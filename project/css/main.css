@@ -8,9 +8,17 @@ body {
 
 .topnav{
 	width: 100%;
-	background-color: rgba(450,0,60,0.8);
-	color: rgba(4, 0, 10, 0.993);
+	background-color: #333;
 	overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 .navbar{
@@ -22,14 +30,13 @@ body {
 	color: white;
 	float: right;
 	text-decoration: none;
-	padding: 12px 24px;
+	padding: 14px 16px;
 	font-size: 17px;
 	display: block;
 }
 
 .navbar a .nav_link{
 	float: right;	
-	color: white;
 }	
 
 .topnav a:hover{
