@@ -6,6 +6,36 @@ body {
   font-size: 22px;
 }
 
+.topnav{
+	width: 100%;
+	background-color: rgba(450,0,60,0.8);
+	color: rgba(4, 0, 10, 0.993);
+	overflow: hidden;
+}
+
+.navbar{
+	text-align: left;
+	font-weight: 700;
+}
+
+.nav_link{
+	color: white;
+	float: right;
+	text-decoration: none;
+	padding: 12px 24px;
+	font-size: 17px;
+	display: block;
+}
+
+.navbar a .nav_link{
+	float: right;	
+	color: white;
+}	
+
+.navbar a .nav_link:hover{
+	background-color: #e9e6e6;
+}
+
 h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -25,7 +55,7 @@ button {
   background-color: #080241;
   padding-top: 40px;
   padding-bottom: 80px;
-  text-align:right;
+  text-align:left;
   color: #ffffff;
 }
 
