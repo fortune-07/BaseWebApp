@@ -32,8 +32,9 @@ body {
 	color: white;
 }	
 
-.navbar a .nav_link:hover{
-	background-color: #e9e6e6;
+.topnav a:hover{
+  background-color:#ddd;
+  color: black;
 }
 
 h1 {
