@@ -1,11 +1,21 @@
 
-body {
+body, html {
   font-family: Arial, serif;
   text-align: center;
   color: #343a40;
   font-size: 22px;
+  height: 100%;
+
 }
 
+.bg{ 
+  background-image: url(walk3.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+  
 .topnav{
 	width: 100%;
 	background-color: #333;
