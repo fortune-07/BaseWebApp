@@ -32,6 +32,14 @@ body, html {
 	font-weight: 700;
 }
 
+.nav-item{
+  color: white;
+	float: right;
+	text-decoration: none;
+	font-size: 17px;
+	display: block; 
+} 
+
 .nav_link{
 	color: white;
 	float: right;
