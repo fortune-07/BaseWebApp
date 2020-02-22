@@ -4,11 +4,6 @@ body, html {
   text-align: center;
   color: #343a40;
   font-size: 22px;
-  height: 100%;
-
-}
-
-.bg{ 
   background-image: url(walk3.jpg);
   height: 100%;
   background-position: center;
