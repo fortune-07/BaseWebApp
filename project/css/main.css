@@ -71,7 +71,7 @@ text-align: left;
   padding: 20px;
 } 
 
-.container .button{
+.container .content .button{
 background-color: #555;
 color: white;
 font-size: 16px;
@@ -81,7 +81,7 @@ cursor: pointer;
 border-radius: 5px;
 }
 
-.container .button:hover{
+.container .content .button:hover{
 background-color: black;
 }
 
