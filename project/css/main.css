@@ -104,6 +104,7 @@ p {
 }
 
 button {
+float: left;
 border: none; 
 border-radius: 5px;
 }
@@ -114,7 +115,7 @@ background-color: black;
 
 
 #image img {
-  height: 100%;
+  height: auto;
   width: 100%;
   
 }
