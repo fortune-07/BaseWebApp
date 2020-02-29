@@ -72,8 +72,8 @@ text-align: left;
 } 
 
 .container .content .button{
+float: left;
 background-color: #555;
-color: white;
 font-size: 16px;
 padding: 12px 24px;
 border: none;
@@ -104,7 +104,8 @@ p {
 }
 
 button {
-margin-top: 40px; 
+border: none; 
+border-radius: 5px;
 }
 
 button:hover{
