@@ -17,8 +17,8 @@ app.get('/about', function (request, response) {
   response.render('pages/about');
 });
 
-app.get('/projects', function (request, response) {
-  response.render('pages/projects');
+app.get('/products', function (request, response) {
+  response.render('pages/products');
 });
 
 app.get('/contact', function (request, response) {
