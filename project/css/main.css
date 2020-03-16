@@ -51,9 +51,8 @@ text-align: left;
 	float: right;	
 }	
 
-.navbar a:hover{
+.navbar a:hover, .dropdown:hover, .dropbtn{
   background-color:#ddd;
-  color: black;
 }
 
 .dropdown {
