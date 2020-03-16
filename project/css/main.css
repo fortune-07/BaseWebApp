@@ -10,40 +10,43 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 } 
-  
-.topnav{
+
+.navbar{ 
+overflow: hidden;
 background-color: #333;
-overflow: hidden;
 }
 
-.topnav a{
+.navbar-header{
   float: left;
-  color: #f2f2f2;
-  padding: 14px 16px;
-  text-align: center;
-  text-decoration: none;
   font-size: 16px;
+  color: white;
+  display: block;
 }
 
-.navbar{
-color: #f2f2f2; 
-overflow: hidden;
-text-align: left;
+.navbar-brand{
+  float: left;
+  font-size: 16px;
+  color: white;
+  display: block;
 }
 
 .nav-item{
   color: white;
 	float: right;
-	text-decoration: none;
-	font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  padding: 14px 16px;
 	display: block; 
 } 
 
 .nav_link{
 	color: white;
 	float: right;
-	text-decoration: none;
-	font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  padding: 14px 16px;
 	display: block;
 }
 
