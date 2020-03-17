@@ -16,9 +16,9 @@ overflow: hidden;
 background-color: #333;
 }
 
-.navbar-header{
+.navbar-brand{
   float: left;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 250;
   color: white;
   display: block;
