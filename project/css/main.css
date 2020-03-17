@@ -23,7 +23,7 @@ background-color: #333;
   display: block;
 }
 
-.nav-item{
+.navbr-nav .nav-item{
   color: white;
 	float: right;
   text-decoration: none;
@@ -32,7 +32,7 @@ background-color: #333;
 	display: block; 
 } 
 
-.nav_link{
+.navbar-nav .nav_link{
 	color: white;
 	float: right;
   text-decoration: none;
