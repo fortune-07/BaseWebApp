@@ -11,12 +11,12 @@ body, html {
   background-size: cover;
 } 
 
-.navbar{ 
+.navbar navbar-expand-sm bg-dark navbar-dark{ 
 overflow: hidden;
 background-color: #333;
 }
 
-.navbar-text{
+.navbar-header{
   float: left;
   font-size: 16px;
   font-weight: 250;
@@ -24,7 +24,7 @@ background-color: #333;
   display: block;
 }
 
-.navbr-nav .nav-item{
+.navbar navbar-expand-sm bg-dark navbar-dark .nav-item{
   color: white;
 	float: right;
   text-decoration: none;
@@ -33,7 +33,7 @@ background-color: #333;
 	display: block; 
 } 
 
-.navbar-nav .nav_link{
+.navbar navbar-expand-sm bg-dark navbar-dark .nav_link{
 	color: white;
 	float: right;
   text-decoration: none;
