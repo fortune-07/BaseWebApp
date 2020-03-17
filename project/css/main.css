@@ -23,13 +23,6 @@ background-color: #333;
   display: block;
 }
 
-.navbar-brand{
-  float: left;
-  font-size: 16px;
-  color: white;
-  display: block;
-}
-
 .nav-item{
   color: white;
 	float: right;
@@ -79,9 +72,8 @@ background-color: #333;
 .dropdown-menu a {
   float: none;
   color: black;
-  padding: 12px 16px;
   text-decoration: none;
-  display: inline;
+  display: none;
   text-align: left;
 }
 
@@ -138,9 +130,9 @@ h2{
 
 h3{
   font-family: 'Poppins', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   margin-top: 20px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 p {
