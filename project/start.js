@@ -21,6 +21,10 @@ app.get('/women', function (request, response) {
   response.render('pages/women');
 });
 
+app.get('/blog', function (request, response) {
+  response.render('pages/blog');
+});
+
 app.get('/contact', function (request, response) {
   response.render('pages/contact');
 });
