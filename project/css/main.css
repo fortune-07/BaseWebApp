@@ -11,7 +11,7 @@ body, html {
   background-size: cover;
 } 
 
-.navbar navbar-expand-sm bg-dark navbar-dark{ 
+.navbar{ 
 overflow: hidden;
 background-color: #333;
 }
@@ -24,7 +24,7 @@ background-color: #333;
   display: block;
 }
 
-.navbar navbar-expand-sm bg-dark navbar-dark .nav-item{
+.navbar .nav-item{
   color: white;
 	float: right;
   text-decoration: none;
@@ -33,7 +33,7 @@ background-color: #333;
 	display: block; 
 } 
 
-.navbar navbar-expand-sm bg-dark navbar-dark .nav_link{
+.navbar .nav_link{
 	color: white;
 	float: right;
   text-decoration: none;
