@@ -16,9 +16,10 @@ overflow: hidden;
 background-color: #333;
 }
 
-.navbar-brand{
+.navbar-text{
   float: left;
   font-size: 16px;
+  font-weight: 250;
   color: white;
   display: block;
 }
