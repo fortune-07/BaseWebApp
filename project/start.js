@@ -33,6 +33,26 @@ app.get('/men', function (request, response) {
   response.render('pages/men');
 });
 
+app.get('/cart', function (request, response) {
+  response.render('pages/cart');
+});
+
+app.get('/shop', function (request, response) {
+  response.render('pages/shop');
+});
+
+app.get('/login', function (request, response) {
+  response.render('pages/login');
+});
+
+app.get('/logout', function (request, response) {
+  response.render('pages/logout');
+});
+
+app.get('/register', function (request, response) {
+  response.render('pages/register');
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
