@@ -12,3 +12,8 @@ function handleRegister(){
     });
   }); 
 }
+
+function handleMessageFormSubmit(){
+  var postUsername = $("uname").val();
+  var postPassword = $("psw").val();
+}
