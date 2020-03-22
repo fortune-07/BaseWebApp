@@ -1,64 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-	<title>FortunesWear</title>
-	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.topnav {
+			overflow: hidden;
+			background-color: #333;
+		}
+
+		.topnav a {
+			float: left;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+
+		.topnav a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+
+		.topnav a.active {
+			background-color: #4CAF50;
+			color: white;
+		}
+
+		.topnav-right {
+			float: right;
+		}
+	</style>
 </head>
 
 <body>
 
 	<div class="topnav">
-		<a class="navbar-brand" href="/">FortunesWear</a>
-
+		FortunesWear
 		<div class="topnav-right">
-			<ul class="topnav-right">
-				<li class="nav-item">
-					<a class="nav-link" href="/">HOME</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/men">MEN</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/women">WOMEN</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/blog">BLOG</a>
-				</li>
-			
-				<!-- Dropdown -->
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="/my account" id="navbardrop" data-toggle="dropdown">
-						MY ACCOUNT</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="/register">REGISTER</a>
-						<a class="dropdown-item" href="/login">LOGIN</a>
-						<a class="dropdown-item" href="/cart">CART</a>
-						<a class="dropdown-item" href="/shop">SHOP</a>
-						<a class="dropdown-item" href="/logout">LOGOUT</a>
-					</div>
-				</li> 
-				<li class="nav-item">
-					<a class="nav-link" href="/about">ABOUT</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/contact">CONTACT</a>
-				</li>
-			</ul>
+			<a href="/home">HOME</a>
+			<a href="/men">MEN</a>
+			<a href="/women">WOMEN</a>
+			<a href="/blog">BLOG</a>
+			<!-- Dropdown-->
+			<div class="topnav dropdown">
+				<a class="dropdown-toggle" href="/my account" id="topnavdrop" data-togggle="dropdown">
+				MY ACCOUNT</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="/regidter">REGISTER</a>
+					<a class="dropdown-item" href="/login">LOGIN</a>
+					<a class="dropdown-item" href="/cart">CART</a>
+					<a class="dropdown-item" href="/shop">SHOP</a>
+					<a class="dropdown-item" href="/logout">LOGOUT</a>
+				</div>
+			</div>
+			<a href="/about">ABOUT</a>
+			<a href="/contact">CONTACT</a>
 		</div>
-	
+	</div>
+
 	<div class="container">
 		<img src="images/sneakers.jpg" style="width: 100;"/>
 	</div>
-
-	<form onSubmit="handleMessageFormSubmit()" action="#">
-		Title:<br>
-		<input id="post-title"><br>
-		Body:<br>
-		<textarea id="post-body"></textarea><br>
-		<button>Submit</button>
-	</form>
 
 </body>
 
