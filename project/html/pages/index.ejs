@@ -27,6 +27,7 @@
 		.navbar-brand{
 			float: left;
 			font-size: 17px;
+			font-weight: 400;
 			color: white;
 			text-align: center;
 			padding: 14px 16px;
@@ -78,6 +79,19 @@
 		.dropdown:hover .dropdown-content {
 			display: block;
 		}
+
+		.container{
+			position: relative;
+			max-width: 1000;
+			margin:auto;
+		}
+
+		.content{
+			position: absolute;
+			color: white;
+			width: 100%;
+			padding: 20px;
+		}
 	</style>
 </head>
 
@@ -105,8 +119,14 @@
 		<a href="/">HOME</a>
 	</div>
 
-	<h3>Dropdown Menu inside a Navigation Bar</h3>
-	<p>Hover over the "Dropdown" link to see the dropdown menu.</p>
+	<div class="container">
+		<img src="images/sneakers.jpg" style="width: max-content;"/>
+		<div class="content">
+			<h2 style="text-align: left;">New Arrivals</h2>
+			<h1 style="text-align: left;">Latest Collection</h1>
+			<button style="text-align: left;" class="button"><a href="/men"></a></button>
+		</div>
+	</div>
 
 </body>
 

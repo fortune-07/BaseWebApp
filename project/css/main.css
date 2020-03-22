@@ -14,31 +14,15 @@ body, html {
 .container {
   position: relative;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: auto;
 } 
 
-.container .content {
+.content {
   position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
 } 
-
-.container .content .button{
-float: left;
-background-color: #555;
-font-size: 16px;
-padding: 12px 24px;
-border: none;
-cursor: pointer;
-border-radius: 5px;
-}
-
-.container .content .button:hover{
-background-color: black;
-}
 
 h1 {
   font-family: 'Poppins', sans-serif;
@@ -66,13 +50,14 @@ p {
 }
 
 button {
-float: left;
 border: none; 
 border-radius: 5px;
+padding: 12px 24px;
+cursor: pointer;
 }
 
 button:hover{
-background-color: black;
+background-color: blue;
 }
 
 
