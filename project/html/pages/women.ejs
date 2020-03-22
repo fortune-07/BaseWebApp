@@ -4,34 +4,68 @@
 </head>
 
 <body>
-    <!-- the classes 'page-header' and 'btn btn-dark' create bootstrap components.  -->
-    <!-- Check out more components here: http://getbootstrap.com/components/ -->
-    <div class="page-header">
-    <% include ../helpers/navbar %>
+    <div class="container text-grey" id="jeans">
+        <p>Women Wear</p>
+    </div>
+    
     <!-- Product grid -->
     <div class="row grayscale">
         <div class="col l3 s6">
             <div class="container">
-                <img src="images/lebron.png" style="width:100%">
-                <p>Black LeBron James<br><b>Ksh.4000</b></p>
+                <img src="images/lebron.png" style="width:100%"/>
+                <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
             </div>
             <div class="container">
-                <img src="images/nikeb.png" style="width:100%">
-                <p>Black Nike Airforce<br><b>Ksh.3500</b></p>
+                <img src="images/nikeb.png" style="width:100%"/>
+                <p>Mega Ripped Jeans<br><b>$19.99</b></p>
             </div>
         </div>
     
         <div class="col l3 s6">
             <div class="container">
-                <img src="images/nikew.png" style="width:80%">
-                <p>White Nike Airforce<br><b>Ksh.3500</b></p>
+                <div class="display-container">
+                    <img src="images/nikew.png" style="width:100%"/>
+                    <span class="tag display-topleft">New</span>
+                    <div class="display-middle display-hover">
+                        <button class="button black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <p>Mega Ripped Jeans<br><b>$19.99</b></p>
             </div>
             <div class="container">
-                <img src="images/offwhite.png" style="width:80%">
-                <p>Nike Airforce Offwhite<br><b>Ksh.3500</b></p> 
+                <img src="images/offwhite.png" style="width:100%"/>
+                <p>Washed Skinny Jeans<br><b>$20.50</b></p>
             </div>
         </div>
-    </div> 
+    
+        <div class="col l3 s6">
+            <div class="container">
+                <img src="images/lebron.png" style="width:100%"/>
+                <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+            </div>
+            <div class="container">
+                <div class="display-container">
+                    <img src="images/nikeb.png" style="width:100%"/>
+                    <span class="tag display-topleft">Sale</span>
+                    <div class="display-middle display-hover">
+                        <button class="button black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <p>Vintage Skinny Jeans<br><b class="text-red">$14.99</b></p>
+            </div>
+        </div>
+    
+        <div class="col l3 s6">
+            <div class="container">
+                <img src="images/nikew.png" style="width:100%"/>
+                <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
+            </div>
+            <div class="container">
+                <img src="images/offwhite.png" style="width:100%"/>
+                <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
