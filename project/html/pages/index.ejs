@@ -36,6 +36,60 @@
 		.topnav-right {
 			float: right;
 		}
+
+		.topnav .nav-item{
+            color: white;
+	        float: right;
+            text-decoration: none;
+            text-align: center;
+            font-size: 16px;
+	        display: block; 
+        } 
+
+        .topnav .nav_link{
+	        color: white;
+	        float: right;
+            text-decoration: none;
+            text-align: center;
+            font-size: 16px;
+	        display: block;
+		}
+
+		.dropdown{
+          float: right;
+        }
+
+        .dropdown-toggle{
+          font-size: 16px;
+          border: none;
+          color: white;
+          padding: 14px 16px;
+        }
+
+        .dropdown-menu{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-menu a {
+            float: none;
+            color: black;
+            text-decoration: none;
+            display: none;
+            text-align: left;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-menu {
+			display: block;
+			
 	</style>
 </head>
 
@@ -44,24 +98,40 @@
 	<div class="topnav">
 		FortunesWear
 		<div class="topnav-right">
-			<a href="/home">HOME</a>
-			<a href="/men">MEN</a>
-			<a href="/women">WOMEN</a>
-			<a href="/blog">BLOG</a>
-			<!-- Dropdown-->
-			<div class="topnav dropdown">
-				<a class="dropdown-toggle" href="/my account" id="topnavdrop" data-togggle="dropdown">
-				MY ACCOUNT</a>
-				<div class="dropdown-menu">
-					<a class="dropdown-item" href="/regidter">REGISTER</a>
-					<a class="dropdown-item" href="/login">LOGIN</a>
-					<a class="dropdown-item" href="/cart">CART</a>
-					<a class="dropdown-item" href="/shop">SHOP</a>
-					<a class="dropdown-item" href="/logout">LOGOUT</a>
-				</div>
-			</div>
-			<a href="/about">ABOUT</a>
-			<a href="/contact">CONTACT</a>
+			<ul class="topnav">
+				<li class="nav-item">
+					<a class="nav-link" href="/home">HOME</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/men">MEN/<a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/women">WOMEN</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/blog">BLOG</a>
+				</li>
+
+				<!-- Dropdown -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="/my account" id="topnavdrop" data-toggle="dropdown">
+						MY ACCOUNT
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="/register">REGISTER</a>
+						<a class="dropdown-item" href="/login">LOGIN</a>
+						<a class="dropdown-item" href="/cart">CART</a>
+						<a class="dropdown-item" href="/shop">SHOP</a>
+						<a class="dropdown-item" href="/logout">LOGOUT</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/about">ABOUT</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/contact">CONTACT</a>
+				</li>
+			</ul>	
 		</div>
 	</div>
 
