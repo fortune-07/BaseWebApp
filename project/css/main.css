@@ -24,6 +24,22 @@ body, html {
   padding: 20px;
 } 
 
+.footer-container{
+  position: relative;
+  margin: auto;
+  max-width: max-content;
+}
+
+.footer_widgets{
+  display: block;
+  overflow: hidden;
+}
+
+.row{
+  overflow: hidden;
+  box-sizing: content-box;
+}
+
 h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
