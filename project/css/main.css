@@ -24,20 +24,19 @@ body, html {
   padding: 20px;
 } 
 
-.footer-container{
-  position: relative;
-  margin: auto;
-  max-width: max-content;
-}
-
-.footer_widgets{
-  display: block;
-  overflow: hidden;
+.footer{
+  padding: 64px;
+  background-color: lightgrey;
+  width: 100%;
 }
 
 .row{
-  overflow: hidden;
-  box-sizing: content-box;
+  width: 100%;
+  padding: 8px;
+  text-align: left;
+  margin: 0px;
+  display: table;
+  clear: both;
 }
 
 h1 {
@@ -59,7 +58,6 @@ h3{
   font-weight: 250;
   margin-top: 20px;
   font-size: 17px;
-  text-align: center;
 }
 
 p {
