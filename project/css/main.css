@@ -32,9 +32,6 @@ body, html {
 
 .row{
   width: 100%;
-  padding: 8px;
-  text-align: left;
-  margin: 0px;
   display: table;
   clear: both;
 }
