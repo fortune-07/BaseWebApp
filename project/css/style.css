@@ -103,7 +103,7 @@ body, html {
 }
 
 .display-products{
-  float: left;
+  display: inline;
 }
 
 .display-products .ul{
