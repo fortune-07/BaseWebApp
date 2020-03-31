@@ -8,94 +8,7 @@
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<style>
-		body {
-			font-family: Arial, Helvetica, sans-serif;
-			background-color: aquamarineg;
-		}
-
-		.navbar {
-			overflow: hidden;
-			background-color: #333;
-		}
-
-		.navbar a {
-			float: right;
-			font-size: 16px;
-			color: white;
-			text-align: center;
-			padding: 14px 16px;
-			text-decoration: none;
-		}
-
-		.navbar-brand{
-			float: left;
-			font-size: 17px;
-			font-weight: 400;
-			color: white;
-			text-align: center;
-			padding: 14px 16px;
-		}
-
-		.dropdown {
-			float: right;
-			overflow: hidden;
-		}
-
-		.dropdown .dropbtn {
-			font-size: 16px;
-			border: none;
-			outline: none;
-			color: white;
-			padding: 14px 16px;
-			background-color: inherit;
-			font-family: inherit;
-			margin: 0;
-		}
-
-		.navbar a:hover,
-		.dropdown:hover .dropbtn {
-			background-color: red;
-		}
-
-		.dropdown-content {
-			display: none;
-			position: absolute;
-			background-color: #f9f9f9;
-			min-width: 160px;
-			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-			z-index: 1;
-		}
-
-		.dropdown-content a {
-			float: none;
-			color: black;
-			padding: 12px 16px;
-			text-decoration: none;
-			display: block;
-			text-align: left;
-		}
-
-		.dropdown-content a:hover {
-			background-color: #ddd;
-		}
-
-		.dropdown:hover .dropdown-content {
-			display: block;
-		}
-
-		.container{
-			width: 500px;
-			margin:auto;
-		}
-
-		.box-1{
-			background-attachment: #333;
-			color: #fff;
-
-		}
-	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
 </head>
 
 <body>
@@ -122,17 +35,17 @@
 		<a href="/">HOME</a>
 	</div>
 
-	<div class="container">
-		<div class="box-1">
-			<h1>Hello World</h1>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas quidem odit ipsum tempore harum, delectus veritatis commodi excepturi reiciendis doloremque! Tenetur corporis enim natus sequi dolore! Placeat, nesciunt ea?</p>
+	<section id="showcase">
+		<div class="container">
+			<h1>New Arrivals</h1>
+			<h1>Latest Collections</h1>
 		</div>
-	</div>
+	</section>
 
 	<!-- Footer -->
 	<footer class="w3-padding-60 w3-light-grey w3-small w3-center" id="footer">
-		<div class="w3-row-padding">
-			<div class="w3-col s4">
+		<div class="row">
+			<div class="block">
 				<h4>Contact</h4>
 				<p>Questions? Go ahead.</p>
 				<form action="/action_page.php" target="_blank">
@@ -144,12 +57,12 @@
 				</form>
 			</div>
 	
-			<div class="w3-col s4">
+			<div class="block">
 				<h3>About</h3>
 				<p><a href="/">About us</a></p>
 			</div>
 	
-			<div class="w3-col s4 w3-justify">
+			<div class="block">
 				<h3>Store</h3>
 				<p><i class="fa fa-fw fa-map-marker"></i> FortunesWear</p>
 				<p><i class="fa fa-fw fa-phone"></i> 0702425821</p>
@@ -164,7 +77,7 @@
 				<i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
 			</div>
 
-			<div class="w3-col s4">
+			<div class="block">
 				<h3>Quick Links</h3>
 				<p><a href="/shop">Shop</a></p>
 				<p><a href="/men">Men</a></p>
