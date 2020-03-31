@@ -107,6 +107,7 @@ body, html {
   width: 33.3%;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  border-style: none;
 } 
 
 h1 {
