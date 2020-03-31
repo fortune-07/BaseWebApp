@@ -104,7 +104,9 @@ body, html {
 
 .display-products{
   float: left;
-
+  width: 33.3%;
+  border: 1px solid #ccc;
+  box-sizing: content-box;
 }
 
 h1 {
