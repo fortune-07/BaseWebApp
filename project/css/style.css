@@ -102,10 +102,14 @@ body, html {
   overflow: hidden;
 } 
 
+.main-block{
+  margin: auto;
+}
+
 .block{
   float: left;
   width: 33.3%;
-  border: 1px solid #ccc;
+  border: 3px solid #ccc;
   box-sizing: border-box;
   border-style: none;
 } 
