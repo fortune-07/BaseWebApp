@@ -9,6 +9,10 @@ body, html {
 
 }
 
+.clr{
+  clear: both;
+}
+
 .navbar {
 	overflow: hidden;
 	background-color: #333;
@@ -82,21 +86,28 @@ body, html {
 #showcase{
   background-image: url('../images/sneakers.jpg');
   background-position: center right;
-  height: 300px;
   margin-bottom: 30px;
   text-align: center;
 }
+
+#showcase h1{
+  color: #fff;
+  font-size: 40px;
+  padding-top: 30px;
+}
+
 .container {
   width: 80%;
   margin: auto;
   overflow: hidden;
 } 
 
-.content {
-  position: absolute;
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
+.block{
+  float: left;
+  width: 33.3%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
 } 
 
 h1 {
