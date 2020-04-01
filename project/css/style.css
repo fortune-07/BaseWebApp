@@ -84,7 +84,7 @@ body, html {
 
 #showcase{
   background-image: url('../images/sneakers.jpg');
-  width: 100%;
+  background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
   margin-bottom: 30px;
@@ -93,7 +93,7 @@ body, html {
 
 #showcase h1{
   color: #fff;
-  font-size: 40px;
+  font-size: 50px;
   padding-top: 30px;
 }
 
