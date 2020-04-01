@@ -14,7 +14,8 @@ body, html {
 
 .navbar {
 	overflow: hidden;
-	background-color: #333;
+  background-color: #333;
+  position: fixed;
 }
 
 .navbar a {
@@ -112,7 +113,10 @@ body, html {
 
 .product{
   display: flex;
-  padding-right: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-right: 10px;
   margin-bottom: 20px;
   width: 30%;
