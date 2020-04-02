@@ -108,7 +108,6 @@ body, html {
 
 #display-products{
   display: flex;
-  margin: 40px auto 0 auto;
   justify-content: space-between;
 }
 
