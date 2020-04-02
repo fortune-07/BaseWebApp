@@ -131,8 +131,6 @@ body, html {
 #home-new-arrival{
   margin-top: 20px;
   display: flex;
-  line-height: 100px;
-  max-width: auto;
 }
 
 #home-new-arrival h3{
