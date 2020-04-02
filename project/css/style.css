@@ -107,14 +107,14 @@ body, html {
 }
 
 #display-products{
-  margin-top: 20px;
+  display: flex;
 }
 
 #disply-products .product{
-  float: left;
-  text-align: center;
-  width: 30%;
+  flex: 1;
   padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
 }
 
 h1 {
