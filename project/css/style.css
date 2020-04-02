@@ -88,7 +88,7 @@ body, html {
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
-  min-height: 500px;
+  min-height: 400px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -106,20 +106,14 @@ body, html {
 }
 
 #display-products{
-  display: flex;
-  margin: 40px auto 0 auto;
-  justify-content: space-between;
-  align-items: stretch;
+  margin-top: 20px;
 }
 
-.product{
-  flex: 1;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-right: 5px;
-  margin-bottom: 20px;
+#disply-products .product{
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
 }
 
 h1 {
