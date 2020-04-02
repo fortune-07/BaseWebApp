@@ -108,12 +108,11 @@ body, html {
 
 #display-products{
   display: flex;
-  margin: 40px auto 0 auto;
 }
 
 #disply-products .product{
   flex: 1;
-  padding: 10px;
+  padding: 10px 10px 10px 10px;
   margin-right: 10px;
   margin-bottom: 20px;
 }
