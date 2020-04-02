@@ -140,13 +140,9 @@ body, html {
   color: black;
 }
 
-.new-arrival-products{
-  display: flex;
-}
-
 .product-item{
   flex: 1;
-  display: grid;
+  margin-right: 3px;
 }
 
 .item-name{
