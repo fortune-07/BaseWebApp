@@ -108,13 +108,15 @@ body, html {
 
 #display-products{
   display: flex;
-  justify-content: space-between;
 }
 
 .product{
-  width: 30%;
-  box-sizing: border-box;
-  padding: 10px;
+  flex: 1;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-right: 5px;
   margin-bottom: 20px;
 }
 
