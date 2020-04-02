@@ -130,8 +130,9 @@ body, html {
 
 #home-new-arrival{
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  align-items: stretch;
+  justify-content: space-between;
+  box-sizing: content-box;
 }
 
 .new-arrival-products{
