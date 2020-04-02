@@ -96,7 +96,8 @@ body, html {
 #showcase h1{
   color: #fff;
   font-size: 50px;
-  padding-top: 30px;
+  margin-top: 100px;
+  margin-bottom: 10px;
 }
 
 .container {
@@ -107,14 +108,15 @@ body, html {
 
 #display-products{
   display: flex;
-  margin-top: 20px;
+  margin-top: 40px auto 0 auto;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 #disply-products .product{
   flex: 1;
-  justify-content: space-between;
-  align-items: stretch;
   padding: 10px;
+  width: 30%;
   margin-right: 5px;
   margin-bottom: 20px;
 }
