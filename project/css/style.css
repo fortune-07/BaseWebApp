@@ -150,7 +150,9 @@ body, html {
 }
 
 .product-item{
-  grid-area: 1/1/2/2;
+  flex: 1;
+  display: grid;
+  grid-auto-flow: row;
 }
 
 .item-name{
