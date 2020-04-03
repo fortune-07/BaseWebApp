@@ -133,6 +133,7 @@ body, html {
   margin-top: 20px;
   display: grid;
   grid-auto-rows: 150px;
+  grid-gap: 10PX;
   padding: 10px;
 }
 
@@ -143,9 +144,13 @@ body, html {
   color: black;
 }
 
-.product-item{
+.new-arrival-product{
   padding: 20px 0;
-  align-items: center;
+  text-align: center;
+}
+
+.product-item{
+  grid-area: auto;
 }
 
 .item-name{
