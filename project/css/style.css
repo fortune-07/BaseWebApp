@@ -108,6 +108,7 @@ body, html {
 
 #display-products{
   display: flex;
+  align-items: center;
 }
 
 .product{
@@ -130,7 +131,9 @@ body, html {
 
 #home-new-arrival{
   margin-top: 20px;
-  display: inline-table;
+  display: grid;
+  grid-auto-rows: 150px;
+  padding: 10px;
 }
 
 #home-new-arrival h3{
@@ -141,9 +144,8 @@ body, html {
 }
 
 .product-item{
-  flex: 1;
-  display: inline-table;
-  margin-right: 3px;
+  padding: 20px 0;
+  align-items: center;
 }
 
 .item-name{
