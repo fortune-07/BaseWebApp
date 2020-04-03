@@ -130,7 +130,7 @@ body, html {
 
 #home-new-arrival{
   margin-top: 20px;
-  display: flex;
+  display: inline-table;
 }
 
 #home-new-arrival h3{
@@ -142,6 +142,7 @@ body, html {
 
 .product-item{
   flex: 1;
+  display: inline-table;
   margin-right: 3px;
 }
 
