@@ -145,36 +145,23 @@ body, html {
   column-count: 4;
   column-fill: auto;
   align-items: stretch;
+  justify-content: space-between;
 }
 
 .product-item img{
-  width: 90px;
+  width: auto;
 }
 
 .item-name{
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   color: black;
 }
 
 .price{
   color: black;
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
-}
-
-.column {
-  float: left;
-  width: 30%;
-  padding: 10px;
-  height: 400px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-  box-sizing: border-box;
 }
 
 h1 {
