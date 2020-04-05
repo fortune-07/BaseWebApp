@@ -145,6 +145,7 @@ body, html {
   column-count: 4;
   column-fill: auto;
   align-items: stretch;
+  box-sizing: border-box;
   justify-content: space-between;
 }
 
