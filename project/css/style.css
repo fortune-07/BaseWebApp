@@ -146,7 +146,7 @@ body, html {
   column-count: 4;
   height: 500px;
   column-fill: auto;
-  width: fit-content;
+  width: 90%;
 }
 
 .product0item1 { grid-area: 1 / 1 / 2 / 2; }
