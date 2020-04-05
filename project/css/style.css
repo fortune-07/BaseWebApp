@@ -145,8 +145,7 @@ body, html {
 }
 
 .new-arrival-product{
-  padding: 20px 0;
-  text-align: center;
+  column-count: 4;
 }
 
 .product0item1 { grid-area: 1 / 1 / 2 / 2; }
