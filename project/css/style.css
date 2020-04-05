@@ -132,6 +132,7 @@ body, html {
   display: grid;
   grid-template-columns: repeat(auto-fit);
   grid-gap: 10px;
+  width: 100px;
 }
 
 #home-new-arrival h3{
@@ -143,12 +144,11 @@ body, html {
 
 .new-arrival-product{
   column-count: 4;
-  column-width: 90%;
   column-fill: auto;
 }
 
-.product-item{
-  box-sizing: border-box;
+.product-item img{
+  width: 90px;
 }
 
 .item-name{
