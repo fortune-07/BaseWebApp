@@ -130,7 +130,8 @@ body, html {
 
 #home-new-arrival{
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-columns: repeat(auto-fit);
+  grid-gap: 10px;
 }
 
 #home-new-arrival h3{
@@ -141,12 +142,9 @@ body, html {
 }
 
 .new-arrival-product{
-  margin-right: 5PX;
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-  justify-content: space-between;
-  z-index: 1;
+  column-count: 4;
+  column-width: 90%;
+  column-fill: auto;
 }
 
 .product0item1 { grid-area: 1 / 1 / 2 / 2; }
