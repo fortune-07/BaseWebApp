@@ -145,6 +145,7 @@ body, html {
 .new-arrival-product{
   column-count: 4;
   column-fill: auto;
+  align-items: stretch;
 }
 
 .product-item img{
