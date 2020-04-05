@@ -207,13 +207,18 @@ background-color: blue;
   
 }
 
-@media screen and (min-width:600px){
-  #main{
+@media screen and (min-width:500px){
+  #showcase{
     width: 100%;
     float: none;
   }
 
   .navbar{
+    width: 100%;
+    float: none;
+  }
+
+  .new-arrival-product{
     width: 100%;
     float: none;
   }
