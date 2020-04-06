@@ -151,7 +151,11 @@ body, html {
 }
 
 .product-item{
-  padding: 10px;
+  padding: 5px;
+}
+
+.product-item:first-child{
+  grid-gap: 0;
 }
 
 .item-name{
