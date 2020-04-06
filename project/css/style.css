@@ -120,6 +120,10 @@ body, html {
   margin-bottom: 20px;
 }
 
+.product:last-child{
+  margin-right: 0;
+}
+
 .product-name{
   text-align: center;
   color: #555;
