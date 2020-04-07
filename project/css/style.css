@@ -171,7 +171,7 @@ body, html {
 .box{
   float: left;
   text-align: center;
-  width: 30%;
+  width: 25%;
   padding: 5px;
   align-content: flex-start;
 }
