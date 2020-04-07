@@ -144,7 +144,7 @@ body, html {
 
 .new-arrival-products{
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   margin: 5px;
   width: 100px;
   height: 500px;
@@ -152,6 +152,7 @@ body, html {
 }
 
 .product-item{
+  flex-flow: row wrap;
   width: 100px;
   margin: 5px;
   text-align: center;
