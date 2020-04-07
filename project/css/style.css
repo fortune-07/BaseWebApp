@@ -144,10 +144,18 @@ body, html {
 
 .new-arrival-products{
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   margin: 5px;
   width: 100px;
-  align-content: space-between;
+  height: 500px;
+  text-align: center;
+}
+
+.product-item{
+  width: 100px;
+  margin: 5px;
+  text-align: center;
+  align-items: flex-start;
 }
 
 .item-name{
