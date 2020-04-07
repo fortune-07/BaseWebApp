@@ -163,7 +163,7 @@ body, html {
   text-align: center;
 }
 
-#footer{
+#boxes{
   margin-top: 20px;
   border-top: 1px black solid;
 }
@@ -171,13 +171,21 @@ body, html {
 .box{
   float: left;
   text-align: center;
-  width: 25%;
+  width: 30%;
   padding: 5px;
   align-content: flex-start;
 }
 
 .box li{
   list-style: none;
+}
+
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #e8491d;
+  text-align: center;
 }
 
 h1 {
