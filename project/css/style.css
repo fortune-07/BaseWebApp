@@ -192,7 +192,8 @@ footer{
   margin-top: 20px;
   color: #ffffff;
   background-color: #e8491d;
-  background-size: 14px 16px;
+  background-position-x: 14px;
+  background-position-y: 16px;
   text-align: center;
 }
 
