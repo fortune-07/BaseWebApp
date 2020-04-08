@@ -114,8 +114,8 @@ body, html {
 
 .polaroid{
   flex: 1;
-  background-color: gray;
-  box-shadow: white;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-right: 5px;
   margin-bottom: 20px;
   padding-top: 10px;
