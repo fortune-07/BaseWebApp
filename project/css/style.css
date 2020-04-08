@@ -171,19 +171,12 @@ body, html {
   font-size: 12px;
 }
 
-.product-grid{
-  display: grid;
+.men {
+  position: relative;
+  width: 50%;
 }
 
-.product-men{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
-  grid-gap: 5px;
-  padding: 5px;
-}
-
-.men-item img{
+.image {
   opacity: 1;
   display: block;
   width: 100%;
@@ -202,13 +195,19 @@ body, html {
   -ms-transform: translate(-50%, -50%)
 }
 
-.product-men:hover .image {
+.men:hover .image {
   opacity: 0.3;
 }
 
-.product-men:hover .middle {
+.men:hover .middle {
   opacity: 1;
-  background-color: grey;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }
 
 #boxes{
