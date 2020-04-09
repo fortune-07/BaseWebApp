@@ -165,8 +165,8 @@ body, html {
   cursor: pointer;
   text-transform: uppercase;
   text-decoration: none;
-  padding-left: 10px;
-  left: center;
+  padding-left: 50px;
+  left: 100px;
 }
 
 #home-new-arrival .button:hover{
