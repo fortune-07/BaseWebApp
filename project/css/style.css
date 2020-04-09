@@ -109,7 +109,6 @@ body, html {
   display: flex;
   width: 100%;
   margin: auto;
-  overflow: hidden;
 }
 
 .polaroid{
@@ -137,7 +136,7 @@ body, html {
 
 #home-new-arrival{
   position: relative;
-  width: 90%;
+  width: 80%;
   margin-bottom: 30px;
 }
 
@@ -204,7 +203,7 @@ body, html {
 
 .men {
   position: relative;
-  width: 90%;
+  width: 80%;
 }
 
 .image {
