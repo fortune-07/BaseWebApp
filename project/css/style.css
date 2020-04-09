@@ -141,14 +141,14 @@ body, html {
   margin-bottom: 20px;
 }
 
-#home-new-arrival h3{
+#home-new-arrival h4{
   font-size: 20px;
   font-weight: bold;
   text-align: center;
   color: black;
 }
 
-.new-arrival-products{
+.new-products{
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto;
@@ -202,6 +202,10 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
+}
+
+.men:last-child{
+  margin-bottom: 0;
 }
 
 .men:hover .image {
