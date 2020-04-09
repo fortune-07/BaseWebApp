@@ -136,7 +136,7 @@ body, html {
 
 #home-new-arrival{
   position: relative;
-  width: 80%;
+  width: 100%;
   margin-bottom: 30px;
 }
 
@@ -151,7 +151,7 @@ body, html {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto;
-  grid-gap: 5px;
+  grid-gap: 3px;
   padding: 5px;
 }
 
@@ -164,7 +164,7 @@ body, html {
   cursor: pointer;
   text-transform: uppercase;
   text-decoration: none;
-  margin-left: 460px;
+  margin-left: 462px;
 }
 
 #home-new-arrival .button:hover{
@@ -251,12 +251,10 @@ body, html {
   margin-top: 5px;
 }
 
-.box ul{
-  list-style: none;
-}
-
 .box li{
   list-style: none;
+  text-decoration: none;
+  display: block;
 }
 
 footer{
