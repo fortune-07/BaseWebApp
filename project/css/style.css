@@ -165,7 +165,7 @@ body, html {
   cursor: pointer;
   text-transform: uppercase;
   text-decoration: none;
-  margin-left: 455px;
+  margin-left: 460px;
 }
 
 #home-new-arrival .button:hover{
@@ -195,7 +195,7 @@ body, html {
   grid-template-rows: auto auto;
   grid-gap: 5px;
   padding: 5px; 
-  justify-content: space-between;
+  align-items: stretch;
 }
 
 .product-men:last-child{
@@ -253,7 +253,7 @@ body, html {
 }
 
 .box ul{
-  text-decoration: none;
+  list-style: none;
 }
 
 .box li{
