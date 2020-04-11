@@ -258,7 +258,7 @@ body, html {
 }
 
 footer{
-  padding: 10px;
+  padding-top: 0px;
   margin-top: 20px;
   color: #ffffff;
   background-color: black;
@@ -312,12 +312,12 @@ button:hover{
 }
 
 
-@media screen and (max-width:700px){
+@media screen and (max-width:600px){
   #showcase h1{
     margin-top: 40px;
   }
 
-  .navbar .navbar-brand .dropbtn #boxes{
+  .navbar .navbar-brand .dropbtn{
     float: none;
     text-align: center;
     width: 100%;
@@ -346,6 +346,11 @@ button:hover{
   #home-new-arrival .button{
     float: none;
     text-align: center;
+    width: 100%;
+  }
+
+  #boxes{
+    display: block;
     width: 100%;
   }
 
