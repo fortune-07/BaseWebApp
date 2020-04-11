@@ -317,7 +317,7 @@ button:hover{
     margin-top: 40px;
   }
 
-  .navbar .navbar-brand #boxes{
+  .navbar .navbar-brand .dropbtn #boxes{
     float: none;
     text-align: center;
     width: 100%;
@@ -328,8 +328,9 @@ button:hover{
   }
 
   .navbar a{
-    display: inline;
+    text-align: center;
     float: none;
+    width: 100%;
   }
 
   #display-products{
@@ -338,8 +339,8 @@ button:hover{
   }
 
   #home-new-arrival{
-    display: inline;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   #home-new-arrival .button{
