@@ -312,7 +312,7 @@ button:hover{
 }
 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:500px){
   #showcase h1{
     margin-top: 40px;
   }
