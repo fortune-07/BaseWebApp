@@ -235,7 +235,7 @@ body, html {
 
 #boxes{
   margin-top: 20px;
-  line-height: 400px;
+  line-height: auto;
   background-color: black;
   border-top: 2px black solid;
   margin-bottom: 0;
@@ -246,6 +246,7 @@ body, html {
   text-align: left;
   width: 30%;
   padding-left: 10px;
+  align-content: space-between;
 }
 
 .box p{
