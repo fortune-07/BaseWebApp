@@ -312,7 +312,7 @@ button:hover{
 }
 
 
-@media screen and (max-width:300px){
+@media screen and (max-width:600px){
   #showcase h1{
     margin-top: 40px;
   }
@@ -340,6 +340,12 @@ button:hover{
   #home-new-arrival{
     display: inline;
     flex-wrap: wrap;
+  }
+
+  #home-new-arrival .button{
+    float: none;
+    text-align: center;
+    width: 100%;
   }
 
 }
