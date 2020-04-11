@@ -29,10 +29,9 @@ body, html {
 .navbar-brand{
 	float: left;
 	font-size: 20px;
-	font-weight: 400;
-	color: white;
+	font-weight: bold;
+	color: blue;
 	text-align: center;
-	padding: 14px 16px;
 }
 
 .dropdown {
