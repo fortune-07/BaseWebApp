@@ -317,7 +317,7 @@ button:hover{
     margin-top: 40px;
   }
 
-  .navbar .navbar a .navbar-brand #boxes{
+  .navbar .navbar-brand #boxes{
     float: none;
     text-align: center;
     width: 100%;
@@ -325,6 +325,11 @@ button:hover{
 
   .navbar{
     padding-bottom: 10px;
+  }
+
+  .navbar a{
+    display: inline;
+    float: none;
   }
 
   #display-products{
