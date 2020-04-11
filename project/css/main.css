@@ -258,7 +258,7 @@ body, html {
 }
 
 footer{
-  padding-top: 1px;
+  padding-top: 0px;
   margin-bottom: 0;
   margin-top: 20px;
   color: #ffffff;
@@ -337,8 +337,8 @@ button:hover{
     width: 100%;
   }
 
-  #home-new-arrival{
-    display: block;
+  #new-products{
+    flex-wrap: wrap;
     width: 100%;
   }
 
@@ -348,7 +348,7 @@ button:hover{
     width: 100%;
   }
 
-  #boxes{
+  #box{
     display: block;
     width: 100%;
   }
