@@ -391,4 +391,26 @@ button:hover{
     width: 100%;
   }
 
+  #newsletter .button1{
+    display: block;
+    width: 100%;
+  }
+
+  #newsletter input[type="email"]{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  #newsletter form{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  #newsletter h2{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
 }
