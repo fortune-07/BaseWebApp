@@ -34,7 +34,7 @@ body, html {
 .navbar li{
   float: right;
   display: inline;
-  direction: inherit;
+  direction: initial;
 }
 
 .navbar-brand{
@@ -393,7 +393,7 @@ button:hover{
     width: 100%;
     clear: both;content: "";
   }
-  
+
   #home-new-arrival .button{
     float: none;
     text-align: left;
@@ -402,6 +402,11 @@ button:hover{
 
   #boxes{
     display: block;
+    width: 100%;
+  }
+
+  .box{
+    min-height: 30px;
     width: 100%;
   }
 
