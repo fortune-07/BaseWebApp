@@ -308,7 +308,7 @@ header{
   background-color: #35424a;
   color: #ffffff;
   padding: 30px;
-  min-height: 20px;
+  min-height: 10px;
   border-bottom: #e8491d 3px solid;
 }
 
@@ -326,7 +326,7 @@ header ul{
 
 header li{
   display: inline;
-  float: left;
+  float: right;
   padding: 0 20px 0 20px;
 }
 
