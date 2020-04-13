@@ -403,13 +403,12 @@ button:hover{
   #boxes{
     display: block;
     width: 100%;
+    margin-bottom: 0;
   }
 
   .box{
     min-height: 30px;
     width: 100%;
-    text-align: left;
-    padding: 5px;
   }
 
   #newsletter .button1{
