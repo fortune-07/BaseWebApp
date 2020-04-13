@@ -326,7 +326,7 @@ header ul{
 
 header li{
   display: inline;
-  float: right;
+  float: left;
   padding: 0 20px 0 20px;
 }
 
@@ -336,7 +336,6 @@ header li{
 
 #branding h1{
   margin: 0;
-  float: left;
 }
 
 header nav{
