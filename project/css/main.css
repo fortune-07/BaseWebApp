@@ -294,6 +294,11 @@ body, html {
   display: block;
 }
 
+.sm{
+  display: inline;
+  padding: 10px;
+}
+
 footer{
   padding-top: 0px;
   margin-bottom: 0;
