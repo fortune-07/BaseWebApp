@@ -26,20 +26,9 @@ body, html {
 	text-decoration: none;
 }
 
-.navbar ul{
-  margin: 0;
-  padding: 0;
-}
-
-.navbar li{
-  float: right;
-  display: inline;
-  direction: ltr;
-}
-
 .navbar-brand{
 	float: left;
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: bold;
 	color: white;
   text-align: center;
@@ -261,7 +250,7 @@ body, html {
 
 #newsletter input[type="email"]{
   padding: 4px;
-  height: 25px;
+  height: 30px;
   width: 250px;
 }
 
@@ -409,6 +398,11 @@ button:hover{
   .box{
     min-height: 30px;
     width: 100%;
+  }
+  
+  .box:last-child{
+    margin-bottom: 0;
+    padding: 0;
   }
 
   #newsletter .button1{
