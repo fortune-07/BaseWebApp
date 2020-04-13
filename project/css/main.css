@@ -295,7 +295,7 @@ body, html {
 }
 
 .sm{
-  display: inline;
+  float: left;
   padding: 10px;
 }
 
