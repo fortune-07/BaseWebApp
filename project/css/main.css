@@ -15,7 +15,6 @@ body, html {
 .navbar {
 	overflow: hidden;
   background-color: #333;
-  border-bottom: #e8491d 3px solid;
 }
 
 .navbar a {
@@ -25,6 +24,16 @@ body, html {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+}
+
+.navbar ul{
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li{
+  float: right;
+  display: inline;
 }
 
 .navbar-brand{
@@ -268,7 +277,6 @@ body, html {
   margin-top: 20px;
   line-height: auto;
   background-color: black;
-  border-top: 2px black solid;
   margin-bottom: 0;
 }
 
@@ -303,50 +311,6 @@ footer{
   color: #ffffff;
   background-color: black;
   text-align: center;
-}
-
-header{
-  background-color: #35424a;
-  color: #ffffff;
-  padding: 10px;
-  min-height: 40px;
-  border-bottom: #e8491d 3px solid;
-}
-
-header a{
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 16px;
-}
-
-header ul{
-  margin: 0;
-  padding: 0;
-}
-
-header li{
-  display: inline;
-  float: left;
-  padding: 14px 16px;
-}
-
-#branding{
-  float: left;
-}
-
-#branding h1{
-  margin: 0;
-}
-
-header nav{
-  float: right;
-  margin-top: 10px;
-}
-
-.highlight{
-  color: blue;
-  font-weight: bold;
 }
 
 h1 {
@@ -455,20 +419,6 @@ button:hover{
   #newsletter h2{
     float: none;
     text-align: center;
-    width: 100%;
-  }
-
-  header #branding{
-    float: none;
-    text-align: center;
-    width: 100%;
-  } 
-
-  header nav,
-  header nav li{
-    float: none;
-    text-align: left;
-    display: inline;
     width: 100%;
   }
 
