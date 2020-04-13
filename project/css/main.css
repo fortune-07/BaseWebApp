@@ -34,7 +34,7 @@ body, html {
 .navbar li{
   float: right;
   display: inline;
-  direction: reverse;
+  direction: inherit;
 }
 
 .navbar-brand{
@@ -394,10 +394,6 @@ button:hover{
     clear: both;content: "";
   }
   
-  .product-item{
-    width: 8%;
-  }
-
   #home-new-arrival .button{
     float: none;
     text-align: left;
