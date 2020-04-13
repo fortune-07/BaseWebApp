@@ -34,6 +34,7 @@ body, html {
 .navbar li{
   float: right;
   display: inline;
+  direction: reverse;
 }
 
 .navbar-brand{
@@ -385,8 +386,16 @@ button:hover{
   }
 
   #new-products{
-    flex-wrap: wrap;
+    float: left;
+    display: table;
+    padding: 5px;
+    box-sizing: border-box;
     width: 100%;
+    clear: both;content: "";
+  }
+  
+  .product-item{
+    width: 8%;
   }
 
   #home-new-arrival .button{
