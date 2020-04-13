@@ -377,10 +377,11 @@ button:hover{
   #new-products{
     float: left;
     display: table;
-    padding: 5px;
     box-sizing: border-box;
     width: 100%;
-    clear: both;content: "";
+    columns: 3;
+    column-gap: 2px;
+    column-width: 10%;
   }
 
   #home-new-arrival .button{
