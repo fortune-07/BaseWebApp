@@ -34,7 +34,7 @@ body, html {
 .navbar li{
   float: right;
   display: inline;
-  direction: initial;
+  direction: ltr;
 }
 
 .navbar-brand{
@@ -408,6 +408,8 @@ button:hover{
   .box{
     min-height: 30px;
     width: 100%;
+    text-align: left;
+    padding: 5px;
   }
 
   #newsletter .button1{
