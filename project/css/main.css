@@ -238,7 +238,7 @@ a{
   cursor: pointer;
   text-transform: uppercase;
   text-decoration: none;
-  margin-left: 462px;
+  left: 50px;
 }
 
 #home-new-arrival .button:hover{
