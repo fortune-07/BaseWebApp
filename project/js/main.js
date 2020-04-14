@@ -34,3 +34,14 @@ const firebaseConfig = {
   appId: "1:954226282245:web:62c27a7231f9cc6755b16c",
   measurementId: "G-0W60Y84PSF"
 };
+
+//Function expression to select elements
+const selectElement=(s)=> document.querySelector(s);
+//Open the menu on click
+selectElement(s: '.open').addEventListener ('click',()=>{
+  selectElement(s: '.nav-list').classList.add('active');
+});
+//close the menu on click
+selectElement(s: '.close').addEventListener('click', () => {
+  selectElement(s: '.nav-list').classList.add(tokens:'active');
+});
