@@ -341,7 +341,10 @@ button:hover{
 .sm{
   float: left;
   padding: 8px;
-  size: 50px;
+}
+
+.icon-social-facebook{
+  size: 30px;
   opacity: 3;
   border-radius: 2px;
 }
