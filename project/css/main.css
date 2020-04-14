@@ -398,6 +398,7 @@ footer{
     float: none;
     text-align: center;
     width: 100%;
+    margin: 0;
   }
 
   .nav-list{
@@ -407,6 +408,8 @@ footer{
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    margin: 0;
+    padding: 2px;
   }
 
   #display-products{
@@ -425,6 +428,8 @@ footer{
   }
 
   #new-products .button{
+    margin: 0;
+    padding: 0;
     float: none;
     display: block;
     text-align: center;
