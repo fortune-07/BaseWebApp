@@ -174,7 +174,7 @@ a{
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   margin: auto;
   overflow: hidden;
 }
@@ -387,18 +387,22 @@ footer{
     margin-top: 40px;
   }
 
-  .navbar .navbar-brand .dropbtn{
+  .navbar{
+    float: none;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .navbar-brand{
     float: none;
     text-align: center;
     width: 100%;
   }
 
-  .navbar{
-    padding-bottom: 10px;
-  }
-
-  .navbar a{
-    text-align: left;
+  .nav-list{
+    display: flex;
+    text-align: center;
     float: none;
     width: 100%;
   }
