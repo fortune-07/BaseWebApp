@@ -404,7 +404,7 @@ footer{
     display: flex;
     text-align: center;
     float: none;
-    align-items: stretch;
+    align-items: center;
     justify-content: space-around;
     width: 100%;
   }
@@ -424,8 +424,10 @@ footer{
     width: 100%;
   }
 
-  #home-new-arrival .button{
+  #new-products .button{
     float: none;
+    display: block;
+    text-align: center;
     align-items: center;
     width: 100%;
   }
