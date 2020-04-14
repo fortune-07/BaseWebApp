@@ -233,8 +233,7 @@ button:hover{
 
 .product-men{
   display: grid;
-  grid-template-columns: auto auto auto auto(auto-fit); 
-  grid-template-rows: auto auto;
+  grid-template-columns: repeat(auto-fit); 
   grid-gap: 5px;
   padding: 5px; 
   align-items: stretch;
