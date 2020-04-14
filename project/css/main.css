@@ -83,10 +83,9 @@ body, html {
 }
 
 #showcase{
-  background-image: url('../images/sneakers.jpg');
+  background: url('../images/sneakers.jpg') center no-repeat;
   background-size: cover;
-  background-position: center right;
-  background-repeat: no-repeat;
+  position: relative;
   min-height: 400px;
   margin-bottom: 30px;
   text-align: center;
