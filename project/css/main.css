@@ -239,6 +239,7 @@ a{
   text-transform: uppercase;
   text-decoration: none;
   left: 50px;
+  transform: translate(-50%, -50% );
 }
 
 #home-new-arrival .button:hover{
