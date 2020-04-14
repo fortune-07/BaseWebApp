@@ -340,8 +340,10 @@ button:hover{
 
 .sm{
   float: left;
-  padding: 10px;
-  size: 10px;
+  padding: 8px;
+  size: 50px;
+  opacity: 3;
+  border-radius: 2px;
 }
 
 footer{
