@@ -404,6 +404,8 @@ footer{
     display: flex;
     text-align: center;
     float: none;
+    align-items: stretch;
+    justify-content: space-between;
     width: 100%;
   }
 
