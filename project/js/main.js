@@ -35,13 +35,10 @@ const firebaseConfig = {
   measurementId: "G-0W60Y84PSF"
 };
 
-//Function expression to select elements
-const selectElement=(s)=> document.querySelector(s);
-//Open the menu on click
-selectElement(s: '.open').addEventListener ('click',()=>{
-  selectElement(s: '.nav-list').classList.add('active');
-});
-//close the menu on click
-selectElement(s: '.close').addEventListener('click', () => {
-  selectElement(s: '.nav-list').classList.add(tokens:'active');
-});
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
