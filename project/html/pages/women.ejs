@@ -3,6 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/stylesheet" src="main.js"></script>
     <style>
         body {
             font-family: "Lato", sans-serif;
@@ -42,6 +43,15 @@
             margin-left: 50px;
         }
 
+        .navbar-brand{
+            float: center;
+	        font-size: 16px;
+	        font-weight: bold;
+	        color: white;
+            text-align: center;
+            padding: 14px 16px;
+        }
+
         @media screen and (max-height: 450px) {
             .sidenav {
                 padding-top: 15px;
@@ -58,25 +68,46 @@
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <div class="container">
+            <div class="navbar-brand">FortunesWear</div>
+            <ul class="nav-list">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/men">Men</a>
+                </li>
+                <li>
+                    <a href="/women">Women</a>
+                </li>
+                <li>
+                    <a href="/blog">Blog</a>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">MY ACCOUNT
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="/register">REGISTER</a>
+                            <a href="/login">LOGIN</a>
+                            <a href="/cart">CART</a>
+                            <a href="/shop">SHOP</a>
+                            <a href="/logout">LOGOUT</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/about">About</a>
+                </li>
+                <li>
+                    <a href="/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
     </div>
 
-    <h2>Animated Sidenav Example</h2>
-    <p>Click on the element below to open the side navigation menu.</p>
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
 
 </body>
 
