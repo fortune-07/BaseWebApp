@@ -363,8 +363,11 @@ a{
 }
 
 footer{
-  padding: 0;
-  background-color: black;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
   text-align: center;
   color: white;
 }
