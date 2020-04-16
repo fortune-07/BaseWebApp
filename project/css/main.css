@@ -221,17 +221,30 @@ a{
   color: black;
 }
 
+#home-new-arrival .button{
+  background-color: black;
+  font-size: 12px;
+  top: 0;
+  left: 50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#home-new-arrival .button:hover{
+  background-color: grey;
+  color: #333;
+}
+
 .new-products{
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto;
   grid-gap: 3px;
   padding: 5px;
-}
-
-#home-new-arrival .button:hover{
-  background-color: grey;
-  color: #333;
 }
 
 .product-item{
