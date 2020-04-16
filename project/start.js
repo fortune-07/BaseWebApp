@@ -29,7 +29,7 @@ app.get('/contact', function (request, response) {
   response.render('pages/contact');
 });
 
-app.get('/my account', function (request, response) {
+app.get('/new-arrivals', function (request, response) {
   response.render('pages/my account');
 });
 
@@ -55,6 +55,22 @@ app.get('/logout', function (request, response) {
 
 app.get('/register', function (request, response) {
   response.render('pages/register');
+});
+
+app.get('/shipping-policy', function (request, response) {
+  response.render('pages/my account');
+});
+
+app.get('/terms-conditions', function (request, response) {
+  response.render('pages/my account');
+});
+
+app.get('/payment-policy', function (request, response) {
+  response.render('pages/my account');
+});
+
+app.get('/return-policy', function (request, response) {
+  response.render('pages/my account');
 });
 
 app.listen(app.get('port'), function() {
