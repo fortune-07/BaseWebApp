@@ -30,7 +30,7 @@ app.get('/contact', function (request, response) {
 });
 
 app.get('/new-arrivals', function (request, response) {
-  response.render('pages/my account');
+  response.render('pages/new-arrivals');
 });
 
 app.get('/men', function (request, response) {
@@ -58,19 +58,19 @@ app.get('/register', function (request, response) {
 });
 
 app.get('/shipping-policy', function (request, response) {
-  response.render('pages/my account');
+  response.render('pages/shipping-policy');
 });
 
 app.get('/terms-conditions', function (request, response) {
-  response.render('pages/my account');
+  response.render('pages/terms-conditions');
 });
 
 app.get('/payment-policy', function (request, response) {
-  response.render('pages/my account');
+  response.render('pages/payment-policy');
 });
 
 app.get('/return-policy', function (request, response) {
-  response.render('pages/my account');
+  response.render('pages/return-policy');
 });
 
 app.listen(app.get('port'), function() {
