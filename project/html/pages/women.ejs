@@ -11,6 +11,12 @@
             font-family: "Lato", sans-serif;
         }
 
+        .container {
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
         .sidenav {
             height: 100%;
             width: 0;
@@ -22,6 +28,7 @@
             overflow-x: hidden;
             transition: 0.5s;
             padding-top: 60px;
+            border-bottom: 2px solid black;
         }
 
         .sidenav a {
@@ -46,7 +53,7 @@
         }
 
         .navbar-brand{
-            float: center;
+            float: right;
 	        font-size: 16px;
 	        font-weight: bold;
 	        color: white;
@@ -69,8 +76,7 @@
 	        margin: 0;
         }
 
-        .navbar a:hover,
-        .dropdown:hover .dropbtn {
+        .dropdown:hover .dropbtn {  
 	        background-color: #ddd;
         }
 
@@ -175,8 +181,8 @@
         }
 
         @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+            from {opacity: .4} 
+            to {opacity: 1}
         }
 
         /* On smaller screens, decrease text size */
@@ -197,11 +203,11 @@
 </head>
 
 <body>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-    <div class="navbar-brand">FortunesWear</div>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="container">
+    <div class="container">
+        <div id="mySidenav" class="sidenav">
+            <div class="navbar-brand">FortunesWear</div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <ul class="nav-list">
                 <li>
                     <a href="/">Home</a>
@@ -296,7 +302,7 @@
             if (n > slides.length) { slideIndex = 1 }
             if (n < 1) { slideIndex = slides.length }
             for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "active";
+                slides[i].style.display = "none";
             }
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
