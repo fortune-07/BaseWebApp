@@ -1,118 +1,108 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="X-UA-compatible" content="ie=edge">
-        <title>Shop</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="main.js"></script>
-        <style>
-            header{
-                width: 100%;
-                height: 5rem;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 1;
-            }
 
-            .container{
-                width: 100%;
-                max-width: 98rem;
-                margin: 0 auto;
-                padding: 0 1.5rem;
-            }
-            
-            .menu-icons i{
-                font-size: 3.5rem;
-                color: #fafafa;
-                cursor: pointer;
-            }
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-            .close{
-                color: #eb648c;
-            }
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
 
-            nav{
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 1rem 0;
-                border-bottom: 1px solid rgba(255,255,255,2);
-            }
+        /* The grid: Four equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px;
+        }
 
-            .nav-brand{
-                width: 2rem;
-            }
+        /* Style the images inside the grid */
+        .column img {
+            opacity: 0.8;
+            cursor: pointer;
+        }
 
-            .nav-list{
-                width: 25rem;
-                height: 100vh;
-                background-color: #d7d4ed;
-                position: fixed;
-                top: 0;
-                right: 26rem;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                z-index: 1500;
-                transition: all 650ms ease-in-out;
-            }
+        .column img:hover {
+            opacity: 1;
+        }
 
-            .nav-list .active{
-                right: 0;
-            }
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
 
-            .nav-item{
-                margin: 1.5rem 0;
-            }
+        /* The expanding image container */
+        .container {
+            position: relative;
+            display: none;
+        }
 
-            .nav-link{
-                font-size: 1.6rem;
-                text-transform: uppercase;
-                color: rgba(0,0,0,.7);
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <nav>
-                    <div class="nav-brand">
-                        <img src="images/nike.jpg">
-                    </div>
-                    <div class="menu=icons open">
-                        <i class="icon ion-md-menu"></i>
-                    </div>
-                    <ul class="nav-list">
-                        <div class="menu-icons close">
-                            <i class="icon ion-md-close"></i>
-                        </div>
-                        <li class="nav-item">
-                            <a href="/" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/" class="nav-link">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/" class="nav-link">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        /* Expanding image text */
+        #imgtext {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            font-size: 20px;
+        }
 
-        <script type="text/javascript" src="main.js"></script>
-    </body>
+        /* Closable button inside the expanded image */
+        .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="text-align:center">
+        <h2>Tabbed Image Gallery</h2>
+        <p>Click on the images below:</p>
+    </div>
+
+    <!-- The four columns -->
+    <div class="row">
+        <div class="column">
+            <img src="images/NikeAirJordan4Retro.jpg" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="images/NikeAirJordan5Retro.jpg" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="images/NikeAirJordan6Retro.jpg" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="images/NikeAirjordan3Retro.jpg" style="width:100%" onclick="myFunction(this);">
+        </div>
+    </div>
+
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+    </div>
+
+    <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+
+</body>
+
 </html>
