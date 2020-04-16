@@ -225,7 +225,7 @@ a{
   background-color: black;
   font-size: 10px;
   top: 0;
-  align-items: center;
+  justify-content: center;
   color: #fff;
   padding: 10px 15px;
   border: none;
