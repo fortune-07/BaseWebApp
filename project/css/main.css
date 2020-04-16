@@ -223,9 +223,9 @@ a{
 
 #home-new-arrival .button{
   background-color: black;
-  font-size: 12px;
+  font-size: 10px;
   top: 0;
-  left: 50;
+  align-items: center;
   color: #fff;
   padding: 10px 15px;
   border: none;
