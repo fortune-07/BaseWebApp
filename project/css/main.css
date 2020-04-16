@@ -225,8 +225,8 @@ a{
   background-color: black;
   font-size: 10px;
   top: 0;
-  justify-content: center;
-  margin-left: 300px;
+  justify-items: center;
+  margin-left: 0;
   color: #fff;
   padding: 10px 15px;
   border: none;
