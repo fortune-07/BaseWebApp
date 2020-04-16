@@ -94,7 +94,16 @@
         </div>
     </form>
 
-    <script type="text/javascript" src="main.js"></script>
+    <script>
+        function handleSignIn() {
+                firebase.auth().signInWithEmailAndPassword(email, password).catch(function (error) {
+                    // Handle Errors here.
+                    var errorCode = error.code;
+                    var errorMessage = error.message;
+                    // ...
+                });
+            }
+    </script>
 </body>
 
 </html>

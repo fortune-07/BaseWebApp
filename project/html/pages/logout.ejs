@@ -13,6 +13,14 @@
     <body>
         <button onclick="handleSignOut()">Logout</button>
 
-        <script type="text/javascript" src="main.js"></script>
+        <script>
+            function handleSignOut() {
+                    firebase.auth().signOut().then(function () {
+                        // Sign-out successful.
+                    }).catch(function (error) {
+                        // An error happened.
+                    });
+                }
+        </script>
     </body>
 </html>
