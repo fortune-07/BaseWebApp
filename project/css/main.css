@@ -154,10 +154,6 @@ a{
   display: block;
 }
 
-#mySidenav{
-  display: none;
-}
-
 .sidenav {
   height: 100%;
   width: 0;
