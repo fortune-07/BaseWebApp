@@ -69,6 +69,7 @@ header{
   padding: 0;
   background-color: black;
   color: #f4f4f4;
+  display: none;
 }
 
 .navbar {
