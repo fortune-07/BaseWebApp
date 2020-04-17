@@ -176,6 +176,10 @@ a{
   transition: 0.3s;
 }
 
+.navbrand{
+  float: right;
+}
+
 .sidenav a:hover {
   color: #f1f1f1;
 }
