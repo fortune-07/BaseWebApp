@@ -454,7 +454,10 @@ footer{
   }
 
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav a {
+    font-size: 18px;
+    display: block;
+  }
 
   #display-products{
     display: block;
