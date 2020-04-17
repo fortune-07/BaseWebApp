@@ -401,26 +401,8 @@ footer{
     margin-top: 40px;
   }
 
-  .navbar{
-    float: none;
-    text-align: center;
-    width: 100%;
-    padding-bottom: 10px;
-  }
-
-  .navbar-brand{
-    float: none;
-    text-align: center;
-    width: 100%;
-  }
-
-  .nav-list{
-    display: flex;
-    text-align: center;
-    float: none;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
+  .navbar .navbar-brand{
+    display: none;
   }
 
   #display-products{
