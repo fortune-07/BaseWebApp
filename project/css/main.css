@@ -64,6 +64,13 @@ a{
   clear: both;
 }
 
+header{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: #f4f4f4;
+}
+
 .navbar {
 	overflow: hidden;
   background-color: #333;
@@ -177,9 +184,14 @@ a{
 }
 
 .navbrand{
-  float: right;
+  align-content: center;
+  justify-content: center;
   font-size: 16px;
   text-align: center;
+}
+
+.highlight{
+  color: orangered;
 }
 
 .sidenav a:hover {
