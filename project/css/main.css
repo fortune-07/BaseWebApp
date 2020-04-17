@@ -177,7 +177,9 @@ a{
 }
 
 .navbrand{
-  float: center;
+  display: flex;
+  font-size: 12px;
+  text-align: center;
 }
 
 .sidenav a:hover {
