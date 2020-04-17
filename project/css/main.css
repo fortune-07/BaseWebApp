@@ -379,6 +379,10 @@ a{
   padding-left: 10px;
 }
 
+.form-contact{
+  border: none;
+}
+
 footer{
   left: 0;
   bottom: 0;
