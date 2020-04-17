@@ -12,32 +12,25 @@
 
 <body>
     <% include ../helpers/navbar %> 
-    <!-- The Contact Section -->
-    <div class="container" style="max-width:800px" id="contact">
-        <h2 class="center">CONTACT</h2>
-        <p class="center"><i>Fan? Drop a note!</i></p>
-        <div class="row-padding-32">
-            <div class="col m6 large margin-bottom">
-                <i class="fa fa-map-marker" style="width:30px"></i> Mombasa, Kenya<br>
-                <i class="fa fa-phone" style="width:30px"></i> Phone: +254 702425821<br>
-                <i class="fa fa-envelope" style="width:30px"> </i> Email: fortuneniguel@mail.com<br>
-            </div>
-            <div class="col m6">
-                <form action="/action_page.php" target="_blank">
-                    <div class="row-padding" style="margin:0 -16px 8px -16px">
-                        <div class="half">
-                            <input class="border" type="text" placeholder="Name" required name="Name">
-                        </div>
-                        <div class="half">
-                            <input class="border" type="text" placeholder="Email" required name="Email">
-                        </div>
-                    </div>
-                    <input class="border" type="text" placeholder="Message" required name="Message">
-                    <button class="button" type="submit">SEND</button>
-                </form>
-            </div>
-        </div>
-    </div>
 
+    <div class="contact-office">
+        <h4>Our Store</h4>
+        <p class="contact-shop" style="padding-left: 0px;"><i class="fas fa-store"
+                style="font-size: 16px; color: #676767;"></i>&nbsp;&nbsp; KicksCrew Store</p>
+        <p class="contact-phone">+254702425821&nbsp;&nbsp;&nbsp;<a href="https://api.whatsapp.com/send?phone=+254702425821"
+                target="_blank"><i class="fab fa-whatsapp-square" style="font-size: 18px; color: #00e676;"></i></a></p>
+        <p class="contact-address">Gala Place, Shop 1621-22, 56 Dundas St, Mong Kok,<br> KLN, Hong Kong</p>
+        <div id="googlemap" style="padding-right: 1vw;"><iframe style="border: 0; width: 100%; height: 210px;"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59048.95101693879!2d114.17116349360286!3d22.332495653365715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340401ebe88946ed%3A0x108a0d09d21dc313!2sKicksCrew+Store!5e0!3m2!1szh-TW!2shk!4v1546597186847"
+                width="320" height="240" frameborder="0" allowfullscreen=""></iframe></div>
+        <br>
+        <h4>Our Office</h4>
+        <p style="padding-left: 0px;"><i class="fas fa-building"
+                style="font-size: 16px; color: #676767;"></i>&nbsp;&nbsp;&nbsp; Kicks-Crew Company Limited</p>
+        <p class="contact-email">cs@kickscrew.com</p>
+        <p class="contact-phone">+852-28111120</p>
+        <p class="contact-address">Flat D, 13/F, Southeast Industrial Building,<br> 611-619 Castle Peak Road, Tsuen Wan,
+            <br> NT, Hong Kong</p>
+    </div>
 </body>
 </html>
