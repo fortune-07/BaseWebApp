@@ -177,7 +177,7 @@ a{
 }
 
 .navbrand{
-  float: right;
+  float: center;
 }
 
 .sidenav a:hover {
@@ -439,7 +439,15 @@ footer{
     margin-top: 40px;
   }
 
-  .navbar .navbar-brand .nav-list{
+  .navbar{
+    display: none;
+  }
+
+  .navbar-brand{
+    display: none;
+  }
+
+  .nav-list{
     display: none;
   }
 
