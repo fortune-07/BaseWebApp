@@ -370,6 +370,11 @@ a{
   padding: 8px;
 }
 
+.column-main{
+  display: flex;
+  float: left;
+}
+
 footer{
   left: 0;
   bottom: 0;
