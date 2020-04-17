@@ -154,6 +154,10 @@ a{
   display: block;
 }
 
+#mysidenav{
+  display: none;
+}
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -435,7 +439,7 @@ footer{
     margin-top: 40px;
   }
 
-  .navbar .navbar-brand{
+  .navbar .navbar-brand .nav-list{
     display: none;
   }
 
