@@ -375,6 +375,10 @@ a{
   float: left;
 }
 
+.contact-office{
+  padding-left: 10px;
+}
+
 footer{
   left: 0;
   bottom: 0;
