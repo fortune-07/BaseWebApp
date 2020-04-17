@@ -191,8 +191,8 @@ header{
 .navbrand{
   font-size: 25px;
   font-weight: bold;
-  text-align: justify;
-  justify-content: center;
+  text-align: center;
+  align-content: space-between;
   margin: 0;
   padding: 0;
 }
