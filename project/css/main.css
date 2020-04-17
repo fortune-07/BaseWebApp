@@ -189,10 +189,10 @@ header{
 }
 
 .navbrand{
-  bottom: 0;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
-  text-align: center;
+  text-align: justify;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
