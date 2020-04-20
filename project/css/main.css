@@ -72,6 +72,11 @@ header{
   display: none;
 }
 
+.nav-small{
+  margin: 0;
+  padding: 0;
+}
+
 .navbar {
 	overflow: hidden;
   background-color: #333;
