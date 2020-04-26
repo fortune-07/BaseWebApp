@@ -294,6 +294,7 @@ header{
 
 .new-products{
   display: grid;
+  box-sizing: border-box;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto;
   grid-gap: 3px;
@@ -302,6 +303,10 @@ header{
 
 .product-item{
   padding: 10px;
+}
+
+.product-item:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
 }
 
 .item-name{
