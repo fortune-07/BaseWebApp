@@ -282,6 +282,7 @@ header{
   padding: 10px 15px;
   border: none;
   cursor: pointer;
+  align-content: center;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -296,14 +297,14 @@ header{
   box-sizing: border-box;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto;
-  grid-gap: 0;
-  padding: 5px;
-  margin: 0;
+  grid-gap: 5px;
+  padding: 0;
+  margin: auto;
 }
 
 .product-item{
   width: auto;
-  padding: 0;
+  padding: 5px;
 }
 
 .product-item:hover {
