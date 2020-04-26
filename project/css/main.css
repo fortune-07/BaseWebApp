@@ -478,6 +478,12 @@ footer{
     display: none;
   }
 
+  .nav-small{
+  margin: 0;
+  padding: 0;
+  display: auto;
+  }
+
   .sidenav {padding-top: 15px;}
   .sidenav a {
     font-size: 18px;
