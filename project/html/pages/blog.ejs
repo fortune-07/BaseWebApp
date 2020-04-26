@@ -15,7 +15,17 @@
     <% include ../helpers/navbar %>
     <% include ../helpers/sidenav %>
     <h1>Blog</h1>
+
     
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 
 </html>
