@@ -212,6 +212,10 @@ header{
   margin-left: 50px;
 }
 
+.page-wrapper{
+  padding-left: 5px;
+}
+
 #showcase{
   background: url('../images/sneakers.jpg') center no-repeat;
   background-size: cover;
