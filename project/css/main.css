@@ -485,10 +485,12 @@ footer{
 
   header{
     display: inline;
+    position: fixed;
   }
 
   .nav-small{
-  display: inline;
+    display: inline;
+    position: fixed;
   }
 
   .sidenav {padding-top: 15px;}
