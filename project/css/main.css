@@ -478,10 +478,12 @@ footer{
     display: none;
   }
 
+  header{
+    display: inline;
+  }
+
   .nav-small{
-  margin: 0;
-  padding: 0;
-  display: auto;
+  display: inline;
   }
 
   .sidenav {padding-top: 15px;}
