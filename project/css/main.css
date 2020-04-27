@@ -81,7 +81,6 @@ header{
 .navbar {
 	overflow: hidden;
   background-color: #333;
-  position: fixed;
 }
 
 .navbar a {
