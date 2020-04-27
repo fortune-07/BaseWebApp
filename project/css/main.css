@@ -81,6 +81,7 @@ header{
 .navbar {
 	overflow: hidden;
   background-color: #333;
+  position: fixed;
 }
 
 .navbar a {
@@ -485,12 +486,10 @@ footer{
 
   header{
     display: inline;
-    position: fixed;
   }
 
   .nav-small{
     display: inline;
-    position: fixed;
   }
 
   .sidenav {padding-top: 15px;}
