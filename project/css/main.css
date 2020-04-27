@@ -75,7 +75,6 @@ header{
 .nav-small{
   margin: 0;
   padding: 0;
-  display: none;
 }
 
 .navbar {
@@ -548,6 +547,10 @@ footer{
     float: none;
     text-align: center;
     width: 100%;
+  }
+
+  .column-main{
+    display: block;
   }
 
 }
