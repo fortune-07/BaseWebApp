@@ -1,201 +1,160 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <head>
+        <title>fortunesweear</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        * {
+        *{
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
 
-        /* style the container */
-        .container {
-            position: relative;
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 20px 0 30px 0;
-        }
-
-        /* style inputs and link buttons */
-        input,
-        .btn {
+        header{
             width: 100%;
-            padding: 12px;
-            border: none;
-            border-radius: 4px;
-            margin: 5px 0;
-            opacity: 0.85;
-            display: inline-block;
-            font-size: 17px;
-            line-height: 20px;
-            text-decoration: none;
-            /* remove underline from anchors */
+            height: auto;
         }
 
-        label, input[type=checkbox]{
-            display: inline;
+        .header-wrapper{
+            width: 100%;
+            height: 160px;
+            background: red;
+            margin: 0 auto;
         }
 
-        input:hover,
-        .btn:hover {
-            opacity: 1;
+        .logo-icon-wrapper{
+            width: 95%;
+            height: 55%;
+            margin: 0 auto;
+            /*background: yellow;*/
         }
-
-        /* add appropriate colors to fb, twitter and google buttons */
-        .fb {
-            background-color: #3B5998;
-            color: white;
-        }
-
-        .twitter {
-            background-color: #55ACEE;
-            color: white;
-        }
-
-        .google {
-            background-color: #dd4b39;
-            color: white;
-        }
-
-        /* style the submit button */
-        input[type=submit] {
-            background-color: #4CAF50;
-            color: white;
-            cursor: pointer;
-        }
-
-        input[type=submit]:hover {
-            background-color: #45a049;
-        }
-
-        /* Two-column layout */
-        .col {
+        
+        .logo{
+            width: 30%;
+            height: 55%;
+            margin-top: 2%;
             float: left;
-            width: 50%;
-            margin: auto;
-            padding: 0 50px;
-            margin-top: 6px;
         }
 
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* vertical line */
-        .vl {
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%);
-            border: 2px solid #ddd;
-            height: 175px;
-        }
-
-        /* text inside the vertical line */
-        .vl-innertext {
-            position: absolute;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #f1f1f1;
-            border: 1px solid #ccc;
-            border-radius: 50%;
-            padding: 8px 10px;
-        }
-
-        /* hide some text on medium and large screens */
-        .hide-md-lg {
-            display: none;
-        }
-
-        /* bottom container */
-        .bottom-container {
+        .nav-brand{
+	        font-size: 16px;
+	        font-weight: bold;
+	        color: white;
             text-align: center;
-            background-color: #666;
-            border-radius: 0px 0px 4px 4px;
         }
 
-        /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 650px) {
-            .col {
-                width: 100%;
-                margin-top: 0;
-            }
+        .icon{
+            width: 30%;
+            height: 100%;
+            float: right;
+            /*background: red;*/
+        }
 
-            /* hide the vertical line */
-            .vl {
-                display: none;
-            }
+        .icon a {
+            font-size: 22px;
+            margin-bottom: 30px;
+            color: black;
+            text-decoration: none;
+            margin-left: 50px;
+            position: relative;
+            top: 40%;
+        }
 
-            /* show the hidden text on small screens */
-            .hide-md-lg {
-                display: block;
-                text-align: center;
-            }
+        .nav-search-wrapper{
+            height: 45%;
+            width: 100%;
+            background: black;
+            margin: 0 auto;
+        }
+
+        .navigation{
+            width: 75%;
+            height: 100%;
+            float: left;
+        }
+
+        .navigation ul {
+            padding: 0;
+        }
+
+        .navigation ul li {
+            list-style-type: none;
+            display: inline-block;
+            margin-left: 30px;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .navigation ul li a{
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .navigation ul li a:hover{
+            border-bottom: 2px solid white;
+        }
+
+        .search-btn{
+            width: 25%;
+            height: 100%;
+            float: right;
+            line-height: 20px;
+        }
+
+        .search-btn input[type="text"] {
+            padding: 5px 30px;
+            margin-left: 30px;
+            padding-left: 2px;
+            background: black;
+            border: 1px solid #a1a1a1;
+            margin-top: 30px;
+            color: #fff;
+        }
+
+        .search-btn a{
+            color: #a1a1a1;
+            font-size: 20px;
+            margin-left: 10px;
         }
     </style>
-</head>
-
-<body>
-
-    <h2>Login Or Create An Account</h2>
-
-    <div class="container">
-        <div class="hide-md-lg">
-            <p>Log In:</p>
-        </div>
-        <div class="vl">
-            <span class="vl-innertext">or</span>
-        </div>
-
-        <div class="col">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="submit" value="Login">
-        </div>
-
-        <form action="/action_page.php">
-            <div class="row">
-                <h2 style="text-align:center">Login with Social Media</h2>
-
-                <div class="col">
-                    <a href="#" class="fb btn">
-                        <i class="fa fa-facebook fa-fw"></i> Login with Facebook
-                    </a>
-                    <a href="#" class="twitter btn">
-                        <i class="fa fa-twitter fa-fw"></i> Login with Twitter
-                    </a>
-                    <a href="#" class="google btn"><i class="fa fa-google fa-fw">
-                        </i> Login with Google+
-                    </a>
+    <body>
+        <!--header section-->
+        <header>
+            <div class="head-wrapper">
+                <div class="logo-icon-wrapper">
+                    <div class="logo">
+                        <div class="nav-brand"><span class="highlight">
+                        Fortunes</span>Wear</div>
+                    </div>
+                    <div class="icon">
+                    <a href="" class="icon1-a"><i class="fas 
+                    fa-shopping-cart"></i><span>Cart</span></a>
+                    <a href="" class="icon1-a"><i class="fas fa user">
+                    <span>Guest</span></i></a>
                 </div>
-
             </div>
-        </form>
-    </div>
-
-    <div class="bottom-container">
-        <div class="row">
-            <div class="col">
-                <a href="#" style="color:white" class="btn">Sign up</a>
+            <div class="nav-search-wrapper">
+                <div class="navigation">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/">Men</a></li>
+                        <li><a href="/">Women</a></li>
+                        <li><a href="/">New Arrivals</a></li>
+                        <li><a href="/">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="search-btn">
+                    <input type="text" placeholder="search item">
+                    <a href="/"><i class="fas fa-search"></i></a>
+                </div>
             </div>
-            <div class="col">
-                <a href="#" style="color:white" class="btn">Forgot password?</a>
-            </div>
-        </div>
-    </div>
-
-    <h2>New Customer</h2>
-    <p>Create an account to expedite future checkouts, track order history, & receive emails, discounts, & special offers!</p>
-
-    <a class="button" href="/register">REGISTER</a>
-
-</body>
-
+        </header>
+        <!--end of header section-->
+    </body>
 </html>
