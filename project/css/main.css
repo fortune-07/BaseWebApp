@@ -57,7 +57,8 @@ header .site-title{
 /* Navigation Menu */
 
 .navbar-nav{
-    padding: 0.8em;
+  margin: 0;
+  padding: 0.8em;
 }
 
 .navbar-nav .nav-link{
@@ -69,7 +70,7 @@ header .site-title{
     padding: 0 1.3em;
 }
 
-.navbar-nav .basket-icon{
+.navbar-nav .shopping-cart-icon{
     margin-right: 6.5rem !important;
 }
 
