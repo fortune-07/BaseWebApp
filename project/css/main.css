@@ -1,4 +1,78 @@
 
+/*import fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato&family=Roboto&family=Sofia&display=swap');
+
+:root{
+    --light-gray: #2b3032a1;
+    --primary-color: #45ccb8;
+    --border: #2b303218;
+    --text-color: #ff686b;
+    --roboto:"roboto", sans-serif;
+    --gugi:"gugi", cursive;
+    --sofia:"sofia", cursive;
+}
+
+.primary-color{
+    color: var(--primary-color);
+}
+
+.bg-primary-color{
+    background-color: var(--primary-color) !important;
+}
+
+.text-color{
+    color: var(--text-color);
+}
+
+.font-roboto{
+    font-family: var(--roboto);
+}
+
+.lightblue{
+    color: lightblue;
+}
+
+/* Header */
+
+header{
+    background-color: var(--primary-color);
+    font-family: var(--roboto);
+}
+
+header .site-title{
+    font-family: var(--gugi);
+}
+
+.container .dropdown-toogle,
+.container .dropdown-item{
+    font-size: 0.7em;
+}
+
+.header-links a{
+    font-size: 0.9em;
+    text-decoration: none;
+    color: white;
+}
+
+/* Navigation Menu */
+
+.navbar-nav{
+    padding: 0.8em;
+}
+
+.navbar-nav .nav-link{
+    font-size: 0.9em;
+    color: var(--light-gray) !important;
+}
+
+.navbar-nav .nav-item .nav-link{
+    padding: 0 1.3em;
+}
+
+.navbar-nav .basket-icon{
+    margin-right: 6.5rem !important;
+}
+
 body, html {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f4f4;
@@ -64,13 +138,14 @@ a{
   clear: both;
 }
 
-header{
+/*header{
   margin: 0;
   padding: 0;
   background-color: black;
   color: #f4f4f4;
   display: none;
 }
+*/
 
 .nav-small{
   margin: 0;
@@ -78,6 +153,7 @@ header{
   display: none;
 }
 
+/*
 .navbar {
 	overflow: hidden;
   background-color: #333;
@@ -166,7 +242,8 @@ header{
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
+} 
+*/
 
 .sidenav {
   height: 100%;
