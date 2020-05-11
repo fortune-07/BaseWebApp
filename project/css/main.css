@@ -63,6 +63,10 @@ header.site-title a{
     color: white;
 }
 
+.btn-group{
+  top: 50%;
+}
+
 /* Navigation Menu */
 
 .navbar-nav{

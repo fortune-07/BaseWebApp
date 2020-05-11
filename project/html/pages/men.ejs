@@ -14,33 +14,8 @@
     <!-- the classes 'page-header' and 'btn btn-dark' create bootstrap components.  -->
     <!-- Check out more components here: http://getbootstrap.com/components/ -->
 
-    <header>
-        <div class="navbar">
-            <span class="navbar-brand">FortunesWear</span>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/men">Men</a></li>
-                <li><a href="/women">WOMEN</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li>
-                    <div class="dropdown">
-                        <button class="dropbtn">MY ACCOUNT
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="/register">REGISTER</a>
-                            <a href="/login">LOGIN</a>
-                            <a href="/cart">CART</a>
-                            <a href="/shop">SHOP</a>
-                            <a href="/logout">LOGOUT</a>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </div>
-    </header>
+    <% include ../helpers/navbar %>
+    <% include ../helpers/sidenav %>
 
     <h1 style="text-align: center;" class="titile"> Men's Wear</h1>
     <!-- Product grid -->
@@ -120,6 +95,16 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
         
 </body>
 
