@@ -10,6 +10,7 @@
     --roboto:"roboto", sans-serif;
     --gugi:"gugi", cursive;
     --sofia:"sofia", cursive;
+    --black: black;
 }
 
 .primary-color{
@@ -35,12 +36,13 @@
 /* Header */
 
 header{
-    background-color: var(--primary-color);
+    background-color: var(--black);
     font-family: var(--roboto);
 }
 
 header .site-title{
     font-family: var(--gugi);
+    font-size: 20px;
 }
 
 .container .dropdown-toogle,
@@ -57,8 +59,13 @@ header .site-title{
 /* Navigation Menu */
 
 .navbar-nav{
-  margin: 0;
+  margin: 0;  
   padding: 0.8em;
+}
+
+.navbar-nav .nav-item{
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-nav .nav-link{
@@ -66,12 +73,12 @@ header .site-title{
     color: var(--light-gray) !important;
 }
 
-.navbar-nav .nav-item .nav-link{
+.navbar-nav .nav-link{
     padding: 0 1.3em;
 }
 
 .navbar-nav .shopping-cart-icon{
-    margin-right: 6.5rem !important;
+    margin-right: 5.5rem !important;
 }
 
 body, html {
@@ -195,7 +202,6 @@ a{
 	font-weight: bold;
 	color: white;
   text-align: center;
-  padding: 14px 16px;
 }
 
 .dropdown {
