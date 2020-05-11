@@ -48,7 +48,7 @@ header .site-title{
     justify-content: center;
 }
 
-.site-title a{
+header.site-title a{
   text-decoration: none;
 }
 
@@ -130,6 +130,7 @@ button {
   padding: 10px 12px;
   cursor: pointer;
   font-size: 10px;
+  justify-content: center;
 }
 
 button:hover{
@@ -153,111 +154,11 @@ a{
   clear: both;
 }
 
-/*header{
-  margin: 0;
-  padding: 0;
-  background-color: black;
-  color: #f4f4f4;
-  display: none;
-}
-*/
-
 .nav-small{
   margin: 0;
   padding: 0;
   display: none;
 }
-
-/*
-.navbar {
-	overflow: hidden;
-  background-color: #333;
-}
-
-.navbar a {
-	float: right;
-  font-size: 16px;
-  color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-}
-
-.navbar ul{
-  margin: 0;
-  padding: 0;
-}
-
-.navbar li{
-  margin: 0;
-  padding: 0;
-}
-
-.nav-list{
-  float: right;
-  font-size: 16px;
-  color: white;
-	text-align: center;
-  padding: 14px 16px;
-  text-transform: uppercase;
-  display: flex;
-}
-
-.navbar-brand{
-	float: left;
-	font-size: 16px;
-	font-weight: bold;
-	color: white;
-  text-align: center;
-}
-
-.dropdown {
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-	font-size: 16px;
-	border: none;
-	outline: none;
-	color: white;
-	padding: 14px 16px;
-	background-color: inherit;
-	font-family: inherit;
-	margin: 0;
-}
-
-.navbar a:hover,
-.dropdown:hover .dropbtn {
-	background-color: #ddd;
-}
-
-.dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #f9f9f9;
-	min-width: 150px;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	z-index: 1;
-}
-
-.dropdown-content a {
-	float: none;
-  color: black;
-  font-size: 12px;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-	text-align: left;
-}
-
-.dropdown-content a:hover {
-	background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-} 
-*/
 
 .sidenav {
   height: 100%;
@@ -397,6 +298,8 @@ a{
   grid-gap: 5px;
   padding: 0;
   margin: auto;
+  overflow: hidden;
+  justify-items: stretch;
 }
 
 .product-item{
@@ -494,6 +397,7 @@ a{
   padding-left: 20px;
   padding-right: 20px;
   color: #ffffff;
+  font-size: 0.9em;
 }
 
 #boxes{
@@ -505,6 +409,7 @@ a{
 
 .box{
   float: left;
+  margin-top: 15px;
   text-align: left;
   width: 30%;
   padding-left: 10px;

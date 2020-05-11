@@ -20,10 +20,14 @@
 			<div class="row">
 				<div class="col-md-4 col-sm-12 col-12">
 					<div class="btn-group">
-						<button class="btn border dropdown-toogle my-md-4 my-2 text-white" data-toogle="dropdown"
-							aria-haspopup="true" aria-expanded="false">USD</button>
-						<div class="dropdown-menu">
-							<a href="#" class="dropdown-item">ERU - Euro</a>
+						<div class="dropdown">
+							<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">
+								USD
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">EURO</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -49,7 +53,7 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
-						<li class="nav-item active">
+						<li class="nav-item">
 							<a class="nav-link" href="/">HOME</a>
 						</li>
 						<li class="nav-item">
@@ -172,7 +176,9 @@
 					<div class="price">Ksh.4000</div>
 				</div>
 			</div>
-			<a class="button" href="/new-arrivals">Show More</a>
+			<div class="button">
+				<a href="/new-arrivals">Show More</a>
+			</div>
 		</div>
 	</section>
 
