@@ -42,7 +42,9 @@ header{
 
 header .site-title{
     font-family: var(--gugi);
-    font-size: 20px;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
 }
 
 .container .dropdown-toogle,
@@ -78,7 +80,7 @@ header .site-title{
 }
 
 .navbar-nav .shopping-cart-icon{
-    margin-right: 5.5rem !important;
+    margin-right: 5rem !important;
 }
 
 body, html {
