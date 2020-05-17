@@ -294,6 +294,12 @@ a{
   color: #333;
 }
 
+.col{
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 .new-products{
   display: grid;
   box-sizing: border-box;
@@ -308,7 +314,7 @@ a{
 
 .product-item{
   width: auto;
-  padding: 5px;
+  padding: 0;
 }
 
 .product-item:hover {
