@@ -462,34 +462,22 @@ footer{
 
 
 @media screen and (max-width:700px){
-  #showcase h1{
-    margin-top: 40px;
-  }
-
   .navbar{
     display: none;
   }
 
-  .navbar-brand{
+  .row{
     display: none;
-  }
-
-  .navbar .nav-list{
-    display: none;
-  }
-
-  header{
-    display: inline;
-  }
-
-  .nav-small{
-    display: inline;
   }
 
   .sidenav {padding-top: 15px;}
   .sidenav a {
     font-size: 18px;
     display: block;
+  }
+
+  #showcase h1{
+    margin-top: 40px;
   }
 
   #display-products{
