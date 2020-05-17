@@ -63,10 +63,6 @@ header.site-title a{
     color: white;
 }
 
-.btn-group{
-  top: 10%;
-}
-
 /* Navigation Menu */
 
 .navbar-nav{
@@ -134,7 +130,6 @@ button {
   padding: 10px 12px;
   cursor: pointer;
   font-size: 10px;
-  justify-content: center;
 }
 
 button:hover{
