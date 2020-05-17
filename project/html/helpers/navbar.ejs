@@ -3,24 +3,19 @@
         <div class="row">
             <div class="col-md-4 col-sm-12 col-12">
                 <div class="btn-group">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            USD
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">EURO</a>
-                        </div>
+                    <button class="btn border dropdown-toggle my-md-4 my-2 text-white" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">KSH</button>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">USD</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-12">
-                <div class="my-md-3">
-                    <a class="site-title" href="/">FortunesWear</a>
-                </div>
+            <div class="col-md-4 col-12 text-center">
+                <h2 class="my-md-3 site-title text-white">FortunesWear</h2>
             </div>
             <div class="col-md-4 col-12 text-right">
                 <p class="my-md-4 header-links">
+                    <i class="fas fa-user"></i>
                     <a href="/login" class="px-2">Sign In</a>
                     <a href="/register" class="px-1">Create An Account</a>
                 </p>
@@ -48,6 +43,19 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/women">WOMEN</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            MY ACCOUNT
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/login">LOGIN</a>
+                            <a class="dropdown-item" href="/register">REGISTER</a>
+                            <a class="dropdown-item" href="/shop">SHOP</a>
+                            <a class="dropdown-item" href="/cart">CART</a>
+                            <a class="dropdown-item" href="/logout">LOGOUT</a>
+                        </div>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/blog">BLOG</a>
                     </li>
@@ -55,7 +63,7 @@
                         <a class="nav-link" href="/about">ABOUT US</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact">CONTACT</a>
+                        <a class="nav-link" href="/contact">CONTACT US</a>
                     </li>
                 </ul>
             </div>
