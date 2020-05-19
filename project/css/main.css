@@ -490,6 +490,10 @@ a{
   align-content: space-between;
 }
 
+.box a{
+  text-decoration: none;
+}
+
 .box p{
   margin-top: 5px;
 }
