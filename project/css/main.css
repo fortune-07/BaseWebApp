@@ -221,7 +221,7 @@ a{
   margin: auto;
 }
 
-.mySlides {display: inline;}
+.mySlides {display: none;}
 
 .fade {
   -webkit-animation-name: fade;
