@@ -206,7 +206,8 @@ a{
 .side{
   margin: 0;
   padding: 0;
-  top: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbrand{
