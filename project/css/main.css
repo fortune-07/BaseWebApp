@@ -198,6 +198,11 @@ a{
   transition: 0.3s;
 }
 
+.sidebar{
+  display: inline;
+  margin: 0;
+}
+
 .navbrand{
   text-align: center;
   margin: 0;
