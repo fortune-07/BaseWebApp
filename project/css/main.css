@@ -326,20 +326,24 @@ a{
 }
 
 .new-products{
+  margin-left: 2px;
+  margin-right: 2px;
   display: grid;
   box-sizing: border-box;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto;
   grid-gap: 5px;
   padding: 0;
-  margin: auto;
   overflow: hidden;
-  justify-items: stretch;
 }
 
 .product-item{
   width: auto;
   padding: 0;
+}
+
+.product-item :last-child{
+  justify-content: stretch;
 }
 
 .product-item a{
