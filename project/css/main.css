@@ -206,6 +206,7 @@ a{
 .side{
   margin: 0;
   padding: 0;
+  top: 50px;
   align-items: center;
   justify-content: center;
 }
