@@ -203,6 +203,12 @@ a{
   margin: 0;
 }
 
+.side{
+  margin: 0;
+  padding: 0;
+  top: 10px;
+}
+
 .navbrand{
   text-align: center;
   margin: 0;
