@@ -210,8 +210,9 @@ a{
 
 .side{
   margin: 0;
-  padding-left: 50px;
+  padding-left: 60px;
   padding-top: 10px;
+  font-size: 20px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -528,6 +529,7 @@ a{
 
 .box a{
   text-decoration: none;
+  color: white;
 }
 
 .box p{
