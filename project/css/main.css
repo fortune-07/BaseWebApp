@@ -202,7 +202,7 @@ a{
   height: 12vh;
   display: flex;
   margin: 0;
-  padding-left: 5px;
+  padding-left: 8px;
   background-color: black;
   color: white;
 }
@@ -511,6 +511,7 @@ a{
   margin-top: 20px;
   line-height: auto;
   background-color: black;
+  color: white;
   margin-bottom: 0;
 }
 
@@ -521,7 +522,7 @@ a{
   text-decoration: none;
   width: 30%;
   padding-left: 10px;
-  align-content: space-between;
+  justify-content: space-between;
 }
 
 .box a{
