@@ -120,6 +120,20 @@
 		</div>
 	</header>
 
+	<div class="slider">
+		<div class="slides">
+			<div class="slide1">
+				<img src="images/airmax.jpg" class="img">
+			</div>
+			<div class="slide1">
+				<img src="images/revenge.jpg" class="img">
+			</div>
+			<div class="slide1">
+				<img src="images/stussy.jpg" class="img">
+			</div>
+		</div>
+	</div>
+
 	<section id="showcase">
 		<div class="container">
 			<h1>Latest collection</h1>
@@ -277,6 +291,7 @@
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 		crossorigin="anonymous">
 	</script>
+	
 	<script>
 		function openNav() {
 			document.getElementById("mySidenav").style.width = "250px";
@@ -285,6 +300,24 @@
 		function closeNav() {
 			document.getElementById("mySidenav").style.width = "0";
 		}
+	</script>
+
+	<script>
+		var $slides = $('.slides');
+		var $slide = $('.slide1')
+		var count = 1;
+
+		$(document).ready(function () {
+			setInterval(function () {
+				$slides.animate({ 'margin-left': '-=68vw' }, 1200, function () {
+					count++;
+					if (count === 4) {
+						$slides.css("margin-left", 0);
+						count = 1;
+					}
+				});
+			}, 4000);
+		});
 	</script>
 	<script src="js/main.js"></script>
 </body>

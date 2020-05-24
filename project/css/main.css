@@ -237,6 +237,26 @@ a{
   padding-left: 10px;
 }
 
+.slider{
+    background-color: #ececfa;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slider .slides{
+    width: 100%;
+    display: flex;
+}
+
+.slide1{
+    width: 100%;
+}
+
+.slide1 .img{
+  width: 100%;
+}
+
 #showcase{
   background: url('../images/sneakers.jpg') center no-repeat;
   background-size: cover;
