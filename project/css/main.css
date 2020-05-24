@@ -203,12 +203,16 @@ a{
   margin: 0;
 }
 
-.side{
+/*.side{
   margin: 0;
   padding-left: 30px;
   padding-top: 10px;
   text-align: center;
   justify-content: center;
+}*/
+
+.side span{
+  text-align: center;
 }
 
 .navbrand{
