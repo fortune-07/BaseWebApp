@@ -203,6 +203,7 @@ a{
   display: flex;
   margin: 0;
   padding-left: 8px;
+  padding-top: 6px;
   background-color: black;
   color: white;
 }
@@ -511,7 +512,6 @@ a{
   margin-top: 20px;
   line-height: auto;
   background-color: black;
-  color: white;
   margin-bottom: 0;
 }
 
@@ -519,6 +519,7 @@ a{
   float: left;
   margin-top: 15px;
   text-align: left;
+  color: white;
   text-decoration: none;
   width: 30%;
   padding-left: 10px;
@@ -564,11 +565,10 @@ a{
 }
 
 footer{
-  left: 0;
+  top: 0;
   bottom: 0;
   width: 100%;
   padding-top: 0;
-  margin-bottom: 0;
   background-color: black;
   text-align: center;
   color: white;
