@@ -199,19 +199,18 @@ a{
 }
 
 .sidebar{
+  height: 20vh;
   display: flex;
   margin: 0;
+  background-color: black;
+  color: white;
 }
 
-/*.side{
+.side{
   margin: 0;
-  padding-left: 30px;
+  padding-left: 50px;
   padding-top: 10px;
-  text-align: center;
-  justify-content: center;
-}*/
-
-.side span{
+  text-transform: uppercase;
   text-align: center;
 }
 
