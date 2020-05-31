@@ -530,7 +530,9 @@ a{
 
 .box a{
   display: block;
+  padding-bottom: 10px;
   text-decoration: none;
+  padding-left: 10px;
   color: gray;
 }
 
@@ -571,7 +573,7 @@ a{
   border: none;
 }
 
-footer{
+.footer{
   background-color: gray;
   color: white;
   text-align: center;
