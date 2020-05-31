@@ -529,6 +529,7 @@ a{
 }
 
 .box a{
+  display: block;
   text-decoration: none;
   color: gray;
 }
@@ -570,14 +571,13 @@ a{
   border: none;
 }
 
-footer{
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  padding-top: 0;
-  background-color: black;
-  text-align: center;
+.copyright{
+  background-color: gray;
   color: white;
+}
+
+.copyright span{
+  text-align: center;
 }
 
 
