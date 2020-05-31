@@ -542,8 +542,8 @@ a{
   text-align: center;
   font-weight: 300px;
   font-size: 20px;
-  margin-top: 1.5rem;
-  color: white;
+  margin-top: 1rem;
+  color: black;
   text-transform: uppercase;
 }
 
@@ -571,15 +571,11 @@ a{
   border: none;
 }
 
-.copyright{
+footer{
   background-color: gray;
   color: white;
-}
-
-.copyright span{
   text-align: center;
 }
-
 
 @media screen and (max-width:700px){
   .navbar{
