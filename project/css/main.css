@@ -530,9 +530,9 @@ a{
 
 .box a{
   display: block;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   text-decoration: none;
-  padding-left: 10px;
+  padding-left: 15px;
   color: gray;
 }
 
@@ -551,12 +551,14 @@ a{
 
 .box li{
   list-style: none;
+  padding-bottom: 5px;
   text-decoration: none;
   display: block;
 }
 
 .sm{
   float: left;
+  font-size: 0.8rem;
   padding: 8px;
 }
 
