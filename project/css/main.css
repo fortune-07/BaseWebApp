@@ -514,7 +514,7 @@ a{
   margin-top: 20px;
   line-height: auto;
   background-color: black;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .box{
@@ -579,10 +579,6 @@ a{
   background-color: black;
   color: white;
   text-align: center;
-}
-
-.footer span{
-  padding: 10px;
 }
 
 @media screen and (max-width:700px){
