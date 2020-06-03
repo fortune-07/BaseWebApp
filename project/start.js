@@ -17,8 +17,12 @@ app.get('/about', function (request, response) {
   response.render('pages/about');
 });
 
-app.get('/women', function (request, response) {
-  response.render('pages/women');
+app.get('/women-jewelry', function (request, response) {
+  response.render('pages/women-jewelry');
+});
+
+app.get('/men-jewelry', function (request, response) {
+  response.render('pages/men-jewelry');
 });
 
 app.get('/blog', function (request, response) {
@@ -33,8 +37,12 @@ app.get('/new-arrivals', function (request, response) {
   response.render('pages/new-arrivals');
 });
 
-app.get('/men', function (request, response) {
-  response.render('pages/men');
+app.get('/men-shoes', function (request, response) {
+  response.render('pages/men-shoes');
+});
+
+app.get('/women-shoes', function (request, response) {
+  response.render('pages/women-shoes');
 });
 
 app.get('/cart', function (request, response) {
