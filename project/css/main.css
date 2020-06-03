@@ -307,6 +307,24 @@ a{
   color: black;
 }
 
+.show-more{
+  height: 30px;
+  width: 120px;
+  line-height: 30px;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.show-more a{
+  background-color: #131313;
+  display: inline-block;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 #home-new-arrival .button{
   background-color: black;
   font-size: 10px;
