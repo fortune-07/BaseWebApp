@@ -558,7 +558,6 @@ a{
 .box a{
   display: block;
   padding-bottom: 5px;
-  text-decoration: underline;
   padding-left: 15px;
   color: gray;
 }
