@@ -576,9 +576,13 @@ a{
 }
 
 .footer{
-  background-color: gray;
+  background-color: black;
   color: white;
   text-align: center;
+}
+
+.footer span{
+  padding: 10px;
 }
 
 @media screen and (max-width:700px){
