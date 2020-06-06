@@ -706,4 +706,8 @@ a{
   .navbar-nav, .nav-item{
     display: inline;
   }
+
+  .nav-small{
+    display: none;
+  }
 }
