@@ -613,6 +613,14 @@ a{
     display: none;
   }
 
+  .navbar-nav{
+    display: inline-block;
+  }
+
+  .nav-item{
+    display: inline;
+  }
+
   .row{
     display: none;
   }
@@ -688,4 +696,14 @@ a{
     display: block;
   }
 
+}
+
+@media screen and (max-width:700px){
+  .navbar-nav{
+    display: inline-block;
+  }
+
+  .navbar-nav, .nav-item{
+    display: inline;
+  }
 }
