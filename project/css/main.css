@@ -337,8 +337,8 @@ a{
   font-size: 10px;
   margin-top: 20px;
   color: #fff;
-  position: relative;
-  justify-content: center;
+  position: absolute;
+  justify-items: center;
   padding: 10px 15px;
   border: none;
   cursor: pointer;
@@ -581,7 +581,7 @@ a{
 .box li{
   list-style: none;
   padding-bottom: 5px;
-  padding-left: 15px;
+  padding-left: 5px;
   text-decoration: none;
   display: block;
 }
