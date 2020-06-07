@@ -33,8 +33,8 @@ app.get('/contact', function (request, response) {
   response.render('pages/contact');
 });
 
-app.get('/new-arrivals', function (request, response) {
-  response.render('pages/new-arrivals');
+app.get('/new-arrival', function (request, response) {
+  response.render('pages/new-arrival');
 });
 
 app.get('/men-shoes', function (request, response) {
