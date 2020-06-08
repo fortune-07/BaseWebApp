@@ -603,14 +603,18 @@ header.site-title a{
 }
 
 /* Product section */
-.page-section{
+.page-main{
   margin: auto;
   overflow: hidden;
+}
+.page-section{
+  display: flex;
+  position: absolute;
 }
 
 .images-frame{
   width: 50%;
-  height: 400vh;
+  height: 300vh;
 }
 
 .images{
@@ -694,7 +698,7 @@ header.site-title a{
 
 .images-wrapper{
   width: 50%;
-  height: 400vh;
+  height: 300vh;
 }
 
 /*about*/
