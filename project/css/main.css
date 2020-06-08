@@ -614,7 +614,7 @@ header.site-title a{
 
 .images-frame{
   width: 50%;
-  height: 300vh;
+  height: auto;
 }
 
 .images{
@@ -696,9 +696,14 @@ header.site-title a{
   opacity: 1;
 }
 
-.images-wrapper{
+.images-info{
   width: 50%;
-  height: 300vh;
+  height: auto;
+}
+
+.images-info h2{
+  text-align: center;
+  font-weight: bold;
 }
 
 /*about*/
