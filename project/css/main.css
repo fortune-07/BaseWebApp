@@ -603,8 +603,27 @@ header.site-title a{
 }
 
 /* Product section */
+.page-section{
+  margin: auto;
+  overflow: hidden;
+}
+
 .images-frame{
+  width: 50%;
+}
+
+.images{
   position: relative;
+}
+
+.images img {
+  vertical-align: middle;
+  height: auto;
+  width: auto;
+  position: absolute;
+  transform: translate3d(-50%,-50%,0);
+  transition-duration: .3s;
+  transition-property: width,height,top,left
 }
 
 .mySlides {
@@ -674,6 +693,10 @@ header.site-title a{
 .active,
 .demo:hover {
   opacity: 1;
+}
+
+.images-wrapper{
+  width: 50%;
 }
 
 /*about*/
