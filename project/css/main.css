@@ -705,6 +705,19 @@ header.site-title a{
   text-align: center;
   font-weight: bold;
 }
+.image-value{
+  text-align: center;
+}
+.info-price{
+  text-align: center;
+  font-weight: bolder;
+}
+.size-button{
+  display: inline;
+}
+.size-button a{
+  padding-right: 20px;
+}
 
 /*about*/
 
