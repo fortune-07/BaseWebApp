@@ -610,6 +610,7 @@ header.site-title a{
 
 .images-frame{
   width: 50%;
+  height: 400vh;
 }
 
 .images{
@@ -618,12 +619,8 @@ header.site-title a{
 
 .images img {
   vertical-align: middle;
-  height: auto;
-  width: auto;
-  position: absolute;
-  transform: translate3d(-50%,-50%,0);
-  transition-duration: .3s;
-  transition-property: width,height,top,left
+  height: 100%;
+  width: 100%;
 }
 
 .mySlides {
@@ -697,6 +694,7 @@ header.site-title a{
 
 .images-wrapper{
   width: 50%;
+  height: 400vh;
 }
 
 /*about*/
