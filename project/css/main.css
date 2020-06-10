@@ -460,9 +460,10 @@ li{
   left: 50%;
   font-size: 10px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 10px;
   transform: translate(-50%, -50%);
+  overflow: hidden;
 }
 
 .show-more a{
