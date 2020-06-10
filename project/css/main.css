@@ -92,6 +92,11 @@ ol{
   margin-bottom: 2.5rem;
 }
 
+ol>li {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
 li{
   list-style: none;
   text-decoration: none;
@@ -341,6 +346,72 @@ header.site-title a{
   font-weight: bold;
   text-align: center;
   color: black;
+}
+
+.home-new-arrival{
+  margin: 50px auto 0;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.home-new-arrival h4{
+  font-size: 24px;
+  font-weight: 600;
+  color: #1d1e20;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 30px;
+  margin-bottom: 10px
+}
+
+ol{
+  display: block;
+  list-style-type: decimal;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.new-arrival-product{
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  font-size: 0;
+}
+
+li{
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.item{
+  display: inline-block;
+  box-sizing: border-box;
+  width: 20%;
+  margin-bottom: 0;
+  font-size: 0;
+  margin-top: 20px;
+  padding: 0 10px;
+  vertical-align: top;
+}
+
+.item-box{
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+}
+
+.item-box img{
+  height: auto;
+  max-width: 100%;
+  border: 0;
+}
+
+.item-image{
+  width: 100%;
 }
 
 .show-more{
