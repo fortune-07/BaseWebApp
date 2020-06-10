@@ -497,6 +497,7 @@ header.site-title a{
 }
 
 #newsletter{
+  margin-top: 30px;
   padding: 15px;
   color: #ffffff;
   background-color: #35424a;
