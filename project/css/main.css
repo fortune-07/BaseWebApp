@@ -335,28 +335,9 @@ header.site-title a{
   display: inline-block;
   font-weight: 700;
   color: #fff;
+  margin-top: 30px;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-#home-new-arrival .button{
-  background-color: black;
-  font-size: 10px;
-  margin-top: 20px;
-  color: #fff;
-  position: absolute;
-  justify-items: center;
-  padding: 10px 15px;
-  border: none;
-  cursor: pointer;
-  justify-items: center;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-#home-new-arrival .button:hover{
-  background-color: grey;
-  color: #333;
 }
 
 .col{
