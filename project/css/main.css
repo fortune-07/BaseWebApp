@@ -4,7 +4,7 @@
 
 :root{
     --light-gray: #2b3032a1;
-    --primary-color: white;
+    --primary-color: #f1f1f1;
     --border: #2b303218;
     --text-color: #ff686b;
     --roboto:"roboto", sans-serif;
@@ -35,8 +35,7 @@
 
 body, html {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
-  color: #555;
+  background-color: #f1f1f1;
   font-size: 16px;
   margin: 0;
 
@@ -383,6 +382,10 @@ li{
   margin-top: 20px;
   padding: 0;
   vertical-align: top;
+}
+
+.item a{
+  text-decoration: none;
 }
 
 .item:hover {
