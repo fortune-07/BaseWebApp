@@ -335,19 +335,6 @@ header.site-title a{
   margin-right: 0;
 }
 
-#home-new-arrival{
-  position: relative;
-  width: 100%;
-  margin-bottom: 30px;
-}
-
-#home-new-arrival h4{
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  color: black;
-}
-
 .home-new-arrival{
   margin: 50px auto 0;
   text-align: left;
@@ -394,7 +381,7 @@ li{
   margin-bottom: 0;
   font-size: 0;
   margin-top: 20px;
-  padding: 0 10px;
+  padding: 0;
   vertical-align: top;
 }
 
