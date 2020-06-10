@@ -87,6 +87,11 @@ ul{
   text-decoration: none;
 }
 
+ol{
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
+
 li{
   list-style: none;
   text-decoration: none;
@@ -277,7 +282,7 @@ header.site-title a{
   color: black;
   background-color: #ddd;
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
   cursor: pointer;
 }
 
@@ -336,6 +341,22 @@ header.site-title a{
   font-weight: bold;
   text-align: center;
   color: black;
+}
+
+.home-new-product{
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  font-size: 0;
+}
+
+.home-new-product ol{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 }
 
 .show-more{
