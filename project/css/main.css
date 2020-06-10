@@ -270,13 +270,14 @@ header.site-title a{
 }
 
 .showcase-info button {
-  border: none;
+  border-radius: none;
   outline: 0;
   display: inline-block;
   padding: 10px 25px;
   color: black;
   background-color: #ddd;
   text-align: center;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -788,10 +789,6 @@ header.site-title a{
   .sidenav a {
     font-size: 18px;
     display: block;
-  }
-
-  #showcase h1{
-    top: 50px;
   }
 
   #display-products{
