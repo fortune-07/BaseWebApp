@@ -339,6 +339,7 @@ header.site-title a{
   margin: 50px auto 0;
   text-align: left;
   padding: 0 10px;
+  background-color: white;
 }
 
 .home-new-arrival h4{
@@ -406,6 +407,43 @@ li{
 .item-image{
   width: 100%;
   border: 0;
+}
+
+.item-info{
+  text-align: center;
+  line-height: 1;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.item-name{
+  font-size: 15px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.item-color{
+  text-align: center;
+  font-size: 12px;
+  color: grey;
+}
+
+.item-price{
+  font-size: 14px;
+  text-align: center;
+  color: black;
+  font-weight: 400;
+}
+
+.price{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  color: #1d1e20;
 }
 
 .show-more{
