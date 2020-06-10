@@ -4,7 +4,7 @@
 
 :root{
     --light-gray: #2b3032a1;
-    --primary-color: grey;
+    --primary-color: white;
     --border: #2b303218;
     --text-color: #ff686b;
     --roboto:"roboto", sans-serif;
@@ -339,7 +339,6 @@ header.site-title a{
   margin: 50px auto 0;
   text-align: left;
   padding: 0 10px;
-  background-color: white;
 }
 
 .home-new-arrival h4{
@@ -427,6 +426,7 @@ li{
   text-align: center;
   font-size: 12px;
   color: grey;
+  margin-bottom: 5px;
 }
 
 .item-price{
@@ -434,6 +434,7 @@ li{
   text-align: center;
   color: black;
   font-weight: 400;
+  margin-bottom: 5px;
 }
 
 .price{
