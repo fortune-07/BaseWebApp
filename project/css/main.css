@@ -365,6 +365,10 @@ header.site-title a{
   font-size: 0;
 }
 
+.new-arrival-product li{
+  text-decoration: none;
+}
+
 .item{
   display: inline-block;
   width: 20px;
