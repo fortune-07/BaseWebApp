@@ -11,46 +11,253 @@
 </head>
 
 <body>
-    <% include ../helpers/navbar %>
-    <% include ../helpers/sidenav %>
-
-    <article class="prd _fb col c-prd"><a class="core"
-            href="/fashion-mens-casual-breathable-canvas-sneakers-black-13809483.html" data-id="FA113AA0MWZPRNAFAMZ"
-            data-name="Men's Casual Breathable Canvas Sneakers - Black" data-price="6.16" data-brand="Fashion"
-            data-category="Fashion/Men's Fashion/Shoes/Fashion Sneakers" data-dimension23="12728" data-dimension26="297"
-            data-dimension27="3.8" data-dimension28="1" data-dimension37="0" data-dimension43="COL_50|GAM0|JESS|SNEF"
-            data-dimension44="0" data-list="" data-position="1" data-track-onclick="eecProduct"
-            data-track-onview="eecProduct" data-track-onclick-bound="true">
-            <div class="img-c"><img
-                    data-src="https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/38/490831/1.jpg?7719"
-                    src="https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/38/490831/1.jpg?7719"
-                    class="img" width="208" height="208" alt=""></div>
-            <div class="info">
-                <h3 class="name">Fashion Men's Casual Breathable Canvas Sneakers - Black</h3>
-                <div class="prc">KSh 720</div>
-                <div class="s-prc-w">
-                    <div class="old">KSh 1,300</div>
-                    <div class="tag _dsct _sm">45%</div>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-12">
+                    <div class="btn-group">
+                        <button class="btn border dropdown-toggle my-md-4 my-2 text-white" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">KSH</button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">USD</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="rev">
-                    <div class="stars _s">3.8 out of 5<div class="in" style="width:76%"></div>
-                    </div>(297)
-                </div><svg aria-label="Express Shipping" viewBox="0 0 114 12" class="ic xprss" width="94" height="10">
-                    <use xlink:href="https://www.jumia.co.ke/assets_he/images/i-shop-jumia.c8de1c55.svg#express"></use>
-                </svg>
+                <div class="col-md-4 col-12 text-center">
+                    <h2 class="my-md-3 site-title text-white">FortunesWear</h2>
+                </div>
+                <div class="col-md-4 col-12 text-right">
+                    <p class="my-md-4 header-links">
+                        <i class="fas fa-user"></i>
+                        <a href="/login" class="px-2">Sign In</a>
+                        <a href="/register" class="px-1">Create An Account</a>
+                    </p>
+                </div>
             </div>
-        </a>
-        <footer class="ft">
-            <form method="post" data-add-cart="" data-sku="FA113AA0MWZPRNAFAMZ" data-var-sel="true"
-                data-id="FA113AA0MWZPRNAFAMZ" data-name="Men's Casual Breathable Canvas Sneakers - Black" data-price="6.16"
-                data-brand="Fashion" data-category="Fashion/Men's Fashion/Shoes/Fashion Sneakers" data-dimension23="12728"
-                data-dimension26="297" data-dimension27="3.8" data-dimension28="1" data-dimension37="0"
-                data-dimension43="COL_50|GAM0|JESS|SNEF" data-dimension44="0" data-track-onsubmit="addToCart"
-                novalidate="true"><input name="simpleSku" value="false" type="hidden"><button data-submit=""
-                    class="add btn _prim _sm">Add To Cart</button><input name="csrfToken"
-                    value="d12e085a486ecd04e5129ad24882d83d" type="hidden"></form>
-        </footer>
-    </article>
+        </div>
+    
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/new-arrival">NEW ARRIVAL</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                JEWELRY
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/men-jewelry">Men's Jewelry</a>
+                                <a class="dropdown-item" href="/women-jewelry">Women's Jewelry</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                SHOES
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/men-shoes">Men's Shoes</a>
+                                <a class="dropdown-item" href="/women-shoes">Women's Shoes</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MY ACCOUNT
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/login">LOGIN</a>
+                                <a class="dropdown-item" href="/register">REGISTER</a>
+                                <a class="dropdown-item" href="/shop">SHOP</a>
+                                <a class="dropdown-item" href="/cart">CART</a>
+                                <a class="dropdown-item" href="/logout">LOGOUT</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="navbar-nav">
+                    <li class="nav-item border rounded-circle mx-2 search-icon">
+                        <i class="fas fa-search p-2"></i>
+                    </li>
+                    <li class="nav-item border rounded-circle mx-2 shopping-cart-icon">
+                        <i class="fas fa-shopping-cart p-2"></i>
+                    </li>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Product Section-->
+    <div class="home-new-arrival">
+        <h4>New Arrival</h4>
+        <ol class="new-arrival-product">
+            <li class="item">
+                <a class="item-box" href="/adidas-yeezy-boost-350">
+                    <img class="item-image" src="images/adidasYeezyBoost350.jpg">
+                    <div class="item-info">
+                        <div class="item-name">adidas Yeezy Boost 350 V2</div>
+                        <div class="item-color">cinder</div>
+                        <div class="item-price">
+                            <span class="price">Ksh.3000</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a class="item-box" href="/adidas-yeezy-boost-350-asia">
+                    <img class="item-image" src="images/adidasYeezyBoost350Asia.jpg">
+                    <div class="item-info">
+                        <div class="item-name">adidas Yeezy Boost 350 V2</div>
+                        <div class="item-color">Asia-Flax</div>
+                        <div class="item-price">
+                            <span class="price">Ksh.3000</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a class="item-box" href="/adidas-yeezy-boost-350-desert">
+                    <img class="item-image" src="images/adidasYeezyBoost350d.jpg">
+                    <div class="item-info">
+                        <div class="item-name">adidas Yeezy Boost 350 V2</div>
+                        <div class="item-color">Desert Sage</div>
+                        <div class="item-price">
+                            <span class="price">Ksh.3000</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a class="item-box" href="/nike-air-jordan-4-retro">
+                    <img class="item-image" src="images/NikeAirJordan4Retro.jpg">
+                    <div class="item-info">
+                        <div class="item-name">Nike Air Jordan 4 Retro SE</div>
+                        <div class="item-color">Neon</div>
+                        <div class="item-price">
+                            <span class="price">Ksh.4000</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a class="item-box" href="/nike-air-jordan-5-retro">
+                    <img class="item-image" src="images/NikeAirJordan5Retro.jpg">
+                    <div class="item-info">
+                        <div class="item-name">Nike Air Jordan 5 Retro SE</div>
+                        <div class="item-color">White</div>
+                        <div class="item-price">
+                            <span class="price">Ksh.4000</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a class="item-box" href="/nike-air-jordan-6-retro">
+                    <img class="item-image" src="images/NikeAirJordan6Retro.jpg">
+                    <div class="item-info">
+                        <div class="item-name">Nike Air Jordan 6 SE</div>
+                        <div class="item-color">Black</div>
+                        <div class="item-price">
+                            <span class="price">Ksh.4000</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a class="item-box" href="/nike-ld-waffle-black">
+                    <img class="item-image" src="images/NikeLDWaffleBlack.jpg">
+                    <div class="item-info">
+                        <div class="item-name">Nike LDWaffle X Sacai</div>
+                        <div class="item-color">Black-Nylon</div>
+                        <div class="item-price">
+                            <span class="price">Ksh.3500</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a class="item-box" href="/nike-ldwaffle-black">
+                    <img class="item-image" src="images/NikeLDWaffleBlack.jpg">
+                    <div class="item-info">
+                        <div class="item-name">Nike LDWaffle x Sacai</div>
+                        <div class="item-color">Black-Nylon</div>
+                        <div class="item-price">
+                            <span class="price">Ksh.3500</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a class="item-box" href="/nike-air-jordan-1">
+                    <img class="item-image" src="images/AirJordanLow.jpg">
+                    <div class="item-info">
+                        <div class="item-name">Nike Air Jordan 1 Low</div>
+                        <div class="item-color">Galaxy</div>
+                        <div class="item-price">
+                            <span class="price">Ksh.4000</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a class="item-box" href="/nike-air-force-1">
+                    <img class="item-image" src="images/NikeAirForce.jpg">
+                    <div class="item-info">
+                        <div class="item-name">Nike Air Force 1</div>
+                        <div class="item-color">Be True</div>
+                        <div class="item-price">
+                            <span class="price">Ksh.3500</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a class="item-box" href="/nike-air-force-1">
+                    <img class="item-image" src="images/NikeAirForce.jpg">
+                    <div class="item-info">
+                        <div class="item-name">Nike Air Force 1</div>
+                        <div class="item-color">Be True</div>
+                        <div class="item-price">
+                            <span class="price">Ksh.3500</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a class="item-box" href="/nike-ldwaffle-white">
+                    <img class="item-image" src="images/NikeLDWaffleWhite.jpg">
+                    <div class="item-info">
+                        <div class="item-name">Nike LDWaffle X Sacai</div>
+                        <div class="item-color">White-Nylon</div>
+                        <div class="item-price">
+                            <span class="price">Ksh.3500</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ol>
+    </div>
     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
