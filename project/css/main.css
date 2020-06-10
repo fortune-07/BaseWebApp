@@ -385,6 +385,12 @@ li{
   vertical-align: top;
 }
 
+.item:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
 .item-box{
   display: inline-block;
   text-decoration: none;
