@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>FortunesWear</title>
+    <title>Women Shoes</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -16,91 +16,43 @@
     <% include ../helpers/navbar %>
     <% include ../helpers/sidenav %>
 
-    <div class="container">
-        <h4 style="text-align: center;">Women</h4>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-            <div class="col">
-                <div class="product-item">
-                    <a href="/">
-                        <img src="images/adidasYeezyBoost350.jpg" class="image" style="width:100%">
-                        <div class="overly-product">
-                            <div class="overly-wrapper">
-                                <div id="heart"><i class="fas fa-heart"></i></div>
-                                <a href="">
-                                    <i class="fas fa-shopping-cart" id="icon"><span id="add">ADD TO CART</span></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item-name">Adidas YeezyBoost350</div>
-                        <div class="price">Ksh.4000</div>
-                    </a>
+    <main class="page-main">
+        <section class="page-section">
+            <div class="images-frame">
+                <img id="myImg" src="images/Airjordan13.jpg" style="width:100%;max-width:300px">
+                
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
                 </div>
             </div>
-            <div class="col">
-                <div class="product-item">
-                    <a href="/">
-                        <img src="images/adidasYeezyBoost350.jpg" class="image" style="width:100%">
-                        <div class="item-name">Adidas YeezyBoost350</div>
-                        <div class="price">Ksh.4000</div>
-                    </a>
-                </div>
-            </div>
-            <div class="col">
-                <div class="product-item">
-                    <a href="/">
-                        <img src="images/adidasYeezyBoost350.jpg" class="image" style="width:100%">
-                        <div class="item-name">Adidas YeezyBoost350</div>
-                        <div class="price">Ksh.4000</div>
-                    </a>
-                </div>
-            </div>
-            <div class="col">
-                <div class="product-item">
-                    <a href="/">
-                        <img src="images/adidasYeezyBoost350.jpg" class="image" style="width:100%">
-                        <div class="item-name">Adidas YeezyBoost350</div>
-                        <div class="price">Ksh.4000</div>
-                    </a>
-                </div>
-            </div>
-            <div class="col">
-                <div class="product-item">
-                    <a href="/">
-                        <img src="images/adidasYeezyBoost350.jpg" class="image" style="width:100%">
-                        <div class="item-name">Adidas YeezyBoost350</div>
-                        <div class="price">Ksh.4000</div>
-                    </a>
-                </div>
-            </div>
-            <div class="col">
-                <div class="product-item">
-                    <a href="/">
-                        <img src="images/adidasYeezyBoost350.jpg" class="image" style="width:100%">
-                        <div class="item-name">Adidas YeezyBoost350</div>
-                        <div class="price">Ksh.4000</div>
-                    </a>
-                </div>
-            </div>
-            <div class="col">
-                <div class="product-item">
-                    <a href="/">
-                        <img src="images/adidasYeezyBoost350.jpg" class="image" style="width:100%">
-                        <div class="item-name">Adidas YeezyBoost350</div>
-                        <div class="price">Ksh.4000</div>
-                    </a>
-                </div>
-            </div>
-            <div class="col">
-                <div class="product-item">
-                    <a href="/">
-                        <img src="images/adidasYeezyBoost350.jpg" class="image" style="width:100%">
-                        <div class="item-name">Adidas YeezyBoost350</div>
-                        <div class="price">Ksh.4000</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+        </section>
+    </main>
+    
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
