@@ -89,6 +89,9 @@ app.get('/nike-air-jordan-13', function (request, response) {
   response.render('pages/nike-air-jordan-13');
 });
 
+app.get('/nike-air-jordan-13-black', function (request, response) {
+  response.render('pages/nike-air-jordan-13-black');
+});
 
 // This file is what handles incoming requests and
 // serves files to the browser, or executes server-side code
