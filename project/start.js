@@ -85,6 +85,10 @@ app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
 
+app.get('/nike-air-jordan-13', function (request, response) {
+  response.render('pages/nike-air-jordan-13');
+});
+
 
 // This file is what handles incoming requests and
 // serves files to the browser, or executes server-side code
