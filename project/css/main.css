@@ -414,6 +414,11 @@ li{
   border: 0;
 }
 
+.item1{
+  width: 288px;
+  height: 180px;
+}
+
 .item-info{
   text-align: center;
   line-height: 1;
