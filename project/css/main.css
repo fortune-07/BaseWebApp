@@ -371,10 +371,11 @@ ol{
   font-size: 0;
 }
 
-.new-arrival-product .container{
+.new-arrival-product 
+.container{
   width: 100%;
   padding: 0;
-  margin: 0;
+  margin-bottom: 10px;
 }
 
 li{
