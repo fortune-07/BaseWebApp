@@ -603,6 +603,10 @@ li{
 .item-grid img{
   height: auto;
   max-width: 100%;
+}
+
+.item-image1{
+  width: 100%;
   border: 10px;
 }
 
