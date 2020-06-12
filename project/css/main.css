@@ -841,6 +841,9 @@ li{
 }
 
 @media screen and (max-width:767px){ 
+  .navbar{
+    display: none;
+  }
   .navbar-nav{
     display: none;
   }
@@ -944,6 +947,7 @@ li{
   .jewelry-wrapper h4{
     font-size: 20px;
     line-height: 24px;
+    margin-top: 5px;
     margin-bottom: 0;
   }
 
