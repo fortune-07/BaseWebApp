@@ -478,7 +478,8 @@ li{
 }
 
 #newsletter{
-  margin-top: 30px;
+  overflow: hidden;
+  margin-top: 20px;
   padding: 15px;
   color: #ffffff;
   background-color: #35424a;
