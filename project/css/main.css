@@ -574,6 +574,44 @@ li{
   color: black;
 }
 
+/* Jewelry */
+.jewelry-wrapper{
+  margin: 50px auto 0;
+  text-align: left;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.jewelry-wrapper h4{
+  font-size: 24px;
+  font-weight: 600;
+  color: #1d1e20;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 30px;
+  margin-bottom: 10px
+}
+
+.jewelry-overlay{
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  font-size: 0;
+}
+
+.item-grid{
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+}
+
+.item-grid img{
+  height: auto;
+  max-width: 100%;
+  border: 10px;
+}
+
 /* Modal Image */
 #myImg {
   border-radius: 5px;
