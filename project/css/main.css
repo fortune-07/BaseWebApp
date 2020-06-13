@@ -456,7 +456,7 @@ li{
   height: 38px;
   width: 124px;
   line-height: 30px;
-  position: absolute;
+  position: relative;
   left: 50%;
   font-size: 10px;
   text-align: center;
