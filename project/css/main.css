@@ -809,6 +809,7 @@ li{
 /* contact*/
 .contact-title{
   text-align: center;
+  color: black;
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
@@ -1003,6 +1004,10 @@ input[type=submit]:hover {
     margin: 30px 0;
     text-align: center;
     text-transform: uppercase;
+  }
+
+  .contact-wrapper{
+    display: block;
   }
 
   .modal-content {
