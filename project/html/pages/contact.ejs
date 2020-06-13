@@ -13,114 +13,177 @@
 </head>
 
 <body>
-    <% include ../helpers/navbar %>
-    <% include ../helpers/sidenav %>
-
-    <main>
-        <div class="contact-title-wrapper">
-            <h1 class="contact-title">
-                <span>Contact Us</span>
-            </h1>
-        </div>
-
-        <div class="contact-main">
-            <form class="form-contact" action="https://fortunewear.herokuapp.com/contact/index/post/" id="contact-form" method="post"
-                data-hasrequired="* Required Fields" novalidate="novalidate">
-                <fieldset class="fieldset">
-                    <div class="field name required">
-                        <label class="label" for="name"><span>Name</span></label>
-                        <div class="control">
-                            <input name="name" id="name" title="Name" value="" class="input-text" type="text"
-                                data-validate="{required:true}" aria-required="true">
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-12">
+                    <div class="btn-group">
+                        <button class="btn border dropdown-toggle my-md-4 my-2 text-white" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">KSH</button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">USD</a>
                         </div>
-                    </div>
-                    <div class="field email required">
-                        <label class="label" for="email"><span>Email</span></label>
-                        <div class="control">
-                            <input name="email" id="contact-email" title="Email" value="" class="input-text" type="email"
-                                data-validate="{required:true, 'validate-email':true}" aria-required="true">
-                        </div>
-                    </div>
-                    <div class="field telephone">
-                        <label class="label" for="telephone"><span>Phone Number</span></label>
-                        <div class="control">
-                            <input name="telephone" id="telephone" title="Phone Number" value="" class="input-text" type="text">
-                        </div>
-                    </div>
-                    <div class="field comment required">
-                        <label class="label" for="comment"><span>What’s on your mind?</span></label>
-                        <div class="control">
-                            <textarea name="comment" id="comment" title="What’s on your mind?" class="input-text" cols="5" rows="3"
-                                data-validate="{required:true}" aria-required="true"></textarea>
-                        </div>
-                    </div>
-                    <div class="field-recaptcha" id="msp-recaptcha-d84b65fc916e7398083ea5f17089d8f1-container"
-                        data-bind="scope:'msp-recaptcha-d84b65fc916e7398083ea5f17089d8f1'">
-                        <!-- ko template: getTemplate() -->
-                        <!-- ko if: (getIsVisible()) -->
-                        <div data-bind="{
-                attr: {
-                    'id': getReCaptchaId() + '-wrapper'
-                },
-                'afterRender': renderReCaptcha()
-            }" id="msp-recaptcha-d84b65fc916e7398083ea5f17089d8f1-wrapper">
-                            <div class="g-recaptcha" id="msp-recaptcha-d84b65fc916e7398083ea5f17089d8f1">
-                                <div style="width: 304px; height: 78px;">
-                                    <div><iframe
-                                            src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdBH88UAAAAACG47JS2v7MSqz9BApeP6UJfLcCr&amp;co=aHR0cHM6Ly93d3cua2lja3NjcmV3LmNvbTo0NDM.&amp;hl=en&amp;v=2diXFiiA9NsPIBTU15LG6xPf&amp;theme=light&amp;size=normal&amp;cb=xxu4qxe29u76"
-                                            width="304" height="78" role="presentation" name="a-c1el3jjro9od" frameborder="0"
-                                            scrolling="no"
-                                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
-                                    </div><textarea id="g-recaptcha-response" name="g-recaptcha-response"
-                                        class="g-recaptcha-response"
-                                        style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
-                                </div><iframe style="display: none;"></iframe>
-                            </div>
-                            <!-- ko if: (getIsInvisibleRecaptcha()) -->
-                            <div class="field">
-                                <div class="control">
-                                    <input type="checkbox" value="" class="required-captcha checkbox" name="recaptcha-validate-"
-                                        data-validate="{required:true}">
-                                </div>
-                            </div>
-                            <!-- /ko -->
-                        </div>
-                        <!-- /ko -->
-                        <!-- /ko -->
-                    </div>
-            
-                </fieldset>
-                <div class="actions-toolbar">
-                    <div class="primary">
-                        <input type="hidden" name="hideit" id="hideit" value="">
-                        <button type="submit" title="Send Message" class="action submit primary">
-                            <span>Send Message</span>
-                        </button>
                     </div>
                 </div>
-            </form>
+                <div class="col-md-4 col-12 text-center">
+                    <h2 class="my-md-3 site-title text-white">FortunesWear</h2>
+                </div>
+                <div class="col-md-4 col-12 text-right">
+                    <p class="my-md-4 header-links">
+                        <i class="fas fa-user"></i>
+                        <a href="/login" class="px-2">Sign In</a>
+                        <a href="/register" class="px-1">Create An Account</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/new-arrival">NEW ARRIVAL</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                JEWELRY
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/men-jewelry">Men's Jewelry</a>
+                                <a class="dropdown-item" href="/women-jewelry">Women's Jewelry</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                SHOES
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/men-shoes">Men's Shoes</a>
+                                <a class="dropdown-item" href="/women-shoes">Women's Shoes</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MY ACCOUNT
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/login">LOGIN</a>
+                                <a class="dropdown-item" href="/register">REGISTER</a>
+                                <a class="dropdown-item" href="/shop">SHOP</a>
+                                <a class="dropdown-item" href="/cart">CART</a>
+                                <a class="dropdown-item" href="/logout">LOGOUT</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="navbar-nav">
+                    <li class="nav-item border rounded-circle mx-2 search-icon">
+                        <i class="fas fa-search p-2"></i>
+                    </li>
+                    <li class="nav-item border rounded-circle mx-2 shopping-cart-icon">
+                        <i class="fas fa-shopping-cart p-2"></i>
+                    </li>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- /Header -->
+
+    <!-- Top menu on small screens -->
+    <header>
+        <div class="nav-small">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="/login">Login/Register</a>
+                <hr>
+                <a href="/">Home</a>
+                <a href="/new-arrival">New Arrival</a>
+                <a href="/men-shoes">Men Shoes</a>
+                <a href="/women-shoes">Women Shoes</a>
+                <a href="/men-jewelry">Men Jewelry</a>
+                <a href="/women-jewelry">Women Jewelry</a>
+                <a href="/blog">Blog</a>
+                <a href="/about">About Us</a>
+                <a href="/contact">Contact Us</a>
+            </div>
+            <div class="sidebar">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                <div class="side">
+                    <span class="highlight">Fortunes</span>Wear
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="contact-title">
+        <h1>
+            <span>Contact Us</span>
+        </h1>
+    </div>
+
+    <div class="contact-wrapper">
+        <div class="contact-form">
+            <div class="form-contact">
+                <form action="/action_page.php">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter email" name="email">
+            
+                    <label for="subject">What's on your mind</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </div>
 
-        <div class="contact-office">
-            <h4>Our Store</h4>
-            <p class="contact-shop" style="padding-left: 0px;"><i class="fas fa-store"
+        <div class="office-contact">
+            <div class="contact-office">
+                <h4>Our Store</h4>
+                <p class="contact-shop" style="padding-left: 0px;"><i class="fas fa-store"
                     style="font-size: 16px; color: #676767;"></i>&nbsp;&nbsp; FortunesWear Store</p>
-            <p class="contact-phone"><i class="fas fa-phone-alt"></i>&nbsp;&nbsp; +254702425821&nbsp;&nbsp;&nbsp;<a href="https://api.whatsapp.com/send?phone=85297949961"
+                <p class="contact-phone"><i class="fas fa-phone-alt"></i> 0702425821&nbsp;&nbsp;&nbsp;<a href="https://api.whatsapp.com/send?phone=+254702425821"
                     target="_blank"><i class="fab fa-whatsapp-square" style="font-size: 18px; color: #00e676;"></i></a></p>
-            <p class="contact-address">Gala Place, Shop 1621-22, 56 Dundas St, Mong Kok,<br> KLN, Hong Kong</p>
-            <div id="googlemap" style="padding-right: 1vw;"><iframe style="border: 0; width: 100%; height: 210px;"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59048.95101693879!2d114.17116349360286!3d22.332495653365715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340401ebe88946ed%3A0x108a0d09d21dc313!2sKicksCrew+Store!5e0!3m2!1szh-TW!2shk!4v1546597186847"
-                    width="320" height="240" frameborder="0" allowfullscreen=""></iframe></div>
-            <br>
-            <h4>Our Office</h4>
-            <p style="padding-left: 0px;"><i class="fas fa-building"
-                    style="font-size: 16px; color: #676767;"></i>&nbsp;&nbsp;&nbsp; FortunesWear Company Limited</p>
-            <p class="contact-email">cs@fortuneswear.com</p>
-            <p class="contact-phone">+254702425821</p>
-            <p class="contact-address">Flat D, 13/F, Southeast Industrial Building,<br> 611-619 Castle Peak Road, Tsuen Wan,
-                <br> NT, Hong Kong</p>
+                <p class="contact-address"><i class="fas fa-map-marker-alt"></i> Gala Place, Shop 1621-22, Moi Avenue<br> Mombasa, Kenya</p>
+                <br>
+                <h4>Our Office</h4>
+                <p style="padding-left: 0px;"><i class="fas fa-building" style="font-size: 16px; color: #676767;"></i>&nbsp;&nbsp;&nbsp;
+                    FortunesWear Company Limited</p>
+                <p class="contact-email"><i class="fas fa-envelope"></i>cs@fortuneswear.com</p>
+                <p class="contact-phone"><i class="fas fa-phone-alt"></i>0702425821</p>
+                <p class="contact-address"><i class="fas fa-map-marker-alt"></i>Flat D, 13/F, Southeast Industrial Building,
+                <br> 
+                611-619 Castle Peak Road, Digo Road, 
+                <br>
+                Mombasa, Kenya</p>
+            </div>
         </div>
-    </main>
+    </div>
+
     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
