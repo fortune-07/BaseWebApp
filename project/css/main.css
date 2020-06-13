@@ -828,11 +828,21 @@ li{
 
 .form-contact{
   border-radius: 5px;
-  background-color: #f2f2f2;
   padding: 20px;
 }
 
 input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=email], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -864,16 +874,15 @@ input[type=submit]:hover {
 
 .contact-office{
   display: block;
+  padding-left: 30px;
 }
 
 .contact-office h4{
   font-size: 20px;
-  line-height: 15px;
+  color: black;
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .contact-office p{
