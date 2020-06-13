@@ -894,7 +894,7 @@ input[type=submit]:hover {
 .contact-office p{
   font-size: 16px;
   color: black;
-  margin-bottom: 4px;
+  margin-bottom: 15px;
 }
 
 .footer{
@@ -1008,6 +1008,20 @@ input[type=submit]:hover {
 
   .contact-wrapper{
     display: block;
+  }
+
+  .contact-form{
+    width: 100%;
+  }
+
+  .office-contact{
+    width: 100%;
+  }
+
+  .contact-office p {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 20px;
   }
 
   .modal-content {
