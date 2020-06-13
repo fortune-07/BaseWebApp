@@ -772,6 +772,7 @@ li{
 .images-info h2{
   text-align: center;
   font-weight: bold;
+  color: black;
 }
 .image-value{
   text-align: center;
@@ -805,17 +806,170 @@ li{
   padding-left: 10px;
 }
 
-.column-main{
-  display: flex;
-  float: left;
+/* contact*/
+.contact-title-wrapper{
+  display: block;
+}
+
+.contact-title{
+  display: block;
+}
+
+.contact-main{
+  padding-bottom: 40px;
+  -webkit-flex-basis: 100%;
+  flex-basis: 100%;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -ms-flex-order: 1;
+  -webkit-order: 1;
+  order: 1;
+  width: 100%;
+}
+
+form{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  display: block;
+  margin-top: 0em;
+}
+
+fieldset{
+  display: block;
+  margin-inline-start: 2px;
+  margin-inline-end: 2px;
+  padding-block-start: 0.35em;
+  padding-inline-start: 0.75em;
+  padding-inline-end: 0.75em;
+  padding-block-end: 0.625em;
+  min-inline-size: min-content;
+  border-width: 2px;
+  border-style: groove;
+  border-color: threedface;
+  border-image: initial;
+}
+
+.fieldset {
+  border: 0;
+  margin: 0 0 40px;
+  padding: 0;
+  letter-spacing: -.31em;
+}
+
+.field{
+  margin: 0 0 20px;
+}
+
+label{
+  cursor: default;
+}
+
+.fieldset .field
+.label{
+  font-weight: 700;
+  margin: 0 0 5px;
+  display: inline-block;
+}
+
+input[type=text]{
+  background: #fff;
+  background-clip: padding-box;
+  border: 1px solid #c2c2c2;
+  border-radius: 1px;
+  font-family: 'ProximaNova-Regular','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  height: 32px;
+  line-height: 1.42857143;
+  padding: 0 9px;
+  vertical-align: baseline;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type=email] {
+  background: #fff;
+  background-clip: padding-box;
+  border: 1px solid #c2c2c2;
+  border-radius: 1px;
+  font-family: 'ProximaNova-Regular','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  height: 32px;
+  line-height: 1.42857143;
+  padding: 0 9px;
+  vertical-align: baseline;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  background: #fff;
+  background-clip: padding-box;
+  border: 1px solid #c2c2c2;
+  border-radius: 1px;
+  font-family: 'ProximaNova-Regular','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  height: auto;
+  line-height: 1.42857143;
+  margin: 0;
+  padding: 10px;
+  vertical-align: baseline;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.actions-toolbar .primary{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.action{
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.action.primary {
+  background-image: none;
+  background: #1d1e20;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'ProximaNova-Regular','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  padding: 7px 15px;
+  font-size: 1.4rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+.contact-title h1{
+  font-weight: 300;
+  line-height: 1.1;
+  font-size: 2.6rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 .contact-office{
-  padding-left: 10px;
+  display: block;
 }
 
-.fieldset{
-  border: none;
+.contact-office h4{
+    font-weight: 700;
+    line-height: 1.1;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-office p{
+  margin-top: 0;
+  margin-bottom: 1rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 .footer{
@@ -918,8 +1072,64 @@ li{
     width: 100%;
   }
 
-  .column-main{
-    display: block;
+  /* Contact */
+  .contact-title{
+    font-size: 18px;
+    line-height: 22px;
+    margin: 30px 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .form-contact{
+    margin-bottom: 65px;
+  }
+
+  .form-contact
+  .fieldset{
+    margin: 0;
+  }
+
+  .field{
+    margin-bottom: 20px;
+  }
+
+  .form-contact .fieldset label {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .form-contact .field input {
+    height: 40px;
+  }
+
+  .form-contact .actions-toolbar {
+    margin-top: 30px;
+  }
+
+  .form-contact .actions-toolbar .action.submit.primary {
+    height: 40px;
+    width: 100%;
+    background-color: #1d1e20;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  .contact-office h4 {
+    font-size: 18px;
+    height: 22px;
+    line-height: 22px;
+    margin: 30px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  .contact-office p {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 20px;
+    padding-left: 25px;
   }
 
   .modal-content {
