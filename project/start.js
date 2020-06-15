@@ -49,8 +49,8 @@ app.get('/cart', function (request, response) {
   response.render('pages/cart');
 });
 
-app.get('/shop', function (request, response) {
-  response.render('pages/shop');
+app.get('/hot-items', function (request, response) {
+  response.render('pages/hot-items');
 });
 
 app.get('/login', function (request, response) {
@@ -81,16 +81,16 @@ app.get('/return-policy', function (request, response) {
   response.render('pages/return-policy');
 });
 
-app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
-});
-
 app.get('/nike-air-jordan-13', function (request, response) {
   response.render('pages/nike-air-jordan-13');
 });
 
 app.get('/nike-air-jordan-13-black', function (request, response) {
   response.render('pages/nike-air-jordan-13-black');
+});
+
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
 });
 
 // This file is what handles incoming requests and
