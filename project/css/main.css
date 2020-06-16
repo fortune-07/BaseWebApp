@@ -180,19 +180,17 @@ header.site-title a{
     padding: 0 1.3em;
 }
 
-.navbar-nav .search-icon{
-  color: black !important;
-}
 .navbar-nav .search-icon a{
   text-decoration: none;
+  color: black !important;
 }
 
 .navbar-nav .shopping-cart-icon{
   margin-right: 2rem !important;
-  color: black !important;
 }
 .navbar-nav .shopping-cart-icon a{
   text-decoration: none;
+  color: black !important;
 }
 
 .nav-small{
