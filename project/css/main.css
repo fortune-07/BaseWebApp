@@ -806,11 +806,10 @@ li{
   color: black;
 }
 
-.about-wrapper img{
-  position: relative;
+.about-image{
+  position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
-  top: 20%;
 }
 
 .about-wrapper .container{
