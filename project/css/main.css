@@ -821,7 +821,8 @@ li{
 }
 .wishlist a{
   text-decoration: none;
-  text-decoration-color: none;
+  padding-top: 5px;
+  color: black;
   text-align: center;
   justify-content: center;
 }
