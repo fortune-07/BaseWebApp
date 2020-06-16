@@ -787,10 +787,12 @@ li{
 }
 .image-value{
   text-align: center;
+  color: black;
 }
 .info-price{
   text-align: center;
   font-weight: bolder;
+  color: black;
 }
 .add-to-cart{
   text-align: center;
@@ -831,6 +833,38 @@ li{
 }
 .size-button a{
   padding-right: 20px;
+}
+.description-attr {
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  margin: 38px 0 20px;
+}
+#product-description {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1d1e20;
+  text-transform: uppercase;
+  padding: 10px 0 0;
+  margin: 0 0 20px;
+}
+.product-attr {
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+.product-attr li {
+  font-size: 14px;
+  color: #8b8b8b;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+.attr-label {
+  min-width: 136px;
+  display: inline-block;
+}
+.product.attribute.overview {
+  font-size: 14px;
+  color: #8b8b8b;
+  margin-bottom: 10px;
 }
 
 /*about*/
