@@ -821,6 +821,9 @@ li{
 }
 .wishlist a{
   text-decoration: none;
+  text-decoration-color: none;
+  text-align: center;
+  justify-content: center;
 }
 .size-button{
   display: inline;
