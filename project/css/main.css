@@ -780,7 +780,9 @@ li{
 
 .images-info h2{
   text-align: center;
-  font-weight: bold;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.1;
   color: black;
 }
 .image-value{
@@ -789,6 +791,13 @@ li{
 .info-price{
   text-align: center;
   font-weight: bolder;
+}
+#add-to-cart{
+  width: 100%;
+  background-color: black;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
 }
 .size-button{
   display: inline;
