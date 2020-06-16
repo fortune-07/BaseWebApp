@@ -823,7 +823,7 @@ li{
 }
 .wishlist a{
   text-decoration: none;
-  padding-top: 5px;
+  padding-top: 15px;
   color: black;
   text-align: center;
   justify-content: center;
@@ -838,6 +838,7 @@ li{
   border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
   margin: 38px 0 20px;
+  padding-left: 15px;
 }
 #product-description {
   font-size: 16px;
