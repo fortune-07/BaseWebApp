@@ -113,12 +113,23 @@ a{
   clear: both;
 }
 
+.container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
 /* Header */
 
 header{
     background-color: var(--black);
     font-family: 'Roboto', Arial, Helvetica;
-    position: fixed;
+}
+
+header .header-wrapper{
+  margin: 0;
+  padding: 0;
+  position: fixed;
 }
 
 header .site-title{
@@ -298,12 +309,6 @@ header.site-title a{
 
 #showcase h1{
   font-size: 50px;
-}
-
-.container {
-  width: 100%;
-  margin: auto;
-  overflow: hidden;
 }
 
 #display-products{
@@ -801,11 +806,8 @@ li{
 }
 
 .about-wrapper img{
-  align-content: center;
-}
-
-.about-image{
-  align-content: center;
+  position: relative;
+  transform: translate(-50%, -50%);
 }
 
 .about-wrapper .container{
