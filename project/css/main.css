@@ -126,15 +126,6 @@ header{
     font-family: 'Roboto', Arial, Helvetica;
 }
 
-header .header-wrapper{
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  position: fixed;
-  background-color: var(--black);
-  font-family: 'Roboto', Arial, Helvetica;
-}
-
 header .site-title{
     font-family: var(--gugi);
     padding-top: 10px;
@@ -818,6 +809,7 @@ li{
 .about-wrapper img{
   position: relative;
   transform: translate(-50%, -50%);
+  left: 50%;
 }
 
 .about-wrapper .container{
