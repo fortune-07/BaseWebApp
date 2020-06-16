@@ -164,6 +164,7 @@ header.site-title a{
 
 .navbar-nav li{
   text-decoration: none;
+  list-style-type: none;
 }
 
 .navbar-nav .nav-item{
@@ -188,8 +189,8 @@ header.site-title a{
 }
 
 .navbar-nav .shopping-cart-icon{
-    margin-right: 2rem !important;
-    color: black;
+  margin-right: 2rem !important;
+  color: black;
 }
 .navbar-nav .shopping-cart-icon a{
   text-decoration: none;
