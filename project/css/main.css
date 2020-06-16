@@ -58,7 +58,7 @@ h5{
 }
 
 p{
-  font-family: 'playfair Display',Arial, Helvetica, sans-serif;
+  font-family: 'Proxima Nova-Regular',Arial, Helvetica, sans-serif;
 }
 
 button {
@@ -175,6 +175,7 @@ header.site-title a{
 
 .navbar-nav .shopping-cart-icon{
     margin-right: 2rem !important;
+    color: black;
 }
 
 .nav-small{
@@ -902,8 +903,12 @@ input[type=submit]:hover {
 
 /* payment policy*/
 .pp-wrapper{
-  background-color: grey;
+  margin-top: 20px;
+  margin-bottom: 0;
   color: black;
+}
+.pp-wrapper p{
+  padding-left: 20px;
 }
 .pp-wrapper ul{
   list-style: none;
