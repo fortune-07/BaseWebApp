@@ -1,57 +1,251 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Payment Policy</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-    </head>
-
-    <body>
-        <% include ../helpers/navbar %>
-        <% include ../helpers/sidenav %>
-        
-        <div class="page-wrapper">
-            <p>At FortunesWear, we endeavor to provide you with the safest and the most secure payment options. In the interest of
-                your safety when making payments, and the security of your personal information, we employ the use of encrypted
-                connections that conform to the highest security standards there are today. This will enable you to make all your
-                transactions with us confidentially.
-            </p>
-            <p>The payment options we have are:</p>
-            <ul>
-                <li><strong>Cash</strong>: This payment method is only limited to those customers who visit our shop and when
-                    collecting your item during physicall delivery.</li>
-                <li><strong>PayPal</strong>: This is very convenient for online shopping. Remember that you can pay by PayPal
-                    with your credit or debit card even when you do not have a PayPal account.</li>
-                <li><strong>Mobile Money</strong>: Make use of the available Mobile Money transfer systems that are available from
-                    the comfort of your house, at work or on your travels.</li>
-            </ul>
-            <p>Please note the for items that require shipping via courier service, shipping will only be done upon payment of both
-                the items value and shipping fees. Non-payment will result in the cancellation of the order. We have made the
-                process as smooth as possible and your cooperation is requested.
-            </p>
-            <p>To shop with confidence, select your most convenient payment option and enjoy happy shopping!
-            </p>
+<head>
+    <title>FortunesWear</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c5a0d2be63.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gugi&family=Oswald:wght@300&family=Playfair+Display&display=swap"
+    rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-12">
+                    <div class="btn-group">
+                        <button class="btn border dropdown-toggle my-md-4 my-2 text-white" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">KSH</button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">USD</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 text-center">
+                    <h2 class="my-md-3 site-title text-white">FortunesWear</h2>
+                </div>
+                <div class="col-md-4 col-12 text-right">
+                    <p class="my-md-4 header-links">
+                        <i class="fas fa-user"></i>
+                        <a href="/login" class="px-2">Sign In</a>
+                        <a href="/register" class="px-1">Create An Account</a>
+                    </p>
+                </div>
+            </div>
         </div>
+    
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/new-arrival">NEW ARRIVAL</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                JEWELRY
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/men-jewelry">Men's Jewelry</a>
+                                <a class="dropdown-item" href="/women-jewelry">Women's Jewelry</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                SHOES
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/men-shoes">Men's Shoes</a>
+                                <a class="dropdown-item" href="/women-shoes">Women's Shoes</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MY ACCOUNT
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/login">LOGIN</a>
+                                <a class="dropdown-item" href="/register">REGISTER</a>
+                                <a class="dropdown-item" href="/shop">SHOP</a>
+                                <a class="dropdown-item" href="/cart">CART</a>
+                                <a class="dropdown-item" href="/logout">LOGOUT</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="navbar-nav">
+                    <li class="nav-item border rounded-circle mx-2 search-icon">
+                        <i class="fas fa-search p-2"></i>
+                    </li>
+                    <li class="nav-item border rounded-circle mx-2 shopping-cart-icon">
+                        <i class="fas fa-shopping-cart p-2"></i>
+                    </li>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-        </script>
-        
-        <script>
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
-            }
+    <!-- Top menu on small screens -->
+    <header>
+        <div class="nav-small">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="/login">Login/Register</a>
+                <hr>
+                <a href="/">Home</a>
+                <a href="/new-arrival">New Arrival</a>
+                <a href="/men-shoes">Men Shoes</a>
+                <a href="/women-shoes">Women Shoes</a>
+                <a href="/men-jewelry">Men Jewelry</a>
+                <a href="/women-jewelry">Women Jewelry</a>
+                <a href="/blog">Blog</a>
+                <a href="/about">About Us</a>
+                <a href="/contact">Contact Us</a>
+            </div>
+            <div class="sidebar">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                <div class="side">
+                    <span class="highlight">Fortunes</span>Wear
+                </div>
+            </div>
+        </div>
+    </header>
 
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
+    <div class="pp-wrapper">
+        <p>At FortunesVibez, we endeavor to provide you with the safest and the most secure payment options. In the interest of
+            your safety when making payments, and the security of your personal information, we employ the use of encrypted
+            connections that conform to the highest security standards there are today. This will enable you to make all your
+            transactions with us confidentially.
+        </p>
+        <p>The payment options we have are:</p>
+        <ul>
+            <li><strong>Cash</strong>: This payment method is only limited to those customers who visit our shop.</li>
+            <li><strong>PayPal</strong>: This is very convenient for online shopping. Remember that you can pay by PayPal with
+                your credit or debit card even when you do not have a PayPal account.</li>
+            <li><strong>Mobile Money</strong>: Make use of the available Mobile Money transfer systems that are available from
+                the comfort of your house, at work or on your travels.</li>
+        </ul>
+        <p>Please note the for items that require shipping via courier service, shipping will only be done upon payment of both
+            the items value and shipping fees. Non-payment will result in the cancellation of the order. We have made the
+            process as smooth as possible and your cooperation is requested.
+        </p>
+        <p>To shop with confidence, select your most convenient payment option and enjoy happy shopping!</p>
+    </div>
+
+    <section id="newsletter">
+        <div class="container">
+            <h2>Subscribe To our Newsletter</h2>
+            <form>
+                <input type="email" placeholder="Enter Email">
+                <button type="submit" class="button1">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="boxes">
+        <div class="box">
+            <h2>ABOUT US</h2>
+            <p>We are all about the trendy, elegant, fun and fashion-conscious you. We are the most preferred online
+                footwear & jewelry
+                retail outlet for the modern man. Our indulgence with fashionable footwear & jewelry began in November 2019,
+                and over the
+                years we have expanded to the online retail scene because we realized there was something missing in that
+                sector, to cope
+                with the demands of the modern man and to widen the scope of elegant people whose needs we felt we could
+                meet.</p>
+        </div>
+        <div class="box">
+            <h2>QUICK LINKS</h2>
+            <a href="/hot-items">Shop</a>
+            <a href="/about">About Us</a>
+            <a href="/contact">Contact Us</a>
+            <a href="/blog">Blog</a>
+            <a href="/vouchers">Gift Vouchers</a>
+            <a href="/blackfriday">Black Friday</a>
+            <br>
+            <h2>STORE</h2>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> FortunesWear</li>
+                <li><i class="fas fa-phone-alt"></i> 0702425821</li>
+                <li><i class="fas fa-envelope"></i> fortuneniguel@gmail.com</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2>Payment Methods:</h2>
+            <ul>
+                <li><i class="fas fa-mobile-alt"></i> M-Pesa</li>
+                <li><i class="far fa-credit-card"></i> Credit Card</li>
+            </ul>
+            <br>
+            <h2>Help Center</h2>
+            <a href="/return-policy">Return Policy</a>
+            <a href="/payment-policy">Payment Policy</a>
+            <a href="/shipping-policy">Shipping Policy</a>
+            <a href="/terms-conditions">Terms & Conditions</a>
+            <br>
+            <ul class="social-media-links">
+                <li class="sm"> <a href="https://www.facebook.com/fortuneniguel" target="_blank"
+                        class="icon-social-facebook" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="sm"><a href="https://twitter.com/fortune_whizz" target="_blank" class="icon-social-twitter"
+                        rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+                <li class="sm"><a href="https://www.linkedin.com/fortunemwagmbo" target="_blank"
+                        class="icon-social-linkedin" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+                <li class="sm"><a href="https://www.instagram.com/fortune.whizz" target="_blank"
+                        class="icon-social-instagram" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <div class="clr"></div>
+    
+    <div class="footer">
+        <span>FortunesWear.com &copy;2020 All Rights Reserved</span>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
         </script>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+    
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
 </html>
