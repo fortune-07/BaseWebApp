@@ -792,13 +792,19 @@ li{
   text-align: center;
   font-weight: bolder;
 }
-#add-to-cart{
-  margin-top: 15px;
-  width: 100%;
+.add-to-cart{
+  text-align: center;
+}
+.add-to-cart .cart{
+  border-radius: 0;
   background-color: black;
   color: white;
-  text-transform: uppercase;
+  width: 100%;
+  height: 45px;
+  font-size: 16px;
   text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 .size-button{
   display: inline;
