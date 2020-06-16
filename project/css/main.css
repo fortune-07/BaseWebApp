@@ -32,27 +32,27 @@ body, html {
 }
 
 h1 {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Proxima Nova', sans-serif;
   font-weight: 500;
   margin-top: 20px;
   font-size: 20px;
 }
 
 h2{
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Proxima Nova', sans-serif;
   font-weight: 300;
   margin-top: 20px;
   font-size: 16px;
 }
 
 h3{
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Proxima Nova', sans-serif;
   font-weight: 250;
   font-size: 17px;
 }
 
 h5{
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Proxima Nova', sans-serif;
   margin: 0;
   font: 17px black;
 }
@@ -171,6 +171,10 @@ header.site-title a{
 
 .navbar-nav .nav-link{
     padding: 0 1.3em;
+}
+
+.navbar-nav .search-icon{
+  color: black;
 }
 
 .navbar-nav .shopping-cart-icon{
@@ -792,6 +796,7 @@ li{
 
 .about-wrapper{
   margin: auto;
+  color: black;
 }
 
 .about-wrapper img{
@@ -808,6 +813,7 @@ li{
 
 .about-wrapper p{
   padding-left: 10px;
+  color: black;
 }
 
 /* contact*/
