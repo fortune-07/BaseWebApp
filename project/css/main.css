@@ -800,11 +800,11 @@ li{
 }
 
 .about-wrapper img{
-  align-items: center;
+  align-content: center;
 }
 
 .about-image{
-  align-items: center;
+  align-content: center;
 }
 
 .about-wrapper .container{
