@@ -810,6 +810,7 @@ li{
   position: relative;
   transform: translate(-50%, -50%);
   left: 50%;
+  top: 20%;
 }
 
 .about-wrapper .container{
@@ -817,7 +818,7 @@ li{
 }
 
 .about-wrapper p{
-  padding-left: 10px;
+  padding-left: 20px;
   color: black;
 }
 
