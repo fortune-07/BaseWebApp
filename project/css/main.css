@@ -188,10 +188,16 @@ header.site-title a{
 .navbar-nav .search-icon{
   color: black;
 }
+.navbar-nav .search-icon a{
+  text-decoration: none;
+}
 
 .navbar-nav .shopping-cart-icon{
     margin-right: 2rem !important;
     color: black;
+}
+.navbar-nav .shopping-cart-icon a{
+  text-decoration: none;
 }
 
 .nav-small{
