@@ -114,7 +114,32 @@
             </nav>
         </div>
     </header>
-    <!-- /Header -->
+    
+    <!-- Top menu on small screens -->
+    <header>
+        <div class="nav-small">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="/login">Login/Register</a>
+                <hr>
+                <a href="/">Home</a>
+                <a href="/new-arrival">New Arrival</a>
+                <a href="/men-shoes">Men Shoes</a>
+                <a href="/women-shoes">Women Shoes</a>
+                <a href="/men-jewelry">Men Jewelry</a>
+                <a href="/women-jewelry">Women Jewelry</a>
+                <a href="/blog">Blog</a>
+                <a href="/about">About Us</a>
+                <a href="/contact">Contact Us</a>
+            </div>
+            <div class="sidebar">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                <div class="side">
+                    <span class="highlight">Fortunes</span>Wear
+                </div>
+            </div>
+        </div>
+    </header>
 
     <!-- Product pop up section-->
     <main class="page-main">
@@ -178,7 +203,7 @@
             </div>
 
             <div class="images-info">
-                <h2>Nike Air Jordan 13 Retro</h2>
+                <h2 class="image-title">Nike Air Jordan 13 Retro</h2>
                 <div class="image-value">
                     234326-13
                 </div>
@@ -190,6 +215,26 @@
                 <div class="size-button">
                     <span class="sz">Select Size</span>
                     <a target="_blank" href="https://fortuneswear.herokuapp.com/size-info">Size Guide</a>
+                </div>
+                <div role="radiogroup" class="var-w" aria-label="Select Variation" data-fi-w="">
+                    <input id="fi-simpleSku-0" class="vi" disabled="" type="radio" name="simpleSku" value="GE840AA0OH27BNAFAMZ-24209470"
+                    required="" data-fi="">
+                    <label class="vl" for="fi-simpleSku-0">39</label>
+                    <input id="fi-simpleSku-1" class="vi" disabled="" type="radio" name="simpleSku" value="GE840AA0OH27BNAFAMZ-24209471"
+                    required="" data-fi="">
+                    <label class="vl" for="fi-simpleSku-1">40</label>
+                    <input id="fi-simpleSku-2" class="vi" type="radio" name="simpleSku" value="GE840AA0OH27BNAFAMZ-24209472" required=""
+                    data-fi="">
+                    <label class="vl" for="fi-simpleSku-2">41</label>
+                    <input id="fi-simpleSku-3" class="vi" type="radio" name="simpleSku" value="GE840AA0OH27BNAFAMZ-24209473" required=""
+                    data-fi="">
+                    <label class="vl" for="fi-simpleSku-3">42</label>
+                    <input id="fi-simpleSku-4" class="vi" type="radio" name="simpleSku" value="GE840AA0OH27BNAFAMZ-24209474" required=""
+                    data-fi="">
+                    <label class="vl" for="fi-simpleSku-4">43</label>
+                    <input id="fi-simpleSku-5" class="vi" disabled="" type="radio" name="simpleSku" value="GE840AA0OH27BNAFAMZ-24209475"
+                    required="" data-fi="">
+                    <label class="vl" for="fi-simpleSku-5">44</label>
                 </div>
                 <form method="post" id="add-to-cart" class="-phxs" data-add-cart="" data-id="GE840SH1J1QSKNAFAMZ"
                     data-name="SNEAKERS" data-price="18.37" data-brand="Generic"
