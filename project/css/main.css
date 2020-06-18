@@ -514,13 +514,16 @@ li{
   flex: 1 1 auto;
   min-width: 10%;
 }
+.hot-item-wrapper .double-bordered-thick{
+  color: black;
+}
 .hot-item-wrapper .double-bordered-thick
 .item-holder .item-line{
   border-top-width: 2px;
 }
 .hot-item-wrapper .color-black
 .item-line{
-  border-color: #2a2a2a;
+  border-color: black;
 }
 .hot-item-wrapper .item-holder
 .item-line{
