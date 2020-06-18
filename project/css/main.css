@@ -397,45 +397,6 @@ li{
   vertical-align: top;
 }
 
-.item .ribbon{
-  top: -10px;
-}
-.ribbon{
-  position: relative;
-  text-align: center;
-  z-index: 1000;
-  top: -20px;
-  left: 20px;
-}
-.item .ribbon,
-.ribbon-content{
-  padding: 5px 10px;
-  font-weight: 400;
-  font-size: 16px;
-  min-width: 70px;
-}
-.ribbon .ribbon-content{
-  background-color: #86288f;
-}
-.ribbon .ribbon-content{
-  position: absolute;
-  display: block;
-  background: #dd1f26;
-  color: #FFF;
-  padding: 10px 15px;
-  font-size: 20px;
-  white-space: nowrap;
-  right: 0;
-  top: 0;
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  -webkit-transform-origin: right top;
-  transform-origin: right top;
-  z-index: 100;
-  min-width: 80px;
-  text-align: center;
-}
-
 .item a{
   text-decoration: none;
 }
