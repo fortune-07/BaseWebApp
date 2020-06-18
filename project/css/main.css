@@ -337,6 +337,7 @@ header.site-title a{
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 600;
+  padding-top: 5px;
   color: grey;
 }
 
@@ -486,6 +487,56 @@ li{
   text-transform: uppercase;
 }
 
+/* Hot-item */
+.hot-item-wrapper{
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.content-element{
+  margin-bottom: 35px;
+}
+.align-center{
+  margin-left: auto;
+  margin-right: auto;
+}
+.width-100{
+  width: 100%;
+}
+.hot-item-wrapper .item-holder{
+  height: 1px;
+  position: relative;
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+  min-width: 10%;
+}
+.hot-item-wrapper .double-bordered-thick
+.item-holder .item-line{
+  border-top-width: 2px;
+}
+.hot-item-wrapper .color-black
+.item-line{
+  border-color: #2a2a2a;
+}
+.hot-item-wrapper .item-holder
+.item-line{
+  height: 1px;
+  border-top: 1px solid #ebebeb;
+  display: block;
+  position: relative;
+  top: 1px;
+  width: 100%;
+}
+.hot-item-wrapper .double-bordered-thick h4{
+  text-align: center;
+  padding: 0 20px!important;
+  font-size: 24px;
+}
+
 #newsletter{
   margin-top: 20px;
   padding: 15px;
@@ -495,6 +546,7 @@ li{
 
 #newsletter h2{
   float: left;
+  font-size: 25px;
 }
 
 #newsletter form{
