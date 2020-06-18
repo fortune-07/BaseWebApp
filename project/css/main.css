@@ -419,7 +419,7 @@ li{
   background-color: #86288f;
 }
 .ribbon .ribbon-content{
-  position: absolute;
+  position: relative;
   display: block;
   background: #dd1f26;
   color: #FFF;
