@@ -401,7 +401,7 @@ li{
   top: -10px;
 }
 .ribbon{
-  position: absolute;
+  position: relative;
   text-align: center;
   z-index: 1000;
   top: -20px;
