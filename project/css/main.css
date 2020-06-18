@@ -397,6 +397,11 @@ li{
   vertical-align: top;
 }
 
+.item .sale-tag{
+  margin: 0;
+  padding: 0;
+}
+
 .item .ribbon{
   top: -10px;
 }
@@ -419,7 +424,7 @@ li{
   background-color: #86288f;
 }
 .ribbon .ribbon-content{
-  position: relative;
+  position: absolute;
   display: block;
   background: #dd1f26;
   color: #FFF;
