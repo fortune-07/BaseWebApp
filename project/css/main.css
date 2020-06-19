@@ -125,7 +125,8 @@ a{
   top: 0;
   right: 0;
   left: 0;
-  z-index: 2;
+  bottom: auto;
+  z-index: 1030;
 }
 header{
     font-family: 'Roboto', Arial, Helvetica;
@@ -1085,7 +1086,7 @@ input[type=submit]:hover {
     display: none;
   }
   .navbar-nav{
-    display: inline;
+    display: none;
   }
 
   #display-products{
