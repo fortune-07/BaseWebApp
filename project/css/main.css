@@ -242,6 +242,7 @@ header.site-title a{
   padding-left: 65px;
   padding-top: 7px;
   font-size: 25px;
+  font-family: var(--gugi);
   text-transform: uppercase;
   text-align: center;
 }
@@ -254,6 +255,7 @@ header.site-title a{
 
 .highlight{
   color: orangered;
+  font-family: var(--gugi);
 }
 
 .sidenav a:hover {
@@ -1048,7 +1050,7 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width:767px){ 
-  .navbar{
+  /*.navbar{
     display: none;
   }
   .navbar-nav{
@@ -1071,7 +1073,7 @@ input[type=submit]:hover {
   .sidenav a {
     font-size: 18px;
     display: block;
-  }
+  }*/
 
   #display-products{
     display: block;
