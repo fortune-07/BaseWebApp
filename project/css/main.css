@@ -64,7 +64,7 @@ p{
 button {
   background-color: black;
   color: #fff;
-  border: none; 
+  border: none;
   border-radius: 5px;
   padding: 10px 12px;
   cursor: pointer;
@@ -129,6 +129,7 @@ a{
 }
 header{
     font-family: 'Roboto', Arial, Helvetica;
+    background-color: silver;
 }
 
 header .site-title{
@@ -158,7 +159,7 @@ header.site-title a{
 /* Navigation Menu */
 
 .navbar-nav{
-  margin: 0;  
+  margin: 0;
   padding: 0.8em;
 }
 
@@ -640,16 +641,16 @@ li{
 
 .modal {
   display: none;
-  position: fixed; 
-  z-index: 1; 
-  padding-top: 100px; 
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.9); 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
 }
 
 .modal-content {
@@ -670,7 +671,7 @@ li{
   height: 150px;
 }
 
-.modal-content, #caption {  
+.modal-content, #caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -678,12 +679,12 @@ li{
 }
 
 @-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
+  from {-webkit-transform:scale(0)}
   to {-webkit-transform:scale(1)}
 }
 
 @keyframes zoom {
-  from {transform:scale(0)} 
+  from {transform:scale(0)}
   to {transform:scale(1)}
 }
 
@@ -1055,7 +1056,7 @@ input[type=submit]:hover {
   padding: 10px;
 }
 
-@media screen and (max-width:767px){ 
+@media screen and (max-width:767px){
   /*.navbar{
     display: none;
   }
@@ -1127,7 +1128,7 @@ input[type=submit]:hover {
     min-height: 30px;
     width: 100%;
   }
-  
+
   .box:last-child{
     margin-bottom: 0;
     padding-bottom: 0;
