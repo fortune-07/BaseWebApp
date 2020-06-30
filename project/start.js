@@ -53,16 +53,36 @@ app.get('/hot-items', function (request, response) {
   response.render('pages/hot-items');
 });
 
+app.get('/customer', function (request, response) {
+  response.render('pages/customer');
+});
+
+app.get('/account', function (request, response) {
+  response.render('pages/customer/account');
+});
+
+app.get('/activate-account', function (request, response) {
+  response.render('pages/customer/activate-account');
+});
+
 app.get('/login', function (request, response) {
-  response.render('pages/login');
+  response.render('pages/customer/login');
 });
 
 app.get('/logout', function (request, response) {
-  response.render('pages/logout');
+  response.render('pages/customer/logout');
+});
+
+app.get('/order', function (request, response) {
+  response.render('pages/customer/order');
 });
 
 app.get('/register', function (request, response) {
-  response.render('pages/register');
+  response.render('pages/customer/register');
+});
+
+app.get('/reset-password', function (request, response) {
+  response.render('pages/customer/reset-password');
 });
 
 app.get('/shipping-policy', function (request, response) {
