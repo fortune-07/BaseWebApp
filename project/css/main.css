@@ -285,7 +285,7 @@ header.site-title a{
   background: url('../images/sneakers.jpg') center no-repeat;
   background-size: cover;
   position: relative;
-  top: 5%;
+  top: auto;
   min-height: 400px;
   margin-bottom: 20px;
 }
