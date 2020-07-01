@@ -158,6 +158,22 @@ header.site-title a{
 
 /* Navigation Menu */
 
+.nav-toggle {
+  cursor: pointer;
+  display: block;
+  font-size: 0;
+  left: 20px;
+  position: absolute;
+  top: 20px;
+  z-index: 14;
+  border-top: 2px solid #222;
+  border-bottom: 2px solid #222;
+  width: 20px;
+  height: 14px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .navbar-nav{
   margin: 0;
   padding: 0.8em;
