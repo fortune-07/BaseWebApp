@@ -25,10 +25,13 @@
 body, html {
   font-family: 'Playfair Dispaly', Arial, Helvetica, sans-serif;
   background-color: white;
-  color: white;
   font-size: 16px;
-  margin: 0;
+}
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -103,10 +106,6 @@ li a{
 a{
   text-decoration: none;
   cursor: pointer;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .clr{
