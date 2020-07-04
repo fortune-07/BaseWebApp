@@ -1,3 +1,5 @@
+console.log("running");
+
 function handleSignUp(){
   firebase.auth().createUserWithEmailAndPassword(email, password).catch(function (error) {
     // Handle Errors here.
