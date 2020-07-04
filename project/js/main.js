@@ -1,4 +1,8 @@
-console.log("running");
+let carts = document.querySelectorAll('.add-cart');
+
+for (let i=0; i < carts.length; i++) {
+  console.log("my loop");
+}
 
 function handleSignUp(){
   firebase.auth().createUserWithEmailAndPassword(email, password).catch(function (error) {
