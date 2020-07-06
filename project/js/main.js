@@ -22,7 +22,7 @@ firebase.analytics();
 
 const auth = firebase.auth();
 
-function signUp(){
+function signIn(){
   var email = document.getElementById("email");
   var password = document.getElementById("password");
 
@@ -30,6 +30,15 @@ function signUp(){
   promise.catch(e => alert(e.maessage))
 
   alert("signed Up");
+}
+
+function signInWithEmailAndPassword(){
+  firebase.auth().signUnWithEmailAndPassword(email, password).catch(function (error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // ...
+  });
 }
 
 function handleSignIn(){
