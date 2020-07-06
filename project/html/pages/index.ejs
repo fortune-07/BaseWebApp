@@ -434,7 +434,22 @@
 			document.getElementById("mySidenav").style.width = "0";
 		}
 	</script>
-
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+			apiKey: "<%= process.env.API_KEY %>",
+			authDomain: "mwagambo-cfa3a.firebaseapp.com",
+			databaseURL: "https://mwagambo-cfa3a.firebaseio.com",
+			projectId: "mwagambo-cfa3a",
+			storageBucket: "mwagambo-cfa3a.appspot.com",
+			messagingSenderId: "775908781299",
+			appId: "1:775908781299:web:4ec58d1571c286ac415b86",
+			measurementId: "G-SPH6WRMQB2"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+	</script>
 	<script src="js/main.js"></script>
 </body>
 
