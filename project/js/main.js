@@ -29,7 +29,7 @@ function signUp(){
   const promise = auth.createUserWithEmailAndPassword(email.value. password.value);
   promise.catch(e => alert(e.maessage))
 
-  alert("signed In");
+  alert("signed Up");
 }
 
 function handleSignIn(){
