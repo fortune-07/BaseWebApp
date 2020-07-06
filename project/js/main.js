@@ -20,6 +20,10 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
+function logIn(){
+  window.alert("working");
+}
+
 const auth = firebase.auth();
 
 function signIn(){
