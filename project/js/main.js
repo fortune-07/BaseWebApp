@@ -6,6 +6,32 @@ for (let i=0; i < carts.length; i++) {
   })
 } 
 
+var firebaseConfig = {
+  apiKey: "<%= process.env.API_KEY %>",
+  authDomain: "mwagambo-cfa3a.firebaseapp.com",
+  databaseURL: "https://mwagambo-cfa3a.firebaseio.com",
+  projectId: "mwagambo-cfa3a",
+  storageBucket: "mwagambo-cfa3a.appspot.com",
+  messagingSenderId: "775908781299",
+  appId: "1:775908781299:web:4ec58d1571c286ac415b86",
+  measurementId: "G-SPH6WRMQB2"
+};
+
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+
+const auth = firebase.auth();
+
+function signUp(){
+  var email = document.getElementById("email");
+  var password = document.getElementById("password");
+
+  const promise = auth.createUserWithEmailAndPassword(email.value. password.value);
+  promise.catch(e => alert(e.maessage))
+
+  alert("signed In");
+}
+
 function handleSignIn(){
   var provider = new firebase.auth.GoogleAuthProvider();
 

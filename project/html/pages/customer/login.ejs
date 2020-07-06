@@ -2,9 +2,24 @@
 <html>
 
 <head>
-    <title>login</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SignUp | FortunesVibez</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
+    <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/ecommerce.js"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/ec.js"></script>
+    <script src="https://kit.fontawesome.com/c5a0d2be63.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+    <script src="js/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
@@ -188,12 +203,13 @@
         </div>
 
         <div class="col">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="submit" value="Login">
+            <input type="email" placeholder="Email" id="email" required>
+            <input type="password" placeholder="Password" id="password" required>
+            <button onclick="signUp" id="signUp"></button>
+            <!-- <input type="submit" value="Login"> -->
         </div>
         <br>
-        <form class="form-login" action="https://fortuneswear.herokuapp.com/customer/account/loginPost" method="POST"
+        <form class="form-login" action="https://fortuneswear.herokuapp.com/customer/account/login" method="POST"
             id="login-form" novalidate="novalidate">
             <div class="row">
                 <h2 style="text-align:center">Login with Social Media</h2>
@@ -236,6 +252,9 @@
         offers!</p>
 
     <a class="button" href="/register">REGISTER</a>
+
+    
+    <script src="js/main.js"></script>
 
 </body>
 
