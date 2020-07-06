@@ -7,7 +7,7 @@ for (let i=0; i < carts.length; i++) {
 } 
 
 var firebaseConfig = {
-  apiKey: "<%= process.env.API_KEY %>",
+  apiKey: "AIzaSyD-pRgQz1p_tlE00KtC4HvwBnM575dExqQ",
   authDomain: "mwagambo-cfa3a.firebaseapp.com",
   databaseURL: "https://mwagambo-cfa3a.firebaseio.com",
   projectId: "mwagambo-cfa3a",
