@@ -27,19 +27,18 @@ function handleSignIn(){
   });
 }
 
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-} 
-
-
 function handleSignOut(){
   firebase.auth().signOut().then(function () {
     // Sign-out successful.
   }).catch(function (error) {
     // An error happened.
   });
-}      
+}
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}    
