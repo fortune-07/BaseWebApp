@@ -301,6 +301,7 @@ header.site-title a{
   background-size: cover;
   position: relative;
   top: 0;
+  z-index: 2;
   min-height: 400px;
   margin-bottom: 20px;
 }
