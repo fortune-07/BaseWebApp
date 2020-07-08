@@ -81,13 +81,28 @@ input, button{
         <h3>Firebase Web Login</h3>
         <input type="email" placeholder="Email">
         <input type="password" placeholder="Password">
-        <button>Login</button>
+        <button onclick="login()">Login</button>
     </div>
     <div class="loggedin-div">
         <h3>Welcome User</h3>
         <p>Welcome to Firebase web login Example. You're currently logged in.</p>
         <button>Logout</button>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var firebaseConfig = {
+            apiKey: "AIzaSyD-pRgQz1p_tlE00KtC4HvwBnM575dExqQ",
+            authDomain: "mwagambo-cfa3a.firebaseapp.com",
+            databaseURL: "https://mwagambo-cfa3a.firebaseio.com",
+            projectId: "mwagambo-cfa3a",
+            storageBucket: "mwagambo-cfa3a.appspot.com",
+            messagingSenderId: "775908781299",
+            appId: "1:775908781299:web:4ec58d1571c286ac415b86",
+            measurementId: "G-SPH6WRMQB2"
+        }; 
+        firebase.initializeApp(firebaseConfig);
+    </script>
 
     <script src="js/main.js"></script>
 </body>
