@@ -38,6 +38,7 @@ input, button{
     margin: 0px auto;
     margin-top: 150px;
     padding: 20px;
+    display: none;
 }
 /*.main-div{
     display: none;
@@ -85,8 +86,8 @@ input, button{
     </div>
     <div id="user_div" class="loggedin-div">
         <h3>Welcome User</h3>
-        <p>Welcome to Firebase web login Example. You're currently logged in.</p>
-        <button>Logout</button>
+        <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+        <button onclick="logout()">Logout</button>
     </div>
     <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase.js"></script>
     <script>

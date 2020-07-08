@@ -27,6 +27,15 @@ firebase.auth().onAuthStateChanged(function (user) {
     document.getElementById("user_div").style.display = "block";
     document.getElementById("login_div").style.display = "none";
 
+    var user = firebase.auth().currentUser;
+
+    if(user != null){
+
+      var email_id = user.email;
+      document.getElementById("user_para").innerHTML = "Welcome User : " + email
+
+    }
+
   } else {
     // No user is signed in.
 
@@ -51,6 +60,10 @@ function login(){
     // ...
   });
 
+}
+
+function logout(){
+  firebase.auth().signOut();
 }
 
 const auth = firebase.auth();
