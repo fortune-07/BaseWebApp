@@ -22,8 +22,11 @@ firebase.analytics();
 
 function login(){
 
-  window.alert("working@!");
-  
+  var userEmail = document.getElementById("email_field").value;
+  var userPass = document.getElementById("password_field").value;
+
+  window.alert(userEmail + " " + userPass);
+
 }
 
 const auth = firebase.auth();
