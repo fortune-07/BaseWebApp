@@ -119,13 +119,13 @@ a{
 }
 
 /* Header */
-.fixed-top {
+/*.fixed-top {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 1;
-}
+}*/
 header{
     font-family: 'Roboto', Arial, Helvetica;
     background-color: silver;
