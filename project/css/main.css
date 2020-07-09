@@ -119,20 +119,21 @@ a{
 }
 
 .header{
-    font-family: 'Roboto', Arial, Helvetica;
-    background-color: silver;
-    z-index: 70;
-    top: 0;
-    position: sticky;
+  font-family: 'Roboto', Arial, Helvetica;
+  background-color: silver;
+  z-index: 70;
+  top: 0;
+  position: sticky;
+  border-bottom: 1px solid black;
 }
 
 .header .site-title{
-    font-family: var(--gugi);
-    padding-top: 10px;
-    font-size: 30px;
-    color: white;
-    text-align: center;
-    justify-content: center;
+  font-family: var(--gugi);
+  padding-top: 10px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  justify-content: center;
 }
 
 .header.site-title a{
