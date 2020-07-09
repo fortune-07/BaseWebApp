@@ -46,6 +46,17 @@
             background: #f1f1f1;
         }
 
+        input[type=email],
+        input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border-radius: 1px;
+            border: 1px solid #c2c2c2;
+            background: #fff;
+        }
+
         input[type=text]:focus,
         input[type=password]:focus {
             background-color: #fff;
@@ -61,6 +72,7 @@
         /* Set a style for the submit button */
         .registerbtn {
             background-color: black;
+            text-transform: uppercase;
             color: white;
             padding: 16px 20px;
             margin: 8px 0;
@@ -89,7 +101,7 @@
 
 <body>
     <div class="page-main">
-        <form id="create-account" action="https://fortunesvibe.herokuapp.com/customer/account/create" method="POST"
+        <form id="create-account" action="https://fortunesvibez.herokuapp.com/account/create" method="POST"
             enctype="multipart/form-data" autocomplete="off">
             <div class="container">
                 <h1>Be A Member of FortunesVibez</h1>
@@ -104,13 +116,13 @@
                 <input type="text" name="firstname" id="firstname" aria-required="true">
         
                 <label for="lastname"><b>Last Name</b></label>
-                <input type="text" placeholder="Last Name" name="lastname" id="lastname" aria-required="true">
+                <input type="text" name="lastname" id="lastname" aria-required="true">
         
                 <label for="email"><b>Email</b></label>
                 <input type="email" autocomplete="email" name="email" id="email" aria-required="true">
         
                 <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" id="psw" aria-required="true">
+                <input type="password" name="pass" id="pass" aria-required="true">
         
                 <label for="psw-repeat"><b>Confirm Password</b></label>
                 <input type="password" name="pass-confirm" id="pass-confirm" aria-required="true">
@@ -121,7 +133,7 @@
             </div>
         
             <div class="container signin">
-                <p>Already have an account? <a href="/login">Login In</a>.</p>
+                <p>Already have an account? <a href="/login">LogIn</a>.</p>
             </div>
         </form>
     </div>
