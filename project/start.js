@@ -61,8 +61,8 @@ app.get('/account', function (request, response) {
   response.render('pages/customer/account');
 });
 
-app.get('/activate-account', function (request, response) {
-  response.render('pages/customer/activate-account');
+app.get('/customer', function (request, response) {
+  response.render('pages/customer/customer');
 });
 
 app.get('/login', function (request, response) {
