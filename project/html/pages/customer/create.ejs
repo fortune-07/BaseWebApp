@@ -1,222 +1,128 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Create New Customer Account</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="stylesheet" type="text/css" href="css/main.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create A New Customer Account</title>
     <style>
-    .page-wrapper{
-        margin: 0 auto;
-        padding: 0;
-    }
-    .page-main{
-        margin: 0 auto;
-        padding: 0;
-        overflow: hidden;
-    }
-    .page-title-wrapper .page title{
-        margin-top: 25px;
-        font-weight: 300;
-        text-align: center;
-    }
-    .create-account{
-        min-width: auto;
-        margin-left: 35px;
-    }
-    .fieldset{
-        font-size: 14px;
-        margin-bottom: 0;
-        border: 0;
-        padding: 0;
-        letter-spacing: -.31em;
-    }
-    .fieldset .create-info{
-        margin: 0;
-        width: 100%;
-    }
-    .field{
-        margin-bottom: 20px;
-    }
-    .label{
-        width: 100%;
-        float: none;
-        text-align: left;
-        padding: 0;
-        display: block;
-        font-size: 14px;
-        font-weight: 300;
-        color: #333;
-        height: 18px;
-        line-height: 18px;
-        margin-bottom: 10px;
-    }
-    .control {
-        width: 100%;
-        float: none;
-    }
-    .actions-toolbar{
-        margin-left: 0;
-    }
-    .primary{
-        display: block;
-        float: none;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-    .primary .submit {
-        display: block;
-        margin: 0;
-        float: none;
-        border: none;
-        padding: 0;
-        height: 44px;
-        width: 100%;
-        background-color: #1d1e20;
-        border-radius: unset;
-        font-size: 14px;
-        font-weight: 400;
-        text-transform: uppercase;
-    }
-    .secondary {
-        float: none;
-        display: block;
-        margin-top: 20px;
-    }
-    .secondary>a {
-        margin-top: 0;
-        height: 18px;
-        font-size: 14px;
-        color: #333;
-        text-decoration: underline;
-    }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Add padding to containers */
+        .container {
+            padding: 16px;
+            background-color: white;
+        }
+
+        .container h1{
+            margin-top: 20px;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        .page-main{
+            margin: auto;
+            padding: 0;
+            justify-content: center;
+        }
+
+        /* Full-width input fields */
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        /* Overwrite default styles of hr */
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        /* Set a style for the submit button */
+        .registerbtn {
+            background-color: black;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .registerbtn:hover {
+            opacity: 1;
+        }
+
+        /* Add a blue text color to links */
+        a {
+            color: dodgerblue;
+        }
+
+        /* Set a grey background color and center the text of the "sign in" section */
+        .signin {
+            background-color: #f1f1f1;
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
-    <div class="page-wrapper">
-        <main class="page-main">
-            <div class="page-title-wrapper">
-                <h1 class="page title">To Be FortunesVibez Member</h1>
+    <div class="page-main">
+        <form id="create-account" action="https://fortunesvibe.herokuapp.com/customer/account/create" method="POST"
+            enctype="multipart/form-data" autocomplete="off">
+            <div class="container">
+                <h1>Be A Member of FortunesVibez</h1>
+                <p class="conditions">
+                    Before you register, please also see the<a target="_blank"
+                        href="https://fortunesvibez.herokuapp.com/terms-conditions/"> Terms
+                        &amp; Conditions</a>
+                </p>
+                <hr>
+        
+                <label for="firstname"><b>First Name</b></label>
+                <input type="text" placeholder="First Name" name="firstname" id="firstname" required>
+        
+                <label for="lastname"><b>Last Name</b></label>
+                <input type="text" placeholder="Last Name" name="lastname" id="lastname" required>
+        
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" id="email" required>
+        
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+                <hr>
+                <p>By creating an account you agree to FortunesVibez Terms of Services.</p>
+        
+                <button type="submit" class="registerbtn">Register</button>
             </div>
-            <p class="conditions">
-                Before you register, please also see the<a target="_blank" href="https://fortunesvibez.herokuapp.com/terms-conditions/"> Terms
-                &amp; Conditions</a>
-            </p>
-            <form class="create-account" action="https://fortunesvibez.herokuapp.com/customer/account/create" method="POST" id="form-validate"
-            enctype="multipart/form-data" autocomplete="off" novalidate="novalidate">
-                <input name="form_key" type="hidden" value=" ">
-                <fieldset class="fieldset create-info">
-                    <div class="field firstname">
-                        <label class="label" for="firstname">First Name</label>
-                        <div class="control"> 
-                            <input type="text" class="input-text" id="firstname" value title="First Name" data-validate="{required:true}" autocomplete="off"
-                            aria-required="true">
-                        </div>
-                    </div>
-                    <div class="field-lastname">
-                        <label class="label" for="firstname">Last Name</label>
-                        <div class="control">
-                            <input type="text" id="lastname" value title="Last Name" data-validate="{required:true}" autocomplete="off"
-                            aria-required="true">
-                        </div>
-                    </div>
-                </fieldset>
-                <fieldset class="create-account" data-hasrequired="*Required Fields">
-                    <div class="email-required">
-                        <label for="email_address" class="label">Email</label>
-                        <div class="control">
-                            <input type="email" class="input-text" name="email" autocomplete="email" id="email_address" value title="Email" 
-                            data-validate="{required:true, 'validate-email':true" aria-required="true">
-                        </div>
-                    </div>
-                    <div class="password-required">
-                        <label for="password" class="label">Password</label>
-                        <div class="control">
-                            <input type="password" class="input-text" name="password" autocomplete="off" id="password" title="password"
-                            data-password-min-length="6" data-password-min-character-sets="1" data-validate="{required:true, 'validate-customer-password':true"
-                            aria-required="true">
-                            <div id="password-strength-meter-container" data-role="password-strength-meter" aria-live="polite">
-                                <div id="password-strength-meter" class="password-strength-meter">
-                                    Password Strength:
-                                    <span id="password-strength-meter-label" data-role="password-strength-meter-label">
-                                        No Password </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="confirmation required">
-                        <label for="password-confirmation" class="label"><span>Confirm Password</span></label>
-                        <div class="control">
-                            <input type="password" class="input-text" name="password_confirmation" title="Confirm Password" id="password-confirmation"
-                            data-validate="{required:true, equalTo:'#password'}" autocomplete="off" aria-required="true">
-                        </div>
-                    </div>
-                    <div id="remember-me-box" class="field choice persistent">
-                        <input type="checkbox" name="persistent_remember_me" class="checkbox" id="remember_meZRbqtMIkBO" checked="checked"
-                            title="Remember Me">
-                        <label for="remember_meZRbqtMIkBO" class="label label-checkbox-persistent">
-                            <i class="i-checkbox-persistent checked"></i>
-                            <span>Keep me logged in</span>
-                        </label>
-                    </div>
-                    <div class="customer-checked">
-                        <span class="agree-register all-check-box" id="user-register"></span>
-                        <span>By Register, you agree to FortunesVibez Terms of Service</span>
-                    </div>
-                    <div class="actions-toolbar">
-                        <div class="primary">
-                            <button type="submit" class="action submit primary" id="register_account" title="Register"
-                                disabled="disabled"><span>Register</span></button>
-                        </div>
-                        <div class="secondary">
-                            <a class="action back" href="https://fortunesvibez.herokuapp.com">
-                                <span>Back</span>
-                            </a>
-                        </div>
-                    </div>
-                </fieldset>
-            </form>
-        </main>
+        
+            <div class="container signin">
+                <p>Already have an account? <a href="/login">Login In</a>.</p>
+            </div>
+        </form>
     </div>
-
-    <script type="text/javascript">
-        require([
-            'jquery',
-            'mage/mage'
-        ], function ($) {
-
-            var dataForm = $('#form-validate');
-            var ignore = null;
-
-            dataForm.mage('validation', {
-                ignore: ignore ? ':hidden:not(' + ignore + ')' : ':hidden'
-            }).find('input:text').attr('autocomplete', 'off');
-
-        });
-    </script>
-    <script type="text/javascript">
-        require(['jquery'], function ($) {
-            $(function () {
-                //register
-                var agree_register = 0;
-                $('#register_account').attr('disabled', 'true');
-                $('.customer-checked').click(function () {
-                    $('#user-register').toggleClass('checked');
-                    $('#register_account').toggleClass('opc');
-                    if (agree_register === 0) {
-                        $('#register_account').removeAttr('disabled');
-                        agree_register = 1;
-                    } else {
-                        $('#register_account').attr('disabled', 'true');
-                        agree_register = 0;
-                    }
-                })
-            })
-        })
-    </script>
 </body>
 
 </html>
