@@ -118,20 +118,15 @@ a{
   overflow: hidden;
 }
 
-/* Header */
-/*3.fixed-top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1;
-}*/
-header{
+.header{
     font-family: 'Roboto', Arial, Helvetica;
     background-color: silver;
+    z-index: 70;
+    top: 0;
+    position: sticky;
 }
 
-header .site-title{
+.header .site-title{
     font-family: var(--gugi);
     padding-top: 10px;
     font-size: 30px;
@@ -140,7 +135,7 @@ header .site-title{
     justify-content: center;
 }
 
-header.site-title a{
+.header.site-title a{
   text-decoration: none;
 }
 
@@ -300,6 +295,7 @@ header.site-title a{
   background: url('../images/sneakers.jpg') center no-repeat;
   background-size: cover;
   position: relative;
+  /*padding-bottom: 55px;*/
   min-height: 400px;
   margin-bottom: 20px;
 }
