@@ -143,7 +143,9 @@ a{
 .container .dropdown-item{
     font-size: 0.7em;
 }
-
+.header-links{
+  color: white;
+}
 .header-links a{
     font-size: 0.9em;
     text-decoration: none;
@@ -166,11 +168,6 @@ a{
   height: 14px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-.navbar-nav{
-  margin: 0;
-  padding: 0.8em;
 }
 
 .navbar-nav{
