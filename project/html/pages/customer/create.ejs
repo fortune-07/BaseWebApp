@@ -29,9 +29,10 @@
         }
 
         .page-main{
-            margin: auto;
-            padding: 0;
-            align-content: center;
+            flex-basis: 100%;
+            flex-grow: 1;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         /* Full-width input fields */
@@ -113,19 +114,19 @@
                 <hr>
         
                 <label for="firstname"><b>First Name</b></label>
-                <input type="text" name="firstname" id="firstname" aria-required="true">
+                <input type="text" name="firstname" id="firstname" required>
         
                 <label for="lastname"><b>Last Name</b></label>
-                <input type="text" name="lastname" id="lastname" aria-required="true">
+                <input type="text" name="lastname" id="lastname" required>
         
                 <label for="email"><b>Email</b></label>
-                <input type="email" autocomplete="email" name="email" id="email" aria-required="true">
+                <input type="email" autocomplete="email" name="email" id="email" required>
         
                 <label for="psw"><b>Password</b></label>
-                <input type="password" name="pass" id="pass" aria-required="true">
+                <input type="password" name="pass" id="pass" required>
         
                 <label for="psw-repeat"><b>Confirm Password</b></label>
-                <input type="password" name="pass-confirm" id="pass-confirm" aria-required="true">
+                <input type="password" name="pass-confirm" id="pass-confirm" arequired>
                 <hr>
                 <p>By creating an account you agree to FortunesVibez Terms of Services.</p>
         
