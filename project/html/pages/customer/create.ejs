@@ -4,21 +4,102 @@
     <title>Create New Customer Account</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/main.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="main.js"></script>
     <style>
-        
+    .page-wrapper{
+        margin: 0 auto;
+        padding: 0;
+    }
+    .page-main{
+        margin: 0 auto;
+        padding: 0;
+        overflow: hidden;
+    }
+    .page-title-wrapper .page title{
+        margin-top: 25px;
+        font-weight: 300;
+        text-align: center;
+    }
+    .create-account{
+        min-width: auto;
+        margin-left: 35px;
+    }
+    .fieldset{
+        font-size: 14px;
+        margin-bottom: 0;
+        border: 0;
+        padding: 0;
+        letter-spacing: -.31em;
+    }
+    .fieldset .create-info{
+        margin: 0;
+        width: 100%;
+    }
+    .field{
+        margin-bottom: 20px;
+    }
+    .label{
+        width: 100%;
+        float: none;
+        text-align: left;
+        padding: 0;
+        display: block;
+        font-size: 14px;
+        font-weight: 300;
+        color: #333;
+        height: 18px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+    .control {
+        width: 100%;
+        float: none;
+    }
+    .actions-toolbar{
+        margin-left: 0;
+    }
+    .primary{
+        display: block;
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .primary .submit {
+        display: block;
+        margin: 0;
+        float: none;
+        border: none;
+        padding: 0;
+        height: 44px;
+        width: 100%;
+        background-color: #1d1e20;
+        border-radius: unset;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .secondary {
+        float: none;
+        display: block;
+        margin-top: 20px;
+    }
+    .secondary>a {
+        margin-top: 0;
+        height: 18px;
+        font-size: 14px;
+        color: #333;
+        text-decoration: underline;
+    }
     </style>
 </head>
 <body>
     <div class="page-wrapper">
-        <main id="maincontent" class="page-main">
+        <main class="page-main">
             <div class="page-title-wrapper">
-                <h1 class="page title">
-                    <span class="base">To Be FortunesVibez Member</span>
-                </h1>
+                <h1 class="page title">To Be FortunesVibez Member</h1>
             </div>
             <p class="conditions">
                 Before you register, please also see the<a target="_blank" href="https://fortunesvibez.herokuapp.com/terms-conditions/"> Terms
@@ -27,11 +108,11 @@
             <form class="create-account" action="https://fortunesvibez.herokuapp.com/customer/account/create" method="POST" id="form-validate"
             enctype="multipart/form-data" autocomplete="off" novalidate="novalidate">
                 <input name="form_key" type="hidden" value=" ">
-                <fieldset class="create info">
-                    <div class="field-firstname">
+                <fieldset class="fieldset create-info">
+                    <div class="field firstname">
                         <label class="label" for="firstname">First Name</label>
                         <div class="control"> 
-                            <input type="text" id="firstname" value title="First Name" data-validate="{required:true}" autocomplete="off"
+                            <input type="text" class="input-text" id="firstname" value title="First Name" data-validate="{required:true}" autocomplete="off"
                             aria-required="true">
                         </div>
                     </div>
@@ -47,14 +128,14 @@
                     <div class="email-required">
                         <label for="email_address" class="label">Email</label>
                         <div class="control">
-                            <input type="email" name="email" autocomplete="email" id="email_address" value title="Email" 
+                            <input type="email" class="input-text" name="email" autocomplete="email" id="email_address" value title="Email" 
                             data-validate="{required:true, 'validate-email':true" aria-required="true">
                         </div>
                     </div>
                     <div class="password-required">
                         <label for="password" class="label">Password</label>
                         <div class="control">
-                            <input type="password" name="password" autocomplete="off" id="password" title="password"
+                            <input type="password" class="input-text" name="password" autocomplete="off" id="password" title="password"
                             data-password-min-length="6" data-password-min-character-sets="1" data-validate="{required:true, 'validate-customer-password':true"
                             aria-required="true">
                             <div id="password-strength-meter-container" data-role="password-strength-meter" aria-live="polite">
@@ -69,7 +150,7 @@
                     <div class="confirmation required">
                         <label for="password-confirmation" class="label"><span>Confirm Password</span></label>
                         <div class="control">
-                            <input type="password" name="password_confirmation" title="Confirm Password" id="password-confirmation"
+                            <input type="password" class="input-text" name="password_confirmation" title="Confirm Password" id="password-confirmation"
                             data-validate="{required:true, equalTo:'#password'}" autocomplete="off" aria-required="true">
                         </div>
                     </div>
