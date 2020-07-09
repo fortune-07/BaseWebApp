@@ -77,8 +77,8 @@ app.get('/order', function (request, response) {
   response.render('pages/customer/order');
 });
 
-app.get('/register', function (request, response) {
-  response.render('pages/customer/register');
+app.get('/create', function (request, response) {
+  response.render('pages/customer/create');
 });
 
 app.get('/reset-password', function (request, response) {
