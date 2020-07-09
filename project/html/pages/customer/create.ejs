@@ -35,18 +35,22 @@
             padding: 0;
             flex-basis: 100%;
             flex-grow: 1;
-            width: 50%;
+            width: 100%;
             box-sizing: border-box;
         }
-        /*#create-account{
-            margin-top: 20px;
-            padding-top: 55px;
-            z-index: 99;
-            transform: translate(-50%, -50%);
-            position: relative;
-            left: 50%;
-            width: 100%;
-        }*/
+        .create-titile{
+            font-size: 18px;
+            font-weight: 300;
+            text-align: center;
+        }
+        
+        .conditions{
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 20px;
+            margin-bottom: 30px;
+            color: #999;
+        }
 
         /* Full-width input fields */
         input[type=text],
@@ -108,6 +112,7 @@
         /* Set a grey background color and center the text of the "sign in" section */
         .signin {
             background-color: #f1f1f1;
+            padding-top: 20px;
             text-align: center;
         }
     </style>
@@ -219,7 +224,7 @@
         <form id="create-account" action="https://fortunesvibez.herokuapp.com/account/create" method="POST"
             enctype="multipart/form-data" autocomplete="off">
             <div class="container">
-                <h1>Be A Member of FortunesVibez</h1>
+                <h1 class="create-titile">Be A Member of FortunesVibez</h1>
                 <p class="conditions">
                     Before you register, please also see the<a target="_blank"
                         href="https://fortunesvibez.herokuapp.com/terms-conditions/"> Terms
