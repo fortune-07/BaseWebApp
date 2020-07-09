@@ -100,6 +100,42 @@
             </form>
         </main>
     </div>
+
+    <script type="text/javascript">
+        require([
+            'jquery',
+            'mage/mage'
+        ], function ($) {
+
+            var dataForm = $('#form-validate');
+            var ignore = null;
+
+            dataForm.mage('validation', {
+                ignore: ignore ? ':hidden:not(' + ignore + ')' : ':hidden'
+            }).find('input:text').attr('autocomplete', 'off');
+
+        });
+    </script>
+    <script type="text/javascript">
+        require(['jquery'], function ($) {
+            $(function () {
+                //register
+                var agree_register = 0;
+                $('#register_account').attr('disabled', 'true');
+                $('.customer-checked').click(function () {
+                    $('#user-register').toggleClass('checked');
+                    $('#register_account').toggleClass('opc');
+                    if (agree_register === 0) {
+                        $('#register_account').removeAttr('disabled');
+                        agree_register = 1;
+                    } else {
+                        $('#register_account').attr('disabled', 'true');
+                        agree_register = 0;
+                    }
+                })
+            })
+        })
+    </script>
 </body>
 
 </html>
