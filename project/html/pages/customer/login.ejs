@@ -111,29 +111,22 @@
         .loginbtn:hover {
             opacity: 1;
         }
-        .login-spacer {
-            display: block;
-            margin: 10px auto;
-            position: relative;
-            text-align: center;
-            line-height: 16px!important;
+        .vl {
+            display: inline;
+            position: absolute;
             top: auto;
-            left: auto;
-            height: auto;
-            width: auto;
-            overflow: visible;
-            font-size: 14px;
+            transform: translate(-50%);
+            border: 2px solid #ddd;
         }
-        .login-border {
-            border-top: 1px solid #e5e2e2;
-            width: 100%;
-        }
-        .login-bordertext {
-            color: #b2b2b2;
-            text-align: center;
-            font-size: 11px;
-            text-transform: uppercase;
-        }
+        .vl-innertext {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            padding: 8px 10px;
+        }         
         .social-media-login {
             display: block;
             float: left;
@@ -391,20 +384,8 @@
             </div>
         </form>
 
-        <div class="login-spacer login-clearfix">
-            <table>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="login-border"></div>
-                        </td>
-                        <td class="login-bordertext w25">or</td>
-                        <td>
-                            <div class="login-border"></div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="vl">
+            <span class="vl-innertext">or</span>
         </div>
 
         <div class="social-media-login">
