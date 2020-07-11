@@ -22,62 +22,126 @@
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        body{
-    background: #fff;
-    padding: 0px;
-    margin: 0px;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-input, button{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-}
-.main-div, .loggedin-div{
-    width: 20%;
-    margin: 0px auto;
-    margin-top: 150px;
-    padding: 20px;
-    display: none;
-}
-/*.main-div{
-    display: none;
-}*/
-.main-div input{
-    display: block;
-    border: 1px solid #5d8ffc;
-    border-radius: 5px;
-    background: #fff;
-    padding: 15px;
-    outline: none;
-    width: 100%;
-    margin-bottom: 20px;
-}
-.main-div input:focus{
-    border: 1px solid #777;
-}
-.main-div button, .loggedin-div button{
-    background: #5d8ffc;
-    color: #fff;
-    border: 0px;
-    border-radius: 5px;
-    display: block;
-    padding: 15px;
-    width: 100%;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-}
-.main-div button:hover, .loggedin-div button:hover{
-    background: #fff;
-    color: #5d8ffc;
-    border: 1px solid #5d8ffc;
-    cursor: pointer;
-}
+        .page-main{
+            margin: auto;
+            padding: 0;
+            flex-basis: 100%;
+            flex-grow: 1;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        .login-titile{
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: 400;
+            text-align: center;
+        }
+        .login-heading{
+            border: none;
+            font-size: 24px;
+            color: #1d1e20;
+            padding-bottom: 0;
+            height: 30px;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+        input[type=email],
+        input[type=password] {
+            width: 100%;
+            padding: 15px;
+            height: 44px;
+            line-height: 44px;
+            box-shadow: 0 0 0 500px #fff inset;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border-radius: 1px;
+            border: 1px solid #c2c2c2;
+            background: #fff;
+        }
+        .label{
+            width: auto;
+            text-align: left;
+            float: none;
+            display: block;
+            padding: 0 0 10px;
+            height: 18px;
+            line-height: 18px;
+            box-sizing: content-box;
+            font-weight: 500;
+            color: #333;
+        }
+        .clogin{
+            display: inline;
+            font-weight: 400;
+            margin: 0 0 5px;
+        }
+        .remind{
+            position: relative;
+            right: 0;
+            line-height: 18px;
+            text-align: right;
+            margin-bottom: 10px;
+            float: unset;
+        }
+        .remind a{
+            margin-top: 0;
+            height: 18px;
+            line-height: 18px;
+            color: #333;
+            text-decoration: underline;
+        }
+        .loginbtn {
+            background-color: black;
+            font-size: 14px;
+            font-weight: 400;
+            height: 44px;
+            text-transform: uppercase;
+            color: white;
+            padding: 12px 14px;
+            margin: 8px 0;
+            border: none;
+            border-radius: unset;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .loginbtn:hover {
+            opacity: 1;
+        }
     </style>
 </head>
 
 <body>
+    <div class="page-main">
+        <h1 class="login-title">Login Or Create An Account</h1>
+        <form id="login-account" action="https://fortunesvibez.herokuapp.com/account/login" method="POST" novalidate="novalidate">
+            <div class="container">
+                <div class="login-heading">
+                    <strong role="heading" aria-level="2">Registered Customers</strong>
+                </div>
+                <hr>
+                <label class="label" for="email">Email</label>
+                <input type="email" id="email_field">
+
+                <label class="label" for="password">Password</label>
+                <input type="password" id="password_field">
+
+                <label for="remember_me" class="clogin">
+                    <span>Keep me logged in</span>
+                </label>
+                <input type="checkbox" value="remember-me">
+
+                <div class="remind">
+                    <a class="action-remind" href="https://fortunesvibez.herokuapp.com/account/resetpassword/">
+                        <span>Forgot Your Password?</span>
+                    </a>
+                </div>
+
+                <button class="loginbtn" onclick="login()">Login</button>
+            </div>
+        </form>
+    </div>
     <div id="login_div" class="main-div">
         <h3>Firebase Web Login</h3>
         <input type="email" placeholder="Email" id="email_field">
