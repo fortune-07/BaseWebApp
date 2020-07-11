@@ -110,23 +110,7 @@
 
         .loginbtn:hover {
             opacity: 1;
-        }
-        .vl {
-            display: inline;
-            position: absolute;
-            top: auto;
-            transform: translate(-50%);
-            border: 2px solid #ddd;
-        }
-        .vl-innertext {
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #f1f1f1;
-            border: 1px solid #ccc;
-            border-radius: 50%;
-            padding: 8px 10px;
-        }         
+        }        
         .social-media-login {
             display: block;
             float: left;
@@ -240,13 +224,8 @@
             .login-heading{
                 display: none;
             }
-            .remind{
-                left: 50%;
-                transform: translateX(-50%);
-                top: 58px;
-            }
             .toolbar{
-                width: 100%;
+                width: 80%;
             }
         }
     </style>
@@ -384,10 +363,6 @@
             </div>
         </form>
 
-        <div class="vl">
-            <span class="vl-innertext">or</span>
-        </div>
-
         <div class="social-media-login">
             <a href="#" class="fb-btn">
                 <i class="fab fa-facebook-square"></i> Login with Facebook
@@ -399,7 +374,7 @@
                 <i class="fab fa-google"></i> Login with Google
             </a>
         </div>
-
+        <div class="clr"></div>
         <div class="new-customer">
             <div class="new-customer-title">
                 <strong id="new-customer-heading" role="heading" aria-level="2">New Customers</strong>
