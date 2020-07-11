@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>SignUp | FortunesVibez</title>
+    <title>Customer Login</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
     <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
     <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
     <script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/ecommerce.js"></script>
     <script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/ec.js"></script>
     <script src="https://kit.fontawesome.com/c5a0d2be63.js" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
     <script src="js/main.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
     <style>
         .page-main{
             margin: auto;
@@ -32,7 +31,8 @@
         }
         .login-titile{
             margin-top: 30px;
-            font-size: 20px;
+            margin-bottom: 15px;
+            font-size: 15px;
             font-weight: 400;
             text-align: center;
         }
@@ -80,7 +80,7 @@
             right: 0;
             line-height: 18px;
             text-align: right;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             float: unset;
         }
         .remind a{
@@ -109,10 +109,149 @@
         .loginbtn:hover {
             opacity: 1;
         }
+        .new-customer{
+            margin-bottom: 30px;
+        }
+        .new-customer-title{
+            border: none;
+            color: #1d1e20;
+            font-size: 15px;
+            padding-bottom: 0;
+            height: 30px;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+        .new-customer-title strong{
+            font-weight: 700;
+        }
+        .customer-content p{
+            color: grey;
+            font-weight: 300;
+        }
+        .actions-toolbar{
+            margin-top: 0;
+        }
+        .toolbar{
+            height: 44px;
+            width: 200px;
+            background-color: #1d1e20;
+            text-align: center;
+            line-height: 44px;
+            font-weight: 400;
+        }
+        .toolbar a{
+            background: 0 0;
+            border: none;
+            margin: 0;
+            padding: 0;
+            float: none;
+        }
     </style>
 </head>
 
 <body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-12">
+                    <div class="btn-group">
+                        <button class="btn border dropdown-toggle my-md-4 my-2 text-white" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">KSH</button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">USD</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 text-center">
+                    <h2 class="my-md-3 site-title">FortunesVibez</h2>
+                </div>
+                <div class="col-md-4 col-12 text-right">
+                    <p class="my-md-4 header-links">
+                        <i class="fas fa-user"></i>
+                        <a href="/customer/account/login" class="px-2">Sign In</a>
+                        <a href="/create" class="px-1">Create An Account</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-md navbar-light bg-white">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse show" id="navbarCollapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/new-arrival">NEW ARRIVAL</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                JEWELRY
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/men-jewelry">Men's Jewelry</a>
+                                <a class="dropdown-item" href="/women-jewelry">Women's Jewelry</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                SHOES
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/men-shoes">Men's Shoes</a>
+                                <a class="dropdown-item" href="/women-shoes">Women's Shoes</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MY ACCOUNT
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/login">LOGIN</a>
+                                <a class="dropdown-item" href="/register">REGISTER</a>
+                                <a class="dropdown-item" href="/shop">SHOP</a>
+                                <a class="dropdown-item" href="/cart">CART</a>
+                                <a class="dropdown-item" onclick="logout()">LOGOUT</a>
+                                <a class="dropdown-item" href="/customer">ACTIVATE</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="navbar-nav">
+                    <li class="nav-item border rounded-circle mx-2 search-icon">
+                        <a href="#">
+                            <i class="fas fa-search p-2"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item border rounded-circle mx-2 shopping-cart-icon">
+                        <a href="/cart">
+                            <i class="fas fa-shopping-cart p-2"></i>
+                        </a>
+                    </li>
+                </div>
+            </nav>
+        </div>
+    </header>
+
     <div class="page-main">
         <h1 class="login-title">Login Or Create An Account</h1>
         <form id="login-account" action="https://fortunesvibez.herokuapp.com/account/login" method="POST" novalidate="novalidate">
@@ -128,9 +267,9 @@
                 <input type="password" id="password_field">
 
                 <label for="remember_me" class="clogin">
+                    <input type="checkbox" value="remember-me">
                     <span>Keep me logged in</span>
                 </label>
-                <input type="checkbox" value="remember-me">
 
                 <div class="remind">
                     <a class="action-remind" href="https://fortunesvibez.herokuapp.com/account/resetpassword/">
@@ -141,23 +280,38 @@
                 <button class="loginbtn" onclick="login()">Login</button>
             </div>
         </form>
-    </div>
-    <div id="login_div" class="main-div">
-        <h3>Firebase Web Login</h3>
-        <input type="email" placeholder="Email" id="email_field">
-        <input type="password" placeholder="Password" id="password_field">
-        <div class="checkbox mb-3">
-            <label>
-                <input type="checkbox" value="remember-me"> Remember me
-            </label>
+        <div class="new-customer">
+            <div class="new-customer-title">
+                <strong id="new-customer-heading" role="heading" aria-level="2">New Customers</strong>
+            </div>
+            <div class="customer-content" aria-labelledby="new-customer-heading">
+                <p>Create an account to expedite future checkouts, track order history, &amp; receive emails, discounts, &amp;
+                    special offers!</p>
+                <div class="actions-toolbar">
+                    <div class="toolbar">
+                        <a href="https://fortunesvibez.herokuapp.com/create/"
+                            class="action create primary"><span>REGISTER</span></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <button onclick="login()">Login</button>
     </div>
+    
     <div id="user_div" class="loggedin-div">
         <h3>Welcome User</h3>
         <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
         <button onclick="logout()">Logout</button>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
     <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase.js"></script>
     <script>
         // Initialize Firebase
