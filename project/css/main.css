@@ -1089,15 +1089,14 @@ input[type=submit]:hover {
   .sidenav a {
     font-size: 18px;
     display: block;
-  }*/
+  }
 
-  .fixed-top .container,
   .row{
     display: none;
   }
   .navbar-nav{
     display: none;
-  }
+  }*/
 
   #display-products{
     display: block;

@@ -110,12 +110,49 @@
 
         .loginbtn:hover {
             opacity: 1;
-        }        
+        }
+        .login-spacer {
+            display: block;
+            margin: 10px auto;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            line-height: 16px!important;
+            top: auto;
+            left: auto;
+            height: auto;
+            width: auto;
+            overflow: visible;
+            font-size: 13px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            max-width: 100%;
+        }
+        .login-border {
+            border-top: 1px solid #e5e2e2;
+            width: 100%;
+        }  
+        .login-bordertext {
+            color: #b2b2b2;
+            text-align: center;
+            font-size: 11px;
+            text-transform: uppercase
+        }  
+        .login-spacer table td {
+            vertical-align: middle;
+            padding: 10px 5px;
+        }
+        .w25 {
+            width: 25px!important;
+        }   
         .social-media-login {
             display: block;
             float: left;
             padding: 0 50px;
-            margin-top: 15px;
+            margin-top: 20px;
             margin-bottom: 20px;
         }
         .fb-btn{
@@ -178,19 +215,20 @@
         }
         .customer-content p{
             color: grey;
+            font-size: 14px;
             font-weight: 300;
             padding-left: 15px;
-            margin: auto;
         }
         .actions-toolbar{
-            margin-top: 0;
+            margin-top: 30px;
         }
         .toolbar{
             height: 44px;
             width: 200px;
             background-color: #1d1e20;
             text-align: center;
-            line-height: 44px;
+            line-height: 42px;
+            height: 42px;
             font-weight: 400;
             color: white;
         }
@@ -363,6 +401,21 @@
             </div>
         </form>
         <div class="container">
+            <div class="login-spacer login-clearfix">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="login-border"></div>
+                            </td>
+                            <td class="login-bordertext w25">or</td>
+                            <td>
+                                <div class="login-border"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             <div class="social-media-login">
                 <a href="#" class="fb-btn">
                     <i class="fab fa-facebook-square"></i> Login with Facebook
@@ -377,7 +430,7 @@
             <div class="clr"></div>
             <div class="new-customer">
                 <div class="new-customer-title">
-                    <strong id="new-customer-heading" role="heading" aria-level="2">New Customers</strong>
+                    <strong id="new-customer-heading" role="heading" aria-level="2">New Customer</strong>
                 </div>
                 <div class="customer-content" aria-labelledby="new-customer-heading">
                     <p>Create an account to expedite future checkouts, track order history, &amp; receive emails, discounts, &amp;
