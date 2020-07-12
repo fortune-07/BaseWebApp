@@ -1066,21 +1066,7 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width:767px){
-  /*.navbar{
-    display: none;
-  }
-  .navbar-nav{
-    display: none;
-  }
-
-  .nav-item{
-    display: inline;
-  }
-
-  .row{
-    display: none;
-  }
-
+  /*
   .nav-small{
     display: inline-block;
   }
@@ -1089,14 +1075,20 @@ input[type=submit]:hover {
   .sidenav a {
     font-size: 18px;
     display: block;
-  }
-
-  .row{
-    display: none;
-  }
-  .navbar-nav{
-    display: none;
   }*/
+  .header .container{
+    display: none;
+  }
+  .header #top-header{
+    display: none;
+  }
+  .navbar-nav .shopping-cart-icon{
+  margin-right: 2rem !important;
+  }
+  .navbar-nav .shopping-cart-icon a{
+  text-decoration: none;
+  color: black !important;
+  }
 
   #display-products{
     display: block;
