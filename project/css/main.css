@@ -1276,7 +1276,8 @@ input[type=submit]:hover {
     display: none;
   }
   .mobile-header{
-    z-index: 70;
+    background-color: silver;
+    z-index: 99;
     top: 0;
     position: sticky;
     border-bottom: 1px solid silver;
@@ -1291,11 +1292,28 @@ input[type=submit]:hover {
     font-size: 25px;
   }
   .logo{
+    padding-top: 10px;
     font-weight: 700;
   }
   .header-icons{
+    margin: 0;
+    padding: 0;
     display: flex;
     float: right;
+  }
+  .search-icon{
+    padding-right: 2px;
+  }
+  .search-icon a{
+    text-decoration: none;
+    color: black;
+  }
+  .shopping-cart-icon{
+    margin-right: 2px;
+  }
+  .shopping-cart-icon a{
+    text-decoration: none;
+    color: black;
   }
 
   #display-products{
