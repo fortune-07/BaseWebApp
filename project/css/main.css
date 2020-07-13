@@ -1065,6 +1065,12 @@ input[type=submit]:hover {
   display: block;
 }
 
+@media screen and (min-width:768px){
+  .to-topbox{
+    display: none;
+  }
+}
+
 @media screen and (max-width:767px){
   /*
   .nav-small{
@@ -1154,6 +1160,15 @@ input[type=submit]:hover {
     float: none;
     text-align: center;
     width: 100%;
+  }
+  .to-topbox{
+    color: #333;
+    background: #b1b1b1;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
   }
 
   /* Contact */

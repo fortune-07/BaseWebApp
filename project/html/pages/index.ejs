@@ -123,27 +123,142 @@
 	</header>
 
 	<!-- Top menu on small screens -->
-	<header>
-		<div class="nav-small">
-			<div id="mySidenav" class="sidenav">
-				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-				<a href="/login">Login/Register</a>
-				<hr>
-				<a href="/">Home</a>
-				<a href="/new-arrival">New Arrival</a>
-				<a href="/men-shoes">Men Shoes</a>
-				<a href="/women-shoes">Women Shoes</a>
-				<a href="/men-jewelry">Men Jewelry</a>
-				<a href="/women-jewelry">Women Jewelry</a>
-				<a href="/blog">Blog</a>
-				<a href="/about">About Us</a>
-				<a href="/contact">Contact Us</a>
-			</div>
-			<div class="sidebar">
-				<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-				<div class="side">
-					<span class="highlight">Fortunes</span>Vibez
+	<header class="page-header">
+		<div class="header-content">
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+			<strong class="logo">FortuneVibez</strong>
+			<div data-block="shoppingcart" class="shoppingcart-wrapper">
+				<a class="action showcart" href="https://fortunesvibez.herokuapp.com/checkout/cart/" data-bind="scope: 'shoppingcart_content'">
+					<span class="text">My Cart</span>
+					<span class="counter qty empty"
+						data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading">
+						<span class="counter-number">
+							<!-- ko text: getCartParam('summary_count') -->0
+							<!-- /ko --></span>
+						<span class="counter-label">
+							<!-- ko if: getCartParam('summary_count') -->
+							<!-- /ko -->
+						</span>
+					</span>
+				</a>
+				<div class="shopping-cart-shadow"></div>
+			
+				<script type="text/javascript">
+					window.checkout = { "shoppingCartUrl": "https:\/\/www.kickscrew.com\/checkout\/cart\/", "checkoutUrl": "https:\/\/www.kickscrew.com\/checkout\/", "updateItemQtyUrl": "https:\/\/www.kickscrew.com\/checkout\/sidebar\/updateItemQty\/", "removeItemUrl": "https:\/\/www.kickscrew.com\/checkout\/sidebar\/removeItem\/", "imageTemplate": "Magento_Catalog\/product\/image_with_borders", "baseUrl": "https:\/\/www.kickscrew.com\/", "minicartMaxItemsVisible": 5, "websiteId": "1", "maxItemsToDisplay": 10, "customerLoginUrl": "https:\/\/www.kickscrew.com\/customer\/account\/login\/referer\/aHR0cHM6Ly93d3cua2lja3NjcmV3LmNvbS8%2C\/", "isRedirectRequired": false, "autocomplete": "off", "captcha": { "user_login": { "isCaseSensitive": false, "imageHeight": 50, "imageSrc": "", "refreshUrl": "https:\/\/www.kickscrew.com\/captcha\/refresh\/", "isRequired": false }, "guest_checkout": { "isCaseSensitive": false, "imageHeight": 50, "imageSrc": "", "refreshUrl": "https:\/\/www.kickscrew.com\/captcha\/refresh\/", "isRequired": false }, "prpl_login_form": { "isCaseSensitive": false, "imageHeight": 50, "imageSrc": "", "refreshUrl": "https:\/\/www.kickscrew.com\/captcha\/refresh\/", "isRequired": false } } };
+				</script>
+			
+				<div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front mage-dropdown-dialog" tabindex="-1"
+					role="dialog" aria-describedby="ui-id-1" style="display: none;">
+					<div class="block block-minicart empty ui-dialog-content ui-widget-content" data-role="dropdownDialog"
+						id="ui-id-1" style="display: block;">
+						<div id="minicart-content-wrapper" data-bind="scope: 'minicart_content'">
+							<!-- ko template: getTemplate() -->
+							<div class="block-title">
+								<strong>
+									<span class="text" data-bind="i18n: 'My Cart'">My Cart</span>
+									<span class="qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false },
+			                       attr: { title: $t('Items in Cart') }, text: getCartParam('summary_count')"
+										title="Items in Cart">0</span>
+								</strong>
+							</div>
+							<div class="block-content">
+								<div data-bind="i18n: 'Your Cart'" class="shopping-cart-title">Your Cart</div>
+								<button type="button" id="btn-shoppingcart-close" class="action close" data-action="close"
+									data-bind="attr: { title: $t('Close') }" title="Close">
+									<span data-bind="i18n: 'Close'">Close</span>
+								</button>
+								<div class="close-cart"></div>
+								<!-- ko if: getCartParam('summary_count') -->
+								<!-- /ko -->
+								<!-- ko if: getCartParam('summary_count') -->
+								<!-- /ko -->
+								<div id="shoppingcart-widgets" class="shoppingcart-widgets">
+									<!-- ko foreach: getRegion('promotion') -->
+									<!-- ko template: getTemplate() -->
+									<!-- ko foreach: {data: elems, as: 'element'} -->
+									<!-- /ko -->
+									<!-- /ko -->
+									<!-- /ko -->
+								</div>
+							</div>
+							<!-- ko foreach: getRegion('sign-in-popup') -->
+							<!-- /ko -->
+							<!-- /ko -->
+						</div>
+					</div>
 				</div>
+			</div>
+			<div class="block block-search algolia-search-block show-search-box block-search-pc">
+				<div class="block block-title"><strong>Search</strong></div>
+				<div class="block block-content">
+					<form id="search_mini_form" action="https://fortunevibez.herokuapp.com/catalogsearch/result/" method="get">
+						<div id="algolia-searchbox">
+							<label for="search">Search:</label>
+							<div class="ais-search-box" style="margin-top: 33px; display: inline-block;"><input id="search"
+									type="text" name="q" class="input-text algolia-search-input ais-search-box--input"
+									autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off"
+									placeholder="Search for products, categories, ..." role="textbox" value=""><span
+									class="ais-search-box--magnifier-wrapper">
+									<div class="ais-search-box--magnifier">
+										<svg xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-13" viewBox="0 0 40 40"
+											width="100%" height="100%">
+											<path
+												d="M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z"
+												fill-rule="evenodd">
+											</path>
+										</svg>
+									</div>
+								</span><span class="ais-search-box--reset-wrapper" style="display: none;"><button type="reset"
+										title="Clear the search query." class="ais-search-box--reset">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="100%" height="100%">
+											<path
+												d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z"
+												fill-rule="evenodd">
+											</path>
+										</svg>
+									</button></span></div>
+							<span class="clear-cross clear-query-autocomplete"></span>
+							<span id="algolia-glass" class="magnifying-glass" width="24" height="24"></span>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div id="mySidenav" class="sidenav" data-role="content" role="tabpanel" aria-hidden="false">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<nav class="navigation" data-action="navigation">
+					<div class="mobile-login-register">
+						<a href="https://fortunesvibez.herokuapp.com/customer/account/login/">Login/Register</a>
+					</div>
+					<div class="menu-scroller-arrow scroller-arrow-prev"></div>
+					<div class="menu-scroller-wrapp">
+						<ul id="ui-id-2" class="ui-menu" role="menu" tabindex="0" style="position: absolute;">
+							<li class="level0 nav-1 first level-top parent ui-menu-item" role="presentation"><a
+									href="https://fortunesvibez.herokuapp.com/shipping-policy/" class="level-top ui-corner-all" id="ui-id-3" tabindex="-1"
+									role="menuitem"><span>Free Shipping</span></a>
+									<span class="menu_switch active">
+										::after
+									</span>
+								<div class="menu-level1-wrapper">
+									<ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all item-show" role="menu"
+										aria-hidden="true" aria-expanded="false" style="display: none;">
+										<li class="level1 nav-1-1 first ui-menu-item" role="presentation"><a
+												href="https://www.kickscrew.com/free-shipping/nike.html" id="ui-id-16" class="ui-corner-all"
+												tabindex="-1" role="menuitem"><span>Nike</span></a></li>
+										<li class="level1 nav-1-2 ui-menu-item" role="presentation"><a
+												href="https://www.kickscrew.com/free-shipping/air-jordan.html" id="ui-id-17" class="ui-corner-all"
+												tabindex="-1" role="menuitem"><span>Air Jordan</span></a></li>
+										<li class="level1 nav-1-3 ui-menu-item" role="presentation"><a
+												href="https://www.kickscrew.com/free-shipping/adidas.html" id="ui-id-18" class="ui-corner-all"
+												tabindex="-1" role="menuitem"><span>adidas</span></a></li>
+										<li class="level1 nav-1-4 last ui-menu-item" role="presentation"><a
+												href="https://www.kickscrew.com/free-shipping/others-free-shipping.html" id="ui-id-19"
+												class="ui-corner-all" tabindex="-1" role="menuitem"><span>Other Brands</span></a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
 			</div>
 		</div>
 	</header>
@@ -409,6 +524,11 @@
 	<div class="footer">
 		<span>FortunesVibez.com &copy;2020 All Rights Reserved</span>
 	</div>
+	<div class="to-topbox">
+		<span onclick="topFunction()" id="myBtn" title="Go to top">
+			<i class="fas fa-sort-up"></i>Back To Top
+		</span>
+	</div>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -447,6 +567,14 @@
 		// Initialize Firebase
 		firebase.initializeApp(firebaseConfig);
 		firebase.analytics();
+	</script>
+	<script>
+		var mybutton = document.getElementById("myBtn");
+
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
 	</script>
 	<script src="js/main.js"></script>
 </body>
