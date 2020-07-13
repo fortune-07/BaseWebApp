@@ -1269,10 +1269,14 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width:767px){
+  .navbar{
+    display: none;
+  }
   .page-header .header-content{
     padding: 0;
     height: 60px;
     z-index: 99;
+    width: 70%;
   }
   .logo{
     z-index: 1000;
@@ -1412,6 +1416,9 @@ input[type=submit]:hover {
     float: none;
     text-align: center;
     width: 100%;
+  }
+  .footer{
+    font-size: 12px;
   }
   .to-topbox{
     color: #333;
