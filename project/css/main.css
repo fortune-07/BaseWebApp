@@ -1288,7 +1288,6 @@ input[type=submit]:hover {
     width: 100%;
   }
   .site-title{
-    color: black;
     font-size: 25px;
   }
   .logo{
@@ -1302,13 +1301,17 @@ input[type=submit]:hover {
     float: right;
   }
   .search-icon{
-    padding-right: 2px;
+    margin-top: 0;
+    padding-top: 0;
+    padding-right: 10px;
   }
   .search-icon a{
     text-decoration: none;
     color: black;
   }
   .shopping-cart-icon{
+    margin-top: 0;
+    padding-top: 0;
     margin-right: 2px;
   }
   .shopping-cart-icon a{
