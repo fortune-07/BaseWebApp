@@ -211,31 +211,6 @@ a{
 }
 
 /* Mobile Header */
-.header-content{
-  position: relative;
-}
-strong{
-  font-weight: 700;
-}
-.logo{
-  font-size: 25px;
-  position: absolute;
-}
-.header-icons{
-  margin: 0;
-  padding: 0;
-  position: relative;
-  display: inline-block;
-}
-.search-icon a{
-  text-decoration: none;
-  color: white;
-}
-.shopping-cart-icon a{
-  text-decoration: none;
-  color: white;
-}
-
 .collapse{
   height: 2vh;
   margin: 0;
@@ -1099,26 +1074,6 @@ input[type=submit]:hover {
   }
   .header .container{
     display: none;
-  }
-  .mobile-header{
-    background-color: silver;
-    top: 0;
-    position: sticky;
-    z-index: 99;
-    border-bottom: 1px solid silver;
-  }
-  .header-content{
-    padding: 0;
-    height: 60px;
-    z-index: 99px;
-  }
-  .logo{
-    z-index: 1000;
-    font-size: 25px;
-  }
-  .header-icons{
-    margin-top: 10px;
-    margin-right: 2rem;
   }
 
   #display-products{
