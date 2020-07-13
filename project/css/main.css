@@ -1272,6 +1272,15 @@ input[type=submit]:hover {
   .navbar{
     display: none;
   }
+  .header .container{
+    display: none;
+  }
+  .mobile-header{
+    z-index: 70;
+    top: 0;
+    position: sticky;
+    border-bottom: 1px solid silver;
+  }
   .header-content{
     padding: 0;
     height: 60px;
