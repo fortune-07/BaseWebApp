@@ -220,7 +220,6 @@ strong{
 .logo{
   font-size: 25px;
   position: absolute;
-  left: 50%;
 }
 .header-icons{
   margin: 0;
@@ -1105,6 +1104,7 @@ input[type=submit]:hover {
     background-color: silver;
     top: 0;
     position: sticky;
+    z-index: 99;
     border-bottom: 1px solid silver;
   }
   .header-content{
@@ -1112,8 +1112,13 @@ input[type=submit]:hover {
     height: 60px;
     z-index: 99px;
   }
-  .site-title{
+  .logo{
+    z-index: 1000;
     font-size: 25px;
+  }
+  .header-icons{
+    margin-top: 10px;
+    margin-right: 2rem;
   }
 
   #display-products{
