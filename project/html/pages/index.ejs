@@ -129,6 +129,7 @@
 			<strong class="logo">FortuneVibez</strong>
 			<div data-block="shoppingcart" class="shoppingcart-wrapper">
 				<a class="action showcart" href="https://fortunesvibez.herokuapp.com/checkout/cart/" data-bind="scope: 'shoppingcart_content'">
+					<i class="fas fa-shopping-cart"></i>
 					<span class="text">My Cart</span>
 					<span class="counter qty empty"
 						data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading">
@@ -144,14 +145,24 @@
 				<div class="shopping-cart-shadow"></div>
 			
 				<script type="text/javascript">
-					window.checkout = { "shoppingCartUrl": "https:\/\/www.kickscrew.com\/checkout\/cart\/", "checkoutUrl": "https:\/\/www.kickscrew.com\/checkout\/", "updateItemQtyUrl": "https:\/\/www.kickscrew.com\/checkout\/sidebar\/updateItemQty\/", "removeItemUrl": "https:\/\/www.kickscrew.com\/checkout\/sidebar\/removeItem\/", "imageTemplate": "Magento_Catalog\/product\/image_with_borders", "baseUrl": "https:\/\/www.kickscrew.com\/", "minicartMaxItemsVisible": 5, "websiteId": "1", "maxItemsToDisplay": 10, "customerLoginUrl": "https:\/\/www.kickscrew.com\/customer\/account\/login\/referer\/aHR0cHM6Ly93d3cua2lja3NjcmV3LmNvbS8%2C\/", "isRedirectRequired": false, "autocomplete": "off", "captcha": { "user_login": { "isCaseSensitive": false, "imageHeight": 50, "imageSrc": "", "refreshUrl": "https:\/\/www.kickscrew.com\/captcha\/refresh\/", "isRequired": false }, "guest_checkout": { "isCaseSensitive": false, "imageHeight": 50, "imageSrc": "", "refreshUrl": "https:\/\/www.kickscrew.com\/captcha\/refresh\/", "isRequired": false }, "prpl_login_form": { "isCaseSensitive": false, "imageHeight": 50, "imageSrc": "", "refreshUrl": "https:\/\/www.kickscrew.com\/captcha\/refresh\/", "isRequired": false } } };
+					window.checkout = 
+					{ "shoppingCartUrl": "https:\/\/fortunesvibez.herokuapp.com\/checkout\/cart\/", "checkoutUrl": 
+					"https:\/\/fortunesvibez.herokuapp.com\/checkout\/", "updateItemQtyUrl": "https:\/\/fortunesvibez.herokuapp.com\/checkout\/sidebar\/updateItemQty\/", 
+					"removeItemUrl": "https:\/\/fortunesvibez.herokuapp.com\/checkout\/sidebar\/removeItem\/", "imageTemplate": "Magento_Catalog\/product\/image_with_borders", 
+					"baseUrl": "https:\/\/fortunesvibez.herokuapp.com\/", "shoppingcartMaxItemsVisible": 5, "websiteId": "1", "maxItemsToDisplay": 10, 
+					"customerLoginUrl": "https:\/\/fortunesvibez.herokuapp.com\/customer\/account\/login\/referer\/aHR0cHM6Ly93d3cua2lja3NjcmV3LmNvbS8%2C\/", 
+					"isRedirectRequired": false, "autocomplete": "off", "captcha": { "user_login": { "isCaseSensitive": false, "imageHeight": 50, "imageSrc": "", 
+					"refreshUrl": "https:\/\/fortunesvibez.herokuapp.com\/captcha\/refresh\/", "isRequired": false }, "guest_checkout": 
+					{ "isCaseSensitive": false, "imageHeight": 50, "imageSrc": "", "refreshUrl": "https:\/\/fortunesvibez.herokuapp.com\/captcha\/refresh\/", "isRequired": false }, 
+					"prpl_login_form": { "isCaseSensitive": false, "imageHeight": 50, "imageSrc": "", "refreshUrl": "https:\/\/fortunesvibez.herokuapp.com\/captcha\/refresh\/", 
+					"isRequired": false } } };
 				</script>
 			
 				<div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front mage-dropdown-dialog" tabindex="-1"
 					role="dialog" aria-describedby="ui-id-1" style="display: none;">
-					<div class="block block-minicart empty ui-dialog-content ui-widget-content" data-role="dropdownDialog"
+					<div class="block block-shoppingcart empty ui-dialog-content ui-widget-content" data-role="dropdownDialog"
 						id="ui-id-1" style="display: block;">
-						<div id="minicart-content-wrapper" data-bind="scope: 'minicart_content'">
+						<div id="shoppingcart-content-wrapper" data-bind="scope: 'shoppingcart_content'">
 							<!-- ko template: getTemplate() -->
 							<div class="block-title">
 								<strong>
@@ -232,31 +243,82 @@
 					<div class="menu-scroller-arrow scroller-arrow-prev"></div>
 					<div class="menu-scroller-wrapp">
 						<ul id="ui-id-2" class="ui-menu" role="menu" tabindex="0" style="position: absolute;">
-							<li class="level0 nav-1 first level-top parent ui-menu-item" role="presentation"><a
-									href="https://fortunesvibez.herokuapp.com/shipping-policy/" class="level-top ui-corner-all" id="ui-id-3" tabindex="-1"
-									role="menuitem"><span>Free Shipping</span></a>
-									<span class="menu_switch active">
-										::after
-									</span>
+							<li class="level0 nav-1 level-top ui-menu-item" role="presentation">
+								<a href="https://fortunesvibez.herokuapp.com/new-arrival/" class="level-top ui-corner-all" id="ui-id-11"
+									tabindex="-1" role="menuitem">
+									<span>New Arrival</span>
+								</a>
+							</li>
+							<li class="level0 nav-2 level-top ui-menu-item" role="presentation">
+								<a href="https://fortunesvibez.herokuapp.com/hot-items/" class="level-top ui-corner-all" id="ui-id-11" tabindex="-1"
+									role="menuitem">
+									<span>Hot Item</span>
+								</a>
+							</li>
+							<li class="level0 nav-3 first level-top parent ui-menu-item" role="presentation">
+								<a href="https://fortunesvibez.herokuapp.com/shoes/" class="level-top ui-corner-all" id="ui-id-2" tabindex="-1"
+									role="menuitem">
+									<span>Fine FootWear</span>
+								</a>
+								<span class="menu_switch"></span>
 								<div class="menu-level1-wrapper">
-									<ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all item-show" role="menu"
-										aria-hidden="true" aria-expanded="false" style="display: none;">
-										<li class="level1 nav-1-1 first ui-menu-item" role="presentation"><a
-												href="https://www.kickscrew.com/free-shipping/nike.html" id="ui-id-16" class="ui-corner-all"
-												tabindex="-1" role="menuitem"><span>Nike</span></a></li>
-										<li class="level1 nav-1-2 ui-menu-item" role="presentation"><a
-												href="https://www.kickscrew.com/free-shipping/air-jordan.html" id="ui-id-17" class="ui-corner-all"
-												tabindex="-1" role="menuitem"><span>Air Jordan</span></a></li>
-										<li class="level1 nav-1-3 ui-menu-item" role="presentation"><a
-												href="https://www.kickscrew.com/free-shipping/adidas.html" id="ui-id-18" class="ui-corner-all"
-												tabindex="-1" role="menuitem"><span>adidas</span></a></li>
-										<li class="level1 nav-1-4 last ui-menu-item" role="presentation"><a
-												href="https://www.kickscrew.com/free-shipping/others-free-shipping.html" id="ui-id-19"
-												class="ui-corner-all" tabindex="-1" role="menuitem"><span>Other Brands</span></a></li>
+									<ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-hidden="true"
+										aria-expanded="false" style="display: none;">
+										<li class="level1 nav-1-1 first ui-menu-item" role="presentation">
+											<a href="https://fortunesvibez.herokuapp.com/men-shoes/" id="ui-id-15" class="ui-corner-all"
+												tabindex="-1" role="menuitem">
+												<span>Male FootWear</span>
+											</a>
+										</li>
+										<li class="level1 nav-1-2 ui-menu-item" role="presentation">
+											<a href="https://fortunesvibez.herokuapp.com/women-shoes/" id="ui-id-16" class="ui-corner-all"
+												tabindex="-1" role="menuitem">
+												<span>Female FootWear</span>
+											</a>
+										</li>
 									</ul>
 								</div>
 							</li>
+							<li class="level0 nav-4 first level-top parent ui-menu-item" role="presentation">
+								<a href="https://fortunesvibez.herokuapp.com/jewelry/" class="level-top ui-corner-all" id="ui-id-2" tabindex="-1"
+									role="menuitem">
+									<span>Fine Jewelry</span>
+								</a>
+								<span class="menu_switch"></span>
+								<div class="menu-level1-wrapper">
+									<ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-hidden="true"
+										aria-expanded="false" style="display: none;">
+										<li class="level1 nav-1-1 first ui-menu-item" role="presentation">
+											<a href="https://fortunesvibez.herokuapp.com/men-jewelry/" id="ui-id-15" class="ui-corner-all"
+												tabindex="-1" role="menuitem">
+												<span>Men's Jewelry</span>
+											</a>
+										</li>
+										<li class="level1 nav-1-2 ui-menu-item" role="presentation">
+											<a href="https://fortunesvibez.herokuapp.com/women-jewelry/" id="ui-id-16" class="ui-corner-all"
+												tabindex="-1" role="menuitem">
+												<span>Women's Jewelry</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="level0 mobile-blog ui-menu-item" role="presentation">
+								<a href="https://fortunesvibez.herokuapp.com/blog/" class="level-top ui-corner-all" id="ui-id-14" tabindex="-1"
+									role="menuitem">
+									<span>Blog</span>
+								</a>
+							</li>
 						</ul>
+					</div>
+					<div class="mobile-shipping">
+						<a href="https://fortunesvibez.herokuapp.com/shipping-policy/">Shipping Policy</a>
+					</div>
+					<div class="mobile-about-us">
+						<a href="https://fortunesvibez.herokuapp.com/about/">About Us</a>
+					</div>
+					<div class="mobile-contact-us">
+						<a href="https://fortunesvibez.herokuapp.com/contact/">Contact Us</a>
 					</div>
 				</nav>
 			</div>
@@ -553,6 +615,14 @@
 		}
 	</script>
 	<script>
+		var mybutton = document.getElementById("myBtn");
+
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<script>
 		// Your web app's Firebase configuration
 		var firebaseConfig = {
 			apiKey: "AIzaSyD-pRgQz1p_tlE00KtC4HvwBnM575dExqQ",
@@ -567,14 +637,6 @@
 		// Initialize Firebase
 		firebase.initializeApp(firebaseConfig);
 		firebase.analytics();
-	</script>
-	<script>
-		var mybutton = document.getElementById("myBtn");
-
-		function topFunction() {
-			document.body.scrollTop = 0;
-			document.documentElement.scrollTop = 0;
-		}
 	</script>
 	<script src="js/main.js"></script>
 </body>
