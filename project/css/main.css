@@ -211,33 +211,16 @@ a{
   z-index: 14;
   width: 20px;
   height: 14px;
-  
   box-sizing: border-box;
 }
 .header-content{
   display: inline;
   margin: 0;
 }
-.logo{
-  font-family: var(--gugi);
-  padding-top: 10px;
-  font-size: 25px;
-  color: white;
-  text-align: center;
-}
-.header-content ul{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  justify-content: space-between;
-}
-.header-content li{
-  text-decoration: none;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.search-icon 
+.shopping-cart-icon{
   float: right;
-  margin-right: 10px;
+  margin-top: 10px;
 }
 .search-icon a{
   text-decoration: none;
@@ -1100,11 +1083,6 @@ input[type=submit]:hover {
   }
   .site-title{
     font-size: 25px;
-  }
-  .header-content ul{
-    margin-top: 0;
-    margin: 0 !important;
-    justify-content: space-between;
   }
   .shopping-cart-icon{
     margin-right: 5px;
