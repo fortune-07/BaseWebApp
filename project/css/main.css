@@ -230,7 +230,7 @@ a{
   list-style: none;
 }
 .header-content li{
-  list-style-type: none;
+  list-style: none;
   float: right;
   margin-right: 10px;
 }
@@ -1111,7 +1111,6 @@ input[type=submit]:hover {
   }
   .mobile-header{
     height: 60px;
-    z-index: 99;
   }
 
   #display-products{
