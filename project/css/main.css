@@ -1133,6 +1133,32 @@ input[type=submit]:hover {
   ul.ui-menu li.level0 {
     position: relative;
   }
+  .menu-scroller-wrap,
+  ul.ui-menu li.level0,
+  a.level-top {
+    border: none !important;
+    padding-left: 10px;
+    font-weight: 400;
+    color: #333;
+    text-transform: uppercase;
+    padding: 0 0 0 20px;
+  }
+  .navigation .parent,
+  .level-top {
+    position: relative;
+    display: block;
+    text-decoration: none;
+  }
+  .menu_switch {
+    display: inline-block;
+    width: 60px;
+    height: 45px;
+    line-height: 1;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 
   #display-products{
     display: block;
