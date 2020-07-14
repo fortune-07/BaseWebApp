@@ -218,7 +218,6 @@ a{
   display: inline;
   margin: 0;
   overflow: hidden;
-  justify-content: space-between;
 } 
 .shopping-cart-icon{
   position: relative;
@@ -230,6 +229,8 @@ a{
   float: right;
 }
 .search-icon a{
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   font-size: 16px;
   padding-right: 5px;
@@ -237,6 +238,8 @@ a{
 }
 .shopping-cart-icon a{
   text-decoration: none;
+  margin: 0;
+  padding: 0;
   color: black;
 }
 
@@ -1091,7 +1094,7 @@ input[type=submit]:hover {
   .header-content{
     padding: 0;
     height: 60px;
-    justify-content: space-between;
+    align-content: space-between;
   }
   .site-title{
     font-size: 25px;
