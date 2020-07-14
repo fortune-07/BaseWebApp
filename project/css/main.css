@@ -211,7 +211,7 @@ a{
   z-index: 14;
   width: 20px;
   height: 14px;
-  -webkit-box-sizing: border-box;
+  
   box-sizing: border-box;
 }
 .header-content{
@@ -1095,8 +1095,18 @@ input[type=submit]:hover {
   .mobile-header{
     height: 60px;
   }
+  .nav-toggle{
+    margin-top: 10px;
+  }
   .site-title{
     font-size: 25px;
+  }
+  .header-content ul{
+    margin-top: 10px;
+    margin: 0 !important;
+  }
+  .shopping-cart-icon{
+    margin-right: 5px;
   }
 
   #display-products{
