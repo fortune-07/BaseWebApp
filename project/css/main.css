@@ -265,16 +265,6 @@ a{
   transition: 0.3s;
 }
 
-.sidebar{
-  height: 12vh;
-  display: flex;
-  margin: 0;
-  padding-left: 8px;
-  padding-top: 6px;
-  background-color: black;
-  color: white;
-}
-
 .highlight{
   color: orangered;
   font-family: var(--gugi);
@@ -287,9 +277,9 @@ a{
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
+  right: 15px;
   font-size: 36px;
-  margin-left: 50px;
+  margin-left: 60px;
 }
 
 .page-wrapper{
@@ -1106,6 +1096,22 @@ input[type=submit]:hover {
   .search-icon{
     margin-top: 10px;
     margin-right: 5px;
+  }
+  .navigation{
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    text-align: left;
+    letter-spacing: -.01em;
+    line-height: 45px;
+    background: #fff;
+    box-sizing: border-box;
+  }
+  .mobile-login-register{
+    cursor: pointer;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   #display-products{
