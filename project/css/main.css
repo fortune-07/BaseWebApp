@@ -214,13 +214,19 @@ a{
   box-sizing: border-box;
 }
 .header-content{
+  position: relative;
   display: inline;
   margin: 0;
-}
-.search-icon 
+  overflow: hidden;
+} 
 .shopping-cart-icon{
+  position: relative;
   float: right;
-  margin-top: 10px;
+  z-index: 19999;
+}
+.search-icon{
+  position: relative;
+  float: right;
 }
 .search-icon a{
   text-decoration: none;
@@ -1081,11 +1087,18 @@ input[type=submit]:hover {
   .nav-toggle{
     margin-top: 10px;
   }
+  .header-content{
+    padding: 0;
+  }
   .site-title{
     font-size: 25px;
   }
   .shopping-cart-icon{
+    margin-top: 10px;
     margin-right: 5px;
+  }
+  .search-icon{
+    margin-top: 10px;
   }
 
   #display-products{
