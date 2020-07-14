@@ -1113,6 +1113,26 @@ input[type=submit]:hover {
     box-sizing: border-box;
     border-bottom: 1px solid #e6e6e6;
   }
+  .menu-scroller-arrow{
+    display: none !important;
+  }
+  .navigation ul.ui-menu {
+    position: static !important;
+  }
+  .navigation ul {
+    margin: 0;
+    padding: 0
+  }
+  .navigation li {
+    margin: 0;
+  }
+  nav ul{
+    list-style: none none;
+  }
+  .navigation .menu-scroller-wrap, 
+  ul.ui-menu li.level0 {
+    position: relative;
+  }
 
   #display-products{
     display: block;
