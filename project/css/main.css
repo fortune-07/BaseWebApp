@@ -160,13 +160,10 @@ a{
 .nav-toggle {
   cursor: pointer;
   display: block;
-  font-size: 0;
   left: 20px;
   position: absolute;
-  top: 20px;
+  margin-top: 10px;
   z-index: 14;
-  border-top: 2px solid #222;
-  border-bottom: 2px solid #222;
   width: 20px;
   height: 14px;
   -webkit-box-sizing: border-box;
@@ -223,20 +220,28 @@ a{
   display: inline;
   margin: 0;
 }
+.logo{
+  font-family: var(--gugi);
+  padding-top: 10px;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
 .header-content ul{
+  margin-top: 10px;
   list-style: none;
 }
 .header-content li{
   list-style-type: none;
   float: right;
-  margin-right: 15px;
+  margin-right: 10px;
+}
+.search-icon{
+  padding-left: 3px;
 }
 .search-icon a{
   text-decoration: none;
   color: black;
-}
-.shopping-cart-icon{
-  padding-left: 2px;
 }
 .shopping-cart-icon a{
   text-decoration: none;
