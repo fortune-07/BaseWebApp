@@ -195,6 +195,7 @@ a{
 
 /* Mobile Header */
 .mobile-header{
+  display: none;
   font-family: 'Roboto', Arial, Helvetica;
   background-color: silver;
   z-index: 70;
@@ -1076,6 +1077,7 @@ input[type=submit]:hover {
     display: none;
   }
   .mobile-header{
+    display: block;
     height: 60px;
   }
   .nav-toggle{
