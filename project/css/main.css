@@ -721,7 +721,7 @@ li{
 }
 
 /* Product pop up section */
-.page-main{
+.main-content{
   margin: auto;
   overflow: hidden;
 }
@@ -1270,12 +1270,15 @@ input[type=submit]:hover {
   .modal-content {
     width: 100%;
   }
-
+  .main-content{
+    padding-right: 10px;
+    padding-left: 10px;
+  }
   .page-section{
     display: block;
   }
   .image-title{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
     margin: 30px 0;
     text-align: center;
