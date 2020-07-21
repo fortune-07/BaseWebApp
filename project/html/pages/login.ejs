@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 
-<head> 
-    <title>Create A New Customer Account</title>
+<head>
+    <title>Customer Login</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
     <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
     <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
@@ -16,125 +16,288 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
     <script src="js/main.js"></script>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: white;
+</head>
+<style>
+    .page-main {
+        margin: auto;
+        padding: 0;
+        flex-basis: 100%;
+        flex-grow: 1;
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .login-titile {
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .login-heading {
+        border: none;
+        font-size: 16px;
+        color: #1d1e20;
+        padding-bottom: 0;
+        height: 30px;
+        line-height: 30px;
+        margin-bottom: 15 px;
+    }
+
+    input[type=email],
+    input[type=password] {
+        width: 100%;
+        padding: 15px;
+        height: 44px;
+        line-height: 44px;
+        box-shadow: 0 0 0 500px #fff inset;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border-radius: 1px;
+        border: 1px solid #c2c2c2;
+        background: #fff;
+    }
+
+    .label {
+        width: auto;
+        text-align: left;
+        float: none;
+        display: block;
+        padding: 0 0 10px;
+        height: 18px;
+        line-height: 18px;
+        box-sizing: content-box;
+        font-weight: 500;
+        color: #333;
+    }
+
+    .clogin {
+        display: inline;
+        font-weight: 400;
+        margin: 0 0 5px;
+        left: 50%;
+    }
+
+    .remind {
+        position: relative;
+        right: 0;
+        line-height: 18px;
+        text-align: right;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        float: unset;
+    }
+
+    .remind a {
+        margin-top: 0;
+        height: 18px;
+        line-height: 18px;
+        color: #333;
+        text-decoration: underline;
+    }
+
+    .loginbtn {
+        background-color: black;
+        font-size: 14px;
+        font-weight: 400;
+        height: 44px;
+        text-transform: uppercase;
+        color: white;
+        padding: 12px 14px;
+        margin: 8px 0;
+        border: none;
+        border-radius: unset;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
+
+    .loginbtn:hover {
+        opacity: 1;
+    }
+
+    .login-spacer {
+        display: block;
+        margin: 10px auto;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        line-height: 16px !important;
+        top: auto;
+        left: auto;
+        height: auto;
+        width: auto;
+        overflow: visible;
+        font-size: 13px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        max-width: 100%;
+    }
+
+    .login-border {
+        border-top: 1px solid #e5e2e2;
+        width: 100%;
+    }
+
+    .login-bordertext {
+        color: #b2b2b2;
+        text-align: center;
+        font-size: 11px;
+        text-transform: uppercase
+    }
+
+    .login-spacer table td {
+        vertical-align: middle;
+        padding: 10px 5px;
+    }
+
+    .w25 {
+        width: 25px !important;
+    }
+
+    .social-media-login {
+        display: block;
+        float: left;
+        padding: 0 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .fb-btn {
+        background-color: #3B5998;
+        color: white;
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+        margin: 5px 0;
+        opacity: 0.85;
+        display: inline-block;
+        font-size: 17px;
+        line-height: 20px;
+        text-decoration: none;
+    }
+
+    .twitter-btn {
+        background-color: #55ACEE;
+        color: white;
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+        margin: 5px 0;
+        opacity: 0.85;
+        display: inline-block;
+        font-size: 17px;
+        line-height: 20px;
+        text-decoration: none;
+    }
+
+    .google-btn {
+        background-color: #3367d6;
+        color: white;
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+        margin: 5px 0;
+        opacity: 0.85;
+        display: inline-block;
+        font-size: 17px;
+        line-height: 20px;
+        text-decoration: none;
+    }
+
+    .new-customer {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .new-customer-title {
+        border: none;
+        color: #1d1e20;
+        font-size: 20px;
+        padding-bottom: 0;
+        height: 30px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .new-customer-title strong {
+        font-weight: 700;
+    }
+
+    .customer-content p {
+        color: grey;
+        font-size: 14px;
+        font-weight: 300;
+        padding-left: 15px;
+    }
+
+    .actions-toolbar {
+        margin-top: 30px;
+    }
+
+    .toolbar {
+        height: 44px;
+        width: 200px;
+        background-color: #1d1e20;
+        text-align: center;
+        line-height: 42px;
+        height: 42px;
+        font-weight: 400;
+        color: white;
+    }
+
+    .toolbar a {
+        background: 0 0;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        border: none;
+        margin: 0;
+        padding: 0;
+        float: none;
+    }
+
+    @media screen and (max-width: 767px) {
+        .page-main {
+            width: 100%;
         }
 
-        * {
-            box-sizing: border-box;
+        .social-media-login {
+            width: 100%;
+            margin-top: 0;
         }
 
-        .page-main{
-            margin: auto;
-            padding: 0;
-            flex-basis: 100%;
-            flex-grow: 1;
-            width: 50%;
-            box-sizing: border-box;
-        }
-        .create-titile{
-            margin-top: 30px;
-            font-size: 20px;
-            font-weight: 400;
+        .login-title {
             text-align: center;
-        }
-        
-        .conditions{
-            font-size: 14px;
-            font-weight: 300;
-            line-height: 20px;
-            margin-bottom: 10px;
-            color: #999;
-        }
-        .conditions a{
-            color: #333;
-            text-decoration: underline;
-        }
-
-        /* Full-width input fields */
-        input[type=text],
-        input[type=password] {
-            width: 100%;
-            padding: 15px;
-            height: 44px;
-            line-height: 44px;
-            box-shadow: 0 0 0 500px #fff inset;
-            margin: 5px 0 22px 0;
-            display: inline-block;
-            border-radius: 1px;
-            border: 1px solid #c2c2c2;
-            background: #fff;
-        }
-
-        input[type=email],
-        input[type=password] {
-            width: 100%;
-            padding: 15px;
-            height: 44px;
-            line-height: 44px;
-            box-shadow: 0 0 0 500px #fff inset;
-            margin: 5px 0 22px 0;
-            display: inline-block;
-            border-radius: 1px;
-            border: 1px solid #c2c2c2;
-            background: #fff;
-        }
-
-        input[type=text]:focus,
-        input[type=password]:focus {
-            background-color: #fff;
-            outline: none;
-        }
-
-        /* Overwrite default styles of hr */
-        hr {
-            border: 1px solid #f1f1f1;
-            margin-bottom: 25px;
-        }
-
-        /* Set a style for the submit button */
-        .registerbtn {
-            background-color: black;
-            font-size: 14px;
-            font-weight: 400;
-            height: 44px;
             text-transform: uppercase;
-            color: white;
-            padding: 12px 14px;
-            margin: 8px 0;
-            border: none;
-            border-radius: unset;
-            cursor: pointer;
+            font-size: 18px;
+            height: 22px;
+            line-height: 22px;
+            margin: 0;
+            padding: 30px 0;
+        }
+
+        .login-heading {
+            display: none;
+        }
+
+        .toolbar {
             width: 100%;
-            opacity: 0.9;
         }
-
-        .registerbtn:hover {
-            opacity: 1;
-        }
-
-        /* Add a blue text color to links */
-        a {
-            color: dodgerblue;
-        }
-
-        /* Set a grey background color and center the text of the "sign in" section */
-        .signin {
-            background-color: #f1f1f1;
-            margin-bottom: 20px;
-            padding-top: 5px;
-            text-align: center;
-            text-transform: uppercase;
-            height: 44px;
-            line-height: 44px;
-        }
-    </style>
+    }
+</style>
 </head>
 
 <body>
@@ -163,7 +326,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="container-fluid p-0">
             <nav class="navbar navbar-expand-md navbar-light bg-white">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -223,7 +386,7 @@
                         </li>
                     </ul>
                 </div>
-    
+
                 <div class="navbar-nav">
                     <li class="nav-item border rounded-circle mx-2 search-icon">
                         <a href="#">
@@ -239,51 +402,93 @@
             </nav>
         </div>
     </header>
+
     <div class="page-main">
-        <form id="create-account" action="https://fortunesvibez.herokuapp.com/account/create" method="POST"
-            enctype="multipart/form-data" autocomplete="off">
+        <form id="login-account" action="https://fortunesvibez.herokuapp.com/account/login" method="POST"
+            novalidate="novalidate">
             <div class="container">
-                <h1 class="create-titile">Be A Member of FortunesVibez</h1>
-                <p class="conditions">
-                    Before you register, please also see our<a target="_blank"
-                        href="https://fortunesvibez.herokuapp.com/terms-conditions/"> Terms
-                        &amp; Conditions</a>
-                </p>
+                <h1 class="login-title">Login Or Create An Account</h1>
+                <div class="login-heading">
+                    <strong role="heading" aria-level="2">Registered Customers</strong>
+                </div>
                 <hr>
-        
-                <label for="firstname">First Name</label>
-                <input type="text" name="firstname" id="firstname" required>
-        
-                <label for="lastname">Last Name</label>
-                <input type="text" name="lastname" id="lastname" required>
-        
-                <label for="email">Email</label>
-                <input type="email" autocomplete="email" name="email" id="email" required>
-        
-                <label for="password">Password</label>
-                <input type="password" name="pass" id="pass" required>
-        
-                <label for="psw-repeat">Confirm Password</label>
-                <input type="password" name="pass-confirm" id="pass-confirm" arequired>
-                <hr>
-                <p>By creating an account you agree to FortunesVibez Terms of Services.</p>
-        
-                <button type="submit" class="registerbtn">Register</button>
-            </div>
-        
-            <div class="container signin">
-                <p>Already have an account? <a href="/login">LogIn</a>.</p>
+                <label class="label" for="email">Email</label>
+                <input type="email" id="email_field">
+
+                <label class="label" for="password">Password</label>
+                <input type="password" id="password_field">
+
+                <label for="remember_me" class="clogin">
+                    <input type="checkbox" value="remember-me">
+                    <span>Keep me logged in</span>
+                </label>
+
+                <div class="remind">
+                    <a class="action-remind" href="https://fortunesvibez.herokuapp.com/account/resetpassword/">
+                        <span>Forgot Your Password?</span>
+                    </a>
+                </div>
+
+                <button class="loginbtn" onclick="login()">Login</button>
             </div>
         </form>
+        <div class="container">
+            <div class="login-spacer login-clearfix">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="login-border"></div>
+                            </td>
+                            <td class="login-bordertext w25">or</td>
+                            <td>
+                                <div class="login-border"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="social-media-login">
+                <a href="#" class="fb-btn">
+                    <i class="fab fa-facebook-square"></i> Login with Facebook
+                </a>
+                <a href="#" class="twitter-btn">
+                    <i class="fab fa-twitter"></i> Login with Twitter
+                </a>
+                <a href="#" class="google-btn">
+                    <i class="fab fa-google"></i> Login with Google
+                </a>
+            </div>
+            <div class="clr"></div>
+            <div class="new-customer">
+                <div class="new-customer-title">
+                    <strong id="new-customer-heading" role="heading" aria-level="2">New Customer</strong>
+                </div>
+                <div class="customer-content" aria-labelledby="new-customer-heading">
+                    <p>Create an account to expedite future checkouts, track order history, &amp; receive emails,
+                        discounts, &amp;
+                        special offers!</p>
+                    <div class="actions-toolbar">
+                        <div class="toolbar">
+                            <a href="https://fortunesvibez.herokuapp.com/create/"
+                                class="action create primary"><span>REGISTER</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
     <section class="boxes">
         <div class="box">
             <h2>ABOUT US</h2>
             <p>We are all about the trendy, elegant, fun and fashion-conscious you. We are the most preferred online
                 footwear & jewelry
-                retail outlet for the modern man. Our indulgence with fashionable footwear & jewelry began in November 2019,
+                retail outlet for the modern man. Our indulgence with fashionable footwear & jewelry began in November
+                2019,
                 and over the
-                years we have expanded to the online retail scene because we realized there was something missing in that
+                years we have expanded to the online retail scene because we realized there was something missing in
+                that
                 sector, to cope
                 with the demands of the modern man and to widen the scope of elegant people whose needs we felt we could
                 meet.</p>
@@ -319,32 +524,50 @@
             <br>
             <ul class="social-media-links">
                 <li class="sm"> <a href="https://www.facebook.com/fortuneniguel" target="_blank"
-                        class="icon-social-facebook" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+                        class="icon-social-facebook" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                </li>
                 <li class="sm"><a href="https://twitter.com/fortune_whizz" target="_blank" class="icon-social-twitter"
                         rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
                 <li class="sm"><a href="https://www.linkedin.com/fortunemwagmbo" target="_blank"
                         class="icon-social-linkedin" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
                 <li class="sm"><a href="https://www.instagram.com/fortune.whizz" target="_blank"
-                        class="icon-social-instagram" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+                        class="icon-social-instagram" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                </li>
             </ul>
         </div>
     </section>
-    
+
     <div class="clr"></div>
-    
+
     <div class="footer">
         <span>FortunesVibez.com &copy;2020 All Rights Reserved</span>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var firebaseConfig = {
+            apiKey: "AIzaSyD-pRgQz1p_tlE00KtC4HvwBnM575dExqQ",
+            authDomain: "mwagambo-cfa3a.firebaseapp.com",
+            databaseURL: "https://mwagambo-cfa3a.firebaseio.com",
+            projectId: "mwagambo-cfa3a",
+            storageBucket: "mwagambo-cfa3a.appspot.com",
+            messagingSenderId: "775908781299",
+            appId: "1:775908781299:web:4ec58d1571c286ac415b86",
+            measurementId: "G-SPH6WRMQB2"
+        };
+        firebase.initializeApp(firebaseConfig);
     </script>
+
     <script src="js/main.js"></script>
 </body>
 

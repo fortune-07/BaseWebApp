@@ -58,23 +58,23 @@ app.get('/customer', function (request, response) {
 });
 
 app.get('/account', function (request, response) {
-  response.render('pages/customer/account');
+  response.render('pages/account');
 });
 
-app.get('/customer', function (request, response) {
-  response.render('pages/customer/customer');
+app.get('/create', function (request, response) {
+  response.render('pages/create');
 });
 
 app.get('/login', function (request, response) {
-  response.render('pages/customer/login');
+  response.render('pages/login');
 });
 
 app.get('/logout', function (request, response) {
-  response.render('pages/customer/logout');
+  response.render('pages/logout');
 });
 
 app.get('/order', function (request, response) {
-  response.render('pages/customer/order');
+  response.render('pages/order');
 });
 
 app.get('/create', function (request, response) {
@@ -82,7 +82,7 @@ app.get('/create', function (request, response) {
 });
 
 app.get('/reset-password', function (request, response) {
-  response.render('pages/customer/reset-password');
+  response.render('pages/reset-password');
 });
 
 app.get('/shipping-policy', function (request, response) {
