@@ -24,7 +24,9 @@ firebase.auth().onAuthStateChanged(function (user) {
     if(user != null){
 
       var email_id = user.email;
-      document.getElementById("user_para").innerHTML = "Welcome User : " + email
+      var email_verified = user.emailVerified;
+      document.getElementById("user_para").innerHTML = "Welcome : " + email +
+                                                       "<br/> verified : " + email_verified;
 
     }
 
@@ -57,6 +59,39 @@ function login(){
 function logout(){
   firebase.auth().signOut();
 }
+
+document.getElementById('create-account').addEventListener("submit", function(e){
+  e.preventDefault();
+
+  var firstname = document.getElementById('firstname');
+  var lastname = document.getElementById('lastname');
+  var user = document.getElementById('email');
+  var pass = document.getElementById('pass');
+  var pass = document.getElementById('pass-confirm');
+  firebase.auth().createUserWithEmailAndPassword(user.value, pass.value)
+  .then(function(response){
+    console.log('success');
+    console.log(response);
+    firebase.database().ref('users').push({
+      firstname: firstname.value,
+      lastname: lastname.vlue,
+      userId:firebase.auth().currentUser.uid,
+      email:firebase.auth().currentUser.email
+    })
+    firebase.auth().signOut();
+    user.value='';
+    pass.value='';
+    firstname.value='';
+    lastname.value = '';
+  })
+  .catch(function(error){
+    //Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    console.log(errorCode);
+    console.log(errorMessage);
+  });
+});
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
