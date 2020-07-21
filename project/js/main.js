@@ -60,38 +60,24 @@ function logout(){
   firebase.auth().signOut();
 }
 
-document.getElementById('create-account').addEventListener("submit", function(e){
-  e.preventDefault();
+document.getElementById('login-account');
+  function login() {
 
-  var firstname = document.getElementById('firstname');
-  var lastname = document.getElementById('lastname');
-  var user = document.getElementById('email');
-  var pass = document.getElementById('pass');
-  var pass = document.getElementById('pass-confirm');
-  firebase.auth().createUserWithEmailAndPassword(user.value, pass.value)
-  .then(function(response){
-    console.log('success');
-    console.log(response);
-    firebase.database().ref('users').push({
-      firstname: firstname.value,
-      lastname: lastname.vlue,
-      userId:firebase.auth().currentUser.uid,
-      email:firebase.auth().currentUser.email
-    })
-    firebase.auth().signOut();
-    user.value='';
-    pass.value='';
-    firstname.value='';
-    lastname.value = '';
-  })
-  .catch(function(error){
-    //Handle Errors here.
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    console.log(errorCode);
-    console.log(errorMessage);
-  });
-});
+    var userEmail = document.getElementById("email_field").value;
+    var userPass = document.getElementById("password_field").value;
+
+    firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function (error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+
+      window.alert("Error : " + errorMessage);
+
+      // ...
+    });
+
+  }
+;
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
