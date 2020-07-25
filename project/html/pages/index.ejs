@@ -127,7 +127,6 @@
 			</div>
 		</div>
 		<div id="mySidenav" class="sidenav" data-role="content" role="tabpanel" aria-hidden="false">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			<nav class="navigation" data-action="navigation">
 				<div class="mobile-login-register">
 					<a href="https://fortunesvibez.herokuapp.com/customer/account/login/">Login/Register</a>
@@ -214,6 +213,7 @@
 				</div>
 			</nav>
 		</div>
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 	</header>
 
 	<section id="showcase">
@@ -478,7 +478,7 @@
 		<span>FortunesVibez.com &copy;2020 All Rights Reserved</span>
 	</div>
 	<div class="to-topbox">
-		<span onclick="topFunction()" id="myBtn" title="Go to top">
+		<span onclick="topFunction()" id="topBtn" title="Go to top">
 			<i class="fas fa-sort-up"></i>Back To Top
 		</span>
 	</div>
@@ -506,7 +506,7 @@
 		}
 	</script>
 	<script>
-		var mybutton = document.getElementById("myBtn");
+		var mybutton = document.getElementById("topBtn");
 
 		function topFunction() {
 			document.body.scrollTop = 0;

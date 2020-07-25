@@ -347,7 +347,7 @@
         <span>FortunesVibez.com &copy;2020 All Rights Reserved</span>
     </div>
     <div class="to-topbox">
-        <span onclick="topFunction()" id="myBtn" title="Go to top">
+        <span onclick="topFunction()" id="topBtn" title="Go to top">
             <i class="fas fa-sort-up"></i>Back To Top
         </span>
     </div>
@@ -375,6 +375,14 @@
             measurementId: "G-SPH6WRMQB2"
         };
         firebase.initializeApp(firebaseConfig);
+    </script>
+    <script>
+        var mybutton = document.getElementById("topBtn");
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
     </script>
     <script src="js/main.js"></script>
 </body>
