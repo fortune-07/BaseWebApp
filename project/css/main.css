@@ -220,30 +220,9 @@ a{
   margin: 0;
   overflow: hidden;
 } 
-.shopping-cart-icon{
-  position: relative;
-  float: right;
-  z-index: 19999;
+#mySidenav{
+  width: 300px;
 }
-.search-icon{
-  position: relative;
-  float: right;
-}
-.search-icon a{
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  font-size: 16px;
-  padding-right: 5px;
-  color: black;
-}
-.shopping-cart-icon a{
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  color: black;
-}
-
 .sidenav {
   height: 100%;
   width: 300px;
