@@ -193,7 +193,7 @@ a{
   color: black !important;
 }
 
-/* Mobile Header */
+/*--------------------------Mobile Header---------------------------- */
 .mobile-header{
   display: none;
   font-family: 'Roboto', Arial, Helvetica;
@@ -269,6 +269,7 @@ a{
   padding-left: 10px;
 }
 
+/*------------------------------INDEX PAGE---------------------*/
 #showcase{
   background: url('../images/sneakers.jpg') center no-repeat;
   background-size: cover;
@@ -585,7 +586,7 @@ li{
   padding: 10px;
 }
 
-/* Jewelry */
+/*------------------------------JEWELERY PAGE----------------------- */
 .jewelry-wrapper{
   margin: 50px auto 0;
   text-align: left;
@@ -627,7 +628,7 @@ li{
   padding: 10px;
 }
 
-/* Modal Image */
+/*---------------------------------Modal Image--------------------------------- */
 #myImg {
   border-radius: 5px;
   cursor: pointer;
@@ -702,7 +703,7 @@ li{
   cursor: pointer;
 }
 
-/* Product pop up section */
+/*------------------------------ON CLICK PRODUCT SECTION---------------------*/
 .main-content{
   margin: auto;
   overflow: hidden;
@@ -913,7 +914,7 @@ input{
   margin-bottom: 10px;
 }
 
-/*about*/
+/*-----------------------------ABOUT PAGE-------------------------*/
 
 .about-wrapper{
   margin: auto;
@@ -936,7 +937,7 @@ input{
   color: black;
 }
 
-/* contact*/
+/*--------------------------------CONTACT PAGE---------------------------*/
 .contact-title{
   text-align: center;
   color: black;
@@ -1027,7 +1028,7 @@ input[type=submit]:hover {
   margin-bottom: 15px;
 }
 
-/* payment policy*/
+/*---------------------------------PAYMENT POLICY PAGE---------------------*/
 .pp-wrapper{
   margin-top: 20px;
   margin-bottom: 0;
@@ -1045,13 +1046,8 @@ input[type=submit]:hover {
   display: block;
 }
 
-@media screen and (min-width:768px){
-  .to-topbox{
-    display: none;
-  }
-}
-
 @media screen and (max-width:767px){
+  /*----------------------------------MOBILE PHONE SCREEN----------------------*/
   .navbar{
     display: none;
   }
