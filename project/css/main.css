@@ -585,6 +585,16 @@ li{
   text-align: center;
   padding: 10px;
 }
+.to-topbox{
+  display: none;
+  color: #333;
+  background: #b1b1b1;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+}
 
 /*------------------------------JEWELERY PAGE----------------------- */
 .jewelry-wrapper{
@@ -1216,6 +1226,9 @@ input[type=submit]:hover {
     line-height: 50px;
     font-size: 20px;
     cursor: pointer;
+  }
+  .to-topbox fa-sort-up{
+    padding-top: 3px;
   }
 
   /* Contact */
