@@ -1219,6 +1219,7 @@ input[type=submit]:hover {
     font-size: 12px;
   }
   .to-topbox{
+    display: block;
     color: #333;
     background: #b1b1b1;
     text-align: center;
