@@ -736,6 +736,7 @@ li{
 .product-info{
   order: 2;
   width: 50%;
+  padding-left: 15px;
 }
 .product-images{
   width: 50%;
@@ -788,7 +789,6 @@ li{
 
 .row:after {
   content: "";
-  /*display: table;*/
   display: inline;
   clear: both;
 }
@@ -797,7 +797,7 @@ li{
   float: left;
   box-sizing: content-box;
   /* width: 16.66%; */
-  width: 16%;
+  width: 16.4%;
   vertical-align: middle;
 }
 
