@@ -718,6 +718,9 @@ li{
 }
 
 /*------------------------------ON CLICK PRODUCT SECTION---------------------*/
+.product-title{
+  float: right;
+}
 .product-container-wrapper{
   display: flex;
   flex-wrap: wrap;
@@ -728,7 +731,6 @@ li{
   flex: 1;
   padding-bottom: 30px;
   flex-basis: 100%;
-  order: 1;
   width: 100%;
 }
 .product-info{
@@ -786,7 +788,8 @@ li{
 
 .row:after {
   content: "";
-  display: table;
+  /*display: table;*/
+  display: inline-block;
   clear: both;
 }
 
