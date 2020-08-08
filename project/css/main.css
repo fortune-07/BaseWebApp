@@ -719,11 +719,11 @@ li{
 
 /*------------------------------ON CLICK PRODUCT SECTION---------------------*/
 .product-title-wrapper{
+  float: right;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   width: 50%;
-  order: 2;
 }
 .product-title{
   text-align: center;
