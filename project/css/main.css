@@ -784,8 +784,7 @@ li{
 
 .row:after {
   content: "";
-  /* display: table; */ 
-  display: inline-block;
+  display: table;
   clear: both;
 }
 
@@ -793,7 +792,7 @@ li{
   float: left;
   box-sizing: content-box;
   /* width: 16.66%; */
-  width: 16%;
+  width: auto;
   vertical-align: middle;
 }
 
