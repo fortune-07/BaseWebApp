@@ -718,6 +718,11 @@ li{
 }
 
 /*------------------------------ON CLICK PRODUCT SECTION---------------------*/
+.product-title-wrapper{
+  display: flex;
+  flex-direction: row-reverse;
+  width: 50%;
+}
 /*.product-title{
   float: right;
 } */
