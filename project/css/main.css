@@ -728,14 +728,16 @@ li{
   flex: 1;
   padding-bottom: 30px;
   flex-basis: 100%;
-  order: -1;
+  order: 1;
   width: 100%;
 }
 .product-info{
+  order: 2;
   width: 50%;
 }
 .product-images{
   width: 50%;
+  order: 1;
 } 
 
 .images{
