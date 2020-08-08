@@ -1286,6 +1286,9 @@ input[type=submit]:hover {
   .product-images{
     width: 100%;
   }
+  .images .row{
+    display: none;
+  }
   .product-info{
     width: 100%;
   }
