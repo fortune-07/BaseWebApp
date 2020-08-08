@@ -723,7 +723,7 @@ li{
   position: absolute;
 }
 .product-title{
-  float: right;
+  float: left;
   text-align: center;
   font-weight: 300;
   font-size: 2rem;
