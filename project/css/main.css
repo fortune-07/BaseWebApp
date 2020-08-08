@@ -595,9 +595,9 @@ li{
   font-size: 20px;
   cursor: pointer;
 }
-.to-topbox span .fa-sort-up{
+.fa-sort-up{
     font-size: 30px;
-    padding-top: 5px;
+    padding-top: 10px;
   }
 
 /*------------------------------JEWELERY PAGE----------------------- */
