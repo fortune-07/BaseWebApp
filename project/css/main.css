@@ -718,13 +718,6 @@ li{
 }
 
 /*------------------------------ON CLICK PRODUCT SECTION---------------------*/
-.product-title{
-  text-align: center;
-  font-weight: 300;
-  font-size: 2rem;
-  line-height: 1.1;
-  color: black;
-}
 .product-container-wrapper{
   display: flex;
   flex-wrap: nowrap;
