@@ -718,9 +718,9 @@ li{
 }
 
 /*------------------------------ON CLICK PRODUCT SECTION---------------------*/
-.product-title{
+/*.product-title{
   float: right;
-}
+} */
 .product-container-wrapper{
   display: flex;
   flex-wrap: wrap;
@@ -789,7 +789,7 @@ li{
 .row:after {
   content: "";
   /*display: table;*/
-  display: inline-block;
+  display: inline;
   clear: both;
 }
 
