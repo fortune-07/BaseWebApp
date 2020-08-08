@@ -721,6 +721,7 @@ li{
 .product-container{
   display: flex;
   position: absolute;
+  vertical-align: middle;
 }
 .product-title{
   text-align: center;
@@ -756,7 +757,7 @@ li{
 .prev,
 .next {
   cursor: pointer;
-  position: absolute;
+  position: 4;
   top: 40%;
   width: auto;
   padding: 16px;
@@ -1277,8 +1278,9 @@ input[type=submit]:hover {
   }
   .product-title{
     position: absolute;
-    top: 5px;
-    z-index: 1;
+    top: 2px;
+    z-index: 99;
+    text-align: center;
     font-size: 20px;
     line-height: 22px;
     margin: 30px 0;
