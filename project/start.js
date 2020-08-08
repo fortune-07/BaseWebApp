@@ -109,6 +109,10 @@ app.get('/nike-air-jordan-13-black', function (request, response) {
   response.render('pages/nike-air-jordan-13-black');
 });
 
+app.get('/adidas-yeezy-boost-350-asia', function (request, response) {
+  response.render('pages/adidas-yeezy-boost-350-asia');
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
