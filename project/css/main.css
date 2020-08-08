@@ -722,6 +722,14 @@ li{
   display: flex;
   position: absolute;
 }
+.product-title{
+  float: right;
+  text-align: center;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.1;
+  color: black;
+}
 
 .product-images{
   width: 50%;
@@ -800,14 +808,6 @@ li{
 .product-info{
   width: 50%;
   height: auto;
-}
-
-.product-title{
-  text-align: center;
-  font-weight: 300;
-  font-size: 2rem;
-  line-height: 1.1;
-  color: black;
 }
 .product-value{
   text-align: center;
@@ -1277,7 +1277,7 @@ input[type=submit]:hover {
     display: block;
   }
   .product-title{
-    top: 5px;
+    float: none;
     font-size: 16px;
     line-height: 22px;
     margin: 30px 0;
