@@ -1276,7 +1276,8 @@ input[type=submit]:hover {
   .product-container{
     display: block;
   }
-  .image-title{
+  .product-title{
+    top: 5px;
     font-size: 16px;
     line-height: 22px;
     margin: 30px 0;
