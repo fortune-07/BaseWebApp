@@ -720,7 +720,6 @@ li{
 /*------------------------------ON CLICK PRODUCT SECTION---------------------*/
 .product-container-wrapper{
   display: flex;
-  flex: 1;
   flex-wrap: wrap;
   box-sizing: border-box;
 }
@@ -733,9 +732,11 @@ li{
   order: 1;
   width: 100%;
 }
-
+.product-info{
+  width: 50%;
+}
 .product-images{
-  position: relative;
+  width: 50%;
 } 
 
 .images{
