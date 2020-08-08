@@ -721,11 +721,14 @@ li{
 .product-title-wrapper{
   display: flex;
   flex-direction: row-reverse;
+  justify-content: center;
   width: 50%;
+  order: 2;
 }
-/*.product-title{
-  float: right;
-} */
+.product-title{
+  text-align: center;
+  font-size: 22px;
+} 
 .product-container-wrapper{
   display: flex;
   flex-wrap: wrap;
