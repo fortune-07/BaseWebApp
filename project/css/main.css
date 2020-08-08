@@ -731,7 +731,6 @@ li{
   box-sizing: border-box;
 }
 .product-container{
-  position: relative;
   padding-bottom: 30px;
   flex-basis: 100%;
   flex-grow: 1;
@@ -739,10 +738,9 @@ li{
   width: 100%;
 }
 
-/*.product-images{
-  width: 50%;
-  height: auto;
-} */
+.product-images{
+  position: relative;
+} 
 
 .images{
   position: relative;
