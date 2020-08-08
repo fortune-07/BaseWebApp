@@ -725,6 +725,8 @@ li{
   box-sizing: border-box;
 }
 .product-container{
+  display: flex;
+  flex: 1;
   padding-bottom: 30px;
   flex-basis: 100%;
   flex-grow: 1;
