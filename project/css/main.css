@@ -757,7 +757,7 @@ li{
 .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 50%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -803,11 +803,6 @@ li{
 .demo:hover {
   opacity: 1;
 }
-
-/*.product-info{
-  width: 50%;
-  height: auto;
-} */
 .product-value{
   text-align: center;
   color: black;
@@ -907,13 +902,6 @@ input{
   text-transform: uppercase;
   padding: 10px 0 0;
   margin: 0 0 20px;
-}
-#product-description:after {
-  display: inline-block;
-  content: '_';
-  float: right;
-  font-size: 18px;
-  margin-top: -7px;
 }
 .product-attr {
   padding-left: 15px;
