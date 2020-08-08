@@ -721,7 +721,6 @@ li{
 .product-container{
   display: flex;
   position: absolute;
-  vertical-align: middle;
 }
 .product-title{
   text-align: center;
