@@ -908,6 +908,13 @@ input{
   padding: 10px 0 0;
   margin: 0 0 20px;
 }
+#product-description:after {
+  display: inline-block;
+  content: '_';
+  float: right;
+  font-size: 18px;
+  margin-top: -7px;
+}
 .product-attr {
   padding-left: 15px;
   margin-bottom: 10px;
