@@ -596,8 +596,8 @@ li{
   cursor: pointer;
 }
 .to-topbox span .fa-sort-up{
-    font-size: 40px;
-    padding-top: 10px;
+    font-size: 30px;
+    padding-top: 5px;
   }
 
 /*------------------------------JEWELERY PAGE----------------------- */
@@ -1228,7 +1228,7 @@ input[type=submit]:hover {
     font-size: 12px;
   }
   .to-topbox{
-    display: inline;
+    display: block;
   }
   /* Contact */
   .contact-title{
