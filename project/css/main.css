@@ -595,6 +595,10 @@ li{
   font-size: 20px;
   cursor: pointer;
 }
+.to-topbox span .fa-sort-up{
+    font-size: 40px;
+    padding-top: 10px;
+  }
 
 /*------------------------------JEWELERY PAGE----------------------- */
 .jewelry-wrapper{
@@ -1224,20 +1228,8 @@ input[type=submit]:hover {
     font-size: 12px;
   }
   .to-topbox{
-    display: block;
-    color: #333;
-    background: #b1b1b1;
-    text-align: center;
-    height: 50px;
-    line-height: 50px;
-    font-size: 20px;
-    cursor: pointer;
+    display: inline;
   }
-  .to-topbox fa-sort-up{
-    font-size: 25px;
-    padding-top: 5px;
-  }
-
   /* Contact */
   .contact-title{
     font-size: 18px;
