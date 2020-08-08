@@ -729,9 +729,9 @@ li{
   display: flex;
   flex-wrap: nowrap;
   box-sizing: border-box;
-  position: relative;
 }
 .product-container{
+  position: relative;
   padding-bottom: 30px;
   flex-basis: 100%;
   flex-grow: 1;
