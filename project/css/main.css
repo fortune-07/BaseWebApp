@@ -728,8 +728,7 @@ li{
   flex: 1;
   padding-bottom: 30px;
   flex-basis: 100%;
-  flex-grow: 1;
-  order: 1;
+  order: -1;
   width: 100%;
 }
 .product-info{
@@ -1274,6 +1273,9 @@ input[type=submit]:hover {
     display: none;
   }
   .product-info{
+    width: 100%;
+  }
+  .product-images{
     width: 100%;
   }
 
