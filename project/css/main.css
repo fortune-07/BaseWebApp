@@ -720,6 +720,7 @@ li{
 /*------------------------------ON CLICK PRODUCT SECTION---------------------*/
 .product-container-wrapper{
   display: flex;
+  flex: 1;
   flex-wrap: wrap;
   box-sizing: border-box;
 }
