@@ -720,7 +720,7 @@ li{
 /*------------------------------ON CLICK PRODUCT SECTION---------------------*/
 .product-container-wrapper{
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   box-sizing: border-box;
 }
 .product-container{
@@ -783,7 +783,6 @@ li{
   content: "";
   /* display: table; */ 
   display: inline-block;
-  vertical-align: middle;
   clear: both;
 }
 
