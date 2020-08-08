@@ -1278,6 +1278,7 @@ input[type=submit]:hover {
   }
   .product-info{
     width: 100%;
+    padding-left: 0;
   }
   .product-images{
     width: 100%;
