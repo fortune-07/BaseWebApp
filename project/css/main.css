@@ -756,7 +756,7 @@ li{
 .prev,
 .next {
   cursor: pointer;
-  position: 4;
+  position: absolute;
   top: 40%;
   width: auto;
   padding: 16px;
