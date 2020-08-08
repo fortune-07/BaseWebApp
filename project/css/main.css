@@ -1277,8 +1277,9 @@ input[type=submit]:hover {
     display: block;
   }
   .product-title{
-    float: none;
-    font-size: 16px;
+    position: relative;
+    top: 5px;
+    font-size: 20px;
     line-height: 22px;
     margin: 30px 0;
     text-align: center;
