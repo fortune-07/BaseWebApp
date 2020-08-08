@@ -797,7 +797,7 @@ li{
   float: left;
   box-sizing: content-box;
   /* width: 16.66%; */
-  width: auto;
+  width: 16%;
   vertical-align: middle;
 }
 
