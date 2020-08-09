@@ -1076,6 +1076,16 @@ input[type=submit]:hover {
   .navbar-nav .icons{
     display: none;
   }
+  .navbar-nav .search-icon{
+    display: none;
+    text-decoration: none;
+    color: black !important;
+  }
+
+  .navbar-nav .shopping-cart-icon{
+    display: none;
+    margin-right: 2rem !important;
+  }
   .mobile-header{
     display: inline-block;
     height: 60px;
