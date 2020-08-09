@@ -1069,14 +1069,15 @@ input[type=submit]:hover {
 
 @media screen and (max-width:767px){
   /*----------------------------------MOBILE PHONE SCREEN----------------------*/
-  .navbar{
+  .header .container,
+  .main-header{
     display: none;
   }
-  .header .container{
+  .navbar-nav .icons{
     display: none;
   }
   .mobile-header{
-    display: block;
+    display: inline-block;
     height: 60px;
   }
   .nav-toggle{
@@ -1091,10 +1092,6 @@ input[type=submit]:hover {
     font-size: 25px;
   }
   .shopping-cart-icon{
-    margin-top: 10px;
-    margin-right: 5px;
-  }
-  .search-icon{
     margin-top: 10px;
     margin-right: 5px;
   }
