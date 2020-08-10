@@ -229,7 +229,9 @@ a{
 }
 .header-content{
   display: flex;
+  justify-content: space-between;
   position: relative;
+  background-color: silver;
   top: 0;
   width: 100%;
 }
