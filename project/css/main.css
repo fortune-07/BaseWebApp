@@ -223,9 +223,9 @@ a{
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 15px;
+  right: 10px;
   font-size: 36px;
-  margin-left: 30px;
+  margin-left: 5px;
 }
 .login-register{
   text-align: center;
@@ -256,6 +256,7 @@ a{
   font-size: 18px;
   font-weight: 400;
   color: black;
+  text-transform: uppercase;
 }
 .header-content{
   display: none;
@@ -323,6 +324,7 @@ a{
 
 .showcase-info button {
   border-radius: none;
+  position: absolute;
   outline: 0;
   display: inline-block;
   padding: 10px 25px;
@@ -1116,7 +1118,7 @@ input[type=submit]:hover {
   .menu-scroll li .menu-item{
     position: relative;
   }
-  .menu-switch{
+  /*.menu-switch{
     display: inline-block;
     width: 30px;
     line-height: 1;
@@ -1136,7 +1138,7 @@ input[type=submit]:hover {
     content: '-';
     font-size: 35px;
     top: 6px;
-  }
+  } */  
   .menu-item1{
     width: 100%;
     display: block !important;
