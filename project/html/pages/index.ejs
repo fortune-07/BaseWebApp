@@ -127,15 +127,17 @@
 		<a href="#">Contact</a>
 	</div>
 	<main id="maincontent" class="page-main">
-		<div class="header-content">
-			<span class="nav-toggle" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-			<div class="logo">
-				<a href="/">FortunesVibez</a>
-			</div>
-			<div class="minicart">
-				<a href="/cart">
-					<i class="fas fa-shopping-cart"></i>
-				</a>
+		<div class="container">
+			<div class="header-content">
+				<span class="nav-toggle" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+				<div class="logo">
+					<a href="/">FortunesVibez</a>
+				</div>
+				<div class="minicart">
+					<a href="/cart">
+						<i class="fas fa-shopping-cart"></i>
+					</a>
+				</div>
 			</div>
 		</div>
 		<section id="showcase">
@@ -434,7 +436,7 @@
 	<script>
 		function openNav() {
 			document.getElementById("mySidenav").style.width = "250px";
-			document.getElementById("maincontent").style.marginLeft = "250px";
+			document.getElementById("maincontent").style.marginLeft = "0";
 			document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 		}
 

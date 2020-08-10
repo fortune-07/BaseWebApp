@@ -238,19 +238,28 @@ a{
   left: 3px;
 }
 .logo{
-  text-align: center;
+  position: relative;
+  z-index: 19999;
+}
+.logo a{
+  text-decoration: none;
   font-family: var(--gugi);
   font-size: 18px;
   color: black;
+  height: 22px;
+  text-align: center;
+  cursor: pointer;
 }
 .minicart{
   display: flex;
+  position: relative;
   float: right;
   z-index: 19999
 }
 .minicart a{
   text-decoration: none;
   color: black;
+  white-space: nowrap;
 }
 
 .page-wrapper{
