@@ -235,7 +235,7 @@ a{
 /*------------------------------INDEX PAGE---------------------*/
 #maincontent{
   margin-left: .5s;
-  padding: 0;
+  padding: 16px;
 }
 #showcase{
   background: url('../images/sneakers.jpg') center no-repeat;
@@ -1039,10 +1039,8 @@ input[type=submit]:hover {
   .header{
     display: none;
   }
-  .mobile-header{
-    display: inline-block;
-    height: 60px;
-  }
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
   .nav-toggle{
     margin-top: 10px;
   }
