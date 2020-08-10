@@ -80,8 +80,8 @@ document.getElementById('login-account');
 ;
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "350px";
-  document.getElementById("maincontent").style.marginLeft = "350px";
+  document.getElementById("mySidenav").style.width = "300px";
+  document.getElementById("maincontent").style.marginLeft = "300px";
   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 

@@ -239,6 +239,23 @@ a{
   cursor: pointer;
   text-transform: uppercase;
 }
+.menu-scroller-wrap ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+.menu-scroll li{
+  margin: 0;
+  list-style: none;
+  display: block;
+}
+.menu-scroll li a{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+}
 .header-content{
   display: none;
 }
@@ -1091,6 +1108,45 @@ input[type=submit]:hover {
   .sidenav a {font-size: 18px;}
   .nav-toggle{
     margin-top: 10px;
+  }
+  .menu-scroller-wrap ul .menu-scroll{
+    position: static !important;
+  }
+  .menu-scroll li .menu-item{
+    position: relative;
+  }
+  .menu-switch{
+    display: inline-block;
+    width: 60px;
+    height: 45px;
+    line-height: 1;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menu-switch::after{
+    content: '+';
+    font-size: 26px;
+    position: absolute;
+    top: 10px;
+    right: 23px;
+  }
+  .menu-switch.active:after {
+    content: '-';
+    font-size: 35px;
+    top: 6px;
+  }
+  .menu-item1{
+    display: block !important;
+    height: unset !important;
+    background-color: #f2f2f2;
+  }
+  .menu-item1{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    padding: 8px 8px 8px 32px;
   }
   .header-content{
     display: flex;
