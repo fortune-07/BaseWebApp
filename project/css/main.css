@@ -229,22 +229,22 @@ a{
 }
 .header-content{
   position: relative;
+  top: 0;
   width: 100%;
 }
 .nav-toggle{
   margin-top: 5px;
   z-index: 900;
-  left: 20px;
+  left: 3px;
 }
 .logo{
   text-align: center;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: var(--gugi);
   font-size: 18px;
   color: black;
 }
 .minicart{
   display: inline-block;
-  position: relative;
   z-index: 19999
 }
 .minicart a{
@@ -1076,7 +1076,7 @@ input[type=submit]:hover {
   }
   .minicart{
     margin-top: 20px;
-    margin-right: 15px;
+    margin-right: 3px;
   }
   .site-title{
     font-size: 25px;
