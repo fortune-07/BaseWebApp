@@ -242,6 +242,7 @@ a{
 .logo{
   margin: 0;
   position: absolute;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
@@ -255,7 +256,7 @@ a{
   cursor: pointer;
 }
 .minicart{
-  display: inline;
+  display: flex;
   position: relative;
   float: right;
   z-index: 19999
