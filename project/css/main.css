@@ -223,9 +223,9 @@ a{
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
+  right: 15px;
   font-size: 36px;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 .login-register{
   text-align: center;
@@ -237,13 +237,10 @@ a{
   font-weight: 400;
   color: black;
   cursor: pointer;
+  text-transform: uppercase;
 }
 .header-content{
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  top: 0;
-  width: 100%;
+  display: none;
 }
 .nav-toggle{
   margin-top: 5px;
@@ -1096,6 +1093,11 @@ input[type=submit]:hover {
     margin-top: 10px;
   }
   .header-content{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+    width: 100%;
     padding: 0;
     height: 60px;
     z-index: 99;
