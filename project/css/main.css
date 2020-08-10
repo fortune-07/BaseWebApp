@@ -263,8 +263,7 @@ a{
   width: 250px;
   top: 0;
   left: 0;
-  font-size: 14px;
-  font-weight: 400;
+  height: 100%;
   color: black;
   text-align: left;
   letter-spacing: -.01em;
@@ -275,6 +274,8 @@ a{
 .login-register{
   box-sizing: border-box;
   text-align: center;
+  font-size: 10px;
+  font-weight: 400;
   border-bottom: 1px solid #e6e6e6;
   cursor: pointer;
 }
@@ -284,16 +285,14 @@ a{
   list-style-type: none;
 }
 .menu-scroller li{
-  margin: 0;
-  padding-left: 15px;
   list-style: none;
   display: block;
 }
 .menu-item{
-  font-size: 14px;
+  font-size: 10px;
+  font-weight: 400;
   color: black;
   text-transform: uppercase;
-  padding-bottom: 10px;
 }
 .menu-item a{
   text-decoration: none;
