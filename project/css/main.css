@@ -244,11 +244,11 @@ a{
   color: black;
 }
 .minicart{
-  display: inline-block;
+  display: flex;
+  float: right;
   z-index: 19999
 }
 .minicart a{
-  float: right;
   text-decoration: none;
   color: black;
 }
@@ -260,13 +260,12 @@ a{
 /*------------------------------INDEX PAGE---------------------*/
 #maincontent{
   margin-left: .5s;
-  padding: 16px;
+  padding: 0;
 }
 #showcase{
   background: url('../images/sneakers.jpg') center no-repeat;
   background-size: cover;
   position: relative;
-  /*padding-bottom: 55px;*/
   min-height: 400px;
   margin-bottom: 20px;
 }
