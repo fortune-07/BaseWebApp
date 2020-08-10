@@ -227,8 +227,8 @@ a{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
-  overflow-x: hidden;
+  background-color: transparent;
+  overflow-x: scroll;
   transition: 0.5s;
   padding-top: 60px;
 }
@@ -240,11 +240,6 @@ a{
   color: #818181;
   display: block;
   transition: 0.3s;
-}
-
-.highlight{
-  color: orangered;
-  font-family: var(--gugi);
 }
 
 .sidenav a:hover {
@@ -263,6 +258,45 @@ a{
   z-index: 99; 
   right: 15px;
   left: 85%;
+}
+.navigation{
+  width: 250px;
+  top: 0;
+  left: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  text-align: left;
+  letter-spacing: -.01em;
+  line-height: 45px;
+  background: #fff;
+  box-sizing: border-box;
+}
+.login-register{
+  box-sizing: border-box;
+  text-align: center;
+  border-bottom: 1px solid #e6e6e6;
+  cursor: pointer;
+}
+.menu-scroller-wrap ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.menu-scroller li{
+  margin: 0;
+  padding-left: 15px;
+  list-style: none;
+  display: block;
+}
+.menu-item{
+  font-size: 14px;
+  color: black;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.menu-item a{
+  text-decoration: none;
 }
 
 .page-wrapper{
@@ -1069,22 +1103,8 @@ input[type=submit]:hover {
 
 @media screen and (max-width:767px){
   /*----------------------------------MOBILE PHONE SCREEN----------------------*/
-  .header .container,
-  .main-header{
+  .header{
     display: none;
-  }
-  .navbar-nav .icons{
-    display: none;
-  }
-  .navbar-nav .search-icon{
-    display: none;
-    text-decoration: none;
-    color: black !important;
-  }
-
-  .navbar-nav .shopping-cart-icon{
-    display: none;
-    margin-right: 2rem !important;
   }
   .mobile-header{
     display: inline-block;
@@ -1100,72 +1120,6 @@ input[type=submit]:hover {
   }
   .site-title{
     font-size: 25px;
-  }
-  .shopping-cart-icon{
-    margin-top: 10px;
-    margin-right: 5px;
-  }
-  .navigation{
-    padding: 0;
-    font-size: 14px;
-    font-weight: 400;
-    color: #333;
-    text-align: left;
-    letter-spacing: -.01em;
-    line-height: 45px;
-    background: #fff;
-    box-sizing: border-box;
-  }
-  .mobile-login-register{
-    cursor: pointer;
-    box-sizing: border-box;
-    border-bottom: 1px solid #e6e6e6;
-  }
-  .menu-scroller-arrow{
-    display: none !important;
-  }
-  .navigation ul.ui-menu {
-    position: static !important;
-  }
-  .navigation ul {
-    margin: 0;
-    padding: 0
-  }
-  .navigation li {
-    margin: 0;
-  }
-  nav ul{
-    list-style: none none;
-  }
-  .navigation .menu-scroller-wrap, 
-  ul.ui-menu li.level0 {
-    position: relative;
-  }
-  .menu-scroller-wrap,
-  ul.ui-menu li.level0,
-  a.level-top {
-    border: none !important;
-    padding-left: 10px;
-    font-weight: 400;
-    color: #333;
-    text-transform: uppercase;
-    padding: 0 0 0 20px;
-  }
-  .navigation .parent,
-  .level-top {
-    position: relative;
-    display: block;
-    text-decoration: none;
-  }
-  .menu_switch {
-    display: inline-block;
-    width: 60px;
-    height: 45px;
-    line-height: 1;
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    top: 0;
   }
 
   #display-products{
