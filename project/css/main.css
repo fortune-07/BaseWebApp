@@ -231,7 +231,6 @@ a{
   display: flex;
   justify-content: space-between;
   position: relative;
-  background-color: silver;
   top: 0;
   width: 100%;
 }
@@ -257,7 +256,7 @@ a{
   cursor: pointer;
 }
 .minicart{
-  float: left;
+  float: right;
   position: relative;
   z-index: 19999;
   right: 5px;
