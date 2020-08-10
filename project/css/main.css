@@ -227,7 +227,10 @@ a{
   font-size: 36px;
   margin-left: 50px;
 }
-
+.header-content{
+  position: relative;
+  width: 100%;
+}
 .nav-toggle{
   margin-top: 5px;
   z-index: 900;
@@ -1066,7 +1069,6 @@ input[type=submit]:hover {
     margin-top: 10px;
   }
   .header-content{
-    position: relative;
     padding: 0;
     height: 60px;
     z-index: 99;
