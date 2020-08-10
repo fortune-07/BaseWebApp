@@ -256,7 +256,8 @@ a{
   cursor: pointer;
 }
 .minicart{
-  display: inline;
+  display: flex;
+  order: 3;
   position: relative;
   float: right;
   z-index: 19999
