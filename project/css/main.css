@@ -418,7 +418,18 @@ ol{
   padding-left: 0;
   font-size: 0;
 }
-
+.home-hot-items{
+  margin: 50px auto 0;
+  text-align: left;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+.hot-item-products{
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  font-size: 0;
+}
 li{
   display: list-item;
   text-align: -webkit-match-parent;
@@ -1208,7 +1219,6 @@ input[type=submit]:hover {
     font-size: 10px;
     margin-top: 20px;
   }
-
   #boxes{
     display: block;
     width: 100%;
