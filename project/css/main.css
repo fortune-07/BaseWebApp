@@ -229,7 +229,7 @@ a{
 }
 .header-content{
   display: flex;
-  align-items: stretch;
+  justify-content: space-between;
   position: relative;
   top: 0;
   width: 100%;
@@ -256,7 +256,7 @@ a{
   cursor: pointer;
 }
 .minicart{
-  float: right;
+  float: left;
   position: relative;
   z-index: 19999;
   right: 5px;
