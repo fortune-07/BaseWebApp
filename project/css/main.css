@@ -258,6 +258,7 @@ a{
   float: left;
   position: relative;
   z-index: 19999;
+  right: 5px;
 }
 .minicart a{
   text-decoration: none;
