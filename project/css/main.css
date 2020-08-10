@@ -228,6 +228,8 @@ a{
   margin-left: 50px;
 }
 .header-content{
+  display: flex;
+  justify-content: flex-start;
   position: relative;
   top: 0;
   width: 100%;
@@ -238,20 +240,22 @@ a{
   left: 3px;
 }
 .logo{
-  position: relative;
-  z-index: 19999;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  text-align: center;
+  font-family: var(--gugi);
 }
 .logo a{
   text-decoration: none;
-  font-family: var(--gugi);
   font-size: 18px;
   color: black;
-  height: 22px;
-  text-align: center;
   cursor: pointer;
 }
 .minicart{
-  display: flex;
+  display: inline;
   position: relative;
   float: right;
   z-index: 19999
@@ -1081,6 +1085,9 @@ input[type=submit]:hover {
     padding: 0;
     height: 60px;
     z-index: 99;
+  }
+  .logo{
+    z-index: 1000;
   }
   .minicart{
     margin-top: 20px;
