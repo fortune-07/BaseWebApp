@@ -1175,6 +1175,10 @@ input[type=submit]:hover {
   .showcase-info button{
     position: absolute;
   }
+  .showcase-info p{
+    font-weight: 400;
+    text-transform: uppercase;
+  }
   #showcase h1{
   font-size: 40px;
   font-weight: 300;
