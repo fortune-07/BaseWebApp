@@ -229,7 +229,6 @@ a{
 }
 .header-content{
   display: flex;
-  justify-content: space-between;
   position: relative;
   top: 0;
   width: 100%;
@@ -259,12 +258,12 @@ a{
   float: left;
   position: relative;
   z-index: 19999;
-  right: 5px;
 }
 .minicart a{
   text-decoration: none;
   display: inline-block;
   color: black;
+  height: 22px;
   white-space: nowrap;
 }
 
