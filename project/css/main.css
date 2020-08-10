@@ -257,9 +257,8 @@ a{
 }
 .minicart{
   display: flex;
-  order: 3;
   position: relative;
-  float: right;
+  text-align: right;
   z-index: 19999
 }
 .minicart a{
