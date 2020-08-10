@@ -256,12 +256,12 @@ a{
   cursor: pointer;
 }
 .minicart{
-  display: inline-block;
-  text-align: right;
-  z-index: 19999
+  float: right;
+  position: absolute;
 }
 .minicart a{
   text-decoration: none;
+  display: inline-block;
   color: black;
   white-space: nowrap;
 }
