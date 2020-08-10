@@ -120,236 +120,198 @@
 
 	<!-- Top menu on small screens -->
 	<header class="mobile-header">
-		<div class="container">
-			<span style="font-size:30px;cursor:pointer" class="nav-toggle" onclick="openNav()">&#9776; </span>
-			<div class="header-content">
-				<div class="site-title">FortunesVibez</div>
-			</div>
-			<li class="mx-2 shopping-cart-icon" style="display: inline;">
-				<a href="/cart">
-					<i class="fas fa-shopping-cart p-2"></i>
-				</a>
-			</li>
-		</div>
-		<div id="mySidenav" class="sidenav" data-role="content" role="tabpanel" aria-hidden="false">
+		<div id="mySidenav" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<nav class="navigation" data-action="navigation">
-				<div class="login-register">
-					<a href="/login">LOGIN/REGISTER</a>
-				</div>
-				<div class="menu-scroller-wrap">
-					<ul class="menu-scroller">
-						<li class="menu-item">
-							<a href="/jewelry">JEWELRY</a>
-						</li>
-						<li class="menu-item">
-							<a href="/shoes">FOOTWEAR</a>
-						</li>
-						<li class="menu-item">
-							<a href="/new-arrival">NEW ARRIVAL</a>
-						</li>
-						<li class="menu-item">
-							<a href="/hot-item">HOT ITEM</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
+			<a href="#">About</a>
+			<a href="#">Services</a>
+			<a href="#">Clients</a>
+			<a href="#">Contact</a>
 		</div>
 	</header>
-
-	<section id="showcase">
-		<div class="showcase-info">
-			<h1>All Time Finest</h1>
-			<p>Street Wear</p>
-			<a href="/"><button>Shop Now</button></a>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+	<main id="maincontent" class="page-main">
+		<section id="showcase">
+			<div class="showcase-info">
+				<h1>All Time Finest</h1>
+				<p>Street Wear</p>
+				<a href="/"><button>Shop Now</button></a>
+			</div>
+		</section>
+		
+		<section id="display-products">
+			<div class="polaroid">
+				<a href="/adidas">
+					<img src="images/nikeairjordan.jpg" width="100%" />
+					<div class="product-name">Nike Air Jordan</div>
+				</a>
+			</div>
+			<div class="polaroid">
+				<a href="/nike">
+					<img src="images/nike.jpg" width="100%" />
+					<div class="product-name">Nike</div>
+				</a>
+			</div>
+			<div class="polaroid">
+				<a href="/yeezy">
+					<img src="images/yeezy.jpg" width="100%" />
+					<div class="product-name">Adidas Yeezy</div>
+				</a>
+			</div>
+		</section>
+		
+		<div class="home-new-arrival">
+			<h4>New Arrival</h4>
+			<ol class="new-arrival-product">
+				<li class="item">
+					<a class="item-box" href="/adidas-yeezy-boost-350">
+						<img class="item-image" src="images/adidasYeezyBoost350.jpg">
+						<div class="item-info">
+							<div class="item-name">adidas Yeezy Boost 350 V2</div>
+							<div class="item-color">cinder</div>
+							<div class="item-price">
+								<span class="price">Ksh.3000</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="item">
+					<a class="item-box" href="/adidas-yeezy-boost-350-asia">
+						<img class="item-image" src="images/adidasYeezyBoost350Asia.jpg">
+						<div class="item-info">
+							<div class="item-name">adidas Yeezy Boost 350 V2</div>
+							<div class="item-color">Asia-Flax</div>
+							<div class="item-price">
+								<span class="price">Ksh.3000</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="item">
+					<a class="item-box" href="/adidas-yeezy-boost-350-desert">
+						<img class="item-image" src="images/adidasYeezyBoost350d.jpg">
+						<div class="item-info">
+							<div class="item-name">adidas Yeezy Boost 350 V2</div>
+							<div class="item-color">Desert Sage</div>
+							<div class="item-price">
+								<span class="price">Ksh.3000</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="item">
+					<a class="item-box" href="/nike-air-jordan-4-retro">
+						<img class="item-image" src="images/NikeAirJordan4Retro.jpg">
+						<div class="item-info">
+							<div class="item-name">Nike Air Jordan 4 Retro SE</div>
+							<div class="item-color">Neon</div>
+							<div class="item-price">
+								<span class="price">Ksh.4000</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="item">
+					<a class="item-box" href="/nike-air-jordan-5-retro">
+						<img class="item-image" src="images/NikeAirJordan5Retro.jpg">
+						<div class="item-info">
+							<div class="item-name">Nike Air Jordan 5 Retro SE</div>
+							<div class="item-color">White</div>
+							<div class="item-price">
+								<span class="price">Ksh.4000</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="item">
+					<a class="item-box" href="/nike-air-jordan-6-retro">
+						<img class="item-image" src="images/NikeAirJordan6Retro.jpg">
+						<div class="item-info">
+							<div class="item-name">Nike Air Jordan 6 SE</div>
+							<div class="item-color">Black</div>
+							<div class="item-price">
+								<span class="price">Ksh.4000</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="item">
+					<a class="item-box" href="/nike-air-jordan-13">
+						<img class="item-image" src="images/Air13.jpg">
+						<div class="item-info">
+							<div class="item-name">Nike Air Jordan 13 Retro</div>
+							<div class="item-color">Flint</div>
+							<div class="item-price">
+								<span class="price">Ksh.4000</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="item">
+					<a class="item-box" href="/nike-ldwaffle-black">
+						<img class="item-image" src="images/NikeLDWaffleBlack.jpg">
+						<div class="item-info">
+							<div class="item-name">Nike LDWaffle x Sacai</div>
+							<div class="item-color">Black-Nylon</div>
+							<div class="item-price">
+								<span class="price">Ksh.3500</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="item">
+					<a class="item-box" href="/nike-air-jordan-1">
+						<img class="item-image" src="images/AirJordanLow.jpg">
+						<div class="item-info">
+							<div class="item-name">Nike Air Jordan 1 Low</div>
+							<div class="item-color">Galaxy</div>
+							<div class="item-price">
+								<span class="price">Ksh.4000</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="item">
+					<a class="item-box" href="/nike-air-jordan-13-black">
+						<img class="item-image" src="images/Air13.jpg">
+						<div class="item-info">
+							<div class="item-name">Nike Air Jordan 13 Retro</div>
+							<div class="item-color">Black</div>
+							<div class="item-price">
+								<span class="price">Ksh.4000</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="item">
+					<a class="item-box" href="/nike-air-force-1">
+						<img class="item-image" src="images/NikeAirForce.jpg">
+						<div class="item-info">
+							<div class="item-name">Nike Air Force 1</div>
+							<div class="item-color">Be True</div>
+							<div class="item-price">
+								<span class="price">Ksh.3500</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="item">
+					<a class="item-box" href="/nike-ldwaffle-white">
+						<img class="item-image" src="images/NikeLDWaffleWhite.jpg">
+						<div class="item-info">
+							<div class="item-name">Nike LDWaffle X Sacai</div>
+							<div class="item-color">White-Nylon</div>
+							<div class="item-price">
+								<span class="price">Ksh.3500</span>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ol>
+			<div class="show-more">
+				<a href="/new-arrival">Show More</a>
+			</div>
 		</div>
-	</section>
-
-	<section id="display-products">
-		<div class="polaroid">
-			<a href="/adidas">
-				<img src="images/nikeairjordan.jpg" width="100%" />
-				<div class="product-name">Nike Air Jordan</div>
-			</a>
-		</div>
-		<div class="polaroid">
-			<a href="/nike">
-				<img src="images/nike.jpg" width="100%" />
-				<div class="product-name">Nike</div>
-			</a>
-		</div>
-		<div class="polaroid">
-			<a href="/yeezy">
-				<img src="images/yeezy.jpg" width="100%" />
-				<div class="product-name">Adidas Yeezy</div>
-			</a>
-		</div>
-	</section>
-
-	<div class="home-new-arrival">
-		<h4>New Arrival</h4>
-		<ol class="new-arrival-product">
-			<li class="item">
-				<a class="item-box" href="/adidas-yeezy-boost-350">
-					<img class="item-image"
-						src="images/adidasYeezyBoost350.jpg">
-					<div class="item-info">
-						<div class="item-name">adidas Yeezy Boost 350 V2</div>
-						<div class="item-color">cinder</div>
-						<div class="item-price">
-							<span class="price">Ksh.3000</span>
-						</div>
-					</div>
-				</a>
-			</li>
-			<li class="item">
-				<a class="item-box" href="/adidas-yeezy-boost-350-asia">
-					<img class="item-image"
-					    src="images/adidasYeezyBoost350Asia.jpg">
-					<div class="item-info">
-						<div class="item-name">adidas Yeezy Boost 350 V2</div>
-						<div class="item-color">Asia-Flax</div>
-						<div class="item-price">
-							<span class="price">Ksh.3000</span>
-						</div>
-					</div>
-				</a>
-			</li>
-			<li class="item">
-				<a class="item-box" href="/adidas-yeezy-boost-350-desert">
-					<img class="item-image"
-						src="images/adidasYeezyBoost350d.jpg">
-					<div class="item-info">
-						<div class="item-name">adidas Yeezy Boost 350 V2</div>
-						<div class="item-color">Desert Sage</div>
-						<div class="item-price">
-							<span class="price">Ksh.3000</span>
-						</div>
-					</div>
-				</a>
-			</li>
-			<li class="item">
-				<a class="item-box" href="/nike-air-jordan-4-retro">
-					<img class="item-image"
-						src="images/NikeAirJordan4Retro.jpg">
-					<div class="item-info">
-						<div class="item-name">Nike Air Jordan 4 Retro SE</div>
-						<div class="item-color">Neon</div>
-						<div class="item-price">
-							<span class="price">Ksh.4000</span>
-						</div>
-					</div>
-				</a>
-			</li>
-			<li class="item">
-				<a class="item-box" href="/nike-air-jordan-5-retro">
-					<img class="item-image"
-						src="images/NikeAirJordan5Retro.jpg">
-					<div class="item-info">
-						<div class="item-name">Nike Air Jordan 5 Retro SE</div>
-						<div class="item-color">White</div>
-						<div class="item-price">
-						    <span class="price">Ksh.4000</span>
-						</div>
-					</div>
-				</a>
-			</li>
-			<li class="item">
-				<a class="item-box" href="/nike-air-jordan-6-retro">
-					<img class="item-image"
-						src="images/NikeAirJordan6Retro.jpg">
-					<div class="item-info">
-						<div class="item-name">Nike Air Jordan 6 SE</div>
-						<div class="item-color">Black</div>
-						<div class="item-price">
-							<span class="price">Ksh.4000</span>
-						</div>
-					</div>
-				</a>
-			</li>
-			<li class="item">
-				<a class="item-box" href="/nike-air-jordan-13">
-					<img class="item-image"
-						src="images/Air13.jpg">
-					<div class="item-info">
-						<div class="item-name">Nike Air Jordan 13 Retro</div>
-						<div class="item-color">Flint</div>
-						<div class="item-price">
-							<span class="price">Ksh.4000</span>
-						</div>
-					</div>
-				</a>
-			</li>
-			<li class="item">
-				<a class="item-box" href="/nike-ldwaffle-black">
-					<img class="item-image"
-						src="images/NikeLDWaffleBlack.jpg">
-					<div class="item-info">
-						<div class="item-name">Nike LDWaffle x Sacai</div>
-						<div class="item-color">Black-Nylon</div>
-						<div class="item-price">
-							<span class="price">Ksh.3500</span>
-						</div>
-					</div>
-				</a>
-			</li>
-			<li class="item">
-				<a class="item-box" href="/nike-air-jordan-1">
-					<img class="item-image"
-						src="images/AirJordanLow.jpg">
-					<div class="item-info">
-						<div class="item-name">Nike Air Jordan 1 Low</div>
-						<div class="item-color">Galaxy</div>
-						<div class="item-price">
-							<span class="price">Ksh.4000</span>
-						</div>
-					</div>
-				</a>
-			</li>
-			<li class="item">
-				<a class="item-box" href="/nike-air-jordan-13-black">
-					<img class="item-image"
-						src="images/Air13.jpg">
-					<div class="item-info">
-						<div class="item-name">Nike Air Jordan 13 Retro</div>
-						<div class="item-color">Black</div>
-						<div class="item-price">
-							<span class="price">Ksh.4000</span>
-						</div>
-					</div>
-				</a>
-			</li>
-			<li class="item">
-				<a class="item-box" href="/nike-air-force-1">
-					<img class="item-image"
-					    src="images/NikeAirForce.jpg">
-					<div class="item-info">
-						<div class="item-name">Nike Air Force 1</div>
-						<div class="item-color">Be True</div>
-						<div class="item-price">
-							<span class="price">Ksh.3500</span>
-						</div>
-					</div>
-				</a>
-			</li>
-			<li class="item">
-				<a class="item-box" href="/nike-ldwaffle-white">
-					<img class="item-image"
-						src="images/NikeLDWaffleWhite.jpg">
-					<div class="item-info">
-						<div class="item-name">Nike LDWaffle X Sacai</div>
-						<div class="item-color">White-Nylon</div>
-						<div class="item-price">
-							<span class="price">Ksh.3500</span>
-						</div>
-					</div>
-				</a>
-			</li>
-		</ol>
-		<div class="show-more">
-			<a href="/new-arrival">Show More</a>
-		</div>
-	</div>
+	</main>
 
 	<div class="clr"></div>
 
@@ -460,6 +422,19 @@
 		// Initialize Firebase
 		firebase.initializeApp(firebaseConfig);
 		firebase.analytics();
+	</script>
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+			document.getElementById("maincontent").style.marginLeft = "250px";
+			document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+			document.getElementById("maincontent").style.marginLeft = "0";
+			document.body.style.backgroundColor = "white";
+		}
 	</script>
 	<script src="js/main.js"></script>
 </body>

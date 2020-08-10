@@ -194,46 +194,20 @@ a{
 }
 
 /*--------------------------Mobile Header---------------------------- */
-.mobile-header{
-  display: none;
-  font-family: 'Roboto', Arial, Helvetica;
-  background-color: silver;
-  z-index: 70;
-  top: 0;
-  position: sticky;
-  border-bottom: 1px solid silver;
-}
-.nav-toggle {
-  cursor: pointer;
-  display: block;
-  left: 20px;
-  position: absolute;
-  margin-top: 10px;
-  z-index: 14;
-  width: 20px;
-  height: 14px;
-  box-sizing: border-box;
-}
-.header-content{
-  position: relative;
-  display: inline;
-  margin: 0;
-  overflow: hidden;
-}
 .sidenav {
   height: 100%;
-  width: 300px;
+  width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: transparent;
-  overflow-x: scroll;
+  background-color: #111;
+  overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
 }
 
-.sidenav a{
+.sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -248,54 +222,10 @@ a{
 
 .sidenav .closebtn {
   position: absolute;
-  font-size: 32px;
-  padding: 0;
-  line-height: 65px;
-  display: inline-block;
   top: 0;
-  transform: translateY(6px);
-  opacity: 1;
-  z-index: 99; 
-  right: 15px;
-  left: 85%;
-}
-.navigation{
-  width: 250px;
-  top: 0;
-  left: 0;
-  height: 100%;
-  color: black;
-  text-align: left;
-  letter-spacing: -.01em;
-  line-height: 45px;
-  background: #fff;
-  box-sizing: border-box;
-}
-.login-register{
-  box-sizing: border-box;
-  text-align: center;
-  font-size: 10px;
-  font-weight: 400;
-  border-bottom: 1px solid #e6e6e6;
-  cursor: pointer;
-}
-.menu-scroller-wrap ul{
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-.menu-scroller li{
-  list-style: none;
-  display: block;
-}
-.menu-item{
-  font-size: 10px;
-  font-weight: 400;
-  color: black;
-  text-transform: uppercase;
-}
-.menu-item a{
-  text-decoration: none;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 .page-wrapper{
@@ -303,6 +233,10 @@ a{
 }
 
 /*------------------------------INDEX PAGE---------------------*/
+#maincontent{
+  margin-left: .5s;
+  padding: 0;
+}
 #showcase{
   background: url('../images/sneakers.jpg') center no-repeat;
   background-size: cover;
