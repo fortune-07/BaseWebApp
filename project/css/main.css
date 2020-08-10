@@ -229,7 +229,7 @@ a{
 }
 .header-content{
   display: flex;
-  justify-content: flex-start;
+  align-items: stretch;
   position: relative;
   top: 0;
   width: 100%;
