@@ -324,7 +324,7 @@ a{
 
 .showcase-info button {
   border-radius: none;
-  position: absolute;
+  position: relative;
   outline: 0;
   display: inline-block;
   padding: 10px 25px;
