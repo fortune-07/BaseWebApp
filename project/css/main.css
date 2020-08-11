@@ -410,7 +410,7 @@ a{
 }
 
 ol{
-  display: inline-block;
+  display: block;
   list-style-type: decimal;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -1275,6 +1275,9 @@ input[type=submit]:hover {
 @media screen and (max-width:767px){
   /*----------------------------------MOBILE PHONE SCREEN----------------------*/
   .header{
+    display: none;
+  }
+  .header-top{
     display: none;
   }
   .header-icons{

@@ -17,7 +17,7 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="container">
+        <div class="container header-top">
             <div class="row">
                 <div class="col-md-4 col-sm-12 col-12">
                     <div class="btn-group">
@@ -100,7 +100,7 @@
                     </ul>
                 </div>
     
-                <div class="navbar-nav">
+                <div class="navbar-nav header-links">
                     <li class="nav-item border rounded-circle mx-2 search-icon">
                         <a href="#">
                             <i class="fas fa-search p-2"></i>
@@ -118,74 +118,55 @@
     <!-- /Header -->
 
     <!-- Top menu on small screens -->
-    <header>
-        <div class="nav-small">
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="/login">Login/Register</a>
-                <hr>
-                <a href="/">Home</a>
-                <a href="/new-arrival">New Arrival</a>
-                <a href="/men-shoes">Men Shoes</a>
-                <a href="/women-shoes">Women Shoes</a>
-                <a href="/men-jewelry">Men Jewelry</a>
-                <a href="/women-jewelry">Women Jewelry</a>
-                <a href="/blog">Blog</a>
-                <a href="/about">About Us</a>
-                <a href="/contact">Contact Us</a>
-            </div>
-            <div class="sidebar">
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-                <div class="side">
-                    <span class="highlight">Fortunes</span>Vibez
+
+    <div class="container">
+        <div class="contact-title">
+            <h1>
+                <span>Contact Us</span>
+            </h1>
+        </div>
+        
+        <div class="contact-wrapper">
+            <div class="contact-form">
+                <div class="form-contact">
+                    <form action="/action_page.php">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name..">
+        
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter email">
+        
+                        <label for="subject">What's on your mind</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+                        <input type="submit" value="Submit">
+                    </form>
                 </div>
             </div>
-        </div>
-    </header>
-
-    <div class="contact-title">
-        <h1>
-            <span>Contact Us</span>
-        </h1>
-    </div>
-
-    <div class="contact-wrapper">
-        <div class="contact-form">
-            <div class="form-contact">
-                <form action="/action_page.php">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name..">
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter email" >
-            
-                    <label for="subject">What's on your mind</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-            
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-        </div>
-
-        <div class="office-contact">
-            <div class="contact-office">
-                <h4>Our Store</h4>
-                <p class="contact-shop" style="padding-left: 0px;"><i class="fas fa-store"
-                    style="font-size: 16px; color: #676767;"></i>&nbsp;&nbsp; FortunesWear Store</p>
-                <p class="contact-phone"><i class="fas fa-phone-alt"></i> 0702425821&nbsp;&nbsp;&nbsp;<a href="https://api.whatsapp.com/send?phone=+254702425821"
-                    target="_blank"><i class="fab fa-whatsapp-square" style="font-size: 18px; color: #00e676;"></i></a></p>
-                <p class="contact-address"><i class="fas fa-map-marker-alt"></i> Gala Place, Shop 1621-22, Moi Avenue<br> Mombasa, Kenya</p>
-                <br>
-                <h4>Our Office</h4>
-                <p style="padding-left: 0px;"><i class="fas fa-building" style="font-size: 16px; color: #676767;"></i>&nbsp;&nbsp;&nbsp;
-                    FortunesWear Company Limited</p>
-                <p class="contact-email"><i class="fas fa-envelope"></i>cs@fortuneswear.com</p>
-                <p class="contact-phone"><i class="fas fa-phone-alt"></i>0702425821</p>
-                <p class="contact-address"><i class="fas fa-map-marker-alt"></i>Flat D, 13/F, Southeast Industrial Building,
-                <br> 
-                611-619 Castle Peak Road, Digo Road, 
-                <br>
-                Mombasa, Kenya</p>
+        
+            <div class="office-contact">
+                <div class="contact-office">
+                    <h4>Our Store</h4>
+                    <p class="contact-shop" style="padding-left: 0px;"><i class="fas fa-store"
+                            style="font-size: 16px; color: #676767;"></i>&nbsp;&nbsp; FortunesWear Store</p>
+                    <p class="contact-phone"><i class="fas fa-phone-alt"></i> 0702425821&nbsp;&nbsp;&nbsp;<a
+                            href="https://api.whatsapp.com/send?phone=+254702425821" target="_blank"><i
+                                class="fab fa-whatsapp-square" style="font-size: 18px; color: #00e676;"></i></a></p>
+                    <p class="contact-address"><i class="fas fa-map-marker-alt"></i> Gala Place, Shop 1621-22, Moi Avenue<br>
+                        Mombasa, Kenya</p>
+                    <br>
+                    <h4>Our Office</h4>
+                    <p style="padding-left: 0px;"><i class="fas fa-building"
+                            style="font-size: 16px; color: #676767;"></i>&nbsp;&nbsp;&nbsp;
+                        FortunesWear Company Limited</p>
+                    <p class="contact-email"><i class="fas fa-envelope"></i>cs@fortunesvibez.com</p>
+                    <p class="contact-phone"><i class="fas fa-phone-alt"></i>0702425821</p>
+                    <p class="contact-address"><i class="fas fa-map-marker-alt"></i>Flat D, 13/F, Southeast Industrial Building,
+                        <br>
+                        611-619 Castle Peak Road, Digo Road,
+                        <br>
+                        Mombasa, Kenya</p>
+                </div>
             </div>
         </div>
     </div>
