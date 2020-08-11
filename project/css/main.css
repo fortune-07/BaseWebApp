@@ -1436,14 +1436,16 @@ input[type=submit]:hover {
   }
 
   .contact-wrapper{
-    display: block;
+    display: flex;
   }
 
   .contact-form{
+    order: 2;
     width: 100%;
   }
 
   .office-contact{
+    order: 1;
     width: 100%;
   }
 
