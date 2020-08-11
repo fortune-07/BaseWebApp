@@ -324,7 +324,7 @@ a{
 }
 
 .show-text{
-  margin-top: 30px;
+  margin-top: 40px;
   text-transform: uppercase;
   color: #fff;
   font-size: 14px; 
@@ -335,7 +335,7 @@ a{
 .showcase-info button {
   border-radius: none;
   outline: 0;
-  margin-top: 50px;
+  margin-top: 45px;
   display: inline-block;
   padding: 10px 25px;
   color: black;
@@ -540,9 +540,11 @@ ol{
   display: inline-block;
   margin-bottom: 30px;
   text-align: center;
+  align-items: center;
 }
 .instagram-header{
   margin-bottom: 0;
+  text-align: center;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 35px;
   font-weight: 700;
@@ -553,6 +555,7 @@ ol{
   text-transform: uppercase;
 }
 .instagram-subheader{
+  text-align: center;
   margin: 0 auto;
   margin-top: 10px;
   font-size: 20px;
@@ -564,8 +567,7 @@ ol{
   font-size: 0;
 }
 .instagram-grid-item li{
-  display: list-item;
-  text-align: -webkit-match-parent;
+  list-style: none;
 }
 .instagram-image{
   display: inline-block;
@@ -1352,9 +1354,13 @@ input[type=submit]:hover {
     font-size: 25px;
   }
   .showcase-info h1{
-  font-size: 40px;
-  font-weight: 300;
-}
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: 300;
+  }
+  .show-text{
+    margin-top: 30px;
+  }
 
   #display-products{
     display: block;
