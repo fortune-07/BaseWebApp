@@ -532,9 +532,19 @@ ol{
 }
 
 /*-----------------------------------------SHOP BY INSTAGRAM----------------------------*/
-.instagram-section-wrap{
-  margin: 60px 0;
-  padding: 0;
+.instagram-page-header{
+  margin: 50px auto 0;
+  text-align: left;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.instagram-page-header h4{
+  color: #1d1e20;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
 .instagram-page-header{
   display: inline-block;
@@ -547,7 +557,7 @@ ol{
   text-align: center;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 35px;
-  font-weight: 700;
+  font-weight: 500;
   font-style: italic;
   letter-spacing: -0.025em;
   line-height: 1;
