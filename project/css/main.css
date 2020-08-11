@@ -1174,11 +1174,13 @@ input{
 
 .contact-wrapper{
   display: flex;
+  flex: 1;
   margin: 0;
   width: 100%;
 }
 
 .contact-form{
+  order: 2;
   width: 50%;
   margin: 0;
   padding: 0;
@@ -1230,6 +1232,7 @@ input[type=submit]:hover {
 }
 
 .office-contact{
+  order: 1;
   width: 50%;
   margin: 0;
   padding: 0;
