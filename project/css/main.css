@@ -410,7 +410,7 @@ a{
 }
 
 ol{
-  display: block;
+  display: inline-block;
   list-style-type: decimal;
   margin-block-start: 1em;
   margin-block-end: 1em;
