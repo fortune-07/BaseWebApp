@@ -1068,9 +1068,12 @@ input{
 
 /*-------------------------------CART PAGE-------------------------------*/
 .products-container{
-  width: 100%;
+  max-width: 970px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+  position: relative;
   justify-content: space-around;
-  margin: 0 auto;
   margin-top: 30px;
 }
 .products-container fa-times-circle{
@@ -1081,51 +1084,61 @@ input{
   cursor: pointer;
 }
 .product-header{
-  max-width: 100%;
+  color: #8e8e93;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
   display: flex;
   justify-content: flex-start;
   border-bottom: 4px solid lightgrey;
-  margin: 0 auto;
 }
 .product-title{
-  width: 60%;
-}
-.price{
-    width: 15%;
-    border-bottom: 1px solid lightgrey;
-    display: flex;
-    align-items: center;
+  text-align: left;
+  width: 53.47%;
 }
 .quantity{
-    width: 20%;
-    border-bottom: 1px solid lightgrey;
-    display: flex;
-    align-items: center;
+  width: 10%;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+}
+.price{
+  width: 18%;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
 }
 .total{
-    width: 10%;
-    border-bottom: 1px solid lightgrey;
-    display: flex;
-    align-items: center;
+  width: 18%;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
 }
 .product {
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 0;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.05);
+  margin: 8px 0;
+}
+.products{
+  border-collapse: collapse;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 10px 0;
 }
 .cartTotalContainer{
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 0;
 }
 .cartTotalTitle{
-    width: 30%;
+  width: 30%;
 }
 .cartTotal{
-    width: 10%;
+  width: 10%;
 }
 
 /*--------------------------------ABOUT PAGE-----------------------------*/
