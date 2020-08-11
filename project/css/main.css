@@ -227,37 +227,6 @@ a{
   font-size: 36px;
   margin-left: 5px;
 }
-.login-register{
-  text-align: center;
-  border-bottom: 1px solid #e6e6e6;
-}
-.login-register a{
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 400;
-  color: black;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-.menu-scroller-wrap ul{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: inline-block;
-}
-.menu-scroll li{
-  margin: 0;
-  list-style: none;
-  display: block;
-}
-.menu-scroll li a{
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 400;
-  color: black;
-  text-transform: uppercase;
-}
 .header-content{
   display: none;
 }
@@ -468,6 +437,7 @@ ol{
 }
 
 .item-info{
+  margin-top: 5px;
   text-align: center;
   line-height: 1;
   text-decoration: none;
@@ -475,28 +445,32 @@ ol{
 }
 
 .item-name{
+  margin-top: 10px;
   font-size: 15px;
   font-weight: 700;
   color: black;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .item-color{
+  margin-top: 10px;
   text-align: center;
   font-size: 12px;
   color: grey;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .item-price{
+  margin-top: 10px;
   font-size: 14px;
-  text-align: center;
+  align-items: center;
   color: black;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .price{
+  text-align: center;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -556,8 +530,8 @@ ol{
   margin-bottom: 0;
   text-align: center;
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 35px;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: bold;
   font-style: italic;
   letter-spacing: -0.025em;
   line-height: 1;
@@ -568,7 +542,8 @@ ol{
   text-align: center;
   margin: 0 auto;
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 400;
 }
 .instagram-grid-item{
   list-style: none;
@@ -1303,11 +1278,65 @@ input[type=submit]:hover {
   .nav-toggle{
     margin-top: 10px;
   }
+
+  /*------------------------------------------MOBILE HEADER--------------------------------*/
+  .login-register{
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .login-register a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .menu-scroller-wrap ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+  }
+  .menu-scroll li{
+    margin: 0;
+    list-style: none;
+    display: block;
+  }
+  .menu-scroll li a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+  }
   .menu-scroller-wrap ul .menu-scroll{
     position: static !important;
   }
   .menu-scroll li .menu-item{
     position: relative;
+  }
+  .mobile-shopping{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-bottom: 1px solid #e6e6e6;
+    text-transform: capitalize;
+  }
+  .mobile-return{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-bottom: 1px solid #e6e6e6;
+    text-transform: capitalize;
+  }
+  .mobile-payment{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-bottom: 1px solid #e6e6e6;
+    text-transform: capitalize;
   }
   /*.menu-switch{
     display: inline-block;
@@ -1381,6 +1410,17 @@ input[type=submit]:hover {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 0;
+  }
+  .instagram-header{
+    font-size: 20px;
+    font-weight: 400;
+    font-weight: bold;
+    text-align: center;
+  }
+  .instagram-subheader{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
   }
 
   .item{
