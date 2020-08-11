@@ -296,10 +296,6 @@ a{
   white-space: nowrap;
 }
 
-.page-wrapper{
-  padding-left: 10px;
-}
-
 /*------------------------------INDEX PAGE---------------------*/
 #maincontent{
   margin-left: .5s;
@@ -328,9 +324,9 @@ a{
 }
 
 .show-text{
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   text-transform: uppercase;
-  color: black;
+  color: #fff;
   font-size: 14px; 
   font-weight: bold;
   mix-blend-mode: screen;
@@ -408,6 +404,10 @@ a{
   line-height: 30px;
   margin-bottom: 10px
 }
+.home-new-arrival ol{
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
 
 ol{
   display: block;
@@ -433,11 +433,11 @@ ol{
 .item{
   display: inline-block;
   box-sizing: border-box;
-  width: 25%;
+  width: 20%;
   margin-bottom: 0;
   font-size: 0;
   margin-top: 20px;
-  padding: 0;
+  padding: 0 10px;
   vertical-align: top;
 }
 
@@ -1275,6 +1275,9 @@ input[type=submit]:hover {
 @media screen and (max-width:767px){
   /*----------------------------------MOBILE PHONE SCREEN----------------------*/
   .header{
+    display: none;
+  }
+  .header-icons{
     display: none;
   }
   .sidenav {padding-top: 15px;}
