@@ -809,23 +809,15 @@ ol{
   box-sizing: border-box;
 }
 .product-title{
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
   padding-left: 52.5%;
-  box-sizing: border-box;
-  margin: 30px 0 10px;
   width: 100%;
   font-size: 28px;
   color: #1d1e20;
   text-align: center;
-  margin: 50px 0 30px;
   line-height: 22px;
 } 
-.product-title span{
-  display: block;
-  max-width: 400px;
-  margin: 0 auto;
-  text-transform: none
-}
 .product-container-wrapper{
   display: flex;
   flex-wrap: wrap;
@@ -1592,9 +1584,6 @@ input[type=submit]:hover {
     line-height: 22px;
     text-align: center;
     text-transform: uppercase;
-  }
-  .product-title span{
-    text-transform: none;
   }
   .product-images{
     order: -1;
