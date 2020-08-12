@@ -155,7 +155,7 @@
 	</div>
 	<main id="maincontent" class="page-main">
 		<div class="container">
-			<div class="header-content">
+			<header class="header-content">
 				<span class="nav-toggle" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
 				<div class="logo">
 					<a href="/">FortunesVibez</a>
@@ -165,7 +165,7 @@
 						<i class="fas fa-shopping-cart"></i>
 					</a>
 				</div>
-			</div>
+			</header>
 		</div>
 		<section id="showcase">
 			<div class="showcase-info">
@@ -506,19 +506,6 @@
 		// Initialize Firebase
 		firebase.initializeApp(firebaseConfig);
 		firebase.analytics();
-	</script>
-	<script>
-		function openNav() {
-			document.getElementById("mySidenav").style.width = "300px";
-			document.getElementById("maincontent").style.marginLeft = "300px";
-			document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-		}
-
-		function closeNav() {
-			document.getElementById("mySidenav").style.width = "0";
-			document.getElementById("maincontent").style.marginLeft = "0";
-			document.body.style.backgroundColor = "white";
-		}
 	</script>
 	<script src="js/main.js"></script>
 </body>

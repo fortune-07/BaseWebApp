@@ -805,14 +805,9 @@ ol{
 /*------------------------------ON CLICK PRODUCT SECTION---------------------*/
 .product-title-wrapper{
   display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
 }
 .product-title{
-  display: flex;
-  flex-direction: row;
-  padding-left: 52.5%;
-  width: 100%;
+  display: inline;
   font-size: 28px;
   color: #1d1e20;
   text-align: center;
