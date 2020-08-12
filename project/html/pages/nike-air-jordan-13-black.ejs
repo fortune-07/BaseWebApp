@@ -15,8 +15,8 @@
 
 <body>
     <!-- Header -->
-    <header>
-        <div class="container">
+    <header class="header">
+        <div class="container" id="top-header">
             <div class="row">
                 <div class="col-md-4 col-sm-12 col-12">
                     <div class="btn-group">
@@ -28,25 +28,21 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-12 text-center">
-                    <h2 class="my-md-3 site-title text-white">FortunesVibez</h2>
+                    <h2 class="my-md-3 site-title">FortunesVibez</h2>
                 </div>
                 <div class="col-md-4 col-12 text-right">
                     <p class="my-md-4 header-links">
                         <i class="fas fa-user"></i>
-                        <a href="/login" class="px-2">Sign In</a>
-                        <a href="/register" class="px-1">Create An Account</a>
+                        <a href="/customer/account/login" class="px-2">Sign In</a>
+                        <a href="/create" class="px-1">Create An Account</a>
                     </p>
                 </div>
             </div>
         </div>
-
+    
         <div class="container-fluid p-0">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+            <nav class="navbar navbar-expand-md navbar-light bg-white">
+                <div class="navbar-collapse collapse show" id="navbarCollapse">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="/">HOME</a>
@@ -84,7 +80,8 @@
                                 <a class="dropdown-item" href="/register">REGISTER</a>
                                 <a class="dropdown-item" href="/shop">SHOP</a>
                                 <a class="dropdown-item" href="/cart">CART</a>
-                                <a class="dropdown-item" href="/logout">LOGOUT</a>
+                                <a class="dropdown-item" onclick="logout()">LOGOUT</a>
+                                <a class="dropdown-item" href="/customer">ACTIVATE</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -98,7 +95,7 @@
                         </li>
                     </ul>
                 </div>
-
+    
                 <div class="navbar-nav">
                     <li class="nav-item border rounded-circle mx-2 search-icon">
                         <a href="#">
@@ -114,6 +111,55 @@
             </nav>
         </div>
     </header>
+    
+    <!-- Top menu on small screens -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="login-register">
+            <a href="/login">Login/Register</a>
+        </div>
+        <div class="menu-scroller-wrap">
+            <ul class="menu-scroll" role="menu" tabindex="0">
+                <li class="menu-item">
+                    <a href="/jewelry">Jewelry</a>
+                    <span class="menu-switch"></span>
+                    <div class="menu-item1">
+                        <a href="/men-jewelry">Men Jewelry</a>
+                        <a href="/women-jewelry">Women Jewelry</a>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    <a href="/blog">Blog</a>
+                </li>
+            </ul>
+            <div class="mobile-shopping">
+                <a href="/shipping-policy">Shopping Policy</a>
+            </div>
+            <div class="mobile-return">
+                <a href="/return-policy">Return Policy</a>
+            </div>
+            <div class="mobile-payment">
+                <a href="/payment-policy">Payment Policy</a>
+            </div>
+        </div>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="container">
+        <div class="header-content">
+            <span class="nav-toggle" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+            <div class="logo">
+                <a href="/">FortunesVibez</a>
+            </div>
+            <div class="minicart">
+                <a href="/cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </div>
+        </div>
+    </div>
     <!-- Product pop up section-->
     <div class="container">
         <section class="product-container-wrapper">
