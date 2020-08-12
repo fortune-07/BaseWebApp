@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Size Info</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
+    <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/ecommerce.js"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/ec.js"></script>
+    <script src="https://kit.fontawesome.com/c5a0d2be63.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container" id="top-header">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-12">
+                    <div class="btn-group">
+                        <button class="btn border dropdown-toggle my-md-4 my-2 text-white" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">KSH</button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">USD</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 text-center">
+                    <h2 class="my-md-3 site-title">FortunesVibez</h2>
+                </div>
+                <div class="col-md-4 col-12 text-right">
+                    <p class="my-md-4 header-links">
+                        <i class="fas fa-user"></i>
+                        <a href="/customer/account/login" class="px-2">Sign In</a>
+                        <a href="/create" class="px-1">Create An Account</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-md navbar-light bg-white">
+                <div class="navbar-collapse collapse show" id="navbarCollapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/new-arrival">NEW ARRIVAL</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                JEWELRY
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/men-jewelry">Men's Jewelry</a>
+                                <a class="dropdown-item" href="/women-jewelry">Women's Jewelry</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                SHOES
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/men-shoes">Men's Shoes</a>
+                                <a class="dropdown-item" href="/women-shoes">Women's Shoes</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MY ACCOUNT
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/login">LOGIN</a>
+                                <a class="dropdown-item" href="/register">REGISTER</a>
+                                <a class="dropdown-item" href="/shop">SHOP</a>
+                                <a class="dropdown-item" href="/cart">CART</a>
+                                <a class="dropdown-item" onclick="logout()">LOGOUT</a>
+                                <a class="dropdown-item" href="/customer">ACTIVATE</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="navbar-nav">
+                    <li class="nav-item border rounded-circle mx-2 search-icon">
+                        <a href="#">
+                            <i class="fas fa-search p-2"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item border rounded-circle mx-2 shopping-cart-icon">
+                        <a href="/cart">
+                            <i class="fas fa-shopping-cart p-2"></i>
+                        </a>
+                    </li>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Top menu on small screens -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="login-register">
+            <a href="/login">Login/Register</a>
+        </div>
+        <div class="menu-scroller-wrap">
+            <ul class="menu-scroll" role="menu" tabindex="0">
+                <li class="menu-item">
+                    <a href="/jewelry">Jewelry</a>
+                    <span class="menu-switch"></span>
+                    <div class="menu-item1">
+                        <a href="/men-jewelry">Men Jewelry</a>
+                        <a href="/women-jewelry">Women Jewelry</a>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    <a href="/blog">Blog</a>
+                </li>
+            </ul>
+            <div class="mobile-shopping">
+                <a href="/shipping-policy">Shopping Policy</a>
+            </div>
+            <div class="mobile-return">
+                <a href="/return-policy">Return Policy</a>
+            </div>
+            <div class="mobile-payment">
+                <a href="/payment-policy">Payment Policy</a>
+            </div>
+        </div>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="container">
+        <div class="header-content">
+            <span class="nav-toggle" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+            <div class="logo">
+                <a href="/">FortunesVibez</a>
+            </div>
+            <div class="minicart">
+                <a href="/cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="page-title-wrapper">
+        <h1 id="page-title-heading" class="page-title"><span class="base" data-ui-id="page-title-wrapper">Size Info</span>
+        </h1>
+    </div>
+    <div id="content-area">
+<h4 class="corpblurcolor-font">NIKE</h4>
+<h5>Nike Men</h5>
+<div class="mobile-fix-scrolling">
+<div class="size-info">
+<div class="size-info-title">
+<table class="sizeInfoTitle">
+<tbody>
+<tr><th>heel-toe (cm)</th></tr>
+<tr><th>CM</th></tr>
+<tr><th>EU</th></tr>
+<tr><th>UK</th></tr>
+<tr><th>US</th></tr>
+</tbody>
+</table>
+</div>
+<div class="size-info-content">
+<div class="size-info-table">
+<div class="size-scroll">
+<table class="sizeInfoContent">
+<tbody>
+<tr>
+<td><span>22</span></td>
+<td><span>22.4</span></td>
+<td><span>22.9</span></td>
+<td><span>23.3</span></td>
+<td><span>23.7</span></td>
+<td><span>24.1</span></td>
+<td><span>24.5</span></td>
+<td><span>25</span></td>
+<td><span>25.4</span></td>
+<td><span>25.8</span></td>
+<td class=""><span>26.2</span></td>
+<td><span>26.7</span></td>
+<td><span>27.1</span></td>
+<td><span>27.5</span></td>
+<td><span>27.9</span></td>
+<td><span>28.3</span></td>
+<td><span>28.8</span></td>
+<td><span>29.2</span></td>
+<td><span>29.6</span></td>
+<td><span>30</span></td>
+<td><span>30.5</span></td>
+<td><span>31.3</span></td>
+<td><span>32.2</span></td>
+<td><span>33</span></td>
+<td><span>33.9</span></td>
+</tr>
+<tr>
+<td><span>23</span></td>
+<td><span>23.5</span></td>
+<td><span>23.5</span></td>
+<td><span>24</span></td>
+<td><span>24</span></td>
+<td><span>24.5</span></td>
+<td><span>25</span></td>
+<td><span>25.5</span></td>
+<td><span>26</span></td>
+<td><span>26.5</span></td>
+<td class=""><span>27</span></td>
+<td><span>27.5</span></td>
+<td><span>28</span></td>
+<td><span>28.5</span></td>
+<td><span>29</span></td>
+<td><span>29.5</span></td>
+<td><span>30</span></td>
+<td><span>30.5</span></td>
+<td><span>31</span></td>
+<td><span>31.5</span></td>
+<td><span>32</span></td>
+<td><span>33</span></td>
+<td><span>34</span></td>
+<td><span>35</span></td>
+<td><span>36</span></td>
+</tr>
+<tr>
+<td class=""><span>36</span></td>
+<td class=""><span>36.5</span></td>
+<td class=""><span>37.5</span></td>
+<td class=""><span>38</span></td>
+<td class=""><span>38.5</span></td>
+<td class=""><span>39</span></td>
+<td class=""><span>40</span></td>
+<td class=""><span>40.5</span></td>
+<td class=""><span>41</span></td>
+<td class=""><span>42</span></td>
+<td class=""><span>42.5</span></td>
+<td><span>43</span></td>
+<td><span>44</span></td>
+<td><span>44.5</span></td>
+<td><span>45</span></td>
+<td><span>45.5</span></td>
+<td><span>46</span></td>
+<td><span>46.5</span></td>
+<td><span>47.5</span></td>
+<td><span>48</span></td>
+<td><span>48.5</span></td>
+<td><span>49.5</span></td>
+<td><span>50.5</span></td>
+<td><span>51.5</span></td>
+<td><span>52.5</span></td>
+</tr>
+<tr>
+<td><span>3.5</span></td>
+<td><span>4</span></td>
+<td><span>4.5</span></td>
+<td><span>5</span></td>
+<td><span>5.5</span></td>
+<td><span>6</span></td>
+<td><span>6</span></td>
+<td><span>6.5</span></td>
+<td><span>7</span></td>
+<td><span>7.5</span></td>
+<td><span>8</span></td>
+<td><span>8.5</span></td>
+<td><span>9</span></td>
+<td><span>9.5</span></td>
+<td><span>10</span></td>
+<td><span>10.5</span></td>
+<td><span>11</span></td>
+<td><span>11.5</span></td>
+<td><span>12</span></td>
+<td><span>12.5</span></td>
+<td><span>13</span></td>
+<td><span>14</span></td>
+<td><span>15</span></td>
+<td><span>16</span></td>
+<td><span>17</span></td>
+</tr>
+<tr>
+<td><span>4</span></td>
+<td><span>4.5</span></td>
+<td><span>5</span></td>
+<td><span>5.5</span></td>
+<td><span>6</span></td>
+<td><span>6.5</span></td>
+<td><span>7</span></td>
+<td><span>7.5</span></td>
+<td><span>8</span></td>
+<td><span>8.5</span></td>
+<td><span>9</span></td>
+<td><span>9.5</span></td>
+<td><span>10</span></td>
+<td><span>10.5</span></td>
+<td><span>11</span></td>
+<td><span>11.5</span></td>
+<td><span>12</span></td>
+<td><span>12.5</span></td>
+<td><span>13</span></td>
+<td><span>13.5</span></td>
+<td><span>14</span></td>
+<td><span>15</span></td>
+<td><span>16</span></td>
+<td><span>17</span></td>
+<td><span>18</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<h5>Nike Women</h5>
+<div class="size-info">
+<div class="size-info-title">
+<table class="sizeInfoTitle">
+<tbody>
+<tr><th>heel-toe (cm)</th></tr>
+<tr><th>EU</th></tr>
+<tr><th>CM</th></tr>
+<tr><th>UK</th></tr>
+<tr><th>US</th></tr>
+</tbody>
+</table>
+</div>
+<div class="size-info-content">
+<div class="size-info-table">
+<div class="size-scroll">
+<table class="sizeInfoContent">
+<tbody>
+<tr>
+<td><span>22</span></td>
+<td><span>22.4</span></td>
+<td><span>22.9</span></td>
+<td><span>23.3</span></td>
+<td><span>23.7</span></td>
+<td><span>24.1</span></td>
+<td><span>24.5</span></td>
+<td><span>25</span></td>
+<td><span>25.4</span></td>
+<td><span>25.8</span></td>
+<td><span>26.2</span></td>
+<td><span>26.7</span></td>
+<td><span>27.1</span></td>
+<td><span>27.5</span></td>
+<td><span>27.9</span></td>
+</tr>
+<tr>
+<td><span>35.5</span></td>
+<td><span>36</span></td>
+<td><span>36.5</span></td>
+<td><span>37.5</span></td>
+<td><span>38</span></td>
+<td><span>38.5</span></td>
+<td><span>39</span></td>
+<td><span>40</span></td>
+<td><span>40.5</span></td>
+<td><span>41</span></td>
+<td><span>42</span></td>
+<td><span>42.5</span></td>
+<td><span>43</span></td>
+<td><span>44</span></td>
+<td><span>44.5</span></td>
+</tr>
+<tr>
+<td><span>22</span></td>
+<td><span>22.5</span></td>
+<td><span>23</span></td>
+<td><span>23.5</span></td>
+<td><span>24</span></td>
+<td><span>24.5</span></td>
+<td><span>25</span></td>
+<td><span>25.5</span></td>
+<td><span>26</span></td>
+<td><span>26.5</span></td>
+<td><span>27</span></td>
+<td><span>27.5</span></td>
+<td><span>28</span></td>
+<td><span>28.5</span></td>
+<td><span>29</span></td>
+</tr>
+<tr>
+<td><span>2.5</span></td>
+<td><span>3</span></td>
+<td><span>3.5</span></td>
+<td><span>4</span></td>
+<td><span>4.5</span></td>
+<td><span>5</span></td>
+<td><span>5.5</span></td>
+<td><span>6</span></td>
+<td><span>6.5</span></td>
+<td><span>7</span></td>
+<td><span>7.5</span></td>
+<td><span>8</span></td>
+<td><span>8.5</span></td>
+<td><span>9</span></td>
+<td><span>9.5</span></td>
+</tr>
+<tr>
+<td><span>5</span></td>
+<td><span>5.5</span></td>
+<td><span>6</span></td>
+<td><span>6.5</span></td>
+<td><span>7</span></td>
+<td><span>7.5</span></td>
+<td><span>8</span></td>
+<td><span>8.5</span></td>
+<td><span>9</span></td>
+<td><span>9.5</span></td>
+<td><span>10</span></td>
+<td><span>10.5</span></td>
+<td><span>11</span></td>
+<td><span>11.5</span></td>
+<td><span>12</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<h5>Nike Kids</h5>
+<div class="size-info">
+<div class="size-info-title">
+<table class="sizeInfoTitle">
+<tbody>
+<tr><th>heel-toe (cm)</th></tr>
+<tr><th>EU</th></tr>
+<tr><th>UK</th></tr>
+<tr><th>US</th></tr>
+<tr><th>CM</th></tr>
+</tbody>
+</table>
+</div>
+<div class="size-info-content">
+<div class="size-info-table">
+<div class="size-scroll">
+<table class="sizeInfoContent">
+<tbody>
+<tr>
+<td><span>19.5</span></td>
+<td><span>19.9</span></td>
+<td><span>20.3</span></td>
+<td><span>20.7</span></td>
+<td><span>21.2</span></td>
+<td><span>21.6</span></td>
+<td><span>22</span></td>
+<td><span>22.4</span></td>
+<td><span>22.9</span></td>
+<td><span>23.3</span></td>
+<td><span>23.7</span></td>
+<td><span>24.1</span></td>
+<td><span>24.5</span></td>
+</tr>
+<tr>
+<td><span>32</span></td>
+<td><span>33</span></td>
+<td><span>33.5</span></td>
+<td><span>34</span></td>
+<td><span>35</span></td>
+<td><span>35.5</span></td>
+<td><span>36</span></td>
+<td><span>36.5</span></td>
+<td><span>37.5</span></td>
+<td><span>38</span></td>
+<td><span>38.5</span></td>
+<td><span>39</span></td>
+<td><span>40</span></td>
+</tr>
+<tr>
+<td><span>13.5</span></td>
+<td><span>1</span></td>
+<td><span>1.5</span></td>
+<td><span>2</span></td>
+<td><span>2.5</span></td>
+<td><span>3</span></td>
+<td><span>3.5</span></td>
+<td><span>4</span></td>
+<td><span>4.5</span></td>
+<td><span>5</span></td>
+<td><span>5.5</span></td>
+<td><span>6</span></td>
+<td><span>6</span></td>
+</tr>
+<tr>
+<td><span>1Y</span></td>
+<td><span>1.5Y</span></td>
+<td><span>2Y</span></td>
+<td><span>2.5Y</span></td>
+<td><span>3Y</span></td>
+<td><span>3.5Y</span></td>
+<td><span>4Y</span></td>
+<td><span>4.5Y</span></td>
+<td><span>5Y</span></td>
+<td><span>5.5Y</span></td>
+<td><span>6Y</span></td>
+<td><span>6.5Y</span></td>
+<td><span>7Y</span></td>
+</tr>
+<tr>
+<td><span>20</span></td>
+<td><span>20.5</span></td>
+<td><span>21</span></td>
+<td><span>21.5</span></td>
+<td><span>22</span></td>
+<td><span>22.5</span></td>
+<td><span>23</span></td>
+<td><span>23.5</span></td>
+<td><span>23.5</span></td>
+<td><span>24</span></td>
+<td><span>24</span></td>
+<td><span>24.5</span></td>
+<td><span>25</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<h4 class="corpblurcolor-font">ADIDAS</h4>
+<div class="mobile-fix-scrolling">
+<div class="size-info">
+<div class="size-info-title">
+<table class="sizeInfoTitle">
+<tbody>
+<tr><th>UK</th></tr>
+<tr><th>EU</th></tr>
+<tr><th>US-MEN</th></tr>
+<tr><th>US-WOMEN</th></tr>
+<tr><th>CN</th></tr>
+<tr><th>Heel-toe (cm)</th></tr>
+<tr><th>Heel-toe (inch)</th></tr>
+</tbody>
+</table>
+</div>
+<div class="size-info-content">
+<div class="size-info-table">
+<div class="size-scroll">
+<table class="sizeInfoContent">
+<tbody>
+<tr>
+<td><span>3</span></td>
+<td><span>3.5</span></td>
+<td><span>4</span></td>
+<td><span>4.5</span></td>
+<td><span>5</span></td>
+<td><span>5.5</span></td>
+<td><span>6</span></td>
+<td><span>6.5</span></td>
+<td><span>7</span></td>
+<td><span>7.5</span></td>
+<td><span>8</span></td>
+<td><span>8.5</span></td>
+<td><span>9</span></td>
+<td><span>9.5</span></td>
+<td><span>10</span></td>
+<td><span>10.5</span></td>
+<td><span>11</span></td>
+<td><span>11.5</span></td>
+<td><span>12</span></td>
+<td><span>12.5</span></td>
+<td><span>13</span></td>
+<td><span>13.5</span></td>
+<td><span>14</span></td>
+<td><span>14.5</span></td>
+<td><span>15</span></td>
+<td><span>16</span></td>
+<td><span>17</span></td>
+</tr>
+<tr>
+<td><span>35.5</span></td>
+<td><span>36.0</span></td>
+<td><span>36.7</span></td>
+<td><span>37.5</span></td>
+<td><span>38.0</span></td>
+<td><span>38.5</span></td>
+<td><span>39.3</span></td>
+<td><span>40.0</span></td>
+<td><span>40.7</span></td>
+<td><span>41.3</span></td>
+<td><span>42.0</span></td>
+<td><span>42.7</span></td>
+<td><span>43.3</span></td>
+<td><span>44.0</span></td>
+<td><span>44.7</span></td>
+<td><span>45.3</span></td>
+<td><span>46.0</span></td>
+<td><span>46.7</span></td>
+<td><span>47.3</span></td>
+<td><span>48.0</span></td>
+<td><span>48.7</span></td>
+<td><span>49.3</span></td>
+<td><span>50.0</span></td>
+<td><span>50.7</span></td>
+<td><span>51.3</span></td>
+<td><span>52.7</span></td>
+<td><span>53.3</span></td>
+</tr>
+<tr>
+<td><span>3.5</span></td>
+<td><span>4</span></td>
+<td><span>4.5</span></td>
+<td><span>5</span></td>
+<td><span>5.5</span></td>
+<td><span>6</span></td>
+<td><span>6.5</span></td>
+<td><span>7</span></td>
+<td><span>7.5</span></td>
+<td><span>8</span></td>
+<td><span>8.5</span></td>
+<td><span>9</span></td>
+<td><span>9.5</span></td>
+<td><span>10</span></td>
+<td><span>10.5</span></td>
+<td><span>11</span></td>
+<td><span>11.5</span></td>
+<td><span>12</span></td>
+<td><span>12.5</span></td>
+<td><span>13</span></td>
+<td><span>13.5</span></td>
+<td><span>14</span></td>
+<td><span>14.5</span></td>
+<td><span>15</span></td>
+<td><span>16</span></td>
+<td><span>17</span></td>
+<td><span>18</span></td>
+</tr>
+<tr>
+<td><span>3.5</span></td>
+<td><span>5</span></td>
+<td><span>5.5</span></td>
+<td><span>6</span></td>
+<td><span>6.5</span></td>
+<td><span>7</span></td>
+<td><span>7.5</span></td>
+<td><span>8</span></td>
+<td><span>8.5</span></td>
+<td><span>9</span></td>
+<td><span>9.5</span></td>
+<td><span>10</span></td>
+<td><span>10.5</span></td>
+<td><span>11</span></td>
+<td><span>11.5</span></td>
+<td><span>12</span></td>
+<td><span>12.5</span></td>
+<td><span>13</span></td>
+<td><span>13.5</span></td>
+<td><span>14</span></td>
+<td><span>14.5</span></td>
+<td><span>15</span></td>
+<td><span>15.5</span></td>
+<td><span>-</span></td>
+<td><span>-</span></td>
+<td><span>-</span></td>
+<td><span>-</span></td>
+</tr>
+<tr>
+<td><span>215</span></td>
+<td><span>220</span></td>
+<td><span>225</span></td>
+<td><span>230</span></td>
+<td><span>235</span></td>
+<td><span>235</span></td>
+<td><span>240</span></td>
+<td><span>245</span></td>
+<td><span>250</span></td>
+<td><span>255</span></td>
+<td><span>260</span></td>
+<td><span>265</span></td>
+<td><span>265</span></td>
+<td><span>270</span></td>
+<td><span>275</span></td>
+<td><span>280</span></td>
+<td><span>285</span></td>
+<td><span>290</span></td>
+<td><span>290</span></td>
+<td><span>295</span></td>
+<td><span>300</span></td>
+<td><span>305</span></td>
+<td><span>310</span></td>
+<td><span>315</span></td>
+<td><span>320</span></td>
+<td><span>325</span></td>
+<td><span>335</span></td>
+</tr>
+<tr>
+<td><span>21.6</span></td>
+<td><span>22.1</span></td>
+<td><span>22.5</span></td>
+<td><span>22.9</span></td>
+<td><span>23.3</span></td>
+<td><span>23.5</span></td>
+<td><span>24.2</span></td>
+<td><span>24.6</span></td>
+<td><span>25.0</span></td>
+<td><span>25.5</span></td>
+<td><span>25.9</span></td>
+<td><span>26.3</span></td>
+<td><span>26.7</span></td>
+<td><span>27.1</span></td>
+<td><span>27.6</span></td>
+<td><span>28.0</span></td>
+<td><span>28.4</span></td>
+<td><span>28.8</span></td>
+<td><span>29.3</span></td>
+<td><span>29.7</span></td>
+<td><span>30.1</span></td>
+<td><span>30.5</span></td>
+<td><span>31.0</span></td>
+<td><span>31.4</span></td>
+<td><span>31.8</span></td>
+<td><span>32.6</span></td>
+<td><span>33.5</span></td>
+</tr>
+<tr>
+<td><span>8.5</span></td>
+<td><span>8.7</span></td>
+<td><span>8.9</span></td>
+<td><span>9.0</span></td>
+<td><span>9.2</span></td>
+<td><span>9.4</span></td>
+<td><span>9.5</span></td>
+<td><span>9.7</span></td>
+<td><span>9.8</span></td>
+<td><span>10.0</span></td>
+<td><span>10.2</span></td>
+<td><span>10.4</span></td>
+<td><span>10.5</span></td>
+<td><span>10.7</span></td>
+<td><span>10.9</span></td>
+<td><span>11.0</span></td>
+<td><span>11.2</span></td>
+<td><span>11.3</span></td>
+<td><span>11.5</span></td>
+<td><span>11.7</span></td>
+<td><span>11.9</span></td>
+<td><span>12.0</span></td>
+<td><span>12.2</span></td>
+<td><span>12.4</span></td>
+<td><span>12.7</span></td>
+<td><span>13.0</span></td>
+<td><span>13.3</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -229,6 +229,7 @@ a{
 }
 .header-content{
   display: none;
+  position: sticky;
 }
 .nav-toggle{
   margin-top: 5px;
@@ -1241,6 +1242,54 @@ input[type=submit]:hover {
   display: block;
 }
 
+/*-------------------------------------SIZE INFO-------------------------------*/
+.page-title {
+  width: 100%;
+  font-size: 28px;
+  color: #1d1e20;
+  text-align: center;
+  margin: 50px 0 30px;
+  line-height: 22px;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.corpblurcolor-font {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 50px;
+  color: #333;
+}
+.size-info {
+  position: relative;
+}
+.size-info-title {
+  display: block;
+  position: relative;
+  width: 100px;
+}
+.size-info-content {
+  position: relative !important;
+  display: contents;
+  top: 0;
+  left: 0;
+  padding-left: 100px;
+  width: 0 !important;
+}
+.size-info-table {
+  position: relative;
+  overflow: hidden;
+  padding: 0 0 5px
+}
+.size-scroll {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+}
+.sizeInfoContent {
+  transition-timing-function: cubic-bezier(.1,.57,.1,1);
+  transition-duration: 0ms;
+  transform: translate(0px,0px) translateZ(0px);
+}
+
 @media screen and (max-width:767px){
   /*----------------------------------MOBILE PHONE SCREEN----------------------*/
   .header{
@@ -1498,6 +1547,37 @@ input[type=submit]:hover {
 
   .modal-content {
     width: 100%;
+  }
+
+  /*-----------------------------------------SIZE INFO-------------------------------*/
+  .page-title {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 30px 0;
+    text-align: center;
+    text-transform: uppercase
+  }
+  .size-info-title {
+    float: left;
+    display: block;
+    position: relative;
+    width: 100px;
+  }
+  .size-info-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-left: 100px;
+  }
+  .size-info-table {
+    position: relative;
+    overflow: hidden;
+    padding: 0 0 5px;
+  }
+  .sizeInfoContent {
+    transition-timing-function: cubic-bezier(.1,.57,.1,1);
+    transition-duration: 0ms;
+    transform: translate(0px,0px) translateZ(0px)
   }
    
   /*--------------------------------------ON CLICK PRODUCTS---------------------------*/

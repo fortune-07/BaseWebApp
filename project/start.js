@@ -101,6 +101,10 @@ app.get('/return-policy', function (request, response) {
   response.render('pages/return-policy');
 });
 
+app.get('/size-info', function (request, response) {
+  response.render('pages/size-info');
+});
+
 app.get('/nike-air-jordan-13', function (request, response) {
   response.render('pages/nike-air-jordan-13');
 });
