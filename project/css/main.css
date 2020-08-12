@@ -230,6 +230,7 @@ a{
 .header-content{
   display: none;
   position: sticky;
+  border-bottom: 1px solid silver;
 }
 .nav-toggle{
   margin-top: 5px;
@@ -803,9 +804,6 @@ ol{
 }
 
 /*------------------------------ON CLICK PRODUCT SECTION---------------------*/
-.product-title-wrapper{
-  display: flex;
-}
 .product-title{
   display: inline;
   font-size: 28px;
