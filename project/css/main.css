@@ -808,6 +808,7 @@ ol{
   box-sizing: border-box;
 }
 .product-title{
+  display: inline-block;
   padding-left: 52.5%;
   box-sizing: border-box;
   margin: 30px 0 10px;
@@ -956,15 +957,13 @@ ol{
   justify-content: center;
 }
 .size-button{
-  display: inline;
-  color: black;
-}
-.sz{
-  text-align: left;
+  text-align: right;
+  margin: auto;
+  max-width: 400px;
 }
 .size-button a{
-  padding-right: 20px;
-  text-align: right;
+  text-decoration: none;
+  
 }
 .var-w{
   padding-bottom: 4px;
@@ -1500,7 +1499,8 @@ input[type=submit]:hover {
   .modal-content {
     width: 100%;
   }
-
+   
+  /*--------------------------------------ON CLICK PRODUCTS---------------------------*/
   .product-container{
     display: flex;
     flex-direction: column;
@@ -1512,6 +1512,9 @@ input[type=submit]:hover {
     line-height: 22px;
     text-align: center;
     text-transform: uppercase;
+  }
+  .product-title span{
+    text-transform: none;
   }
   .product-images{
     order: -1;
@@ -1526,7 +1529,8 @@ input[type=submit]:hover {
   .product-images{
     width: 100%;
   }
-
+  
+  /*----------------------------------------JEWELRY PRODUCTS-----------------------------*/
   .jewelry-wrapper h4{
     font-size: 20px;
     line-height: 20px;
