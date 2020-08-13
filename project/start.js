@@ -105,12 +105,52 @@ app.get('/size-info', function (request, response) {
   response.render('pages/size-info');
 });
 
+app.get('/BV0073-101-Nike-LDWaffle-x-Sacai-White', function (request, response) {
+  response.render('pages/BV0073-101-Nike-LDWaffle-x-Sacai-White');
+});
+
+app.get('/CV0258-100-Nike-Air-Force-1-Be-True-White', function (request, response) {
+  response.render('pages/CV0258-100-Nike-Air-Force-1-Be-True-White');
+});
+
+app.get('/FX9035-adidas-Yeezy-Boost-350-V2-Desert-Sage', function (request, response) {
+  response.render('pages/FX9035-adidas-Yeezy-Boost-350-V2-Desert-Sage');
+});
+
+app.get('/DA1911-102-Nike-Air-Jordan-5-Retro-Fire-Red', function (request, response) {
+  response.render('pages/DA1911-102-Nike-Air-Jordan-5-Retro-Fire-Red');
+});
+
+app.get('/CT4954-007-Nike-Air-Jordan-6-Retro-DMP', function (request, response) {
+  response.render('pages/CT4954-007-Nike-Air-Jordan-6-Retro-DMP');
+});
+
+app.get('/Korean-Sweet-Flower-Earrings', function (request, response) {
+  response.render('pages/Korean-Sweet-Flower-Earrings');
+});
+
+app.get('/Golden-Star-Stud-Ear-Earrings-big', function (request, response) {
+  response.render('pages/Golden-Star-Stud-Ear-Earrings-big');
+});
+
+app.get('/BV0073-002-Nike-LDWaffle-x-Sacai-Black-Nylon', function (request, response) {
+  response.render('pages/BV0073-002-Nike-LDWaffle-x-Sacai-Black-Nylon');
+});
+
+app.get('/led-luminous-Diamond-Wrist-watch', function (request, response) {
+  response.render('pages/led-luminous-Diamond-Wrist-watch');
+});
+
+app.get('/Patel-Philippe-Calatrava BLack-Curren-Watch', function (request, response) {
+  response.render('pages/Patel-Philippe-Calatrava BLack-Curren-Watch');
+});
+
 app.get('/nike-air-jordan-13', function (request, response) {
   response.render('pages/nike-air-jordan-13');
 });
 
-app.get('/nike-air-jordan-13-black', function (request, response) {
-  response.render('pages/nike-air-jordan-13-black');
+app.get('/884129-404-Nike-Air-Jordan-13-Retro-GS-FlintNavy', function (request, response) {
+  response.render('pages/884129-404-Nike-Air-Jordan-13-Retro-GS-FlintNavy');
 });
 
 app.get('/adidas-yeezy-boost-350-asia', function (request, response) {
