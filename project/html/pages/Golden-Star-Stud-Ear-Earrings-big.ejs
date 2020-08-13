@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+    <main class="main-content">
+        <section class="product-container-wrapper">
+            <h1 class="image-title">
+                <span>Korean Sweet Flower Earrings</span>
+            </h1>
+            <div class="product-images">
+                <img id="myImg" src="images/jewelry/women/Koreansweatstudearring1.jpg" style="width:100%;max-width:300px">
+    
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="product-value">
+                    KE9028
+                </div>
+                <hr>
+                <div class="product-price">
+                    Ksh.300
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        var modal = document.getElementById("myModal");
+
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</head>
+</html>
