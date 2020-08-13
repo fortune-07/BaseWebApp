@@ -110,20 +110,8 @@ function showSlides(n) {
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "300px";
-  document.getElementById("maincontent").style.marginLeft = "300px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("maincontent").style.marginLeft = "0";
-  document.body.style.backgroundColor = "white";
-}
-
-/*function openNav() {
-  document.getElementById("mySidenav").style.width = "300px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}*/  
+}  

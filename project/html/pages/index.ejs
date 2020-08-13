@@ -48,6 +48,53 @@
 
 		<div class="container-fluid p-0">
 			<nav class="navbar navbar-expand-md navbar-light bg-white">
+				<div class="container">
+					<div class="header-content">
+						<span class="nav-toggle" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+						<div class="logo">
+							<a href="/">FortunesVibez</a>
+						</div>
+						<div class="minicart">
+							<a href="/cart">
+								<i class="fas fa-shopping-cart"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div id="mySidenav" class="sidenav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<div class="login-register">
+						<a href="/login">Login/Register</a>
+					</div>
+					<div class="menu-scroller-wrap">
+						<ul class="menu-scroll" role="menu" tabindex="0">
+							<li class="menu-item">
+								<a href="/jewelry">Jewelry</a>
+								<span class="menu-switch"></span>
+								<div class="menu-item1">
+									<a href="/men-jewelry">Men Jewelry</a>
+									<a href="/women-jewelry">Women Jewelry</a>
+								</div>
+							</li>
+							<li class="menu-item">
+								<a href="/blog">Blog</a>
+							</li>
+						</ul>
+						<div class="mobile-shopping">
+							<a href="/shipping-policy">Shopping Policy</a>
+						</div>
+						<div class="mobile-return">
+							<a href="/return-policy">Return Policy</a>
+						</div>
+						<div class="mobile-payment">
+							<a href="/payment-policy">Payment Policy</a>
+						</div>
+					</div>
+					<a href="#">About</a>
+					<a href="#">Services</a>
+					<a href="#">Clients</a>
+					<a href="#">Contact</a>
+				</div>
 				<div class="navbar-collapse collapse show" id="navbarCollapse">
 					<ul class="navbar-nav">
 						<li class="nav-item">
@@ -118,238 +165,202 @@
 		</div>
 	</header>
 
-	<!-- Top menu on small screens -->
-	<div id="mySidenav" class="sidenav">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<div class="login-register">
-			<a href="/login">Login/Register</a>
-		</div>
-		<div class="menu-scroller-wrap">
-			<ul class="menu-scroll" role="menu" tabindex="0">
-				<li class="menu-item">
-					<a href="/jewelry">Jewelry</a>
-					<span class="menu-switch"></span>
-					<div class="menu-item1">
-						<a href="/men-jewelry">Men Jewelry</a>
-						<a href="/women-jewelry">Women Jewelry</a>
-					</div>
-				</li>
-				<li class="menu-item">
-					<a href="/blog">Blog</a>
-				</li>
-			</ul>
-			<div class="mobile-shopping">
-				<a href="/shipping-policy">Shopping Policy</a>
+	<div class="container">
+		<div class="header-content">
+			<span class="nav-toggle" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+			<div class="logo">
+				<a href="/">FortunesVibez</a>
 			</div>
-			<div class="mobile-return">
-				<a href="/return-policy">Return Policy</a>
-			</div>
-			<div class="mobile-payment">
-				<a href="/payment-policy">Payment Policy</a>
+			<div class="minicart">
+				<a href="/cart">
+					<i class="fas fa-shopping-cart"></i>
+				</a>
 			</div>
 		</div>
-		<a href="#">About</a>
-		<a href="#">Services</a>
-		<a href="#">Clients</a>
-		<a href="#">Contact</a>
 	</div>
-	<main id="maincontent" class="page-main">
-		<div class="container">
-			<div class="header-content">
-				<span class="nav-toggle" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-				<div class="logo">
-					<a href="/">FortunesVibez</a>
-				</div>
-				<div class="minicart">
-					<a href="/cart">
-						<i class="fas fa-shopping-cart"></i>
-					</a>
-				</div>
-		    </div>
+	<section id="showcase">
+		<div class="showcase-info">
+			<h1 class="glow">House Of Fashion</h1>
+			<p class="show-text">Street Wear</p>
+			<a href="/"><button>Shop Now</button></a>
 		</div>
-		<section id="showcase">
-			<div class="showcase-info">
-				<h1 class="glow">House Of Fashion</h1>
-				<p class="show-text">Street Wear</p>
-				<a href="/"><button>Shop Now</button></a>
-			</div>
-		</section>
-		
-		<section id="display-products">
-			<div class="polaroid">
-				<a href="/adidas">
-					<img src="images/nikeairjordan.jpg" width="100%" />
-					<div class="product-name">Nike Air Jordan</div>
+	</section>
+	
+	<section id="display-products">
+		<div class="polaroid">
+			<a href="/adidas">
+				<img src="images/nikeairjordan.jpg" width="100%" />
+				<div class="product-name">Nike Air Jordan</div>
+			</a>
+		</div>
+		<div class="polaroid">
+			<a href="/nike">
+				<img src="images/nike.jpg" width="100%" />
+				<div class="product-name">Nike</div>
+			</a>
+		</div>
+		<div class="polaroid">
+			<a href="/yeezy">
+				<img src="images/yeezy.jpg" width="100%" />
+				<div class="product-name">Adidas Yeezy</div>
+			</a>
+		</div>
+	</section>
+	
+	<div class="home-new-arrival">
+		<h4>New Arrival</h4>
+		<ol class="jewelry-overlay">
+			<li class="item">
+				<a class="item-grid" href="/Nike-LDWaffle-x-Sacai-White-BV0073-101">
+					<img class="item-image" src="images/NikeLDWaffleWhite.jpg" alt="NikeLDWaffleWhite">
+					<div class="item-info">
+						<div class="item-name">Nike LDWaffle X Sacai</div>
+						<div class="item-color">White-Nylon</div>
+						<div class="item-price">
+							<span class="price">Ksh.3500</span>
+						</div>
+					</div>
 				</a>
-			</div>
-			<div class="polaroid">
-				<a href="/nike">
-					<img src="images/nike.jpg" width="100%" />
-					<div class="product-name">Nike</div>
+			</li>
+			<li class="item">
+				<a class="item-grid" href="/adidas-yeezy-boost-350-asia">
+					<img class="item-image" src="images/adidasYeezyBoost350Asia.jpg" alt="adidasYeezyBoost350Asia">
+					<div class="item-info">
+						<div class="item-name">adidas Yeezy Boost 350 V2</div>
+						<div class="item-color">Asia-Flax</div>
+						<div class="item-price">
+							<span class="price">Ksh.3000</span>
+						</div>
+					</div>
 				</a>
-			</div>
-			<div class="polaroid">
-				<a href="/yeezy">
-					<img src="images/yeezy.jpg" width="100%" />
-					<div class="product-name">Adidas Yeezy</div>
+			</li>
+			<li class="item">
+				<a class="item-grid" href="/Nike-Air-Force-1-Be-True-White-CV0258-100">
+					<img class="item-image" src="images/NikeAirForce.jpg" alt="NikeAirForce">
+					<div class="item-info">
+						<div class="item-name">Nike Air Force 1</div>
+						<div class="item-color">Be True</div>
+						<div class="item-price">
+							<span class="price">Ksh.3500</span>
+						</div>
+					</div>
 				</a>
-			</div>
-		</section>
-		
-		<div class="home-new-arrival">
-			<h4>New Arrival</h4>
-			<ol class="jewelry-overlay">
-				<li class="item">
-					<a class="item-grid" href="/Nike-LDWaffle-x-Sacai-White-BV0073-101">
-						<img class="item-image" src="images/NikeLDWaffleWhite.jpg" alt="NikeLDWaffleWhite">
-						<div class="item-info">
-							<div class="item-name">Nike LDWaffle X Sacai</div>
-							<div class="item-color">White-Nylon</div>
-							<div class="item-price">
-								<span class="price">Ksh.3500</span>
-							</div>
+			</li>
+			<li class="item">
+				<a class="item-grid" href="/adidas-Yeezy-Boost-350-V2-Desert-Sage-FX9035">
+					<img class="item-image" src="images/adidasYeezyBoost350d.jpg" alt="adidasYeezyBoost350d">
+					<div class="item-info">
+						<div class="item-name">adidas Yeezy Boost 350 V2</div>
+						<div class="item-color">Desert Sage</div>
+						<div class="item-price">
+							<span class="price">Ksh.2800</span>
 						</div>
-					</a>
-				</li>
-				<li class="item">
-					<a class="item-grid" href="/adidas-yeezy-boost-350-asia">
-						<img class="item-image" src="images/adidasYeezyBoost350Asia.jpg" alt="adidasYeezyBoost350Asia">
-						<div class="item-info">
-							<div class="item-name">adidas Yeezy Boost 350 V2</div>
-							<div class="item-color">Asia-Flax</div>
-							<div class="item-price">
-								<span class="price">Ksh.3000</span>
-							</div>
+					</div>
+				</a>
+			</li>
+			<li class="item">
+				<a class="item-grid" href="/Nike-Air-Jordan-5-Retro-Fire-Red-DA1911-102">
+					<img class="item-image" src="images/NikeAirJordan5Retro.jpg" alt="NikeAirJordan5Retro">
+					<div class="item-info">
+						<div class="item-name">Nike AirJordan 5 Retro</div>
+						<div class="item-color">White</div>
+						<div class="item-price">
+							<span class="price">Ksh.3000</span>
 						</div>
-					</a>
-				</li>
-				<li class="item">
-					<a class="item-grid" href="/Nike-Air-Force-1-Be-True-White-CV0258-100">
-						<img class="item-image" src="images/NikeAirForce.jpg" alt="NikeAirForce">
-						<div class="item-info">
-							<div class="item-name">Nike Air Force 1</div>
-							<div class="item-color">Be True</div>
-							<div class="item-price">
-								<span class="price">Ksh.3500</span>
-							</div>
+					</div>
+				</a>
+			</li>
+			<li class="item">
+				<a class="item-grid" href="/Nike-Air-Jordan-6-Retro-DMP-CT4954-007">
+					<img class="item-image" src="images/NikeAirJordan6Retro.jpg" alt="NikeAirJordan6Retro">
+					<div class="item-info">
+						<div class="item-name">Nike Air Jordan 6 SE</div>
+						<div class="item-color">Black</div>
+						<div class="item-price">
+							<span class="price">Ksh.4000</span>
 						</div>
-					</a>
-				</li>
-				<li class="item">
-					<a class="item-grid" href="/adidas-Yeezy-Boost-350-V2-Desert-Sage-FX9035">
-						<img class="item-image" src="images/adidasYeezyBoost350d.jpg" alt="adidasYeezyBoost350d">
-						<div class="item-info">
-							<div class="item-name">adidas Yeezy Boost 350 V2</div>
-							<div class="item-color">Desert Sage</div>
-							<div class="item-price">
-								<span class="price">Ksh.2800</span>
-							</div>
+					</div>
+				</a>
+			</li>
+			<li class="item">
+				<a class="iitem-grid" href="/Korean-Sweet-Flower-Earrings">
+					<img class="item-image" src="images/jewelry/women/Koreansweatstudearring1.jpg" alt="dope lit"
+						style="height: 180px;">
+					<div class="item-info">
+						<div class="item-name">Korean Sweet Flower Earrings</div>
+						<div class="item-color">Golden-Rose</div>
+						<div class="item-price">
+							<span class="price">Ksh.300</span>
 						</div>
-					</a>
-				</li>
-				<li class="item">
-					<a class="item-grid" href="/Nike-Air-Jordan-5-Retro-Fire-Red-DA1911-102">
-						<img class="item-image" src="images/NikeAirJordan5Retro.jpg" alt="NikeAirJordan5Retro">
-						<div class="item-info">
-							<div class="item-name">Nike AirJordan 5 Retro</div>
-							<div class="item-color">White</div>
-							<div class="item-price">
-								<span class="price">Ksh.3000</span>
-							</div>
+					</div>
+				</a>
+			</li>
+			<li class="item">
+				<a class="item-grid" href="/Golden-Star-Stud-Ear-Earrings-big">
+					<img class="item-image" src="images/jewelry/women/star-grid.jpg" alt="star grid" style="height: 180px;">
+					<div class="item-info">
+						<div class="item-name">Star Stud Ear Earrings-Big</div>
+						<div class="item-color">Golden</div>
+						<div class="item-price">
+							<span class="price">Ksh.300</span>
 						</div>
-					</a>
-				</li>
-				<li class="item">
-					<a class="item-grid" href="/Nike-Air-Jordan-6-Retro-DMP-CT4954-007">
-						<img class="item-image" src="images/NikeAirJordan6Retro.jpg" alt="NikeAirJordan6Retro">
-						<div class="item-info">
-							<div class="item-name">Nike Air Jordan 6 SE</div>
-							<div class="item-color">Black</div>
-							<div class="item-price">
-								<span class="price">Ksh.4000</span>
-							</div>
+					</div>
+				</a>
+			</li>
+			<li class="item">
+				<a class="item-grid" href="/Nike-LDWaffle-x-Sacai-Black-Nylon-BV0073-002">
+					<img class="item-image" src="images/NikeLDWaffleBlack.jpg" alt="NikeLDWaffleBlack">
+					<div class="item-info">
+						<div class="item-name">Nike LDWaffle x Sacai</div>
+						<div class="item-color">Black-Nylon</div>
+						<div class="item-price">
+							<span class="price">Ksh.3500</span>
 						</div>
-					</a>
-				</li>
-				<li class="item">
-					<a class="iitem-grid" href="/Korean-Sweet-Flower-Earrings">
-						<img class="item-image" src="images/jewelry/women/Koreansweatstudearring1.jpg" alt="dope lit" style="height: 180px;">
-						<div class="item-info">
-							<div class="item-name">Korean Sweet Flower Earrings</div>
-							<div class="item-color">Golden-Rose</div>
-							<div class="item-price">
-								<span class="price">Ksh.300</span>
-							</div>
+					</div>
+				</a>
+			</li>
+			<li class="item">
+				<a class="item-grid" href="/Nike-Air-Jordan-13-Retro-GS-FlintNavy-884129-404">
+					<img class="item-image" src="images/Air13.jpg" alt="Air13">
+					<div class="item-info">
+						<div class="item-name">Nike Air Jordan 13 Retro</div>
+						<div class="item-color">Flint</div>
+						<div class="item-price">
+							<span class="price">Ksh.4000</span>
 						</div>
-					</a>
-				</li>
-				<li class="item">
-					<a class="item-grid" href="/Golden-Star-Stud-Ear-Earrings-big">
-						<img class="item-image" src="images/jewelry/women/star-grid.jpg" alt="star grid" style="height: 180px;">
-						<div class="item-info">
-							<div class="item-name">Star Stud Ear Earrings-Big</div>
-							<div class="item-color">Golden</div>
-							<div class="item-price">
-								<span class="price">Ksh.300</span>
-							</div>
+					</div>
+				</a>
+			</li>
+			<li class="item">
+				<a class="item-grid" href="/led-luminous-Diamond-Wrist-watch">
+					<img class="item-image" src="images/jewelry/men/led  backlight sport watch.jpg"
+						alt="led  backlight sport watch" style="height: 180px;">
+					<div class="item-info">
+						<div class="item-name">led Luminous Diamond Wrist Watch</div>
+						<div class="item-color">Luminous</div>
+						<div class="item-price">
+							<span class="price">Ksh.2500</span>
 						</div>
-					</a>
-				</li>
-				<li class="item">
-					<a class="item-grid" href="/Nike-LDWaffle-x-Sacai-Black-Nylon-BV0073-002">
-						<img class="item-image" src="images/NikeLDWaffleBlack.jpg" alt="NikeLDWaffleBlack">
-						<div class="item-info">
-							<div class="item-name">Nike LDWaffle x Sacai</div>
-							<div class="item-color">Black-Nylon</div>
-							<div class="item-price">
-								<span class="price">Ksh.3500</span>
-							</div>
+					</div>
+				</a>
+			</li>
+			<li class="item">
+				<a class="item-grid" href="/Patel-Philippe-Calatrava BLack-Curren-Watch">
+					<img class="item-image" src="images/jewelry/men/curren vintage wristwatch-stainless steel.jpg"
+						alt="curren vintage wristwatch-stainless steel" style="height: 180px;">
+					<div class="item-info">
+						<div class="item-name">Patel Philippe Calatrava Curren WristWatch</div>
+						<div class="item-color">Black</div>
+						<div class="item-price">
+							<span class="price">Ksh.2000</span>
 						</div>
-					</a>
-				</li>
-				<li class="item">
-					<a class="item-grid" href="/Nike-Air-Jordan-13-Retro-GS-FlintNavy-884129-404">
-						<img class="item-image" src="images/Air13.jpg" alt="Air13">
-						<div class="item-info">
-							<div class="item-name">Nike Air Jordan 13 Retro</div>
-							<div class="item-color">Flint</div>
-							<div class="item-price">
-								<span class="price">Ksh.4000</span>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li class="item">
-					<a class="item-grid" href="/led-luminous-Diamond-Wrist-watch">
-						<img class="item-image" src="images/jewelry/men/led  backlight sport watch.jpg" alt="led  backlight sport watch"
-							style="height: 180px;">
-						<div class="item-info">
-							<div class="item-name">led Luminous Diamond Wrist Watch</div>
-								<div class="item-color">Luminous</div>
-								<div class="item-price">
-									<span class="price">Ksh.2500</span>
-								</div>
-							</div>
-					</a>
-				</li>
-				<li class="item">
-					<a class="item-grid" href="/Patel-Philippe-Calatrava BLack-Curren-Watch">
-						<img class="item-image" src="images/jewelry/men/curren vintage wristwatch-stainless steel.jpg" 
-						    alt="curren vintage wristwatch-stainless steel" style="height: 180px;">
-						<div class="item-info">
-							<div class="item-name">Patel Philippe Calatrava Curren WristWatch</div>
-							<div class="item-color">Black</div>
-							<div class="item-price">
-								<span class="price">Ksh.2000</span>
-							</div>
-						</div>
-					</a>
-				</li>
+					</div>
+				</a>
+			</li>
 			<div class="show-more">
 				<a href="/new-arrival">Show More</a>
 			</div>
-		</div>
-	</main>
+	</div>
 	<!--<div class="container">
 		<div class="instagram-page-header">
 			<h4 class="instagram-header">SHOP BY INSTAGRAM</h4>
