@@ -101,24 +101,24 @@ app.get('/size-info', function (request, response) {
   response.render('pages/size-info');
 });
 
-app.get('/BV0073-101-Nike-LDWaffle-x-Sacai-White', function (request, response) {
-  response.render('pages/BV0073-101-Nike-LDWaffle-x-Sacai-White');
+app.get('/Nike-LDWaffle-x-Sacai-White-BV0073-101', function (request, response) {
+  response.render('pages/Nike-LDWaffle-x-Sacai-White-BV0073-101');
 });
 
-app.get('/CV0258-100-Nike-Air-Force-1-Be-True-White', function (request, response) {
-  response.render('pages/CV0258-100-Nike-Air-Force-1-Be-True-White');
+app.get('/Nike-Air-Force-1-Be-True-White-CV0258-100', function (request, response) {
+  response.render('pages/Nike-Air-Force-1-Be-True-White-CV0258-100');
 });
 
-app.get('/FX9035-adidas-Yeezy-Boost-350-V2-Desert-Sage', function (request, response) {
-  response.render('pages/FX9035-adidas-Yeezy-Boost-350-V2-Desert-Sage');
+app.get('/adidas-Yeezy-Boost-350-V2-Desert-Sage-FX9035', function (request, response) {
+  response.render('pages/adidas-Yeezy-Boost-350-V2-Desert-Sage-FX9035');
 });
 
-app.get('/DA1911-102-Nike-Air-Jordan-5-Retro-Fire-Red', function (request, response) {
-  response.render('pages/DA1911-102-Nike-Air-Jordan-5-Retro-Fire-Red');
+app.get('/Nike-Air-Jordan-5-Retro-Fire-Red-DA1911-102', function (request, response) {
+  response.render('pages/Nike-Air-Jordan-5-Retro-Fire-Red-DA1911-102');
 });
 
-app.get('/CT4954-007-Nike-Air-Jordan-6-Retro-DMP', function (request, response) {
-  response.render('pages/CT4954-007-Nike-Air-Jordan-6-Retro-DMP');
+app.get('/Nike-Air-Jordan-6-Retro-DMP-CT4954-007', function (request, response) {
+  response.render('pages/Nike-Air-Jordan-6-Retro-DMP-CT4954-007');
 });
 
 app.get('/Korean-Sweet-Flower-Earrings', function (request, response) {
@@ -129,8 +129,8 @@ app.get('/Golden-Star-Stud-Ear-Earrings-big', function (request, response) {
   response.render('pages/Golden-Star-Stud-Ear-Earrings-big');
 });
 
-app.get('/BV0073-002-Nike-LDWaffle-x-Sacai-Black-Nylon', function (request, response) {
-  response.render('pages/BV0073-002-Nike-LDWaffle-x-Sacai-Black-Nylon');
+app.get('/Nike-LDWaffle-x-Sacai-Black-Nylon-BV0073-002', function (request, response) {
+  response.render('pages/Nike-LDWaffle-x-Sacai-Black-Nylon-BV0073-002');
 });
 
 app.get('/led-luminous-Diamond-Wrist-watch', function (request, response) {
@@ -145,8 +145,8 @@ app.get('/nike-air-jordan-13', function (request, response) {
   response.render('pages/nike-air-jordan-13');
 });
 
-app.get('/884129-404-Nike-Air-Jordan-13-Retro-GS-FlintNavy', function (request, response) {
-  response.render('pages/884129-404-Nike-Air-Jordan-13-Retro-GS-FlintNavy');
+app.get('/Nike-Air-Jordan-13-Retro-GS-FlintNavy-884129-404', function (request, response) {
+  response.render('pages/Nike-Air-Jordan-13-Retro-GS-FlintNavy-884129-404');
 });
 
 app.get('/adidas-yeezy-boost-350-asia', function (request, response) {
