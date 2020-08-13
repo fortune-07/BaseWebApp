@@ -1575,11 +1575,9 @@ table {
   }
   .product-title{
     display: inline;
-    margin: 20px 0 10px;
     text-align: center;
     font-size: 18px;
     line-height: 22px;
-    text-align: center;
     text-transform: uppercase;
   }
   .product-images{
