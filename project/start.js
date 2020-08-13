@@ -17,14 +17,6 @@ app.get('/about', function (request, response) {
   response.render('pages/about');
 });
 
-app.get('/women-jewelry', function (request, response) {
-  response.render('pages/women-jewelry');
-});
-
-app.get('/men-jewelry', function (request, response) {
-  response.render('pages/men-jewelry');
-});
-
 app.get('/blog', function (request, response) {
   response.render('pages/blog');
 });
@@ -37,6 +29,18 @@ app.get('/new-arrival', function (request, response) {
   response.render('pages/new-arrival');
 });
 
+app.get('/hot-items', function (request, response) {
+  response.render('pages/hot-items');
+});
+
+app.get('/women-jewelry', function (request, response) {
+  response.render('pages/women-jewelry');
+});
+
+app.get('/men-jewelry', function (request, response) {
+  response.render('pages/men-jewelry');
+});
+
 app.get('/men-shoes', function (request, response) {
   response.render('pages/men-shoes');
 });
@@ -47,10 +51,6 @@ app.get('/women-shoes', function (request, response) {
 
 app.get('/cart', function (request, response) {
   response.render('pages/cart');
-});
-
-app.get('/hot-items', function (request, response) {
-  response.render('pages/hot-items');
 });
 
 app.get('/customer', function (request, response) {
@@ -75,10 +75,6 @@ app.get('/logout', function (request, response) {
 
 app.get('/order', function (request, response) {
   response.render('pages/order');
-});
-
-app.get('/create', function (request, response) {
-  response.render('pages/customer/create');
 });
 
 app.get('/reset-password', function (request, response) {
