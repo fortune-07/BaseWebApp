@@ -335,7 +335,6 @@ a{
 
 .polaroid{
   flex: 1;
-  background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-right: 5px;
   margin-bottom: 20px;
@@ -504,54 +503,43 @@ ol{
 }
 
 /*-----------------------------------------SHOP BY INSTAGRAM----------------------------*/
-.instagram-page-header{
-  display: inline-block;
-  text-align: center;
-  height: 400px;
-  margin-bottom: 20px;
+#shop-by-instagram{
+  margin: auto;
+  padding: 10px;
+  margin-top: 20px;
 }
-.instagram-header{
-  text-align: center;
-  margin-bottom: 0;
-  text-align: center;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 35px;
-  font-weight: bold;
+.instagram-title{
+  font-family: 'Roboto',sans-serif;
   font-weight: 700;
   font-style: italic;
+  font-size: 35px;
+  text-align: center;
   letter-spacing: -0.025em;
   line-height: 1;
-  word-break: break-word;
   text-transform: uppercase;
 }
-.instagram-subheader{
-  text-align: center;
-  margin-top: 10px;
+.instagram-subtitle{
   font-size: 20px;
   font-weight: 500;
+  text-align: center;
+  margin-top: 10px;
 }
-.instagram-grid-item{
-  list-style: none;
+.instagram-grid{
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
+  height: 400px;
 }
-.instagram-grid-item li{
-  list-style: none;
-}
-.instagram-image{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
+.instagram-product-pic{
+  flex: 1;
+  margin: 0;
   padding: 10px;
 }
-.instagram-image a{
+.ig-link{
   text-decoration: none;
 }
-.instagram-image:hover {
-  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
-  box-sizing: border-box;
-  vertical-align: top;
+.ig-pic{
+  height: inherit;
+  width: 100%;
 }
 .instagram-product-title{
   font-size: 13.6px;
@@ -1473,20 +1461,23 @@ table {
     line-height: 24px;
     margin-bottom: 0;
   }
-  .instagram-header{
+  .instagram-title{
     font-size: 22px;
     font-weight: 600;
-    font-weight: bold;
     text-align: center;
   }
-  .instagram-subheader{
+  .instagram-subtitle{
     font-size: 16px;
     font-weight: 500;
     text-align: center;
   }
-  .instagram-grid-item{
+  .instagram-grid{
     display: flex;
     flex-wrap: wrap;
+  }
+  .instagram-product-pic{
+    width: calc((100% - 10px)/2);
+    padding: 10px;
   }
 
   .item{
