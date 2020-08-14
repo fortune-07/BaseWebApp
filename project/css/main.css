@@ -1463,6 +1463,11 @@ table {
     line-height: 24px;
     margin-bottom: 0;
   }
+
+  #shop-by-instagram{
+    margin-top: 10px ;
+    margin-bottom: 10px;
+  }
   .instagram-title{
     font-size: 22px;
     font-weight: 600;
