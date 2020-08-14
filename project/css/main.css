@@ -238,6 +238,7 @@ a{
   border-bottom: 1px solid silver;
 }
 .nav-toggle{
+  border: 0;
   margin-top: 5px;
   z-index: 900;
   left: 3px;
@@ -511,6 +512,7 @@ ol{
 .instagram-title{
   font-family: 'Roboto',sans-serif;
   font-weight: 700;
+  font-weight: bold;
   font-style: italic;
   font-size: 35px;
   text-align: center;
@@ -1474,6 +1476,7 @@ table {
   .instagram-grid{
     display: flex;
     flex-wrap: wrap;
+    height: unset;
   }
   .instagram-product-pic{
     width: calc((100% - 10px)/2);
