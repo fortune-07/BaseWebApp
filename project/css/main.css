@@ -194,6 +194,11 @@ a{
 }
 
 /*--------------------------Mobile Header---------------------------- */
+.mobile-header{
+  margin: 0;
+  padding: 0;
+  display: none;
+}
 .sidenav {
   height: 100%;
   width: 0;
@@ -818,6 +823,23 @@ ol{
 }
 
 /*------------------------------ON CLICK PRODUCT SECTION---------------------*/
+.image-title{
+  display: inline-block;
+  padding-left: 52.5%;
+  box-sizing: border-box;
+  margin: 30px 0 10px;
+  width: 100%;
+  font-size: 28px;
+  color: #1d1e20;
+  text-align: center;
+  line-height: 22px;
+}
+.image-title span{
+  display: block;
+  max-width: 400px;
+  margin: 0 auto;
+  text-transform: none;
+}
 .product-title{
   margin: 30px 0 10px;
   display:  block;
@@ -1315,6 +1337,11 @@ table {
   }
 
   /*------------------------------------------MOBILE HEADER--------------------------------*/
+  .mobile-header{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
   .login-register{
     text-align: center;
     border-bottom: 1px solid #e6e6e6;

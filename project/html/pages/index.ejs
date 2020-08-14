@@ -47,7 +47,7 @@
 		</div>
 
 		<div class="container-fluid p-0">
-			<nav class="navbar navbar-expand-md navbar-light bg-white">
+			<div class="mobile-header">
 				<div class="container">
 					<div class="header-content">
 						<span class="nav-toggle" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
@@ -95,6 +95,8 @@
 					<a href="#">Clients</a>
 					<a href="#">Contact</a>
 				</div>
+			</div>
+			<nav class="navbar navbar-expand-md navbar-light bg-white">
 				<div class="navbar-collapse collapse show" id="navbarCollapse">
 					<ul class="navbar-nav">
 						<li class="nav-item">
@@ -360,53 +362,55 @@
 			<div class="show-more">
 				<a href="/new-arrival">Show More</a>
 			</div>
+		</ol>
 	</div>
-	<!--<div class="container">
-		<div class="instagram-page-header">
-			<h4 class="instagram-header">SHOP BY INSTAGRAM</h4>
-			<h4 class="instagram-subheader">Featuring Fortune (@fortunesvibez)</h4>
+
+	<section id="shop-by-instagram">
+		<h4 class="instagram-title">
+			<span>Shop By Instagram</span>
+		</h4>
+		<h4 class="instagram-subtitle">
+			<span>Featuring Fortune (@FortunesVibez)</span>
+		</h4>
+		<div class="instagram-grid">
+			<div class="instagram-product-pic">
+				<a href="https://www.instagram.com/p/B6DqPHDhPKx/" target="_blank">
+					<img src="images/white2.jpg">
+				</a>
+				<div class="instagram-product-title">
+					pictured -
+					<a href="/product/shoes" class="text-link">Shoes</a>
+				</div>
+			</div>
+			<div class="instagram-product-pic">
+				<a href="https://www.instagram.com/p/B6Dsmt7hH9I/" target="_blank">
+					<img src="images/white1.jpg">
+				</a>
+				<div class="instagram-product-title">
+					pictured -
+					<a href="/product/shoes" class="text-link">Shoes</a>
+				</div>
+			</div>
+			<div class="instagram-product-pic">
+				<a href="https://www.instagram.com/p/BpFvaSanUuT/" target="_blank">
+					<img src="images/fortunewhizz.jpg">
+				</a>
+				<div class="instagram-product-title">
+					pictured -
+					<a href="/product/shoes" class="text-link">Shoes</a>
+				</div>
+			</div>
+			<div class="instagram-product-pic">
+				<a href="https://www.instagram.com/p/Bv3bu1nnuWP/" target="_blank">
+					<img src="images/fortune.JPG">
+				</a>
+				<div class="instagram-product-title">
+					pictured -
+					<a href="/product/shoes" class="text-link">Shoes</a>
+				</div>
+			</div>
 		</div>
-		<div class="instagram-product-grid">
-			<ol class="instagram-grid-item">
-				<li class="instagram-image">
-					<a class="item-grid" href="https://www.instagram.com/p/B6DqPHDhPKx/" target="_blank">
-						<img src="images/white2.jpg">
-					</a>
-					<div class="instagram-product-title">
-						pictured -
-						<a href="/product/shoes" class="text-link">Shoes</a>
-					</div>
-				</li>
-				<li class="instagram-image">
-					<a class="item-grid" href="https://www.instagram.com/p/B6Dsmt7hH9I/" target="_blank">
-						<img src="images/white1.jpg">
-					</a>
-					<div class="instagram-product-title">
-						pictured -
-						<a href="/product/watches" class="text-link">Watch</a>
-					</div>
-				</li>
-				<li class="instagram-image">
-					<a class="item-grid" href="https://www.instagram.com/p/BpFvaSanUuT/" target="_blank">
-						<img src="images/fortunewhizz.jpg">
-					</a>
-					<div class="instagram-product-title">
-						pictured -
-						<a href="/product/watches" class="text-link">Watch</a>
-					</div>
-				</li>
-				<li class="instagram-image">
-					<a class="item-grid" href="https://www.instagram.com/p/Bv3bu1nnuWP/" target="_blank">
-						<img src="images/fortune.JPG">
-					</a>
-					<div class="instagram-product-title">
-						pictured -
-						<a href="/product/watches" class="text-link">Watch</a>
-					</div>
-				</li>
-			</ol>
-		</div>
-	</div> -->
+	</section>
 
 	<div class="clr"></div>
 
@@ -503,7 +507,6 @@
 		}
 	</script>
 	<script>
-		// Your web app's Firebase configuration
 		var firebaseConfig = {
 			apiKey: "AIzaSyD-pRgQz1p_tlE00KtC4HvwBnM575dExqQ",
 			authDomain: "mwagambo-cfa3a.firebaseapp.com",
@@ -514,11 +517,20 @@
 			appId: "1:775908781299:web:4ec58d1571c286ac415b86",
 			measurementId: "G-SPH6WRMQB2"
 		};
-		// Initialize Firebase
+		
 		firebase.initializeApp(firebaseConfig);
 		firebase.analytics();
 	</script>
 	<script src="js/main.js"></script>
+	<script>
+		function openNav() {
+				document.getElementById("mySidenav").style.width = "300px";
+			}
+
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			} 
+	</script>
 </body>
 
 </html>
