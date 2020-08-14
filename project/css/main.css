@@ -295,6 +295,7 @@ a{
   color: white;
 }
 .glow{
+  margin-top: 10px;
   font-size: 50px;
   font-family: var(--gugi);
   font-weight: 400;
@@ -1330,7 +1331,7 @@ table {
   .mobile-header{
     margin: 0;
     padding: 0;
-    display: inline-block;
+    display: block;
   }
   .login-register{
     text-align: center;
@@ -1449,8 +1450,12 @@ table {
     font-size: 40px;
     font-weight: 300;
   }
+  .glow{
+    margin-top: 20px;
+  }
   .show-text{
-    margin-top: 30px;
+    margin-bottom: 5px;
+    margin-top: 20px;
   }
 
   #display-products{
