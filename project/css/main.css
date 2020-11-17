@@ -1467,6 +1467,7 @@ table {
   #display-products{
     display: block;
     width: 100%;
+    height: 600px;
   }
 
   .home-new-arrival h4{
