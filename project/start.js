@@ -33,8 +33,8 @@ app.get('/tops', function (request, response) {
   response.render('pages/tops');
 });
 
-app.get('/bottom', function (request, response) {
-  response.render('pages/bottom');
+app.get('/bottoms', function (request, response) {
+  response.render('pages/bottoms');
 });
 
 app.get('/skirts', function (request, response) {
