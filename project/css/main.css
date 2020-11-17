@@ -1312,13 +1312,10 @@ table {
 
 @media screen and (max-width:767px){
   /*----------------------------------MOBILE PHONE SCREEN----------------------*/
-  /*.header{
-    display: none;
-  }*/
-  .top-header{
+  .header{
     display: none;
   }
-  .header-top{
+  .top-header{
     display: none;
   }
   .header-icons{
