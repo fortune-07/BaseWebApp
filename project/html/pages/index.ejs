@@ -48,9 +48,8 @@
 
 		<div class="container-fluid p-0">
 			<nav class="navbar navbar-expand-md navbar-light bg-white">
-				<span class="nav-toggle" style="font-size:30px;cursor:pointer" onclick="openNav()" 
-				    data-toggle="collapse" data-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">&#9776; 
+				<span class="nav-toggle" style="font-size:30px;cursor:pointer" onclick="openNav()"
+				type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">&#9776; 
 				</span>
 				<div class="navbar-collapse collapse show" id="navbarCollapse">
 					<ul class="navbar-nav">
@@ -118,7 +117,7 @@
 		</div>
 	</header>
 	<div class="mobile-header">
-		<div class="container" style="display: none;">
+		<div class="container" >
 			<div class="header-content">
 				<span class="nav-toggle" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
 				<div class="logo">
@@ -131,7 +130,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="mySidenav" class="sidenav" style="display: none;">
+		<div id="mySidenav" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			<div class="login-register">
 				<a href="/login">Login/Register</a>
