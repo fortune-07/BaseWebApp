@@ -9,6 +9,18 @@ var firebaseConfig = {
   measurementId: "G-SPH6WRMQB2"
 };
 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBpGOBMPlQlAH3q1Ntm7mEaI3RDJh9LmmI",
+  authDomain: "fortunesvibez.firebaseapp.com",
+  databaseURL: "https://fortunesvibez.firebaseio.com",
+  projectId: "fortunesvibez",
+  storageBucket: "fortunesvibez.appspot.com",
+  messagingSenderId: "199862479106",
+  appId: "1:199862479106:web:85b06fa41c8192181fba1b",
+  measurementId: "G-CMWJPVS3P8"
+};
+
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
